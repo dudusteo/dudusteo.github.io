@@ -12,8 +12,16 @@ import Calculator from "./routes/calculator";
 
 const router = createBrowserRouter([
   {
-    path: "epic7/substat",
-    element: <Calculator />,
+    path: "epic7",
+    children: [
+      {
+        path: "calculators",
+        children: [
+          { path: "gear-score", element: <Calculator /> },
+        ],
+      }
+    ],
+
   },
 ]);
 
