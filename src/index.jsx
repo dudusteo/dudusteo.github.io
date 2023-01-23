@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "@emotion/react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import "css-resetter";
 import './styles/main.css'
 import theme from "./styles/theme";
@@ -10,7 +10,7 @@ import theme from "./styles/theme";
 import Root from "./routes/root";
 import Calculator from "./routes/calculator";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "epic7",
     children: [
