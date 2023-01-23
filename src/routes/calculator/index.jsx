@@ -1,99 +1,217 @@
 import * as React from "react";
 import Dropdown from "../../core/dropdown";
 import Input from "../../core/input";
-import Text from "../../core/text";
+import * as Image from "../../img/image"
 
 /** @jsxImportSource @emotion/react */
 import style from "./calculator.style";
 import align from "../../styles/align.style";
 
-const options = [
-    { name: "Epic", value: "epic" },
-    { name: "Heroic", value: "heroic" },
-    { name: "Rare", value: "rare" },
-    { name: "Good", value: "good" },
-    { name: "Normal", value: "normal" },
+const rarityOptions = [
+    { name: "Epic" },
+    { name: "Heroic" },
+    { name: "Rare" },
+    { name: "Good" },
+    { name: "Normal" },
 ];
+
+const gearLevelOptions = [
+    { name: 85 },
+    { name: 88 },
+    { name: 90 },
+]
+
+const rarityJSON = {
+    "Epic": { substats: 4 },
+    "Heroic": { substats: 3 },
+    "Rare": { substats: 2 },
+    "Good": { substats: 1 },
+    "Normal": { substats: 0 },
+}
+
+const gearLevelJSON = {
+    85: {
+        "Attack%": 12,
+        "Critical Hit Chance": 11,
+        "Critical Hit Damage": 13,
+        "Defense%": 12,
+        "Effectiveness": 12,
+        "Effect Resistance": 12,
+        "Health%": 12,
+        "Speed": 8,
+        "Attack": 100,
+        "Defense": 60,
+        "Health": 540
+    },
+    88: {
+        "Attack%": 13,
+        "Critical Hit Chance": 12,
+        "Critical Hit Damage": 14,
+        "Defense%": 13,
+        "Effectiveness": 13,
+        "Effect Resistance": 13,
+        "Health%": 13,
+        "Speed": 9,
+        "Attack": 103,
+        "Defense": 62,
+        "Health": 553
+    },
+    90: {
+        "Attack%": 13,
+        "Critical Hit Chance": 12,
+        "Critical Hit Damage": 14,
+        "Defense%": 13,
+        "Effectiveness": 13,
+        "Effect Resistance": 13,
+        "Health%": 13,
+        "Speed": 9,
+        "Attack": 105,
+        "Defense": 62,
+        "Health": 567
+    }
+}
+
+const multipliers = [1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 2.6, 2.8, 3, 3.3, 3.6, 3.9, 4.25, 5];
+
+const subStatJSON = {
+    "Attack%": { calc: (x) => x, img: Image.stat_atk },
+    "Critical Hit Chance": { calc: (x) => x * 1.6, img: Image.stat_cr },
+    "Critical Hit Damage": { calc: (x) => x * 1.143, img: Image.stat_cd },
+    "Defense%": { img: Image.stat_def, calc: (x) => x },
+    "Effectiveness": { calc: (x) => x, img: Image.stat_eff },
+    "Effect Resistance": { calc: (x) => x, img: Image.stat_res },
+    "Health%": { calc: (x) => x, img: Image.stat_hp },
+    "Speed": { calc: (x) => x * 2, img: Image.stat_spd },
+    "Attack": { calc: (x) => x * 3.46 / 39, img: Image.stat_atk },
+    "Defense": { calc: (x) => x * 4.99 / 41, img: Image.stat_def },
+    "Health": { calc: (x) => x * 3.09 / 174, img: Image.stat_hp },
+}
 
 const substatOptions = [
-    { name: "Attack%", value: 0, placeholder: "%", calc: (x) => x },
-    { name: "Critical Hit Chance", value: 1, placeholder: "%", calc: (x) => x * 1.6 },
-    { name: "Critical Hit Damage", value: 2, placeholder: "%", calc: (x) => x * 1.14 },
-    { name: "Defense%", value: 3, placeholder: "%", calc: (x) => x },
-    { name: "Effectiveness", value: 4, placeholder: "%", calc: (x) => x },
-    { name: "Effect Resistance", value: 5, placeholder: "%", calc: (x) => x },
-    { name: "Health%", value: 6, placeholder: "%", calc: (x) => x },
-    { name: "Speed", value: 7, placeholder: "Flat", calc: (x) => x * 2 },
-    { name: "Attack", value: 8, placeholder: "Flat", calc: (x) => x * 3.46 / 39 },
-    { name: "Defense", value: 9, placeholder: "Flat", calc: (x) => x * 3.46 / 39 },
-    { name: "Health", value: 10, placeholder: "Flat", calc: (x) => x * 3.46 / 39 },
+    { name: "Attack%" },
+    { name: "Critical Hit Chance" },
+    { name: "Critical Hit Damage" },
+    { name: "Defense%" },
+    { name: "Effectiveness" },
+    { name: "Effect Resistance" },
+    { name: "Health%" },
+    { name: "Speed" },
+    { name: "Attack" },
+    { name: "Defense" },
+    { name: "Health" },
 ];
 
-const calculate = (stats) => {
+const calculateGearScore = (subs) => {
     var result = 0.0;
-    Object.keys(stats).map((key) => {
-        var { id, value } = stats[key];
-        result += substatOptions[id].calc(parseFloat(value)) || 0.0;
+    subs.forEach((object) => {
+        var { name, value } = object;
+        result += subStatJSON[name].calc(parseFloat(value)) || 0.0;
     })
     return result.toFixed(2);
 }
 
+const calculateMainStat = (mainStatName, gearEnchanceLevel, gearLevel) => {
+    return gearLevelJSON[gearLevel][mainStatName] * multipliers[gearEnchanceLevel];
+}
+
 const Calculator = () => {
-    const [rarity, setRarity] = React.useState(options[0].value);
+    const [rarity, setRarity] = React.useState(rarityOptions[0].name);
     const [stats, setStats] = React.useState({
-        "1": { id: 0, value: '' },
-        "2": { id: 1, value: '' },
-        "3": { id: 2, value: '' },
-        "4": { id: 3, value: '' }
+        main: { name: 'Attack%', value: '' },
+        subs: [{ name: 'Critical Hit Chance', value: '' }, { name: 'Critical Hit Damage', value: '' }, { name: 'Speed', value: '' }, { name: 'Effect Resistance', value: '' }]
     })
+    const setMain = (newMain) => {
+        setStats(prevState => ({
+            ...prevState,
+            main: newMain,
+        }));
+    }
+    const setSubs = (newSubs) => {
+        setStats(prevState => ({
+            ...prevState,
+            subs: newSubs,
+        }));
+    }
+    const [gearScore, setGearScore] = React.useState(0.0);
+    const [mainStat, setMainStat] = React.useState(60);
+    const [gearLevel, setGearLevel] = React.useState(85);
+    const [gearEnchanceLevel, setGearEnchanceLevel] = React.useState(0);
 
+    React.useEffect(() => {
+        setGearScore(calculateGearScore(stats.subs));
+        setMainStat(calculateMainStat(stats.main.name, gearEnchanceLevel, gearLevel))
+    }, [stats, gearLevel, gearEnchanceLevel])
 
-    const handleStat = (newStat, index) => {
-        setStats({
-            ...stats,
-            [index]: {
-                ...stats[index],
-                id: newStat,
+    React.useEffect(() => {
+        console.log(rarityJSON[rarity].substats);
+        var newSubs = [];
+        [...Array(rarityJSON[rarity].substats).keys()].forEach((index) => {
+            newSubs.push({ name: substatOptions[index + 1].name, value: '' })
+        });
+        setSubs(newSubs)
+
+    }, [rarity])
+
+    const handleStat = (newStat, originIndex) => {
+        var newSubs = stats.subs;
+        stats.subs.forEach((object, index) => {
+            if (object.name === newStat) {
+                originIndex === -1 ? newSubs[index] = { ...stats.subs[index], name: stats.main.name, value: '' } : newSubs[index] = stats.subs[originIndex];
             }
         })
+        if (originIndex === -1) {
+            setMain({ ...stats.main, name: newStat, value: '' });
+        } else {
+            if (stats.main.name === newStat) {
+                setMain({ ...stats.main, name: stats.subs[originIndex].name, value: '' });
+            }
+            newSubs[originIndex] = { ...stats.subs[originIndex], name: newStat, value: '' };
+            setSubs(newSubs);
+        }
     }
 
     const handleStatValue = (newValue, index) => {
-        setStats({
-            ...stats,
-            [index]: {
-                ...stats[index],
-                value: newValue,
-            }
-        })
+        var newSubs = stats.subs;
+        newSubs[index] = { ...stats.subs[index], value: newValue };
+        setSubs(newSubs);
     }
 
-
-
     return (
-        <div css={style.calculator(rarity)}>
-            <div css={align.horizontalCenter}>
-                <Text type="title">E7 Substat Calculator</Text>
+        <div css={style.calculator(rarity.toLowerCase())}>
+            <div css={[align.horizontalCenter, style.text("title", "large")]}>
+                <span>E7 Gear Score Calculator</span>
             </div>
-            <div>
-                <Dropdown
-                    options={options}
-                    value={rarity}
-                    setValue={setRarity}
-                ></Dropdown>
+
+            <div css={style.item}>
+                <div css={[align.twoHorizontal, style.color(rarity.toLowerCase()), style.size("tiny")]}>
+                    <Dropdown
+                        options={rarityOptions}
+                        value={rarity}
+                        setValue={setRarity}
+                    ></Dropdown>
+                    <span>Item</span>
+                    <Dropdown options={gearLevelOptions} value={gearLevel} setValue={setGearLevel}></Dropdown>
+                </div>
+                <div css={[align.twoHorizontal, align.lastRight, style.text("title", "medium")]}>
+                    <img src={subStatJSON[stats.main.name].img} alt=""></img>
+                    <Dropdown options={substatOptions} value={stats.main.name} setValue={(x) => handleStat(x, -1)}></Dropdown>
+                    <span>{mainStat}</span>
+                </div>
+                <div>
+                    {
+                        stats.subs.map((key, index) =>
+                        (
+                            <div css={[align.twoHorizontal, align.lastRight, style.text("else", "small")]} key={index}>
+                                <img src={subStatJSON[key.name].img} alt=""></img>
+                                <Dropdown options={substatOptions} value={key.name} setValue={(x) => handleStat(x, index)}></Dropdown>
+                                <Input placeholder="value here" setValue={(x) => handleStatValue(parseFloat(x), index)}></Input>
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
-            {
-                Object.keys(stats).map((key) => {
-                    return (
-                        <div css={[align.twoHorizontal, align.lastRight]} key={key}>
-                            <Dropdown options={substatOptions} value={stats[key].id} setValue={(x) => handleStat(x, key)}></Dropdown>
-                            <Input placeholder={substatOptions[stats[key].id].placeholder} setValue={(x) => handleStatValue(x, key)}></Input>
-                        </div>
-                    )
-                })
-            }
-            <div css={align.horizontalCenter}>
-                <Text type="title">Gear Score{" " + calculate(stats)}</Text>
+            <div css={[align.horizontalCenter, style.text("title", "large")]}>
+                <span > Gear Score{" " + gearScore}</span>
             </div>
 
         </div >

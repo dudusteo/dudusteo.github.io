@@ -3,10 +3,10 @@ import { css } from "@emotion/react/macro";
 const style = {
   dropdown: (input) => (theme) =>
     css`
-      color: ${theme.text.gray};
-      border-radius: 5px;
-
-      //border: 2px solid ${theme.border.secondary};
+      &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
     `,
   color: (activeColor) => (theme) =>
     css`

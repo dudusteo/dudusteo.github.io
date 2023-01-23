@@ -1,11 +1,13 @@
+import stat_atk from "../img/stat_atk.png";
+
 const theme = {
   primary: "#101010",
   secondary: "#564228",
   border: { primary: "#564228", secondary: "#333333" },
   text: {
-    size: { small: "18px", large: "36px" },
+    size: { tiny: "18px", small: "21px", medium: "25px", large: "30px" },
     white: "#FFFFFF",
-    gray: "#898989",
+    gray: "#5D5D5D",
     gold: "#765E40",
   },
   rarity: {
