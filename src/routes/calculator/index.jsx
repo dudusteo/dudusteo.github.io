@@ -1,11 +1,14 @@
 import * as React from "react";
+
 import Dropdown from "../../core/dropdown";
 import Input from "../../core/input";
+import Button from "../../core/button";
 import * as Image from "../../img/image"
 
 /** @jsxImportSource @emotion/react */
 import style from "./calculator.style";
 import align from "../../styles/align.style";
+import Divider from "../../core/divider";
 
 const rarityOptions = [
     { name: "Epic" },
@@ -27,6 +30,30 @@ const rarityJSON = {
     "Rare": { substats: 2 },
     "Good": { substats: 1 },
     "Normal": { substats: 0 },
+}
+
+const gearScoreEvaluationJSON = {
+    85: [
+        { higher_than: 0, name: "Low Rolls", },
+        { higher_than: 50, name: "Avarage Rolls", },
+        { higher_than: 60, name: "High Rolls", },
+    ],
+
+
+    88: [
+        { higher_than: 0, name: "Low Rolls", },
+        { higher_than: 60, name: "Avarage Rolls", },
+        { higher_than: 70, name: "High Rolls", },
+    ],
+
+
+    90: [
+        { higher_than: 0, name: "Low Rolls", },
+        { higher_than: 60, name: "Avarage Rolls", },
+        { higher_than: 70, name: "High Rolls", },
+    ],
+
+
 }
 
 const gearLevelJSON = {
@@ -136,14 +163,16 @@ const Calculator = () => {
     const [mainStat, setMainStat] = React.useState(60);
     const [gearLevel, setGearLevel] = React.useState(85);
     const [gearEnchanceLevel, setGearEnchanceLevel] = React.useState(0);
+    const [gearScoreEvaluation, setGearScoreEvaluation] = React.useState("");
 
     React.useEffect(() => {
         setGearScore(calculateGearScore(stats.subs));
         setMainStat(calculateMainStat(stats.main.name, gearEnchanceLevel, gearLevel))
-    }, [stats, gearLevel, gearEnchanceLevel])
+        gearScoreEvaluationJSON[gearLevel].forEach((object) => object.higher_than <= gearScore && setGearScoreEvaluation(object.name));
+
+    }, [stats, gearLevel, gearEnchanceLevel, gearScore])
 
     React.useEffect(() => {
-        console.log(rarityJSON[rarity].substats);
         var newSubs = [];
         [...Array(rarityJSON[rarity].substats).keys()].forEach((index) => {
             newSubs.push({ name: substatOptions[index + 1].name, value: '' })
@@ -154,9 +183,17 @@ const Calculator = () => {
 
     const handleStat = (newStat, originIndex) => {
         var newSubs = stats.subs;
+        var isOnly = true;
         stats.subs.forEach((object, index) => {
             if (object.name === newStat) {
-                originIndex === -1 ? newSubs[index] = { ...stats.subs[index], name: stats.main.name, value: '' } : newSubs[index] = stats.subs[originIndex];
+                if (originIndex === -1) {
+                    newSubs[index] = { ...stats.subs[index], name: stats.main.name, value: '' }
+                } else {
+                    newSubs[index] = stats.subs[originIndex];
+                    newSubs[originIndex] = object;
+                }
+
+                isOnly = false;
             }
         })
         if (originIndex === -1) {
@@ -165,7 +202,9 @@ const Calculator = () => {
             if (stats.main.name === newStat) {
                 setMain({ ...stats.main, name: stats.subs[originIndex].name, value: '' });
             }
-            newSubs[originIndex] = { ...stats.subs[originIndex], name: newStat, value: '' };
+            if (isOnly) {
+                newSubs[originIndex] = { ...stats.subs[originIndex], name: newStat, value: '' };
+            }
             setSubs(newSubs);
         }
     }
@@ -188,32 +227,41 @@ const Calculator = () => {
                         options={rarityOptions}
                         value={rarity}
                         setValue={setRarity}
-                    ></Dropdown>
+                    />
                     <span>Item</span>
-                    <Dropdown options={gearLevelOptions} value={gearLevel} setValue={setGearLevel}></Dropdown>
+                    <Dropdown options={gearLevelOptions} value={gearLevel} setValue={setGearLevel} />
                 </div>
+                <Divider />
                 <div css={[align.twoHorizontal, align.lastRight, style.text("title", "medium")]}>
                     <img src={subStatJSON[stats.main.name].img} alt=""></img>
-                    <Dropdown options={substatOptions} value={stats.main.name} setValue={(x) => handleStat(x, -1)}></Dropdown>
+                    <Dropdown options={substatOptions} value={stats.main.name} setValue={(x) => handleStat(x, -1)} />
                     <span>{mainStat}</span>
                 </div>
+                <Divider />
                 <div>
                     {
-                        stats.subs.map((key, index) =>
-                        (
-                            <div css={[align.twoHorizontal, align.lastRight, style.text("else", "small")]} key={index}>
-                                <img src={subStatJSON[key.name].img} alt=""></img>
-                                <Dropdown options={substatOptions} value={key.name} setValue={(x) => handleStat(x, index)}></Dropdown>
-                                <Input placeholder="value here" setValue={(x) => handleStatValue(parseFloat(x), index)}></Input>
-                            </div>
-                        ))
+                        stats.subs.map((key, index) => {
+                            return (
+                                <div css={[align.twoHorizontal, align.lastRight, style.text("else", "small")]} key={index}>
+                                    <img src={subStatJSON[key.name].img} alt=""></img>
+                                    <Dropdown options={substatOptions} value={key.name} setValue={(x) => handleStat(x, index)} />
+                                    <Input placeholder="value here" value={key.value} setValue={(x) => handleStatValue(x, index)} />
+                                </div>
+                            )
+                        })
                     }
+                </div>
+                <Divider />
+                <div css={align.horizontalCenter}>
+                    <Button>Enhance</Button>
                 </div>
             </div>
             <div css={[align.horizontalCenter, style.text("title", "large")]}>
-                <span > Gear Score{" " + gearScore}</span>
+                <span>Gear Score{" " + gearScore}</span>
             </div>
-
+            <div css={[align.horizontalCenter, style.text("else", "medium")]}>
+                <span>{gearScoreEvaluation}</span>
+            </div>
         </div >
     );
 };

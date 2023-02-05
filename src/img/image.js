@@ -7,6 +7,7 @@ import stat_hp from "./stat_hp.png";
 import stat_res from "./stat_res.png";
 import stat_spd from "./stat_spd.png";
 import section_divider from "./section_divider.png";
+import epic7_logo from "./epic7_logo.png";
 
 export {
   stat_atk,
@@ -18,4 +19,5 @@ export {
   stat_res,
   stat_spd,
   section_divider,
+  epic7_logo,
 };

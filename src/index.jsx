@@ -1,35 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { HashRouter, Route, Routes } from "react-router-dom";
+
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "@emotion/react";
-import { RouterProvider, createHashRouter } from "react-router-dom";
+
 import "css-resetter";
 import './styles/main.css'
 import theme from "./styles/theme";
 
-import Root from "./routes/root";
+import Home from "./routes/home";
 import Calculator from "./routes/calculator";
+import Epic7 from "./routes/epic7";
 
-const router = createHashRouter([
-  {
-    path: "epic7",
-    children: [
-      {
-        path: "calculators",
-        children: [
-          { path: "gear-score", element: <Calculator /> },
-        ],
-      }
-    ],
-
-  },
-]);
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <RouterProvider router={router} />
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/epic7" element={<Epic7 />} />
+          <Route path="/epic7/calculators" element={<div>EPIC7 Calculators</div>} />
+          <Route path="/epic7/calculators/gear-score" element={<Calculator />} />
+        </Routes>
+      </HashRouter>
     </ThemeProvider>
   </React.StrictMode>
 );

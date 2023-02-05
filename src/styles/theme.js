@@ -5,10 +5,13 @@ const theme = {
   secondary: "#564228",
   border: { primary: "#564228", secondary: "#333333" },
   text: {
-    size: { tiny: "18px", small: "21px", medium: "25px", large: "30px" },
+    size: { tiny: 18, small: 21, medium: 25, large: 30 },
     white: "#FFFFFF",
     gray: "#5D5D5D",
     gold: "#765E40",
+  },
+  button: {
+    size: { medium: 5 },
   },
   rarity: {
     epic: "#F2412F",

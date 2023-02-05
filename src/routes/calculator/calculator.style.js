@@ -39,26 +39,26 @@ const style = {
       input,
       select {
         font-size: ${size === "large"
-          ? theme.text.size.large
+          ? theme.text.size.large + "px"
           : size === "medium"
-          ? theme.text.size.medium
+          ? theme.text.size.medium + "px"
           : size === "small"
-          ? theme.text.size.small
-          : theme.text.size.tiny};
+          ? theme.text.size.small + "px"
+          : theme.text.size.tiny + "px"};
         line-height: ${size === "large"
-          ? theme.text.size.large
+          ? theme.text.size.large + "px"
           : size === "medium"
-          ? theme.text.size.medium
+          ? theme.text.size.medium + "px"
           : size === "small"
-          ? theme.text.size.small
-          : theme.text.size.tiny};
+          ? theme.text.size.small + "px"
+          : theme.text.size.tiny + "px"};
         height: ${size === "large"
-          ? theme.text.size.large
+          ? theme.text.size.large + "px"
           : size === "medium"
-          ? theme.text.size.medium
+          ? theme.text.size.medium + "px"
           : size === "small"
-          ? theme.text.size.small
-          : theme.text.size.tiny};
+          ? theme.text.size.small + "px"
+          : theme.text.size.tiny + "px"};
       }
     `,
   color: (activeColor) => (theme) =>
@@ -75,29 +75,29 @@ const style = {
           ? theme.text.white
           : theme.text.gray};
         font-size: ${size === "large"
-          ? theme.text.size.large
+          ? theme.text.size.large + "px"
           : size === "medium"
-          ? theme.text.size.medium
+          ? theme.text.size.medium + "px"
           : size === "small"
-          ? theme.text.size.small
-          : theme.text.size.tiny};
+          ? theme.text.size.small + "px"
+          : theme.text.size.tiny + "px"};
         line-height: ${size === "large"
-          ? theme.text.size.large
+          ? theme.text.size.large + "px"
           : size === "medium"
-          ? theme.text.size.medium
+          ? theme.text.size.medium + "px"
           : size === "small"
-          ? theme.text.size.small
-          : theme.text.size.tiny};
+          ? theme.text.size.small + "px"
+          : theme.text.size.tiny + "px"};
         height: ${size === "large"
-          ? theme.text.size.large
+          ? theme.text.size.large + "px"
           : size === "medium"
-          ? theme.text.size.medium
+          ? theme.text.size.medium + "px"
           : size === "small"
-          ? theme.text.size.small
-          : theme.text.size.tiny};
+          ? theme.text.size.small + "px"
+          : theme.text.size.tiny + "px"};
       }
       option {
-        font-size: ${theme.text.size.small};
+        font-size: ${theme.text.size.small + "px"};
         color: fieldtext;
       }
       img {
@@ -105,20 +105,20 @@ const style = {
           ? "brightness(255)"
           : "none"};
         line-height: ${size === "large"
-          ? theme.text.size.large
+          ? theme.text.size.large + "px"
           : size === "medium"
-          ? theme.text.size.medium
-          : theme.text.size.small};
+          ? theme.text.size.medium + "px"
+          : theme.text.size.small + "px"};
         width: ${size === "large"
-          ? theme.text.size.large
+          ? theme.text.size.large + "px"
           : size === "medium"
-          ? theme.text.size.medium
-          : theme.text.size.small};
+          ? theme.text.size.medium + "px"
+          : theme.text.size.small + "px"};
         height: ${size === "large"
-          ? theme.text.size.large
+          ? theme.text.size.large + "px"
           : size === "medium"
-          ? theme.text.size.medium
-          : theme.text.size.small};
+          ? theme.text.size.medium + "px"
+          : theme.text.size.small + "px"};
       }
     `,
 };

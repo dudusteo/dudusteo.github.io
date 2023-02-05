@@ -4,10 +4,10 @@ import * as React from 'react'
 import style from './input.style';
 
 const Input = (props) => {
-    const { placeholder, setValue } = props;
+    const { placeholder, value, setValue } = props;
     return (
         <div css={style.container}>
-            <input placeholder={placeholder} onChange={(e) => setValue(e.target.value)}></input>
+            <input placeholder={placeholder} value={value} onChange={(e) => setValue(e.target.value)}></input>
         </div >
 
     )
