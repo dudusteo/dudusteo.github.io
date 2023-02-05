@@ -24,6 +24,26 @@ const gearLevelOptions = [
     { name: 90 },
 ]
 
+const gearEnhanceLevelOptions = [
+    { name: 0 },
+    { name: 1 },
+    { name: 2 },
+    { name: 3 },
+    { name: 4 },
+    { name: 5 },
+    { name: 6 },
+    { name: 7 },
+    { name: 8 },
+    { name: 9 },
+    { name: 10 },
+    { name: 11 },
+    { name: 12 },
+    { name: 13 },
+    { name: 14 },
+    { name: 15 },
+]
+
+
 const rarityJSON = {
     "Epic": { substats: 4 },
     "Heroic": { substats: 3 },
@@ -137,8 +157,8 @@ const calculateGearScore = (subs) => {
     return result.toFixed(2);
 }
 
-const calculateMainStat = (mainStatName, gearEnchanceLevel, gearLevel) => {
-    return gearLevelJSON[gearLevel][mainStatName] * multipliers[gearEnchanceLevel];
+const calculateMainStat = (mainStatName, gearEnhanceLevel, gearLevel) => {
+    return gearLevelJSON[gearLevel][mainStatName] * multipliers[gearEnhanceLevel];
 }
 
 const Calculator = () => {
@@ -162,15 +182,15 @@ const Calculator = () => {
     const [gearScore, setGearScore] = React.useState(0.0);
     const [mainStat, setMainStat] = React.useState(60);
     const [gearLevel, setGearLevel] = React.useState(85);
-    const [gearEnchanceLevel, setGearEnchanceLevel] = React.useState(0);
+    const [gearEnhanceLevel, setGearEnhanceLevel] = React.useState(0);
     const [gearScoreEvaluation, setGearScoreEvaluation] = React.useState("");
 
     React.useEffect(() => {
         setGearScore(calculateGearScore(stats.subs));
-        setMainStat(calculateMainStat(stats.main.name, gearEnchanceLevel, gearLevel))
+        setMainStat(calculateMainStat(stats.main.name, gearEnhanceLevel, gearLevel))
         gearScoreEvaluationJSON[gearLevel].forEach((object) => object.higher_than <= gearScore && setGearScoreEvaluation(object.name));
 
-    }, [stats, gearLevel, gearEnchanceLevel, gearScore])
+    }, [stats, gearLevel, gearEnhanceLevel, gearScore])
 
     React.useEffect(() => {
         var newSubs = [];
@@ -228,8 +248,10 @@ const Calculator = () => {
                         value={rarity}
                         setValue={setRarity}
                     />
-                    <span>Item</span>
+                    <span>Item&nbsp;</span>
                     <Dropdown options={gearLevelOptions} value={gearLevel} setValue={setGearLevel} />
+                    <span>&nbsp;</span>
+                    <Dropdown options={gearEnhanceLevelOptions} value={gearEnhanceLevel} setValue={setGearEnhanceLevel} />
                 </div>
                 <Divider />
                 <div css={[align.twoHorizontal, align.lastRight, style.text("title", "medium")]}>

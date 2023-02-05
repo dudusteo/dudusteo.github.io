@@ -16,8 +16,6 @@ const Dropdown = (props) => {
                     {item.name}
                 </option>)}
         </select>
-
-
     )
 }
 
