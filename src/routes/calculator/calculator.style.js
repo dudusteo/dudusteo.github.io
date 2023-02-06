@@ -26,6 +26,11 @@ const style = {
       height: fit-content;
       height: 700px;
     `,
+  topItem: (input) => (theme) =>
+    css`
+      margin-top: 3em;
+    `,
+
   item: (input) => (theme) =>
     css`
       border: 2px solid ${theme.border.primary};
@@ -61,7 +66,7 @@ const style = {
           : theme.text.size.tiny + "px"};
       }
     `,
-  color: (activeColor) => (theme) =>
+  colorFromRarity: (activeColor) => (theme) =>
     css`
       color: ${theme.rarity[activeColor]};
     `,

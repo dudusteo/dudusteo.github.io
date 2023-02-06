@@ -3,11 +3,11 @@ import * as React from 'react'
 /** @jsxImportSource @emotion/react */
 import style from './button.style';
 
-const Button = ({ children }, props) => {
-    const { onClick } = props;
+const Button = (props) => {
+    const { onClick, children, size = "small", color = "green" } = props;
     return (
         <React.Fragment >
-            <button css={style.button} type="button" onClick={onClick}>
+            <button css={style.button(color, size)} type="button" onClick={(e) => onClick()}>
                 {children}
             </button>
         </React.Fragment>

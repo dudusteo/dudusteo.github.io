@@ -12,6 +12,10 @@ const theme = {
   },
   button: {
     size: { medium: 5 },
+    color: {
+      green: { start: "#052415", end: "#6dd91f" },
+      blue: { start: "#051025", end: "#42BAEE" },
+    },
   },
   rarity: {
     epic: "#F2412F",
