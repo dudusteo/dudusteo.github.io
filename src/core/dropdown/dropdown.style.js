@@ -10,7 +10,7 @@ const style = {
     `,
   color: (activeColor) => (theme) =>
     css`
-      color: ${theme.rarity[activeColor]};
+      color: ${theme.rank[activeColor]};
     `,
 };
 

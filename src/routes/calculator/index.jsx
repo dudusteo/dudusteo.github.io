@@ -9,238 +9,110 @@ import style from "./calculator.style";
 import align from "../../styles/align.style";
 import Divider from "../../core/divider";
 
-import { gearLevelJSON, gearScoreEvaluationJSON, rarityJSON, substatJSON } from "./json";
-import { reforgeItem } from "./utils";
+import {
+    calculateGearScore,
+    calculatePercent,
+    getBaseItem,
+    getImage,
+    reforgeItem,
+    upgradeItem,
+} from "./utils";
 
-const rarityOptions = [
-    { name: "Epic" },
-    { name: "Heroic" },
-    { name: "Rare" },
-    { name: "Good" },
-    { name: "Normal" },
-];
+import {
+    gearEnhanceLevelOptions,
+    gearLevelOptions,
+    rarityOptions,
+    substatOptions,
+} from "./dropdown";
 
-const gearLevelOptions = [{ name: 85 }, { name: 88 }, { name: 90 }];
-
-const gearEnhanceLevelOptions = [
-    { name: 0 },
-    { name: 1 },
-    { name: 2 },
-    { name: 3 },
-    { name: 4 },
-    { name: 5 },
-    { name: 6 },
-    { name: 7 },
-    { name: 8 },
-    { name: 9 },
-    { name: 10 },
-    { name: 11 },
-    { name: 12 },
-    { name: 13 },
-    { name: 14 },
-    { name: 15 },
-];
-
-const multipliers = [
-    1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 2.6, 2.8, 3, 3.3, 3.6, 3.9, 4.25, 5,
-];
-
-const substatOptions = [
-    { name: "Attack%" },
-    { name: "Critical Hit Chance" },
-    { name: "Critical Hit Damage" },
-    { name: "Defense%" },
-    { name: "Effectiveness" },
-    { name: "Effect Resistance" },
-    { name: "Health%" },
-    { name: "Speed" },
-    { name: "Attack" },
-    { name: "Defense" },
-    { name: "Health" },
-];
-
-const calculateGearScore = (subs) => {
-    var result = 0.0;
-    subs.forEach((object) => {
-        var { name, value } = object;
-        result += substatJSON[name].calc(parseFloat(value)) || 0.0;
-    });
-    return result.toFixed(2);
-};
-
-const calculateMainStat = (mainStatName, gearEnhanceLevel, gearLevel) => {
-    return gearLevelJSON[gearLevel][mainStatName] * multipliers[gearEnhanceLevel];
-};
-
-const returnMissingSubstat = (substats) => {
-    var arr = [];
-    var res = "";
-    substats.forEach((object) => arr.push(object.name));
-    substatOptions.some((object) => {
-        return !arr.includes(object.name) ? res = object.name : false;
-    });
-
-    return res;
-}
+import { nameToType, typeToName } from "../../json";
 
 const Calculator = () => {
-    const [rarity, setRarity] = React.useState(rarityOptions[0].name);
-    const [stats, setStats] = React.useState({
-        main: { name: "Attack%", value: "" },
-        subs: [
-            { name: "Critical Hit Chance", value: "" },
-            { name: "Critical Hit Damage", value: "" },
-            { name: "Speed", value: "" },
-            { name: "Effect Resistance", value: "" },
-        ],
-    });
+    const [item, setItem] = React.useState(getBaseItem(85, "Epic"));
+
+    const setRank = (newRank) => {
+        setItem((prevState) => ({
+            ...prevState,
+            rank: newRank,
+        }));
+    }
+
+    const updateItem = (newItem) => {
+        setItem((prevState) => ({
+            ...prevState,
+            ...newItem,
+        }));
+    }
+
+    const setLevel = (newLevel) => {
+        setItem((prevState) => ({
+            ...prevState,
+            level: newLevel,
+        }));
+    }
+
     const setMain = (newMain) => {
-        setStats((prevState) => ({
+        setItem((prevState) => ({
             ...prevState,
             main: newMain,
         }));
     };
+
     const setSubs = (newSubs) => {
-        setStats((prevState) => ({
+        setItem((prevState) => ({
             ...prevState,
-            subs: newSubs,
+            substats: newSubs,
         }));
     };
-    const [gearScore, setGearScore] = React.useState(0.0);
-    const [mainStat, setMainStat] = React.useState(60);
-    const [gearLevel, setGearLevel] = React.useState(85);
-    const [gearEnhanceLevel, setGearEnhanceLevel] = React.useState(0);
-    const [gearScoreEvaluation, setGearScoreEvaluation] = React.useState("");
 
-    React.useEffect(() => {
-        setGearScore(calculateGearScore(stats.subs));
-        setMainStat(
-            calculateMainStat(stats.main.name, gearEnhanceLevel, gearLevel)
-        );
-        gearScoreEvaluationJSON[gearLevel].forEach(
-            (object) =>
-                object.higher_than <= gearScore && setGearScoreEvaluation(object.name)
-        );
-    }, [stats, gearLevel, gearEnhanceLevel, gearScore]);
-
-    React.useEffect(() => {
-        var newSubs = [];
-        [...Array(rarityJSON[rarity].substats).keys()].forEach((index) => {
-            newSubs.push({ name: substatOptions[index + 1].name, value: "" });
-        });
-        setSubs(newSubs);
-    }, [rarity]);
-
-    const hardReset = () => {
-        var newSubs = [];
-        [...Array(rarityJSON[rarity].substats).keys()].forEach((index) => {
-            newSubs.push({ name: substatOptions[index + 1].name, value: "" });
-        });
-        setSubs(newSubs);
-        setGearEnhanceLevel(0);
-    }
-
-    React.useEffect(() => {
-        var old_subs = [...stats.subs];
-        if (!["Epic", "Heroic", "Rare", "Good"].includes(rarity)) {
-            if (gearEnhanceLevel >= 3) {
-                if (old_subs.length < 1) {
-                    old_subs.push({ name: returnMissingSubstat([...old_subs, stats.main]), value: "" });
-                    setSubs(old_subs);
-                }
-            } else {
-                while (stats.subs.length >= 1) {
-                    stats.subs.pop();
-                }
-            }
-        }
-        if (!["Epic", "Heroic", "Rare"].includes(rarity)) {
-            if (gearEnhanceLevel >= 6) {
-                if (old_subs.length < 2) {
-                    old_subs.push({ name: returnMissingSubstat([...old_subs, stats.main]), value: "" });
-                    setSubs(old_subs);
-                }
-            } else {
-                while (stats.subs.length >= 2) {
-                    stats.subs.pop();
-                }
-            }
-        }
-        if (!["Epic", "Heroic"].includes(rarity)) {
-            if (gearEnhanceLevel >= 9) {
-                if (old_subs.length < 3) {
-                    old_subs.push({ name: returnMissingSubstat([...old_subs, stats.main]), value: "" });
-                    setSubs(old_subs);
-                }
-            } else {
-                while (stats.subs.length >= 3) {
-                    stats.subs.pop();
-                }
-            }
-        }
-        if (!["Epic"].includes(rarity)) {
-            if (gearEnhanceLevel >= 12) {
-                if (old_subs.length < 4) {
-                    old_subs.push({ name: returnMissingSubstat([...old_subs, stats.main]), value: "" });
-                    setSubs(old_subs);
-                }
-            } else {
-                while (stats.subs.length >= 4) {
-                    stats.subs.pop();
-                }
-            }
-        }
-    }, [stats, rarity, gearEnhanceLevel]);
-
-    const handleStat = (newStat, originIndex) => {
-        var newSubs = [...stats.subs];
-        var isOnly = true;
-        stats.subs.forEach((object, index) => {
-            if (object.name === newStat) {
-                if (originIndex === -1) {
-                    newSubs[index] = {
-                        ...stats.subs[index],
-                        name: stats.main.name,
-                        value: "",
-                    };
-                } else {
-                    newSubs[index] = stats.subs[originIndex];
-                    newSubs[originIndex] = object;
-                }
-                isOnly = false;
-            }
-        });
-        if (originIndex === -1) {
-            setMain({ ...stats.main, name: newStat, value: "" });
-        } else {
-            if (stats.main.name === newStat) {
-                setMain({
-                    ...stats.main,
-                    name: stats.subs[originIndex].name,
-                    value: "",
-                });
-            }
-            if (isOnly) {
-                newSubs[originIndex] = {
-                    ...stats.subs[originIndex],
-                    name: newStat,
-                    value: "",
-                };
-            }
-            setSubs(newSubs);
-        }
+    const setEnhance = (newEnhance) => {
+        setItem((prevState) => ({
+            ...prevState,
+            enhance: newEnhance,
+        }));
     };
 
-    const handleStatValue = (newValue, index) => {
-        var newSubs = stats.subs;
-        newSubs[index] = { ...stats.subs[index], value: newValue };
+    const hardReset = (newRank) => {
+        setItem(getBaseItem(85, newRank));
+    };
+
+    React.useEffect(() => {
+        hardReset(item.rank);
+    }, [item.rank])
+
+    const handleStatType = (newType, originIndex) => {
+        var newStats = [item.main, ...item.substats];
+        newStats.forEach((object, index) => {
+            if (object.type === newType) {
+                newStats[index] = { ...newStats[originIndex + 1], value: "" };
+            }
+        });
+        newStats[originIndex + 1] = {
+            ...newStats[originIndex + 1],
+            type: newType,
+            value: "",
+        };
+        setMain(newStats[0]);
+        setSubs(newStats.slice(1));
+    };
+
+    const handleStatValue = (newValue, originIndex) => {
+        var newSubs = [...item.substats];
+        newSubs[originIndex] = { ...item.substats[originIndex], value: newValue };
         setSubs(newSubs);
     };
 
     return (
-        <div css={style.calculator(rarity.toLowerCase())}>
-            <div css={[align.verticalCenter, align.horizontalCenter, style.text("title", "large"), style.topItem]}>
-                <span>E7 Gear Score Calculator</span>
+        <div css={style.calculator(item.rank.toLowerCase())}>
+            <div
+                css={[
+                    align.verticalCenter,
+                    align.horizontalCenter,
+                    style.text("title", "large"),
+                    style.topItem,
+                ]}
+            >
+                <span>E7 Gear Score Calculator (Beta)</span>
             </div>
 
             <div css={style.item}>
@@ -249,33 +121,35 @@ const Calculator = () => {
                         <div
                             css={[
                                 align.twoHorizontal,
-                                style.colorFromRarity(rarity.toLowerCase()),
+                                style.colorFromRarity(item.rank.toLowerCase()),
                                 style.size("tiny"),
                             ]}
                         >
                             <Dropdown
                                 options={rarityOptions}
-                                value={rarity}
-                                setValue={setRarity}
+                                value={item.rank}
+                                setValue={(x) => setRank(x)}
                             />
                             <span>Item&nbsp;</span>
                             <Dropdown
                                 options={gearLevelOptions}
-                                value={gearLevel}
-                                setValue={setGearLevel}
+                                value={item.level}
+                                setValue={(x) => setLevel(x)}
                             />
                             <span>&nbsp;+</span>
                             <Dropdown
                                 options={gearEnhanceLevelOptions}
-                                value={gearEnhanceLevel}
-                                setValue={(x) => setGearEnhanceLevel(parseInt(x))}
+                                value={item.enhance}
+                                setValue={(x) => setEnhance(parseInt(x))}
                             />
                         </div>
                         <div css={style.text("title", "medium")}>
                             <span>Equipment name</span>
                         </div>
                     </div>
-                    <Button size="tiny" color="blue" onClick={hardReset}>Reset</Button>
+                    <Button size="tiny" color="blue" onClick={() => hardReset(item.rank)}>
+                        Reset
+                    </Button>
                 </div>
                 <Divider />
                 <div
@@ -285,17 +159,17 @@ const Calculator = () => {
                         style.text("title", "medium"),
                     ]}
                 >
-                    <img src={substatJSON[stats.main.name].img} alt=""></img>
+                    <img src={getImage(item.main.type)} alt=""></img>
                     <Dropdown
                         options={substatOptions}
-                        value={stats.main.name}
-                        setValue={(x) => handleStat(x, -1)}
+                        value={typeToName[item.main.type]}
+                        setValue={(x) => handleStatType(nameToType[x], -1)}
                     />
-                    <span>{mainStat.toFixed(0)}</span>
+                    <span>{item.main.value}</span>
                 </div>
                 <Divider />
                 <div>
-                    {stats.subs.map((key, index) => {
+                    {item.substats.map((substat, index) => {
                         return (
                             <div
                                 css={[
@@ -305,42 +179,56 @@ const Calculator = () => {
                                 ]}
                                 key={index}
                             >
-                                <img src={substatJSON[key.name].img} alt=""></img>
+                                <img src={getImage(substat.type)} alt=""></img>
                                 <Dropdown
                                     options={substatOptions}
-                                    value={key.name}
-                                    setValue={(x) => handleStat(x, index)}
+                                    value={typeToName[substat.type]}
+                                    setValue={(x) => handleStatType(nameToType[x], index)}
                                 />
                                 <Input
                                     placeholder="value here"
-                                    value={key.value}
-                                    setValue={(x) => handleStatValue(x, index)}
+                                    value={substat.value}
+                                    setValue={(e) => handleStatValue(parseFloat(e), index)}
                                 />
+                                {/* <Input placeholder={"+"} /> */}
                             </div>
                         );
                     })}
                 </div>
                 <Divider />
-                <div css={[align.horizontalCenter, align.twoHorizontal, align.verticalCenter]}>
+                <div
+                    css={[
+                        align.horizontalCenter,
+                        align.twoHorizontal,
+                        align.verticalCenter,
+                    ]}
+                >
                     <div>
                         <Button
-                            onClick={() =>
-                                setGearEnhanceLevel(
-                                    gearEnhanceLevel < 15 ? gearEnhanceLevel + 1 : gearEnhanceLevel
-                                )
-                            }
+                            onClick={() => {
+                                updateItem(upgradeItem(item, 0, 8));
+                            }}
                         >
-                            Enhance
+                            Enhance +3
                         </Button>
                     </div>
-                    {parseInt(gearEnhanceLevel) === 15 && parseInt(gearLevel) === 85 && <div><Button color="blue" onClick={(x) => { setSubs(reforgeItem(stats.subs)); setGearLevel(90); }}>Reforge</Button> </div>}
+                    {parseInt(item.enhance) === 15 && parseInt(item.level) === 85 && (
+                        <div>
+                            <Button
+                                color="blue"
+                                onClick={() => setSubs(reforgeItem(item))}
+                            >
+                                Reforge
+                            </Button>
+                        </div>
+                    )}
                 </div>
             </div>
             <div css={[align.horizontalCenter, style.text("title", "large")]}>
-                <span>Gear Score{" " + gearScore}</span>
+                <span>Gear Score{" " + calculateGearScore(item)}</span>
             </div>
             <div css={[align.horizontalCenter, style.text("else", "medium")]}>
-                <span>{gearScoreEvaluation}</span>
+                <span>{calculatePercent(item) + " %"}</span>
             </div>
             <div css={[align.horizontalCenter, style.text("else", "small")]}>
                 <span>Reforge is working, but not properly :)</span>

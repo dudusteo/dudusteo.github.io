@@ -1,7 +1,7 @@
 import { css } from "@emotion/react/macro";
 
 const style = {
-  calculator: (rarity) => (theme) =>
+  calculator: (rank) => (theme) =>
     css`
       margin: auto;
       border: 2px solid ${theme.border.primary};
@@ -9,15 +9,15 @@ const style = {
       background: linear-gradient(
           to bottom,
           #000000ff,
-          ${theme.rarity[rarity] + "20"} 40%,
-          ${theme.rarity[rarity] + "20"} 60%,
+          ${theme.rank[rank] + "20"} 40%,
+          ${theme.rank[rank] + "20"} 60%,
           #000000ff 100%
         ),
         linear-gradient(
           to right,
           #000000ff,
-          ${theme.rarity[rarity] + "20"} 40%,
-          ${theme.rarity[rarity] + "20"} 60%,
+          ${theme.rank[rank] + "20"} 40%,
+          ${theme.rank[rank] + "20"} 60%,
           #000000ff 100%
         );
 
@@ -68,7 +68,7 @@ const style = {
     `,
   colorFromRarity: (activeColor) => (theme) =>
     css`
-      color: ${theme.rarity[activeColor]};
+      color: ${theme.rank[activeColor]};
     `,
 
   text: (type, size) => (theme) =>

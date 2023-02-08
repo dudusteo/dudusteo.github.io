@@ -7,7 +7,7 @@ const Input = (props) => {
     const { placeholder, value, setValue } = props;
     return (
         <div css={style.container}>
-            <input placeholder={placeholder} value={value} onChange={(e) => setValue(e.target.value)}></input>
+            <input placeholder={placeholder} value={value ? value : ""} onChange={(e) => setValue(e.target.value)}></input>
         </div >
 
     )

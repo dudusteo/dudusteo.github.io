@@ -8,12 +8,12 @@ const Dropdown = (props) => {
 
     return (
         <select css={[style.dropdown]} value={value} onChange={(e) => setValue(e.target.value)}>
-            {options.map((item, key) =>
+            {options.map((item, index) =>
                 <option
-                    css={[typeof item.name === "string" && style.color(item.name.toLowerCase())]}
-                    key={key}
-                    value={item.name}>
-                    {item.name}
+                    css={[typeof item === "string" && style.color(item.toLowerCase())]}
+                    key={index}
+                    value={item}>
+                    {item}
                 </option>)}
         </select>
     )

@@ -1,23 +1,32 @@
-import stat_atk from "./stat_atk.png";
-import stat_cd from "./stat_cd.png";
-import stat_cr from "./stat_cr.png";
-import stat_def from "./stat_def.png";
-import stat_eff from "./stat_eff.png";
-import stat_hp from "./stat_hp.png";
-import stat_res from "./stat_res.png";
-import stat_spd from "./stat_spd.png";
+// Stats Icons
+import AttackPercent from "./stat_atk.png";
+import CriticalHitChancePercent from "./stat_cr.png";
+import CriticalHitDamagePercent from "./stat_cd.png";
+import DefensePercent from "./stat_def.png";
+import EffectivenessPercent from "./stat_eff.png";
+import EffectResistancePercent from "./stat_res.png";
+import HealthPercent from "./stat_hp.png";
+import Speed from "./stat_spd.png";
+import Attack from "./stat_atk.png";
+import Defense from "./stat_def.png";
+import Health from "./stat_hp.png";
+
+// Styling
 import section_divider from "./section_divider.png";
 import epic7_logo from "./epic7_logo.png";
 
 export {
-  stat_atk,
-  stat_cd,
-  stat_cr,
-  stat_def,
-  stat_eff,
-  stat_hp,
-  stat_res,
-  stat_spd,
+  AttackPercent,
+  CriticalHitChancePercent,
+  CriticalHitDamagePercent,
+  DefensePercent,
+  EffectivenessPercent,
+  EffectResistancePercent,
+  HealthPercent,
+  Speed,
+  Attack,
+  Defense,
+  Health,
   section_divider,
   epic7_logo,
 };

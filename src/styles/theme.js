@@ -17,7 +17,7 @@ const theme = {
       blue: { start: "#051025", end: "#42BAEE" },
     },
   },
-  rarity: {
+  rank: {
     epic: "#F2412F",
     heroic: "#D759DF",
     rare: "#5587E2",
