@@ -85,7 +85,7 @@ const Calculator = () => {
                     style.topItem,
                 ]}
             >
-                <span>E7 Gear Score Calculator (Beta)</span>
+                <span>{"E7 Gear Score Calculator (Beta)"}</span>
             </div>
 
             <div css={style.item}>
@@ -103,13 +103,13 @@ const Calculator = () => {
                                 value={item.rank}
                                 setValue={(x) => setRank(x)}
                             />
-                            <span>Item&nbsp;</span>
+                            <span>{"Item"}&nbsp;</span>
                             <Dropdown
                                 options={gearLevelOptions}
                                 value={item.level}
                                 setValue={(x) => setLevel(x)}
                             />
-                            <span>&nbsp;+</span>
+                            <span>&nbsp;{"+"}</span>
                             <Dropdown
                                 options={gearEnhanceLevelOptions}
                                 value={item.enhance}
@@ -117,11 +117,11 @@ const Calculator = () => {
                             />
                         </div>
                         <div css={style.text("title", "medium")}>
-                            <span>Equipment name</span>
+                            <span>{"Equipment name"}</span>
                         </div>
                     </div>
                     <Button size="tiny" color="blue" onClick={() => hardReset(item.rank)}>
-                        Reset
+                        {"Reset"}
                     </Button>
                 </div>
                 <Divider />
@@ -182,7 +182,7 @@ const Calculator = () => {
                                 updateItem(upgradeItem(item, 0, 0));
                             }}
                         >
-                            Enhance +3
+                            {"Enhance +3"}
                         </Button>
                     </div>
                     {parseInt(item.enhance) === 15 && parseInt(item.level) === 85 && (
@@ -191,20 +191,20 @@ const Calculator = () => {
                                 color="blue"
                                 onClick={() => setSubs(reforgeItem(item))}
                             >
-                                Reforge
+                                {"Reforge"}
                             </Button>
                         </div>
                     )}
                 </div>
             </div>
             <div css={[align.horizontalCenter, style.text("title", "large")]}>
-                <span>Gear Score{" " + calculateGearScore(item)}</span>
+                <span>{"Gear Score " + calculateGearScore(item)}</span>
             </div>
             <div css={[align.horizontalCenter, style.text("else", "medium")]}>
-                <span>{calculatePercent(item) + " %"}</span>
+                <span>{"Quality: " + calculatePercent(item) + " %"}</span>
             </div>
             <div css={[align.horizontalCenter, style.text("else", "small")]}>
-                <span>Reforge is working, but not properly :)</span>
+                <span>{"Reforge is working, but not properly :)"}</span>
             </div>
         </div>
     );
