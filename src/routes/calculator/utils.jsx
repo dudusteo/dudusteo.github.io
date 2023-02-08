@@ -2,6 +2,30 @@ import { mainStatValues, rankInfo, rollsInfo, substatJSON } from "./json";
 import * as Image from "../../img/image";
 import { typeToName } from "../../json";
 
+export const handleStatType = (item, newType, originIndex) => {
+    var newStats = [item.main, ...item.substats];
+    newStats.forEach((object, index) => {
+        if (object.type === newType) {
+            newStats[index] = { ...newStats[originIndex + 1], value: 0 };
+        }
+    });
+    newStats[originIndex + 1] = {
+        ...newStats[originIndex + 1],
+        type: newType,
+        value: 0,
+    };
+
+    const newItem = { ...item, main: newStats[0], substats: [...newStats.slice(1)] };
+    newItem.main.value = calculateMainStat(newItem);
+    return newItem;
+};
+
+export const handleStatValue = (item, newValue, originIndex) => {
+    var newSubs = [...item.substats];
+    newSubs[originIndex] = { ...item.substats[originIndex], value: newValue };
+    return { ...item, substats: [...newSubs] };
+};
+
 export const reforgeItem = (item) => {
     item.level = 90;
     item.main.value = calculateMainStat(item);

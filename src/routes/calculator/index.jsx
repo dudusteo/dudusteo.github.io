@@ -14,6 +14,8 @@ import {
     calculatePercent,
     getBaseItem,
     getImage,
+    handleStatType,
+    handleStatValue,
     reforgeItem,
     upgradeItem,
 } from "./utils";
@@ -51,13 +53,6 @@ const Calculator = () => {
         }));
     }
 
-    const setMain = (newMain) => {
-        setItem((prevState) => ({
-            ...prevState,
-            main: newMain,
-        }));
-    };
-
     const setSubs = (newSubs) => {
         setItem((prevState) => ({
             ...prevState,
@@ -79,28 +74,6 @@ const Calculator = () => {
     React.useEffect(() => {
         hardReset(item.rank);
     }, [item.rank])
-
-    const handleStatType = (newType, originIndex) => {
-        var newStats = [item.main, ...item.substats];
-        newStats.forEach((object, index) => {
-            if (object.type === newType) {
-                newStats[index] = { ...newStats[originIndex + 1], value: "" };
-            }
-        });
-        newStats[originIndex + 1] = {
-            ...newStats[originIndex + 1],
-            type: newType,
-            value: "",
-        };
-        setMain(newStats[0]);
-        setSubs(newStats.slice(1));
-    };
-
-    const handleStatValue = (newValue, originIndex) => {
-        var newSubs = [...item.substats];
-        newSubs[originIndex] = { ...item.substats[originIndex], value: newValue };
-        setSubs(newSubs);
-    };
 
     return (
         <div css={style.calculator(item.rank.toLowerCase())}>
@@ -163,7 +136,7 @@ const Calculator = () => {
                     <Dropdown
                         options={substatOptions}
                         value={typeToName[item.main.type]}
-                        setValue={(x) => handleStatType(nameToType[x], -1)}
+                        setValue={(x) => updateItem(handleStatType(item, nameToType[x], -1))}
                     />
                     <span>{item.main.value}</span>
                 </div>
@@ -183,12 +156,12 @@ const Calculator = () => {
                                 <Dropdown
                                     options={substatOptions}
                                     value={typeToName[substat.type]}
-                                    setValue={(x) => handleStatType(nameToType[x], index)}
+                                    setValue={(x) => updateItem(handleStatType(item, nameToType[x], index))}
                                 />
                                 <Input
                                     placeholder="value here"
                                     value={substat.value}
-                                    setValue={(e) => handleStatValue(parseFloat(e), index)}
+                                    setValue={(x) => updateItem(handleStatValue(item, parseFloat(x), index))}
                                 />
                                 {/* <Input placeholder={"+"} /> */}
                             </div>
@@ -206,7 +179,7 @@ const Calculator = () => {
                     <div>
                         <Button
                             onClick={() => {
-                                updateItem(upgradeItem(item, 0, 8));
+                                updateItem(upgradeItem(item, 0, 0));
                             }}
                         >
                             Enhance +3
