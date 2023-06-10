@@ -25,7 +25,7 @@ const style = {
 					#000000ff 100%
 				);
 
-			button {
+			div {
 				&:nth-of-type(1) {
 					justify-self: end;
 					grid-area: item1;

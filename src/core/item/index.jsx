@@ -15,7 +15,7 @@ import { statOptions } from "../../json/stats";
 import Divider from "../divider";
 import Input from "../input";
 
-const Item = ({ item, setItem }) => {
+const Item = ({ item, setItem, portal = false }) => {
 	React.useEffect(() => {
 		if (Object.keys(item).length === 0) {
 			setItem(getBaseItem(85, "Epic"));
@@ -66,7 +66,7 @@ const Item = ({ item, setItem }) => {
 	};
 
 	return (
-		<div css={[style.background]}>
+		<div css={[style.background, portal && style.portal]}>
 			<div css={[style.item(item.rank.toLowerCase())]}>
 				<div css={[align.twoHorizontal, align.lastRight]}>
 					<div>

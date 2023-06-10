@@ -4,22 +4,34 @@ import * as React from "react";
 import style from "./itemSlot.style";
 import Item from "../item";
 import ItemIcon from "../item-icon";
+import ClickAwayListener from "@mui/base/ClickAwayListener";
+import Portal from "@mui/base/Portal";
 
 const ItemSlot = ({ item, setItem }) => {
-	const [show, setShow] = React.useState(false);
+	const [open, setOpen] = React.useState(false);
 
 	return (
-		<>
-			<button
-				css={style.background("empty")}
-				onClick={() => {
-					setShow((oldShow) => !oldShow);
-				}}
-			>
-				{item?.rank && <ItemIcon item={item}></ItemIcon>}
-			</button>
-			{show && <Item item={item} setItem={setItem}></Item>}
-		</>
+		<ClickAwayListener onClickAway={() => setOpen(false)}>
+			<div>
+				<button
+					css={style.background("empty")}
+					onClick={() => {
+						setOpen((prevState) => !prevState);
+					}}
+				>
+					{item?.rank && <ItemIcon item={item}></ItemIcon>}
+				</button>
+				{open ? (
+					<Portal>
+						<Item
+							item={item}
+							setItem={setItem}
+							portal="true"
+						></Item>
+					</Portal>
+				) : null}
+			</div>
+		</ClickAwayListener>
 	);
 };
 

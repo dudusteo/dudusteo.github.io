@@ -4,8 +4,13 @@ const style = {
 	background: (rank) => (theme) =>
 		css`
 			background-color: black;
+		`,
+	portal: (rank) => (theme) =>
+		css`
 			position: fixed;
-			z-index: 2;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 		`,
 	item: (rank) => (theme) =>
 		css`
