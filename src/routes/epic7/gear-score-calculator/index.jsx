@@ -1,13 +1,13 @@
 import * as React from "react";
 
-import Dropdown from "../../core/dropdown";
-import Input from "../../core/input";
-import Button from "../../core/button";
+import Dropdown from "../../../core/dropdown";
+import Input from "../../../core/input";
+import Button from "../../../core/button";
 
 /** @jsxImportSource @emotion/react */
 import style from "./calculator.style";
-import align from "../../styles/align.style";
-import Divider from "../../core/divider";
+import align from "../../../styles/align.style";
+import Divider from "../../../core/divider";
 
 import {
 	calculateGearScore,
@@ -27,9 +27,9 @@ import {
 	substatOptions,
 } from "./dropdown";
 
-import { nameToType, typeToName } from "../../json";
+import { nameToType, typeToName } from "../../../json";
 
-const Calculator = () => {
+const GearScoreCalculator = () => {
 	const [item, setItem] = React.useState(getBaseItem(85, "Epic"));
 
 	const setRank = (newRank) => {
@@ -236,4 +236,4 @@ const Calculator = () => {
 	);
 };
 
-export default Calculator;
+export default GearScoreCalculator;
