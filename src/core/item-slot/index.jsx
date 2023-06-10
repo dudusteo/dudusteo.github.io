@@ -6,29 +6,38 @@ import Item from "../item";
 import ItemIcon from "../item-icon";
 import ClickAwayListener from "@mui/base/ClickAwayListener";
 import Portal from "@mui/base/Portal";
+import { Popper } from "@mui/base";
 
 const ItemSlot = ({ item, setItem }) => {
-	const [open, setOpen] = React.useState(false);
+	const [anchorEl, setAnchorEl] = React.useState(null);
+
+	const handleClick = (event) => {
+		setAnchorEl(anchorEl ? null : event.currentTarget);
+	};
+
+	const open = Boolean(anchorEl);
+	const id = open ? "simple-popper" : undefined;
 
 	return (
-		<ClickAwayListener onClickAway={() => setOpen(false)}>
+		<ClickAwayListener onClickAway={() => setAnchorEl(null)}>
 			<div>
 				<button
+					aria-describedby={id}
+					type="button"
 					css={style.background("empty")}
-					onClick={() => {
-						setOpen((prevState) => !prevState);
-					}}
+					onClick={handleClick}
 				>
 					{item?.rank && <ItemIcon item={item}></ItemIcon>}
 				</button>
 				{open ? (
-					<Portal>
-						<Item
-							item={item}
-							setItem={setItem}
-							portal="true"
-						></Item>
-					</Portal>
+					<Popper
+						id={id}
+						open={open}
+						anchorEl={anchorEl}
+						placement="right-start"
+					>
+						<Item item={item} setItem={setItem}></Item>
+					</Popper>
 				) : null}
 			</div>
 		</ClickAwayListener>

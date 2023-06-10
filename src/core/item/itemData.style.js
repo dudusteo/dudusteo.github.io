@@ -5,13 +5,7 @@ const style = {
 		css`
 			background-color: black;
 		`,
-	portal: (rank) => (theme) =>
-		css`
-			position: fixed;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		`,
+
 	item: (rank) => (theme) =>
 		css`
 			border: 2px solid ${theme.border.primary};

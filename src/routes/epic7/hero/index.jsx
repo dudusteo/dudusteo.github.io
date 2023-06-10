@@ -3,6 +3,7 @@ import * as React from "react";
 /** @jsxImportSource @emotion/react */
 import style from "./hero.style";
 import ItemSlot from "../../../core/item-slot";
+import characters from "../../../img/characters";
 
 const Hero = () => {
 	const [items, setItems] = React.useState([{}, {}, {}, {}, {}, {}]);
@@ -12,25 +13,31 @@ const Hero = () => {
 	}, [items]);
 
 	return (
-		<div css={style.hero}>
-			{items.map((item, index) => (
-				<ItemSlot
-					key={index}
-					item={item}
-					setItem={(setItem) =>
-						setItems((prevItems) => {
-							const newItems = [...prevItems];
+		<div css={style.background}>
+			<div css={style.hero}>
+				<img alt="" src={characters.c1144} />
+			</div>
 
-							newItems[index] =
-								setItem instanceof Function
-									? setItem(prevItems[index])
-									: setItem;
+			<div css={style.items}>
+				{items.map((item, index) => (
+					<ItemSlot
+						key={index}
+						item={item}
+						setItem={(setItem) =>
+							setItems((prevItems) => {
+								const newItems = [...prevItems];
 
-							return newItems;
-						})
-					}
-				/>
-			))}
+								newItems[index] =
+									setItem instanceof Function
+										? setItem(prevItems[index])
+										: setItem;
+
+								return newItems;
+							})
+						}
+					/>
+				))}
+			</div>
 		</div>
 	);
 };
