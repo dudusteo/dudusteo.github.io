@@ -11,7 +11,9 @@ const Epic7 = () => {
 			<Link to="/epic7/gear-score-calculator">
 				<img alt="" src={Image.epic7_logo}></img>
 			</Link>
-			<div></div>
+			<Link to="/epic7/hero">
+				<img alt="" src={Image.epic7_logo}></img>
+			</Link>
 		</div>
 	);
 };
