@@ -21,32 +21,33 @@ const style = {
 		`,
 	hero: (input) => (theme) =>
 		css`
-			position: absolute;
 			width: 100%;
 			img {
-				height: 50rem;
+				height: 50em;
 				position: absolute;
 				left: 50%;
 				transform: translate(-50%, 0%);
 			}
 		`,
-	artifacts: (input) => (theme) =>
-		css`
-			display: grid;
-		`,
 	items: (input) => (theme) =>
 		css`
 			display: grid;
-			grid-template-rows: repeat(3, 1fr);
+			grid-template-rows: repeat(4, 1fr);
 			grid-template-columns: repeat(4, 1fr);
 			grid-template-areas:
+				". . artifact ."
 				". item1 item4 ."
 				". item2 item5 ."
 				". item3 item6 .";
-			grid-gap: 10px;
 
-			div {
+			.artifactSlot {
+				grid-area: artifact;
+				justify-self: end;
+			}
+			.itemSlot {
+				margin: 0em 0.6em;
 				z-index: 1;
+				align-self: center;
 				&:nth-of-type(1) {
 					grid-area: item1;
 					justify-self: start;

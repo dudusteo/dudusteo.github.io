@@ -3,7 +3,7 @@ import { css } from "@emotion/react/macro";
 const style = {
 	artifact: (rank) => (theme) =>
 		css`
-			height: 8rem;
+			height: 8em;
 		`,
 	text: (rank) => (theme) =>
 		css`

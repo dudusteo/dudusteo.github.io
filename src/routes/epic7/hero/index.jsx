@@ -18,9 +18,6 @@ const Hero = () => {
 			<div css={style.hero}>
 				<img alt="" src={characters.c1144} />
 			</div>
-			<div css={style.artifacts}>
-				<ArtifactSlot />
-			</div>
 
 			<div css={style.items}>
 				{items.map((item, index) => (
@@ -41,6 +38,7 @@ const Hero = () => {
 						}
 					/>
 				))}
+				<ArtifactSlot />
 			</div>
 		</div>
 	);

@@ -1,9 +1,8 @@
 import { css } from "@emotion/react/macro";
 
 const style = {
-	base: (input) => (theme) =>
+	artifactSlot: (input) => (theme) =>
 		css`
-			position: absolute;
 			svg {
 				position: absolute;
 			}
@@ -13,7 +12,7 @@ const style = {
 		`,
 	background: (input) => (theme) =>
 		css`
-			height: 8rem;
+			height: 8em;
 			margin: 2px;
 			path {
 				stroke: #777;

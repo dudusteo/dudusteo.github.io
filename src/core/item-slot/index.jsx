@@ -19,7 +19,7 @@ const ItemSlot = ({ item, setItem }) => {
 
 	return (
 		<ClickAwayListener onClickAway={() => setAnchorEl(null)}>
-			<div>
+			<div className="itemSlot">
 				<button
 					aria-describedby={id}
 					type="button"
