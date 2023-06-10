@@ -4,10 +4,10 @@ const style = {
 	background: (rank) => (theme) =>
 		css`
 			border: 2px solid ${theme.border.secondary};
+			border-radius: 15px;
 			height: 6em;
 			width: 6em;
 			padding: 0.2em;
-			border-radius: 15px;
 
 			background: linear-gradient(
 					to top,

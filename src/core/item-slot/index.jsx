@@ -5,7 +5,6 @@ import style from "./itemSlot.style";
 import Item from "../item";
 import ItemIcon from "../item-icon";
 import ClickAwayListener from "@mui/base/ClickAwayListener";
-import Portal from "@mui/base/Portal";
 import { Popper } from "@mui/base";
 
 const ItemSlot = ({ item, setItem }) => {

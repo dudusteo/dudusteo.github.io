@@ -4,6 +4,7 @@ import * as React from "react";
 import style from "./hero.style";
 import ItemSlot from "../../../core/item-slot";
 import characters from "../../../img/characters";
+import ArtifactSlot from "../../../core/artifact-slot";
 
 const Hero = () => {
 	const [items, setItems] = React.useState([{}, {}, {}, {}, {}, {}]);
@@ -16,6 +17,9 @@ const Hero = () => {
 		<div css={style.background}>
 			<div css={style.hero}>
 				<img alt="" src={characters.c1144} />
+			</div>
+			<div css={style.artifacts}>
+				<ArtifactSlot />
 			</div>
 
 			<div css={style.items}>

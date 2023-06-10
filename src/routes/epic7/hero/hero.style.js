@@ -30,6 +30,10 @@ const style = {
 				transform: translate(-50%, 0%);
 			}
 		`,
+	artifacts: (input) => (theme) =>
+		css`
+			display: grid;
+		`,
 	items: (input) => (theme) =>
 		css`
 			display: grid;
