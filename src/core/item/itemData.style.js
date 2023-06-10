@@ -1,12 +1,31 @@
 import { css } from "@emotion/react/macro";
 
 const style = {
-	item: (input) => (theme) =>
+	background: (rank) => (theme) =>
+		css`
+			background-color: black;
+			position: fixed;
+			z-index: 2;
+		`,
+	item: (rank) => (theme) =>
 		css`
 			border: 2px solid ${theme.border.primary};
 			padding: 1em;
 			border-radius: 15px;
-			margin: 3em;
+			background: linear-gradient(
+					to bottom,
+					#000000ff,
+					${theme.rank[rank] + "20"} 40%,
+					${theme.rank[rank] + "20"} 60%,
+					#000000ff 100%
+				),
+				linear-gradient(
+					to right,
+					#000000ff,
+					${theme.rank[rank] + "20"} 40%,
+					${theme.rank[rank] + "20"} 60%,
+					#000000ff 100%
+				);
 		`,
 	colorFromRarity: (activeColor) => (theme) =>
 		css`

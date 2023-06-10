@@ -7,6 +7,10 @@ import ItemSlot from "../../../core/item-slot";
 const Hero = () => {
 	const [items, setItems] = React.useState([{}, {}, {}, {}, {}, {}]);
 
+	React.useEffect(() => {
+		console.log(items);
+	}, [items]);
+
 	return (
 		<div css={style.hero}>
 			{items.map((item, index) => (
@@ -25,7 +29,7 @@ const Hero = () => {
 							return newItems;
 						})
 					}
-				></ItemSlot>
+				/>
 			))}
 		</div>
 	);

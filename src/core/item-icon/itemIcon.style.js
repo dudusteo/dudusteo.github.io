@@ -20,6 +20,10 @@ const style = {
 					#000000ff 100%
 				);
 		`,
+	text: (rank) => (theme) =>
+		css`
+			color: ${theme.text.gold};
+		`,
 };
 
 export default style;

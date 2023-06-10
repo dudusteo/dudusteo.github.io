@@ -16,7 +16,7 @@ const ItemSlot = ({ item, setItem }) => {
 					setShow((oldShow) => !oldShow);
 				}}
 			>
-				{item?.rank && <ItemIcon rank={"Epic"}>item</ItemIcon>}
+				{item?.rank && <ItemIcon item={item}></ItemIcon>}
 			</button>
 			{show && <Item item={item} setItem={setItem}></Item>}
 		</>
