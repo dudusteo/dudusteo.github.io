@@ -67,7 +67,12 @@ const Hero = () => {
 			...prevArtifact,
 			...build.artifact,
 		}));
-		setItems((prevItems) => [...prevItems]);
+		setItems((prevItems) =>
+			prevItems.map((prevItem, index) => ({
+				...prevItem,
+				...build.items[index],
+			}))
+		);
 	}, [searchParams]);
 
 	React.useEffect(() => {
