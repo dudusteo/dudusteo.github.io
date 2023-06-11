@@ -4,10 +4,10 @@ import * as React from "react";
 import style from "./artifactIcon.style";
 import artifacts from "../../img/artifacts";
 
-const ArtifactIcon = ({ artifact }) => {
+const ArtifactIcon = ({ artifactName }) => {
 	return (
 		<div css={style.artifact}>
-			<img alt="" src={artifacts.art0181} />
+			<img alt="" src={artifacts[artifactName]} />
 		</div>
 	);
 };
