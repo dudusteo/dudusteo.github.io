@@ -3,17 +3,15 @@ import { css } from "@emotion/react/macro";
 const style = {
 	artifactSlot: (input) => (theme) =>
 		css`
+			width: 7.3em;
 			svg {
 				position: absolute;
-			}
-			img {
-				margin: 1px 0px;
 			}
 		`,
 	background: (input) => (theme) =>
 		css`
 			height: 8em;
-			margin: 2px;
+
 			path {
 				stroke: #777;
 				stroke-width: 2px;
