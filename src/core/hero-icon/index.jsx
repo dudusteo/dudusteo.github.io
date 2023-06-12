@@ -15,10 +15,10 @@ const HeroIcon = ({ hero }) => {
 			},
 			showControls: true,
 			jsonUrl: `https://www.e7vau.lt/static/game/portrait/${
-				heroes[hero.name].code
+				heroes.data[hero.name].code
 			}.json`,
 			atlasUrl: `https://www.e7vau.lt/static/game/portrait/${
-				heroes[hero.name].code
+				heroes.data[hero.name].code
 			}.atlas`,
 		};
 
@@ -32,7 +32,7 @@ const HeroIcon = ({ hero }) => {
 				alt=""
 				src={
 					"https://static.smilegatemegaport.com/event/live/epic7/guide/images/hero/" +
-					heroes[hero.name].code +
+					heroes.data[hero.name].code +
 					"_s.png"
 				}
 			/>

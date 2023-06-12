@@ -11,7 +11,7 @@ const ArtifactIcon = ({ artifact }) => {
 				alt=""
 				src={
 					"https://static.smilegatemegaport.com/event/live/epic7/guide/wearingStatus/images/artifact/" +
-					artifacts[artifact.name].code +
+					artifacts.data[artifact.name].code +
 					"_ico.png"
 				}
 			/>

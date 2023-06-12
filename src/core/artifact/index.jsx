@@ -8,7 +8,7 @@ import artifacts, { artifactEnhanceOptions } from "../../json/artifacts";
 import Button from "../button";
 
 const getBaseArtifact = () => {
-	return { name: Object.keys(artifacts)[0], enhance: 0 };
+	return { name: Object.keys(artifacts.data)[0], enhance: 0 };
 };
 
 const Artifact = ({ artifact, setArtifact, removeArtifact }) => {
@@ -49,7 +49,7 @@ const Artifact = ({ artifact, setArtifact, removeArtifact }) => {
 							]}
 						>
 							<Dropdown
-								options={Object.keys(artifacts)}
+								options={Object.keys(artifacts.data)}
 								value={artifact.name}
 								setValue={(x) => setName(x)}
 							/>

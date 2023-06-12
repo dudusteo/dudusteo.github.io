@@ -108,12 +108,11 @@ const Hero = () => {
 		setSearchParams((prevSearchParams) =>
 			URLifyBuild({ hero, artifact, items })
 		);
-		console.log(items);
 	}, [hero, artifact, items, setSearchParams]);
 
 	return (
 		<div css={style.background}>
-			<StatTable />
+			<StatTable hero={hero} artifact={artifact} />
 			<div css={style.hero}>{hero?.name && <HeroIcon hero={hero} />}</div>
 
 			<div css={style.items}>
