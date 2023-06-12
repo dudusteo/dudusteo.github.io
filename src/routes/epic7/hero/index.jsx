@@ -18,43 +18,70 @@ const DecodeItem = (encodedItem) => {
 
 const URLifyBuild = ({ hero, artifact, items }) => {
 	let URLItems = [];
+	let build = {};
+
+	if ("name" in hero) {
+		build = { ...build, hero: hero.name };
+	}
+
+	if ("name" in artifact) {
+		build = { ...build, artifact: artifact.name };
+	}
+
+	if ("enhance" in artifact) {
+		build = { ...build, artifactEnhance: artifact.enhance };
+	}
 
 	items.forEach((item) => {
 		URLItems.push(EncodeItem(item));
 	});
 
 	return {
-		hero: hero.name,
-		artifact: [artifact.name, artifact.enhance],
+		...build,
 		item: [...URLItems],
 	};
 };
 
 const parseURLifiedBuild = ({ searchParams }) => {
 	let URLItems = [];
+	let build = {};
+
+	if (searchParams.get("hero")) {
+		build = { ...build, hero: { name: searchParams.get("hero") } };
+	}
+
+	if (searchParams.get("artifact")) {
+		build = {
+			...build,
+			artifact: { ...build.artifact, name: searchParams.get("artifact") },
+		};
+	}
+
+	if (searchParams.get("artifactEnhance")) {
+		build = {
+			...build,
+			artifact: {
+				...build.artifact,
+				enhance: searchParams.get("artifactEnhance"),
+			},
+		};
+	}
 
 	searchParams.getAll("item").forEach((item) => {
 		URLItems.push(DecodeItem(item));
 	});
 
 	return {
-		hero: { name: searchParams.get("hero") },
-		artifact: {
-			name: searchParams.getAll("artifact")[0],
-			enhance: searchParams.getAll("artifact")[1],
-		},
+		...build,
 		items: URLItems,
 	};
 };
 
 const Hero = () => {
 	const [items, setItems] = React.useState([{}, {}, {}, {}, {}, {}]);
-	const [artifact, setArtifact] = React.useState({
-		name: "Golden Rose",
-		enhance: 30,
-	});
+	const [artifact, setArtifact] = React.useState({});
 
-	const [hero, setHero] = React.useState({ name: "Abigail" });
+	const [hero, setHero] = React.useState({});
 	const [searchParams, setSearchParams] = useSearchParams();
 
 	React.useEffect(() => {
@@ -84,9 +111,7 @@ const Hero = () => {
 
 	return (
 		<div css={style.background}>
-			<div css={style.hero}>
-				<HeroIcon hero={hero} />
-			</div>
+			<div css={style.hero}>{hero?.name && <HeroIcon hero={hero} />}</div>
 
 			<div css={style.items}>
 				{items.map((item, index) => (

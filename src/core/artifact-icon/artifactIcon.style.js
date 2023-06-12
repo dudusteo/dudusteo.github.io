@@ -4,6 +4,7 @@ const style = {
 	artifact: (rank) => (theme) =>
 		css`
 			img {
+				height: 8em;
 				display: block;
 				margin-left: auto;
 				margin-right: auto;

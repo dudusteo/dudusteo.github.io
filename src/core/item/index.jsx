@@ -15,10 +15,10 @@ import { statOptions } from "../../json/stats";
 import Divider from "../divider";
 import Input from "../input";
 
-const Item = ({ item, setItem }) => {
+const Item = ({ item, setItem, removeItem }) => {
 	React.useEffect(() => {
 		if (Object.keys(item).length === 0) {
-			setItem(getBaseItem(85, "Epic"));
+			setItem((prevItem) => getBaseItem(85, "Epic"));
 		}
 	}, [item, setItem]);
 
@@ -61,10 +61,6 @@ const Item = ({ item, setItem }) => {
 		}));
 	};
 
-	const hardReset = (newRank) => {
-		setItem(getBaseItem(85, newRank));
-	};
-
 	return (
 		<div css={[style.background]}>
 			<div css={[style.item(item.rank.toLowerCase())]}>
@@ -100,9 +96,9 @@ const Item = ({ item, setItem }) => {
 					<Button
 						size="tiny"
 						color="blue"
-						onClick={() => hardReset(item.rank)}
+						onClick={() => removeItem()}
 					>
-						{"Reset"}
+						{"Remove"}
 					</Button>
 				</div>
 				<Divider />

@@ -3,8 +3,8 @@ import { css } from "@emotion/react/macro";
 const style = {
 	artifactSlot: (input) => (theme) =>
 		css`
+			height: 8em;
 			width: 8em;
-			align-items: center;
 
 			svg {
 				width: 8em;

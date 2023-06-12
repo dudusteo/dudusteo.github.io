@@ -5,12 +5,28 @@ import style from "./artifact.style";
 import align from "../../styles/align.style";
 import Dropdown from "../dropdown";
 import artifacts from "../../json/artifacts";
+import Button from "../button";
 
-const Artifact = ({ artifact, setArtifact }) => {
+const getBaseArtifact = () => {
+	return { name: Object.keys(artifacts)[0], enhance: 0 };
+};
+
+const Artifact = ({ artifact, setArtifact, removeArtifact }) => {
+	React.useEffect(() => {
+		if (Object.keys(artifact).length === 0) {
+			setArtifact((prevArtifact) => getBaseArtifact());
+		}
+	}, [artifact, setArtifact]);
+
+	if (Object.keys(artifact).length === 0) {
+		return <div>loading ...</div>;
+	}
+
 	const setName = (newName) => {
 		setArtifact((prevArtifact) => ({
 			...prevArtifact,
 			name: newName,
+			enhance: prevArtifact?.enhance ? prevArtifact.enhance : 0,
 		}));
 	};
 
@@ -44,6 +60,13 @@ const Artifact = ({ artifact, setArtifact }) => {
 								setValue={(x) => setEnhance(parseInt(x))}
 							/>
 						</div>
+						<Button
+							size="tiny"
+							color="blue"
+							onClick={() => removeArtifact()}
+						>
+							{"Remove"}
+						</Button>
 					</div>
 				</div>
 			</div>

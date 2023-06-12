@@ -14,6 +14,11 @@ const ItemSlot = ({ item, setItem }) => {
 		setAnchorEl(anchorEl ? null : event.currentTarget);
 	};
 
+	const removeItem = (event) => {
+		setAnchorEl(null);
+		setItem((prevItem) => ({}));
+	};
+
 	const open = Boolean(anchorEl);
 	const id = open ? "simple-popper" : undefined;
 
@@ -35,7 +40,11 @@ const ItemSlot = ({ item, setItem }) => {
 						anchorEl={anchorEl}
 						placement="right-start"
 					>
-						<Item item={item} setItem={setItem}></Item>
+						<Item
+							item={item}
+							setItem={setItem}
+							removeItem={removeItem}
+						></Item>
 					</Popper>
 				) : null}
 			</div>
