@@ -12,7 +12,7 @@ import {
 	gearLevelOptions,
 	gearRarityOptions,
 	getBaseItem,
-	stats,
+	gear,
 } from "../../json/gear";
 
 const Item = ({ item, setItem, removeItem }) => {
@@ -40,20 +40,6 @@ const Item = ({ item, setItem, removeItem }) => {
 		}));
 	};
 
-	const setLevel = (newLevel) => {
-		setItem((prevState) => ({
-			...prevState,
-			level: newLevel,
-		}));
-	};
-
-	const setEnhance = (newEnhance) => {
-		setItem((prevState) => ({
-			...prevState,
-			enhance: newEnhance,
-		}));
-	};
-
 	return (
 		<div css={[style.background]}>
 			<div css={[style.item(item.rank.toLowerCase())]}>
@@ -75,14 +61,22 @@ const Item = ({ item, setItem, removeItem }) => {
 							<Dropdown
 								options={gearLevelOptions}
 								value={item.level}
-								setValue={(x) => setLevel(x)}
+								setValue={(level) =>
+									updateItem(
+										gear.handleLevel(item, parseInt(level))
+									)
+								}
 							/>
 							<span>&nbsp;{"+"}</span>
 
 							<Dropdown
 								options={gearEnhanceLevelOptions}
 								value={item.enhance}
-								setValue={(x) => setEnhance(parseInt(x))}
+								setValue={(x) =>
+									updateItem(
+										gear.handleEnhace(item, parseInt(x))
+									)
+								}
 							/>
 						</div>
 					</div>
@@ -102,12 +96,12 @@ const Item = ({ item, setItem, removeItem }) => {
 						style.text("title", "medium"),
 					]}
 				>
-					<img src={stats.getImage(item.main.type)} alt=""></img>
+					<img src={gear.getImage(item.main.type)} alt=""></img>
 					<Dropdown
-						options={stats.options}
+						options={gear.options}
 						value={item.main.type}
 						setValue={(mainType) =>
-							updateItem(stats.handleType(item, mainType, -1))
+							updateItem(gear.handleType(item, mainType, -1))
 						}
 					/>
 					<span>{item.main.value}</span>
@@ -125,15 +119,15 @@ const Item = ({ item, setItem, removeItem }) => {
 								key={index}
 							>
 								<img
-									src={stats.getImage(substat.type)}
+									src={gear.getImage(substat.type)}
 									alt=""
 								></img>
 								<Dropdown
-									options={stats.options}
+									options={gear.options}
 									value={substat.type}
 									setValue={(substatType) =>
 										updateItem(
-											stats.handleType(
+											gear.handleType(
 												item,
 												substatType,
 												index
@@ -146,7 +140,7 @@ const Item = ({ item, setItem, removeItem }) => {
 									value={substat.value}
 									setValue={(x) =>
 										updateItem(
-											stats.handleValue(
+											gear.handleValue(
 												item,
 												parseFloat(x),
 												index

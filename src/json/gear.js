@@ -2,14 +2,24 @@ import * as Image from "../img";
 
 export const gearRarityOptions = ["Epic", "Heroic", "Rare", "Good", "Normal"];
 
-export const gearLevelOptions = [78, 80, 85, 88, 90];
+export const gearLevelOptions = [75, 78, 80, 85, 88, 90];
 
 export const gearEnhanceLevelOptions = [
 	0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
 ];
 
-export const mainStatValues = {
-	85: {
+const percentMainStats = {
+	tier1: {
+		AttackPercent: 12,
+		CriticalHitChancePercent: 11,
+		CriticalHitDamagePercent: 13,
+		DefensePercent: 12,
+		EffectivenessPercent: 12,
+		EffectResistancePercent: 12,
+		HealthPercent: 12,
+		Speed: 7, // this tested
+	},
+	tier2: {
 		AttackPercent: 12,
 		CriticalHitChancePercent: 11,
 		CriticalHitDamagePercent: 13,
@@ -18,41 +28,61 @@ export const mainStatValues = {
 		EffectResistancePercent: 12,
 		HealthPercent: 12,
 		Speed: 8,
+	},
+	tier3: {
+		AttackPercent: 13,
+		CriticalHitChancePercent: 12,
+		CriticalHitDamagePercent: 14,
+		DefensePercent: 13,
+		EffectivenessPercent: 13,
+		EffectResistancePercent: 13,
+		HealthPercent: 13,
+		Speed: 9,
+	},
+};
+
+export const mainStatValues = {
+	75: {
+		...percentMainStats.tier1,
+		Attack: 95,
+		Defense: 57,
+		Health: 513,
+	},
+	78: {
+		...percentMainStats.tier2,
+		Attack: 95,
+		Defense: 57,
+		Health: 513,
+	},
+	80: {
+		...percentMainStats.tier2,
+		Attack: 95,
+		Defense: 57,
+		Health: 513,
+	},
+	85: {
+		...percentMainStats.tier2,
 		Attack: 100,
 		Defense: 60,
 		Health: 540,
 	},
 	88: {
-		AttackPercent: 13,
-		CriticalHitChancePercent: 12,
-		CriticalHitDamagePercent: 14,
-		DefensePercent: 13,
-		EffectivenessPercent: 13,
-		EffectResistancePercent: 13,
-		HealthPercent: 13,
-		Speed: 9,
+		...percentMainStats.tier3,
 		Attack: 103,
 		Defense: 62,
 		Health: 553,
 	},
 	90: {
-		AttackPercent: 13,
-		CriticalHitChancePercent: 12,
-		CriticalHitDamagePercent: 14,
-		DefensePercent: 13,
-		EffectivenessPercent: 13,
-		EffectResistancePercent: 13,
-		HealthPercent: 13,
-		Speed: 9,
+		...percentMainStats.tier3,
 		Attack: 105,
 		Defense: 62,
 		Health: 567,
 	},
 };
 
-export const stats = {
-	handleType: (item, newType, originIndex) => {
-		var newStats = [item.main, ...item.substats];
+export const gear = {
+	handleType: (prevItem, newType, originIndex) => {
+		var newStats = [prevItem.main, ...prevItem.substats];
 		newStats.forEach((object, index) => {
 			if (object.type === newType) {
 				newStats[index] = { ...newStats[originIndex + 1], value: 0 };
@@ -65,20 +95,30 @@ export const stats = {
 		};
 
 		const newItem = {
-			...item,
+			...prevItem,
 			main: newStats[0],
 			substats: [...newStats.slice(1)],
 		};
 		newItem.main.value = calculateMainStat(newItem);
 		return newItem;
 	},
-	handleValue: (item, newValue, originIndex) => {
-		var newSubs = [...item.substats];
+	handleValue: (prevItem, newValue, originIndex) => {
+		var newSubs = [...prevItem.substats];
 		newSubs[originIndex] = {
-			...item.substats[originIndex],
+			...prevItem.substats[originIndex],
 			value: newValue,
 		};
-		return { ...item, substats: [...newSubs] };
+		return { ...prevItem, substats: [...newSubs] };
+	},
+	handleLevel: (prevItem, newLevel) => {
+		prevItem.level = newLevel;
+		prevItem.main.value = calculateMainStat(prevItem);
+		return prevItem;
+	},
+	handleEnhace: (prevItem, newEnhance) => {
+		prevItem.enhance = newEnhance;
+		prevItem.main.value = calculateMainStat(prevItem);
+		return prevItem;
 	},
 	getImage: (name) => {
 		return Image[name];
@@ -112,7 +152,7 @@ export const returnMissingSubstat = (substats) => {
 	var arr = [];
 	var res = "";
 	substats.forEach((object) => arr.push(object.type));
-	stats.options.some((key) => {
+	gear.options.some((key) => {
 		return !arr.includes(key) ? (res = key) : false;
 	});
 	return res;

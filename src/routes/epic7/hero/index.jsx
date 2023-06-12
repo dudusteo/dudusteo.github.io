@@ -83,6 +83,7 @@ const Hero = () => {
 	const [artifact, setArtifact] = React.useState({});
 
 	const [hero, setHero] = React.useState({});
+
 	const [searchParams, setSearchParams] = useSearchParams();
 
 	React.useEffect(() => {
