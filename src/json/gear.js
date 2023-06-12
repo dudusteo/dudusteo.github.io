@@ -1,3 +1,5 @@
+import * as Image from "../img";
+
 export const gearRarityOptions = ["Epic", "Heroic", "Rare", "Good", "Normal"];
 
 export const gearLevelOptions = [78, 80, 85, 88, 90];
@@ -77,6 +79,9 @@ export const stats = {
 			value: newValue,
 		};
 		return { ...item, substats: [...newSubs] };
+	},
+	getImage: (name) => {
+		return Image[name];
 	},
 	options: [
 		"AttackPercent",

@@ -3,7 +3,7 @@ import * as React from "react";
 /** @jsxImportSource @emotion/react */
 import style from "./epic7.style";
 import { Link } from "react-router-dom";
-import * as Image from "../../img/image";
+import * as Image from "../../img";
 
 const Epic7 = () => {
 	return (

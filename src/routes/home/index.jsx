@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 
-import * as Image from "../../img/image";
+import * as Image from "../../img";
 
 /** @jsxImportSource @emotion/react */
 import style from "./home.style";

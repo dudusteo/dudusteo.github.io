@@ -1,5 +1,5 @@
 import { mainStatValues, rankInfo, rollsInfo, substatJSON } from "./json";
-import * as Image from "../../../img/image";
+import * as Image from "../../../img";
 import { typeToName } from "../../../json";
 
 export const handleStatType = (item, newType, originIndex) => {

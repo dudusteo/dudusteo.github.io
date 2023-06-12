@@ -102,7 +102,7 @@ const Item = ({ item, setItem, removeItem }) => {
 						style.text("title", "medium"),
 					]}
 				>
-					{/* <img src={getImage(item.main.type)} alt=""></img> */}
+					<img src={stats.getImage(item.main.type)} alt=""></img>
 					<Dropdown
 						options={stats.options}
 						value={item.main.type}
@@ -124,7 +124,10 @@ const Item = ({ item, setItem, removeItem }) => {
 								]}
 								key={index}
 							>
-								{/* <img src={getImage(substat.type)} alt=""></img> */}
+								<img
+									src={stats.getImage(substat.type)}
+									alt=""
+								></img>
 								<Dropdown
 									options={stats.options}
 									value={substat.type}
