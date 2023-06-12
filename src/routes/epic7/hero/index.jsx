@@ -3,9 +3,9 @@ import * as React from "react";
 /** @jsxImportSource @emotion/react */
 import style from "./hero.style";
 import ItemSlot from "../../../core/item-slot";
-import characters from "../../../img/characters";
 import ArtifactSlot from "../../../core/artifact-slot";
 import { useSearchParams } from "react-router-dom";
+import characters from "../../../json/heroes";
 
 const EncodeItem = (item) => {
 	return JSON.stringify(item);
@@ -23,8 +23,8 @@ const URLifyBuild = ({ hero, artifact, items }) => {
 	});
 
 	return {
-		hero: hero.id,
-		artifact: [artifact.id, artifact.enhance],
+		hero: hero.name,
+		artifact: [artifact.name, artifact.enhance],
 		item: [...URLItems],
 	};
 };
@@ -37,9 +37,9 @@ const parseURLifiedBuild = ({ searchParams }) => {
 	});
 
 	return {
-		hero: { id: searchParams.get("hero") },
+		hero: { name: searchParams.get("hero") },
 		artifact: {
-			id: searchParams.getAll("artifact")[0],
+			name: searchParams.getAll("artifact")[0],
 			enhance: searchParams.getAll("artifact")[1],
 		},
 		items: URLItems,
@@ -49,11 +49,11 @@ const parseURLifiedBuild = ({ searchParams }) => {
 const Hero = () => {
 	const [items, setItems] = React.useState([{}, {}, {}, {}, {}, {}]);
 	const [artifact, setArtifact] = React.useState({
-		id: "art0181",
+		name: "Golden Rose",
 		enhance: 30,
 	});
 
-	const [hero, setHero] = React.useState({ id: "c2102" });
+	const [hero, setHero] = React.useState({ name: "Abigail" });
 	const [searchParams, setSearchParams] = useSearchParams();
 
 	React.useEffect(() => {
@@ -84,7 +84,7 @@ const Hero = () => {
 	return (
 		<div css={style.background}>
 			<div css={style.hero}>
-				<img alt="" src={characters[hero.id]} />
+				<img alt="" src={characters[hero.name].assets.image} />
 			</div>
 
 			<div css={style.items}>
@@ -106,7 +106,7 @@ const Hero = () => {
 						}
 					/>
 				))}
-				<ArtifactSlot artifact={artifact} />
+				<ArtifactSlot artifact={artifact} setArtifact={setArtifact} />
 			</div>
 		</div>
 	);

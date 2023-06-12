@@ -2,12 +2,12 @@ import * as React from "react";
 
 /** @jsxImportSource @emotion/react */
 import style from "./artifactIcon.style";
-import artifacts from "../../img/artifacts";
+import artifacts from "../../json/artifacts";
 
-const ArtifactIcon = ({ artifactName }) => {
+const ArtifactIcon = ({ artifact }) => {
 	return (
 		<div css={style.artifact}>
-			<img alt="" src={artifacts[artifactName]} />
+			<img alt="" src={artifacts[artifact.name].assets.image} />
 		</div>
 	);
 };
