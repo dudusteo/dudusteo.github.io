@@ -1,7 +1,7 @@
 import { css } from "@emotion/react/macro";
 
 const style = {
-	artifact: (rank) => (theme) =>
+	hero: (rank) => (theme) =>
 		css`
 			img {
 				display: block;

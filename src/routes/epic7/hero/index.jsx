@@ -5,7 +5,8 @@ import style from "./hero.style";
 import ItemSlot from "../../../core/item-slot";
 import ArtifactSlot from "../../../core/artifact-slot";
 import { useSearchParams } from "react-router-dom";
-import characters from "../../../json/heroes";
+import heroes from "../../../json/heroes";
+import HeroIcon from "../../../core/hero-icon";
 
 const EncodeItem = (item) => {
 	return JSON.stringify(item);
@@ -79,12 +80,12 @@ const Hero = () => {
 		setSearchParams((prevSearchParams) =>
 			URLifyBuild({ hero, artifact, items })
 		);
-	}, [hero, artifact, items]);
+	}, [hero, artifact, items, setSearchParams]);
 
 	return (
 		<div css={style.background}>
 			<div css={style.hero}>
-				<img alt="" src={characters[hero.name].assets.image} />
+				<HeroIcon hero={hero} />
 			</div>
 
 			<div css={style.items}>
