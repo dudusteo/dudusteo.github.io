@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.714c2d83.css",
-    "main.js": "/static/js/main.d2515da7.js",
+    "main.js": "/static/js/main.7384ed91.js",
     "static/media/epic7_logo.png": "/static/media/epic7_logo.b8630be26929bfa2af43.png",
     "static/media/section_divider.png": "/static/media/section_divider.f42e6409cd3e20419db4.png",
     "static/media/stat_eff.png": "/static/media/stat_eff.746ab171a7b56cb8fa9e.png",
     "index.html": "/index.html",
     "main.714c2d83.css.map": "/static/css/main.714c2d83.css.map",
-    "main.d2515da7.js.map": "/static/js/main.d2515da7.js.map"
+    "main.7384ed91.js.map": "/static/js/main.7384ed91.js.map"
   },
   "entrypoints": [
     "static/css/main.714c2d83.css",
-    "static/js/main.d2515da7.js"
+    "static/js/main.7384ed91.js"
   ]
 }
