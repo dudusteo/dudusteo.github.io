@@ -107,6 +107,7 @@ const Hero = () => {
 		setSearchParams((prevSearchParams) =>
 			URLifyBuild({ hero, artifact, items })
 		);
+		console.log(items);
 	}, [hero, artifact, items, setSearchParams]);
 
 	return (

@@ -5,15 +5,15 @@ import style from "./itemData.style";
 import align from "../../styles/align.style";
 import Dropdown from "../dropdown";
 import Button from "../button";
+import Divider from "../divider";
+import Input from "../input";
 import {
 	gearEnhanceLevelOptions,
 	gearLevelOptions,
-	rarityOptions,
-} from "../../routes/epic7/gear-score-calculator/dropdown";
-import { getBaseItem } from "../../routes/epic7/gear-score-calculator/utils";
-import { statOptions } from "../../json/stats";
-import Divider from "../divider";
-import Input from "../input";
+	gearRarityOptions,
+	getBaseItem,
+	stats,
+} from "../../json/gear";
 
 const Item = ({ item, setItem, removeItem }) => {
 	React.useEffect(() => {
@@ -33,17 +33,10 @@ const Item = ({ item, setItem, removeItem }) => {
 		}));
 	};
 
-	const setMainStat = (newMainStat) => {
+	const updateItem = (newItem) => {
 		setItem((prevState) => ({
 			...prevState,
-			main: { ...prevState.main, type: newMainStat },
-		}));
-	};
-
-	const setMainStatValue = (newMainStatValue) => {
-		setItem((prevState) => ({
-			...prevState,
-			main: { ...prevState.main, value: newMainStatValue },
+			...newItem,
 		}));
 	};
 
@@ -74,7 +67,7 @@ const Item = ({ item, setItem, removeItem }) => {
 							]}
 						>
 							<Dropdown
-								options={rarityOptions}
+								options={gearRarityOptions}
 								value={item.rank}
 								setValue={(x) => setRank(x)}
 							/>
@@ -111,15 +104,13 @@ const Item = ({ item, setItem, removeItem }) => {
 				>
 					{/* <img src={getImage(item.main.type)} alt=""></img> */}
 					<Dropdown
-						options={statOptions}
+						options={stats.options}
 						value={item.main.type}
-						setValue={(x) => setMainStat(x)}
+						setValue={(mainType) =>
+							updateItem(stats.handleType(item, mainType, -1))
+						}
 					/>
-					<Input
-						placeholder="value here"
-						value={item.main.value}
-						setValue={(x) => setMainStatValue(x)}
-					/>
+					<span>{item.main.value}</span>
 				</div>
 				<Divider />
 				<div>
@@ -135,14 +126,30 @@ const Item = ({ item, setItem, removeItem }) => {
 							>
 								{/* <img src={getImage(substat.type)} alt=""></img> */}
 								<Dropdown
-									options={statOptions}
+									options={stats.options}
 									value={substat.type}
-									setValue={(x) => console.log(x)}
+									setValue={(substatType) =>
+										updateItem(
+											stats.handleType(
+												item,
+												substatType,
+												index
+											)
+										)
+									}
 								/>
 								<Input
 									placeholder="value here"
 									value={substat.value}
-									setValue={(x) => console.log(x)}
+									setValue={(x) =>
+										updateItem(
+											stats.handleValue(
+												item,
+												parseFloat(x),
+												index
+											)
+										)
+									}
 								/>
 							</div>
 						);

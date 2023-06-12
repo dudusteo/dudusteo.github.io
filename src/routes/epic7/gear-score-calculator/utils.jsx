@@ -105,14 +105,13 @@ export const getBaseItem = (level, rank) => {
 		level: level,
 		rank: rank,
 		enhance: 0,
-		main: { type: "Attack", value: 100 },
+		main: { type: "Attack", value: 0 },
 		substats: [],
 	};
 	for (var i = 0; i < rankInfo[rank].rolls.min; i++) {
 		baseItem.substats.push({
 			type: returnMissingSubstat([baseItem.main, ...baseItem.substats]),
 			value: 0,
-			rolls: 1,
 		});
 	}
 

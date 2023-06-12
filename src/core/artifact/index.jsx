@@ -4,7 +4,7 @@ import * as React from "react";
 import style from "./artifact.style";
 import align from "../../styles/align.style";
 import Dropdown from "../dropdown";
-import artifacts from "../../json/artifacts";
+import artifacts, { artifactEnhanceOptions } from "../../json/artifacts";
 import Button from "../button";
 
 const getBaseArtifact = () => {
@@ -55,7 +55,7 @@ const Artifact = ({ artifact, setArtifact, removeArtifact }) => {
 							/>
 							<span>&nbsp;{"+"}</span>
 							<Dropdown
-								options={[0, 1]}
+								options={artifactEnhanceOptions}
 								value={artifact.enhance}
 								setValue={(x) => setEnhance(parseInt(x))}
 							/>
