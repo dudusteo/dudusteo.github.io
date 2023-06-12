@@ -3,6 +3,8 @@ import { css } from "@emotion/react/macro";
 const style = {
 	background: (input) => (theme) =>
 		css`
+			display: grid;
+			grid-template-columns: 1fr 2fr 1fr;
 			height: 40em;
 			background: linear-gradient(
 					to bottom,
@@ -21,6 +23,7 @@ const style = {
 		`,
 	hero: (input) => (theme) =>
 		css`
+			position: absolute;
 			width: 100%;
 			img {
 				height: 50em;
@@ -33,12 +36,12 @@ const style = {
 		css`
 			display: grid;
 			grid-template-rows: repeat(4, 1fr);
-			grid-template-columns: repeat(4, 1fr);
+			grid-template-columns: repeat(2, 1fr);
 			grid-template-areas:
-				". . artifact ."
-				". item1 item4 ."
-				". item2 item5 ."
-				". item3 item6 .";
+				". artifact"
+				"item1 item4"
+				"item2 item5"
+				"item3 item6";
 
 			.artifactSlot {
 				grid-area: artifact;

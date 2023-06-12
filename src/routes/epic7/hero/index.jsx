@@ -7,6 +7,7 @@ import ArtifactSlot from "../../../core/artifact-slot";
 import { useSearchParams } from "react-router-dom";
 import heroes from "../../../json/heroes";
 import HeroIcon from "../../../core/hero-icon";
+import StatTable from "../../../core/stat-table";
 
 const EncodeItem = (item) => {
 	return JSON.stringify(item);
@@ -112,6 +113,7 @@ const Hero = () => {
 
 	return (
 		<div css={style.background}>
+			<StatTable />
 			<div css={style.hero}>{hero?.name && <HeroIcon hero={hero} />}</div>
 
 			<div css={style.items}>
