@@ -8,6 +8,7 @@ import { useSearchParams } from "react-router-dom";
 import heroes from "../../../json/heroes";
 import HeroIcon from "../../../core/hero-icon";
 import StatTable from "../../../core/stat-table";
+import Dropdown from "../../../core/dropdown";
 
 const EncodeItem = (item) => {
 	return JSON.stringify(item);
@@ -114,7 +115,9 @@ const Hero = () => {
 	return (
 		<div css={style.background}>
 			<StatTable hero={hero} artifact={artifact} />
-			<div css={style.hero}>{hero?.name && <HeroIcon hero={hero} />}</div>
+			<div css={style.hero}>
+				{"name" in hero && <HeroIcon hero={hero} />}
+			</div>
 
 			<div css={style.items}>
 				{items.map((item, index) => (
@@ -136,6 +139,15 @@ const Hero = () => {
 					/>
 				))}
 				<ArtifactSlot artifact={artifact} setArtifact={setArtifact} />
+			</div>
+			<div css={style.characters}>
+				<Dropdown
+					options={Object.keys(heroes.data)}
+					value={hero.name}
+					setValue={(newName) =>
+						setHero((prevHero) => ({ ...prevHero, name: newName }))
+					}
+				></Dropdown>
 			</div>
 		</div>
 	);

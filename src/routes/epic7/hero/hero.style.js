@@ -23,9 +23,10 @@ const style = {
 		`,
 	hero: (input) => (theme) =>
 		css`
+			z-index: 0;
 			position: absolute;
 			width: 100%;
-			img {
+			div {
 				height: 50em;
 				position: absolute;
 				left: 50%;
@@ -76,6 +77,11 @@ const style = {
 					justify-self: end;
 				}
 			}
+		`,
+	characters: (input) => (theme) =>
+		css`
+			z-index: 1;
+			color: #ffffff;
 		`,
 };
 

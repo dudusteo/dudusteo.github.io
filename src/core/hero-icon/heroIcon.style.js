@@ -3,10 +3,10 @@ import { css } from "@emotion/react/macro";
 const style = {
 	hero: (rank) => (theme) =>
 		css`
-			img {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
+			width: fit-content;
+			height: fit-content;
+			div {
+				width: 60em;
 			}
 		`,
 	text: (rank) => (theme) =>

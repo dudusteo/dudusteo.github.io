@@ -7,35 +7,25 @@ import heroes from "../../json/heroes";
 import { SpinePlayer } from "@esotericsoftware/spine-player";
 const HeroIcon = ({ hero }) => {
 	React.useEffect(() => {
-		const config = {
-			premultipliedAlpha: true,
-			backgroundColor: "#cccccc",
+		console.log("i fire once");
+		new SpinePlayer("spine-widget", {
+			alpha: true,
 			viewport: {
 				debugRender: true,
 			},
-			showControls: true,
+			showControls: false,
 			jsonUrl: `https://www.e7vau.lt/static/game/portrait/${
 				heroes.data[hero.name].code
 			}.json`,
 			atlasUrl: `https://www.e7vau.lt/static/game/portrait/${
 				heroes.data[hero.name].code
 			}.atlas`,
-		};
-
-		//new SpinePlayer("player-container", config);
-	}, [hero]);
+		});
+	}, []);
 
 	return (
 		<div css={style.hero}>
-			{/* <div id="player-container"></div>; */}
-			<img
-				alt=""
-				src={
-					"https://static.smilegatemegaport.com/event/live/epic7/guide/images/hero/" +
-					heroes.data[hero.name].code +
-					"_s.png"
-				}
-			/>
+			<div id="spine-widget"></div>
 		</div>
 	);
 };
