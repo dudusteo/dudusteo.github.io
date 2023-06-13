@@ -26,11 +26,9 @@ const style = {
 			z-index: 0;
 			position: absolute;
 			width: 100%;
-			div {
-				height: 50em;
-				position: absolute;
-				left: 50%;
-				transform: translate(-50%, 0%);
+			height: 100%;
+			& > div {
+				/* position: absolute; */
 			}
 		`,
 	items: (input) => (theme) =>

@@ -14,19 +14,17 @@ import GearScoreCalculator from "./routes/epic7/gear-score-calculator";
 import Hero from "./routes/epic7/hero";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-	<React.StrictMode>
-		<ThemeProvider theme={theme}>
-			<HashRouter>
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/epic7" element={<Epic7 />} />
-					<Route
-						path="/epic7/gear-score-calculator"
-						element={<GearScoreCalculator />}
-					/>
-					<Route path="/epic7/hero" element={<Hero />} />
-				</Routes>
-			</HashRouter>
-		</ThemeProvider>
-	</React.StrictMode>
+	<ThemeProvider theme={theme}>
+		<HashRouter>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/epic7" element={<Epic7 />} />
+				<Route
+					path="/epic7/gear-score-calculator"
+					element={<GearScoreCalculator />}
+				/>
+				<Route path="/epic7/hero" element={<Hero />} />
+			</Routes>
+		</HashRouter>
+	</ThemeProvider>
 );

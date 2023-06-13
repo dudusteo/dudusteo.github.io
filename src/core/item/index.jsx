@@ -15,10 +15,10 @@ import {
 	gear,
 } from "../../json/gear";
 
-const Item = ({ item, setItem, removeItem }) => {
+const Item = React.memo(({ item, setItem, removeItem }) => {
 	React.useEffect(() => {
 		if (Object.keys(item).length === 0) {
-			setItem((prevItem) => getBaseItem(85, "Epic"));
+			setItem(getBaseItem(85, "Epic"));
 		}
 	}, [item, setItem]);
 
@@ -34,10 +34,7 @@ const Item = ({ item, setItem, removeItem }) => {
 	};
 
 	const updateItem = (newItem) => {
-		setItem((prevState) => ({
-			...prevState,
-			...newItem,
-		}));
+		setItem(newItem);
 	};
 
 	return (
@@ -155,6 +152,6 @@ const Item = ({ item, setItem, removeItem }) => {
 			</div>
 		</div>
 	);
-};
+});
 
 export default Item;

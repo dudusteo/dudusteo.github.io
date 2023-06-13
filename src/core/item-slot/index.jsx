@@ -16,7 +16,7 @@ const ItemSlot = ({ item, setItem }) => {
 
 	const removeItem = (event) => {
 		setAnchorEl(null);
-		setItem((prevItem) => ({}));
+		setItem({});
 	};
 
 	const open = Boolean(anchorEl);

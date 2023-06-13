@@ -16,7 +16,7 @@ const ArtifactSlot = ({ artifact, setArtifact }) => {
 
 	const removeArtifact = (event) => {
 		setAnchorEl(null);
-		setArtifact((prevArtifact) => ({}));
+		setArtifact({});
 	};
 
 	const open = Boolean(anchorEl);
@@ -36,7 +36,7 @@ const ArtifactSlot = ({ artifact, setArtifact }) => {
 						<path d="M 96 32 L 96 76 A 12 12 90 0 1 88 88 L 54 106 A 12 12 90 0 1 42 106 L 8 88 A 12 12 90 0 1 0 76 L 0 32 A 12 12 90 0 1 8 20 L 42 2 A 12 12 90 0 1 54 2 L 88 20 A 12 12 90 0 1 96 32" />
 					</svg>
 
-					{artifact?.name && <ArtifactIcon artifact={artifact} />}
+					{"name" in artifact && <ArtifactIcon artifact={artifact} />}
 					<div>{artifact.enhance}</div>
 				</div>
 				{open ? (
@@ -48,7 +48,9 @@ const ArtifactSlot = ({ artifact, setArtifact }) => {
 					>
 						<Artifact
 							artifact={artifact}
-							setArtifact={setArtifact}
+							setArtifact={(newArtifact) =>
+								setArtifact(newArtifact)
+							}
 							removeArtifact={removeArtifact}
 						/>
 					</Popper>

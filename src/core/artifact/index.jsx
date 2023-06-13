@@ -11,30 +11,29 @@ const getBaseArtifact = () => {
 	return { name: Object.keys(artifacts.data)[0], enhance: 0 };
 };
 
-const Artifact = ({ artifact, setArtifact, removeArtifact }) => {
+const Artifact = React.memo(({ artifact, setArtifact, removeArtifact }) => {
 	React.useEffect(() => {
 		if (Object.keys(artifact).length === 0) {
-			setArtifact((prevArtifact) => getBaseArtifact());
+			setArtifact(getBaseArtifact());
 		}
-	}, [artifact, setArtifact]);
+	}, []);
 
 	if (Object.keys(artifact).length === 0) {
 		return <div>loading ...</div>;
 	}
 
 	const setName = (newName) => {
-		setArtifact((prevArtifact) => ({
-			...prevArtifact,
+		setArtifact({
 			name: newName,
-			enhance: prevArtifact?.enhance ? prevArtifact.enhance : 0,
-		}));
+			enhance: artifact.enhance,
+		});
 	};
 
 	const setEnhance = (newEnhance) => {
-		setArtifact((prevArtifact) => ({
-			...prevArtifact,
+		setArtifact({
+			name: artifact.name,
 			enhance: newEnhance,
-		}));
+		});
 	};
 
 	return (
@@ -72,6 +71,6 @@ const Artifact = ({ artifact, setArtifact, removeArtifact }) => {
 			</div>
 		</div>
 	);
-};
+});
 
 export default Artifact;

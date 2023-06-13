@@ -4,7 +4,7 @@ import * as React from "react";
 import style from "./hero.style";
 import ItemSlot from "../../../core/item-slot";
 import ArtifactSlot from "../../../core/artifact-slot";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import heroes from "../../../json/heroes";
 import HeroIcon from "../../../core/hero-icon";
 import StatTable from "../../../core/stat-table";
@@ -44,7 +44,7 @@ const URLifyBuild = ({ hero, artifact, items }) => {
 	};
 };
 
-const parseURLifiedBuild = ({ searchParams }) => {
+const parseURLifiedBuild = (searchParams) => {
 	let URLItems = [];
 	let build = {};
 
@@ -79,74 +79,76 @@ const parseURLifiedBuild = ({ searchParams }) => {
 	};
 };
 
+const baseBuild = {
+	hero: { name: "Abigail" },
+	artifact: { name: "A Little Queen's Huge Crown", enhance: 0 },
+	items: [{}, {}, {}],
+};
+
 const Hero = () => {
-	const [items, setItems] = React.useState([{}, {}, {}, {}, {}, {}]);
-	const [artifact, setArtifact] = React.useState({});
-
-	const [hero, setHero] = React.useState({});
-
+	const [build, setBuild] = React.useState(baseBuild);
 	const [searchParams, setSearchParams] = useSearchParams();
 
 	React.useEffect(() => {
-		const build = parseURLifiedBuild({ searchParams });
+		const params = {};
+		const parsedParams = parseURLifiedBuild(searchParams);
 
-		setHero((prevHero) => ({
-			...prevHero,
-			...build.hero,
-		}));
-		setArtifact((prevArtifact) => ({
-			...prevArtifact,
-			...build.artifact,
-		}));
-		setItems((prevItems) =>
-			prevItems.map((prevItem, index) => ({
-				...prevItem,
-				...build.items[index],
-			}))
-		);
+		for (let [key, value] of Object.entries(baseBuild)) {
+			params[key] = parsedParams[key] ? parsedParams[key] : value;
+		}
+		setBuild(params);
 	}, [searchParams]);
 
-	React.useEffect(() => {
-		setSearchParams((prevSearchParams) =>
-			URLifyBuild({ hero, artifact, items })
-		);
-	}, [hero, artifact, items, setSearchParams]);
+	const setHero = (newHero) => {
+		setSearchParams((prevSearchParams) => {
+			const updatedParams = new URLSearchParams(prevSearchParams);
+			updatedParams.set("hero", newHero.name);
+			return updatedParams.toString();
+		});
+	};
+
+	const setItem = (newItem, index) => {
+		setSearchParams((prevSearchParams) => {
+			const updatedParams = new URLSearchParams(prevSearchParams);
+			updatedParams.set("item" + index, EncodeItem(newItem));
+			return updatedParams.toString();
+		});
+	};
+
+	const setArtifact = (newArtifact) => {
+		setSearchParams((prevSearchParams) => {
+			const updatedParams = new URLSearchParams(prevSearchParams);
+			updatedParams.set("artifact", newArtifact.name);
+			updatedParams.set("artifactEnhance", newArtifact.enhance);
+			return updatedParams.toString();
+		});
+	};
 
 	return (
 		<div css={style.background}>
-			<StatTable hero={hero} artifact={artifact} />
+			<StatTable hero={build.hero} artifact={build.artifact} />
 			<div css={style.hero}>
-				{"name" in hero && <HeroIcon hero={hero} />}
+				{build.hero.name && <HeroIcon hero={build.hero} />}
 			</div>
 
 			<div css={style.items}>
-				{items.map((item, index) => (
+				{build.items.map((item, index) => (
 					<ItemSlot
 						key={index}
 						item={item}
-						setItem={(setItem) =>
-							setItems((prevItems) => {
-								const newItems = [...prevItems];
-
-								newItems[index] =
-									setItem instanceof Function
-										? setItem(prevItems[index])
-										: setItem;
-
-								return newItems;
-							})
-						}
+						setItem={(item) => setItem(item, index)}
 					/>
 				))}
-				<ArtifactSlot artifact={artifact} setArtifact={setArtifact} />
+				<ArtifactSlot
+					artifact={build.artifact}
+					setArtifact={(newArtifact) => setArtifact(newArtifact)}
+				/>
 			</div>
 			<div css={style.characters}>
 				<Dropdown
 					options={Object.keys(heroes.data)}
-					value={hero.name}
-					setValue={(newName) =>
-						setHero((prevHero) => ({ ...prevHero, name: newName }))
-					}
+					value={build.hero.name}
+					setValue={(newHeroName) => setHero({ name: newHeroName })}
 				></Dropdown>
 			</div>
 		</div>

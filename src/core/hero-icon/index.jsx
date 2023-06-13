@@ -1,33 +1,38 @@
 import * as React from "react";
 
-/** @jsxImportSource @emotion/react */
-import style from "./heroIcon.style";
-
 import heroes from "../../json/heroes";
 import { SpinePlayer } from "@esotericsoftware/spine-player";
-const HeroIcon = ({ hero }) => {
-	React.useEffect(() => {
-		console.log("i fire once");
-		new SpinePlayer("spine-widget", {
-			alpha: true,
-			viewport: {
-				debugRender: true,
-			},
-			showControls: false,
-			jsonUrl: `https://www.e7vau.lt/static/game/portrait/${
-				heroes.data[hero.name].code
-			}.json`,
-			atlasUrl: `https://www.e7vau.lt/static/game/portrait/${
-				heroes.data[hero.name].code
-			}.atlas`,
-		});
-	}, []);
+const HeroIcon = React.memo(({ hero }) => {
+	const [, setSpineWidget] = React.useState();
 
-	return (
-		<div css={style.hero}>
-			<div id="spine-widget"></div>
-		</div>
-	);
-};
+	React.useEffect(() => {
+		setSpineWidget((prevSpineWidget) => {
+			if (prevSpineWidget) {
+				prevSpineWidget.dispose();
+			}
+
+			return new SpinePlayer("spine-widget", {
+				alpha: true,
+				viewport: {
+					x: -600,
+					y: -400,
+					width: 1200,
+					height: 1200,
+				},
+				showControls: false,
+				jsonUrl: `https://www.e7vau.lt/static/game/portrait/${
+					heroes.data[hero.name].code
+				}.json`,
+				atlasUrl: `https://www.e7vau.lt/static/game/portrait/${
+					heroes.data[hero.name].code
+				}.atlas`,
+				skin: "normal",
+				animation: "idle",
+			});
+		});
+	}, [hero]);
+
+	return <div id="spine-widget"></div>;
+});
 
 export default HeroIcon;

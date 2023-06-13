@@ -29,33 +29,25 @@ const buildOptions = {
 	"dual attack chance": 0,
 };
 
-const StatTable = ({ hero, artifact }) => {
-	const [stats, setStats] = React.useState(buildOptions);
+const StatTable = React.memo(({ hero, artifact }) => {
+	let newStats = buildOptions;
 
-	React.useEffect(() => {
-		let newStats = buildOptions;
-
-		if ("name" in hero) {
-			var heroStats = heroes.getStats(hero.name, 60);
-			Object.entries(heroStats).forEach(
-				([key, value]) => (newStats[key] = heroStats[key])
-			);
-		}
-		if ("name" in artifact) {
-			var artifactStats = artifacts.getStats(
-				artifact.name,
-				artifact.enhance
-			);
-			Object.entries(artifactStats).forEach(
-				([key, value]) => (newStats[key] += artifactStats[key])
-			);
-		}
-		setStats(newStats);
-	}, [hero, artifact]);
+	if ("name" in hero) {
+		var heroStats = heroes.getStats(hero.name, 60);
+		Object.entries(heroStats).forEach(
+			([key, value]) => (newStats[key] = heroStats[key])
+		);
+	}
+	if ("name" in artifact) {
+		var artifactStats = artifacts.getStats(artifact.name, artifact.enhance);
+		Object.entries(artifactStats).forEach(
+			([key, value]) => (newStats[key] += artifactStats[key])
+		);
+	}
 
 	return (
 		<div css={style.base}>
-			{Object.entries(stats).map(([key, value], index) => (
+			{Object.entries(newStats).map(([key, value], index) => (
 				<div
 					key={index}
 					css={[
@@ -70,6 +62,6 @@ const StatTable = ({ hero, artifact }) => {
 			))}
 		</div>
 	);
-};
+});
 
 export default StatTable;
