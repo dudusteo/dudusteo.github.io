@@ -4,7 +4,7 @@ import * as React from "react";
 import style from "./hero.style";
 import ItemSlot from "../../../core/item-slot";
 import ArtifactSlot from "../../../core/artifact-slot";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import heroes from "../../../json/heroes";
 import HeroIcon from "../../../core/hero-icon";
 import StatTable from "../../../core/stat-table";
@@ -18,31 +18,31 @@ const DecodeItem = (encodedItem) => {
 	return JSON.parse(encodedItem);
 };
 
-const URLifyBuild = ({ hero, artifact, items }) => {
-	let URLItems = [];
-	let build = {};
+// const URLifyBuild = ({ hero, artifact, items }) => {
+// 	let URLItems = [];
+// 	let build = {};
 
-	if ("name" in hero) {
-		build = { ...build, hero: hero.name };
-	}
+// 	if ("name" in hero) {
+// 		build = { ...build, hero: hero.name };
+// 	}
 
-	if ("name" in artifact) {
-		build = { ...build, artifact: artifact.name };
-	}
+// 	if ("name" in artifact) {
+// 		build = { ...build, artifact: artifact.name };
+// 	}
 
-	if ("enhance" in artifact) {
-		build = { ...build, artifactEnhance: artifact.enhance };
-	}
+// 	if ("enhance" in artifact) {
+// 		build = { ...build, artifactEnhance: artifact.enhance };
+// 	}
 
-	items.forEach((item) => {
-		URLItems.push(EncodeItem(item));
-	});
+// 	items.forEach((item) => {
+// 		URLItems.push(EncodeItem(item));
+// 	});
 
-	return {
-		...build,
-		item: [...URLItems],
-	};
-};
+// 	return {
+// 		...build,
+// 		item: [...URLItems],
+// 	};
+// };
 
 const parseURLifiedBuild = (searchParams) => {
 	let URLItems = [];
