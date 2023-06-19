@@ -18,71 +18,34 @@ const DecodeItem = (encodedItem) => {
 	return JSON.parse(encodedItem);
 };
 
-// const URLifyBuild = ({ hero, artifact, items }) => {
-// 	let URLItems = [];
-// 	let build = {};
-
-// 	if ("name" in hero) {
-// 		build = { ...build, hero: hero.name };
-// 	}
-
-// 	if ("name" in artifact) {
-// 		build = { ...build, artifact: artifact.name };
-// 	}
-
-// 	if ("enhance" in artifact) {
-// 		build = { ...build, artifactEnhance: artifact.enhance };
-// 	}
-
-// 	items.forEach((item) => {
-// 		URLItems.push(EncodeItem(item));
-// 	});
-
-// 	return {
-// 		...build,
-// 		item: [...URLItems],
-// 	};
-// };
+const baseBuild = {
+	hero: { name: "Abigail" },
+	artifact: {},
+	items: { item0: {}, item1: {}, item2: {}, item3: {}, item4: {}, item5: {} },
+};
 
 const parseURLifiedBuild = (searchParams) => {
-	let URLItems = [];
-	let build = {};
+	let build = baseBuild;
 
 	if (searchParams.get("hero")) {
-		build = { ...build, hero: { name: searchParams.get("hero") } };
+		build.hero = { name: searchParams.get("hero") };
 	}
 
 	if (searchParams.get("artifact")) {
-		build = {
-			...build,
-			artifact: { ...build.artifact, name: searchParams.get("artifact") },
-		};
+		build.artifact = DecodeItem(searchParams.get("artifact"));
 	}
 
-	if (searchParams.get("artifactEnhance")) {
-		build = {
-			...build,
-			artifact: {
-				...build.artifact,
-				enhance: searchParams.get("artifactEnhance"),
-			},
-		};
+	for (let index = 0; index < 6; index++) {
+		if (searchParams.get("item" + index)) {
+			build.items["item" + index] = DecodeItem(
+				searchParams.get("item" + index)
+			);
+		}
 	}
-
-	searchParams.getAll("item").forEach((item) => {
-		URLItems.push(DecodeItem(item));
-	});
 
 	return {
 		...build,
-		items: URLItems,
 	};
-};
-
-const baseBuild = {
-	hero: { name: "Abigail" },
-	artifact: { name: "A Little Queen's Huge Crown", enhance: 0 },
-	items: [{}, {}, {}],
 };
 
 const Hero = () => {
@@ -90,13 +53,7 @@ const Hero = () => {
 	const [searchParams, setSearchParams] = useSearchParams();
 
 	React.useEffect(() => {
-		const params = {};
-		const parsedParams = parseURLifiedBuild(searchParams);
-
-		for (let [key, value] of Object.entries(baseBuild)) {
-			params[key] = parsedParams[key] ? parsedParams[key] : value;
-		}
-		setBuild(params);
+		setBuild(parseURLifiedBuild(searchParams));
 	}, [searchParams]);
 
 	const setHero = (newHero) => {
@@ -118,8 +75,7 @@ const Hero = () => {
 	const setArtifact = (newArtifact) => {
 		setSearchParams((prevSearchParams) => {
 			const updatedParams = new URLSearchParams(prevSearchParams);
-			updatedParams.set("artifact", newArtifact.name);
-			updatedParams.set("artifactEnhance", newArtifact.enhance);
+			updatedParams.set("artifact", EncodeItem(newArtifact));
 			return updatedParams.toString();
 		});
 	};
@@ -132,10 +88,10 @@ const Hero = () => {
 			</div>
 
 			<div css={style.items}>
-				{build.items.map((item, index) => (
+				{Object.keys(build.items).map((key, index) => (
 					<ItemSlot
 						key={index}
-						item={item}
+						item={build.items[key]}
 						setItem={(item) => setItem(item, index)}
 					/>
 				))}

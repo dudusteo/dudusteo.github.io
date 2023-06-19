@@ -120,6 +120,10 @@ export const gear = {
 		prevItem.main.value = calculateMainStat(prevItem);
 		return prevItem;
 	},
+	handleRank: (prevItem, newRank) => {
+		prevItem.rank = newRank;
+		return prevItem;
+	},
 	getImage: (name) => {
 		return Image[name];
 	},

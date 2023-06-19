@@ -20,18 +20,11 @@ const Item = React.memo(({ item, setItem, removeItem }) => {
 		if (Object.keys(item).length === 0) {
 			setItem(getBaseItem(85, "Epic"));
 		}
-	}, [item, setItem]);
+	}, []);
 
 	if (Object.keys(item).length === 0) {
 		return <div>loading ...</div>;
 	}
-
-	const setRank = (newRank) => {
-		setItem((prevState) => ({
-			...prevState,
-			rank: newRank,
-		}));
-	};
 
 	const updateItem = (newItem) => {
 		setItem(newItem);
@@ -52,7 +45,9 @@ const Item = React.memo(({ item, setItem, removeItem }) => {
 							<Dropdown
 								options={gearRarityOptions}
 								value={item.rank}
-								setValue={(x) => setRank(x)}
+								setValue={(rank) =>
+									updateItem(gear.handleRank(item, rank))
+								}
 							/>
 							<span>{"Item"}&nbsp;</span>
 							<Dropdown
