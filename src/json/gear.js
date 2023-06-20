@@ -116,6 +116,7 @@ export const gear = {
 		return prevItem;
 	},
 	handleEnhace: (prevItem, newEnhance) => {
+		console.log(typeof calculateMainStat(prevItem));
 		prevItem.enhance = newEnhance;
 		prevItem.main.value = calculateMainStat(prevItem);
 		return prevItem;
@@ -147,9 +148,9 @@ export const calculateMainStat = (item) => {
 	const multipliers = [
 		1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 2.6, 2.8, 3, 3.3, 3.6, 3.9, 4.25, 5,
 	];
-	return (
+	return parseFloat(
 		mainStatValues[level][item.main.type] * multipliers[enhance]
-	).toFixed(0);
+	);
 };
 
 export const returnMissingSubstat = (substats) => {
