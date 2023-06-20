@@ -148,7 +148,7 @@ const StatTable = React.memo(({ hero, artifact, items }) => {
 				>
 					<span>{toUpperCaseWord(key)}</span>
 					<span>
-						{toViewFormat(key, value + additionalStats[key] || 0)}
+						{toViewFormat(key, value + (additionalStats[key] || 0))}
 					</span>
 					{additionalStats[key] && (
 						<>
