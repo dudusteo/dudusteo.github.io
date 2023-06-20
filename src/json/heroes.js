@@ -2,22 +2,42 @@ import data from "./cache/herodata.json";
 
 const heroes = {
 	data,
-	getStats: (name, level) => {
-		const base =
+	getBaseStats: (name, level) => {
+		const baseStats =
 			level === 60
 				? data[name].calculatedStatus.lv60SixStarFullyAwakened
 				: data[name].calculatedStatus.lv50SixStarFullyAwakened;
 
 		return {
-			attack: base.atk,
-			defense: base.def,
-			health: base.hp,
-			speed: base.spd,
-			"critical hit chance": base.chc,
-			"critical hit damage": base.chd,
-			effectiveness: base.eff,
-			"effect resistance": base.efr,
-			"dual attack chance": base.dac,
+			attack: baseStats.atk,
+			defense: baseStats.def,
+			health: baseStats.hp,
+			speed: baseStats.spd,
+			"critical hit chance": baseStats.chc,
+			"critical hit damage": baseStats.chd,
+			effectiveness: baseStats.eff,
+			"effect resistance": baseStats.efr,
+			"dual attack chance": baseStats.dac,
+		};
+	},
+
+	getBonusStats: (name, level) => {
+		const bonusStats =
+			level === 60
+				? data[name].calculatedStatus.lv60SixStarFullyAwakened
+				: data[name].calculatedStatus.lv50SixStarFullyAwakened;
+		return {
+			AttackPercent: bonusStats.bonusMaxAtkPercent,
+			DefensePercent: bonusStats.bonusMaxDefPercent,
+			HealthPercent: bonusStats.bonusMaxHpPercent,
+			Attack: bonusStats.overrideAtk,
+			Defense: bonusStats.overrideDef,
+			Health: bonusStats.overrideHp,
+			Speed: bonusStats.overrideAdditionalSpd,
+			CriticalHitChancePercent: bonusStats.overrideAdditionalCr,
+			CriticalHitDamagePercent: bonusStats.overrideAdditionalCd,
+			EffectivenessPercent: bonusStats.overrideAdditionalEff,
+			EffectResistancePercent: bonusStats.overrideAdditionalRes,
 		};
 	},
 };

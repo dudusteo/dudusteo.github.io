@@ -7,7 +7,7 @@ export const artifactEnhanceOptions = [
 
 const artifacts = {
 	data,
-	getStats: (name, level) => {
+	getBaseStats: (name, level) => {
 		const artifact = data[name];
 		const baseHealth = artifact.stats.health;
 		const baseAttack = artifact.stats.attack;

@@ -32,16 +32,18 @@ const buildOptions = {
 const StatTable = React.memo(({ hero, artifact }) => {
 	let newStats = buildOptions;
 
-	if ("name" in hero) {
-		var heroStats = heroes.getStats(hero.name, 60);
-		Object.entries(heroStats).forEach(
-			([key, value]) => (newStats[key] = heroStats[key])
-		);
-	}
+	var heroBaseStats = heroes.getBaseStats(hero.name, 60);
+	Object.entries(heroBaseStats).forEach(
+		([key, value]) => (newStats[key] = value)
+	);
+
 	if ("name" in artifact) {
-		var artifactStats = artifacts.getStats(artifact.name, artifact.enhance);
+		var artifactStats = artifacts.getBaseStats(
+			artifact.name,
+			artifact.enhance
+		);
 		Object.entries(artifactStats).forEach(
-			([key, value]) => (newStats[key] += artifactStats[key])
+			([key, value]) => (newStats[key] += value)
 		);
 	}
 
