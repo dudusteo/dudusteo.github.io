@@ -6,35 +6,84 @@ import align from "../../styles/align.style";
 import heroes from "../../json/heroes";
 import artifacts from "../../json/artifacts";
 
-// 				"cp": 14466,
-// 				"atk": 984,
-// 				"hp": 6266,
-// 				"spd": 117,
-// 				"def": 637,
-// 				"chc": 0.15,
-// 				"chd": 1.5,
-// 				"dac": 0.03,
-// 				"eff": 0,
-// 				"efr": 0
+// 			attack: baseStats.atk,
+// 			defense: baseStats.def,
+// 			health: baseStats.hp,
+// 			speed: baseStats.spd,
+// 			"critical hit chance": baseStats.chc,
+// 			"critical hit damage": baseStats.chd,
+// 			effectiveness: baseStats.eff,
+// 			"effect resistance": baseStats.efr,
+// 			"dual attack chance": baseStats.dac,
 
-const buildOptions = {
-	attack: 0,
-	defense: 0,
-	health: 0,
-	speed: 0,
-	"critical hit chance": 0,
-	"critical hit damage": 0,
-	effectiveness: 0,
-	"effect resistance": 0,
-	"dual attack chance": 0,
+const calculateBonusStats = (heroBaseStats, bonusStats) => {
+	const calculatedStats = {};
+
+	const apply = {
+		AttackPercent: (heroBaseStats, bonusStatValue) => {
+			return ["attack", heroBaseStats.attack * (bonusStatValue * 0.01)];
+		},
+		DefensePercent: (heroBaseStats, bonusStatValue) => {
+			return ["defense", heroBaseStats.defense * (bonusStatValue * 0.01)];
+		},
+		HealthPercent: (heroBaseStats, bonusStatValue) => {
+			return ["health", heroBaseStats.health * (bonusStatValue * 0.01)];
+		},
+		Attack: (heroBaseStats, bonusStatValue) => {
+			return ["attack", bonusStatValue];
+		},
+		Defense: (heroBaseStats, bonusStatValue) => {
+			return ["defense", bonusStatValue];
+		},
+		Health: (heroBaseStats, bonusStatValue) => {
+			return ["health", bonusStatValue];
+		},
+		Speed: (heroBaseStats, bonusStatValue) => {
+			return ["speed", bonusStatValue];
+		},
+		CriticalHitChancePercent: (heroBaseStats, bonusStatValue) => {
+			return ["critical hit chance", bonusStatValue];
+		},
+		CriticalHitDamagePercent: (heroBaseStats, bonusStatValue) => {
+			return ["critical hit damage", bonusStatValue];
+		},
+		EffectivenessPercent: (heroBaseStats, bonusStatValue) => {
+			return ["effectiveness", bonusStatValue];
+		},
+		EffectResistancePercent: (heroBaseStats, bonusStatValue) => {
+			return ["effect resistance", bonusStatValue];
+		},
+	};
+
+	Object.entries(bonusStats).forEach(([key, value]) => {
+		if (value) {
+			const [statKey, statValue] = apply[key](heroBaseStats, value);
+
+			if (!calculatedStats[statKey]) {
+				calculatedStats[statKey] = statValue;
+			} else {
+				calculatedStats[statKey] += statValue;
+			}
+		}
+	});
+
+	return calculatedStats;
 };
 
 const StatTable = React.memo(({ hero, artifact }) => {
-	let newStats = buildOptions;
+	let newStats = {};
 
 	var heroBaseStats = heroes.getBaseStats(hero.name, 60);
 	Object.entries(heroBaseStats).forEach(
 		([key, value]) => (newStats[key] = value)
+	);
+
+	var heroBonusStats = heroes.getBonusStats(hero.name, 60);
+
+	const bonusStats = calculateBonusStats(heroBaseStats, heroBonusStats);
+
+	Object.entries(bonusStats).forEach(
+		([key, value]) => (newStats[key] += value)
 	);
 
 	if ("name" in artifact) {
