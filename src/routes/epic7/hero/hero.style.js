@@ -5,6 +5,7 @@ const style = {
 		css`
 			display: grid;
 			grid-template-columns: 1fr 2fr 1fr;
+			grid-template-areas: "left middle right";
 			height: 40em;
 			background: linear-gradient(
 					to bottom,
@@ -21,16 +22,21 @@ const style = {
 					#000000ff 100%
 				);
 		`,
+	stats: (input) => (theme) =>
+		css`
+			grid-area: left;
+		`,
 	hero: (input) => (theme) =>
 		css`
-			z-index: 0;
-			position: absolute;
-			width: 100%;
-			height: 100%;
+			grid-area: middle;
+			& > * {
+				height: 100%;
+			}
 		`,
 	items: (input) => (theme) =>
 		css`
 			display: grid;
+			grid-area: middle;
 			grid-template-rows: repeat(4, 1fr);
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-areas:
@@ -76,6 +82,7 @@ const style = {
 	characters: (input) => (theme) =>
 		css`
 			z-index: 1;
+			grid-area: right;
 			color: #ffffff;
 		`,
 };

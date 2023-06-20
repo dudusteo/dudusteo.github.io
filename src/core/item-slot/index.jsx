@@ -38,6 +38,7 @@ const ItemSlot = ({ item, setItem }) => {
 						open={open}
 						anchorEl={anchorEl}
 						placement="right-start"
+						style={{ zIndex: 10 }}
 					>
 						<Item
 							item={item}

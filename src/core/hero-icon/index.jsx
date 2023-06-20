@@ -20,10 +20,10 @@ const HeroIcon = React.memo(({ hero }) => {
 			return new SpinePlayer("spine-widget", {
 				alpha: true,
 				viewport: {
-					x: -600,
-					y: -400,
-					width: 1200,
-					height: 1200,
+					x: -400,
+					y: -50,
+					width: 800,
+					height: 800,
 				},
 				showControls: false,
 				jsonUrl: `https://www.e7vau.lt/static/game/portrait/${

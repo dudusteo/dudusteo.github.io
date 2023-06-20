@@ -100,7 +100,10 @@ const Hero = () => {
 
 	return (
 		<div css={style.background}>
-			<StatTable hero={hero} artifact={artifact} items={items} />
+			<div css={style.stats}>
+				<StatTable hero={hero} artifact={artifact} items={items} />
+			</div>
+
 			<div css={style.hero}>
 				<HeroIcon hero={hero} />
 			</div>

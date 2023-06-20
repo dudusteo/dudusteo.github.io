@@ -6,6 +6,22 @@ import align from "../../styles/align.style";
 import heroes from "../../json/heroes";
 import artifacts from "../../json/artifacts";
 
+const toUpperCaseWord = (text) =>
+	text.replace(/(^\w|\s\w)/g, (m) => m.toUpperCase());
+
+const toViewFormat = (key, value) => {
+	const filter = [
+		"critical hit chance",
+		"critical hit damage",
+		"effectiveness",
+		"effect resistance",
+		"dual attack chance",
+	];
+	return filter.find((element) => element === key)
+		? (value * 100).toFixed(1) + "%"
+		: parseInt(value);
+};
+
 const apply = {
 	AttackPercent: (heroBaseStats, bonusStatValue) => {
 		return ["attack", heroBaseStats.attack * (bonusStatValue * 0.01)];
@@ -29,16 +45,16 @@ const apply = {
 		return ["speed", bonusStatValue];
 	},
 	CriticalHitChancePercent: (heroBaseStats, bonusStatValue) => {
-		return ["critical hit chance", bonusStatValue];
+		return ["critical hit chance", bonusStatValue * 0.01];
 	},
 	CriticalHitDamagePercent: (heroBaseStats, bonusStatValue) => {
-		return ["critical hit damage", bonusStatValue];
+		return ["critical hit damage", bonusStatValue * 0.01];
 	},
 	EffectivenessPercent: (heroBaseStats, bonusStatValue) => {
-		return ["effectiveness", bonusStatValue];
+		return ["effectiveness", bonusStatValue * 0.01];
 	},
 	EffectResistancePercent: (heroBaseStats, bonusStatValue) => {
-		return ["effect resistance", bonusStatValue];
+		return ["effect resistance", bonusStatValue * 0.01];
 	},
 };
 
@@ -128,8 +144,8 @@ const StatTable = React.memo(({ hero, artifact, items }) => {
 						style.text("else", "small"),
 					]}
 				>
-					<span>{key}</span>
-					<span>{value}</span>
+					<span>{toUpperCaseWord(key)}</span>
+					<span>{toViewFormat(key, value)}</span>
 				</div>
 			))}
 		</div>

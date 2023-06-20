@@ -34,10 +34,10 @@ const heroes = {
 			Defense: bonusStats.overrideDef,
 			Health: bonusStats.overrideHp,
 			Speed: bonusStats.overrideAdditionalSpd,
-			CriticalHitChancePercent: bonusStats.overrideAdditionalCr,
-			CriticalHitDamagePercent: bonusStats.overrideAdditionalCd,
-			EffectivenessPercent: bonusStats.overrideAdditionalEff,
-			EffectResistancePercent: bonusStats.overrideAdditionalRes,
+			CriticalHitChancePercent: bonusStats.overrideAdditionalCr * 100,
+			CriticalHitDamagePercent: bonusStats.overrideAdditionalCd * 100,
+			EffectivenessPercent: bonusStats.overrideAdditionalEff * 100,
+			EffectResistancePercent: bonusStats.overrideAdditionalRes * 100,
 		};
 	},
 };

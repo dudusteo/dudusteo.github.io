@@ -44,6 +44,7 @@ const ArtifactSlot = ({ artifact, setArtifact }) => {
 						open={open}
 						anchorEl={anchorEl}
 						placement="left-start"
+						style={{ zIndex: 10 }}
 					>
 						<Artifact
 							artifact={artifact}
