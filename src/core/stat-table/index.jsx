@@ -100,16 +100,18 @@ const StatTable = React.memo(({ hero, artifact, items }) => {
 	let newStats = {};
 
 	const heroBaseStats = heroes.getBaseStats(hero.name, 60);
+	let additionalStats = {};
 	Object.entries(heroBaseStats).forEach(
 		([key, value]) => (newStats[key] = value)
 	);
 
 	const heroBonusStats = heroes.getBonusStats(hero.name, 60);
 	const bonusStats = calculateBonusStats(heroBaseStats, heroBonusStats);
-
-	Object.entries(bonusStats).forEach(
-		([key, value]) => (newStats[key] += value)
-	);
+	Object.entries(bonusStats).forEach(([key, value]) => {
+		additionalStats[key]
+			? (additionalStats[key] += value)
+			: (additionalStats[key] = value);
+	});
 
 	Object.entries(items).forEach(([key, value]) => {
 		if ("rank" in value) {
@@ -117,8 +119,10 @@ const StatTable = React.memo(({ hero, artifact, items }) => {
 				heroBaseStats,
 				value
 			);
-			Object.entries(itemBonusStats).forEach(
-				([key, value]) => (newStats[key] += value)
+			Object.entries(itemBonusStats).forEach(([key, value]) =>
+				additionalStats[key]
+					? (additionalStats[key] += value)
+					: (additionalStats[key] = value)
 			);
 		}
 	});
@@ -128,24 +132,34 @@ const StatTable = React.memo(({ hero, artifact, items }) => {
 			artifact.name,
 			artifact.enhance
 		);
-		Object.entries(artifactStats).forEach(
-			([key, value]) => (newStats[key] += value)
+		Object.entries(artifactStats).forEach(([key, value]) =>
+			additionalStats[key]
+				? (additionalStats[key] += value)
+				: (additionalStats[key] = value)
 		);
 	}
 
+	console.log(additionalStats);
+
 	return (
-		<div css={style.base}>
+		<div css={style.statTable}>
 			{Object.entries(newStats).map(([key, value], index) => (
 				<div
+					css={[style.text("else", "small"), style.statRow]}
 					key={index}
-					css={[
-						align.twoHorizontal,
-						align.lastRight,
-						style.text("else", "small"),
-					]}
 				>
 					<span>{toUpperCaseWord(key)}</span>
-					<span>{toViewFormat(key, value)}</span>
+					<span>
+						{toViewFormat(key, value + additionalStats[key] || 0)}
+					</span>
+					{additionalStats[key] && (
+						<>
+							<span>^</span>
+							<span>
+								{toViewFormat(key, additionalStats[key])}
+							</span>
+						</>
+					)}
 				</div>
 			))}
 		</div>

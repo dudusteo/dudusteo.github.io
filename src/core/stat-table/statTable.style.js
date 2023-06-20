@@ -1,7 +1,25 @@
 import { css } from "@emotion/react/macro";
 
 const style = {
-	base: (input) => (theme) => css``,
+	statTable: (input) => (theme) =>
+		css`
+			height: fit-content;
+		`,
+	statRow: (input) => (theme) =>
+		css`
+			display: grid;
+			grid-template-columns: 3fr 1fr 0.5fr 1fr;
+			span:nth-of-type(2) {
+				justify-self: end;
+			}
+			span:nth-of-type(3) {
+				justify-self: end;
+				color: #ac5002;
+			}
+			span:nth-of-type(4) {
+				color: #ac5002;
+			}
+		`,
 	text: (type, size) => (theme) =>
 		css`
 			span,
