@@ -139,8 +139,6 @@ const StatTable = React.memo(({ hero, artifact, items }) => {
 		);
 	}
 
-	console.log(additionalStats);
-
 	return (
 		<div css={style.statTable}>
 			{Object.entries(newStats).map(([key, value], index) => (

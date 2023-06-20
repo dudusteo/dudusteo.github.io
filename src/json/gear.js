@@ -116,7 +116,6 @@ export const gear = {
 		return prevItem;
 	},
 	handleEnhace: (prevItem, newEnhance) => {
-		console.log(typeof calculateMainStat(prevItem));
 		prevItem.enhance = newEnhance;
 		prevItem.main.value = calculateMainStat(prevItem);
 		return prevItem;
