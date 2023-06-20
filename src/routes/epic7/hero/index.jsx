@@ -49,14 +49,32 @@ const parseURLifiedBuild = (searchParams) => {
 };
 
 const Hero = () => {
-	const [build, setBuild] = React.useState(baseBuild);
+	const [hero, setHero] = React.useState(baseBuild.hero);
+	const [artifact, setArtifact] = React.useState(baseBuild.artifact);
+	const [items, setItems] = React.useState(baseBuild.items);
+
 	const [searchParams, setSearchParams] = useSearchParams();
 
 	React.useEffect(() => {
-		setBuild(parseURLifiedBuild(searchParams));
+		const parsedURLBuild = parseURLifiedBuild(searchParams);
+
+		setArtifact((prevArtifact) =>
+			JSON.stringify(prevArtifact) ===
+			JSON.stringify(parsedURLBuild.artifact)
+				? prevArtifact
+				: parsedURLBuild.artifact
+		);
+
+		setHero((prevHero) =>
+			JSON.stringify(prevHero) === JSON.stringify(parsedURLBuild.hero)
+				? prevHero
+				: parsedURLBuild.hero
+		);
+
+		setItems((prevItems) => ({ ...prevItems, ...parsedURLBuild.items }));
 	}, [searchParams]);
 
-	const setHero = (newHero) => {
+	const handleHero = (newHero) => {
 		setSearchParams((prevSearchParams) => {
 			const updatedParams = new URLSearchParams(prevSearchParams);
 			updatedParams.set("hero", newHero.name);
@@ -64,7 +82,7 @@ const Hero = () => {
 		});
 	};
 
-	const setItem = (newItem, index) => {
+	const handleItem = (newItem, index) => {
 		setSearchParams((prevSearchParams) => {
 			const updatedParams = new URLSearchParams(prevSearchParams);
 			updatedParams.set("item" + index, EncodeItem(newItem));
@@ -72,7 +90,7 @@ const Hero = () => {
 		});
 	};
 
-	const setArtifact = (newArtifact) => {
+	const handleArtifact = (newArtifact) => {
 		setSearchParams((prevSearchParams) => {
 			const updatedParams = new URLSearchParams(prevSearchParams);
 			updatedParams.set("artifact", EncodeItem(newArtifact));
@@ -82,29 +100,31 @@ const Hero = () => {
 
 	return (
 		<div css={style.background}>
-			<StatTable hero={build.hero} artifact={build.artifact} />
+			<StatTable hero={hero} artifact={artifact} items={items} />
 			<div css={style.hero}>
-				{build.hero.name && <HeroIcon hero={build.hero} />}
+				<HeroIcon hero={hero} />
 			</div>
 
 			<div css={style.items}>
-				{Object.keys(build.items).map((key, index) => (
+				{Object.keys(items).map((key, index) => (
 					<ItemSlot
 						key={index}
-						item={build.items[key]}
-						setItem={(item) => setItem(item, index)}
+						item={items[key]}
+						setItem={(item) => handleItem(item, index)}
 					/>
 				))}
 				<ArtifactSlot
-					artifact={build.artifact}
-					setArtifact={(newArtifact) => setArtifact(newArtifact)}
+					artifact={artifact}
+					setArtifact={(newArtifact) => handleArtifact(newArtifact)}
 				/>
 			</div>
 			<div css={style.characters}>
 				<Dropdown
 					options={Object.keys(heroes.data)}
-					value={build.hero.name}
-					setValue={(newHeroName) => setHero({ name: newHeroName })}
+					value={hero.name}
+					setValue={(newHeroName) =>
+						handleHero({ name: newHeroName })
+					}
 				></Dropdown>
 			</div>
 		</div>

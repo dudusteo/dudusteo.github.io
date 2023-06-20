@@ -2,15 +2,14 @@ import * as React from "react";
 
 /** @jsxImportSource @emotion/react */
 import style from "./artifactSlot.style";
+import Artifact from "../artifact";
 import ArtifactIcon from "../artifact-icon";
 import { ClickAwayListener, Popper } from "@mui/base";
-import Artifact from "../artifact";
 
 const ArtifactSlot = ({ artifact, setArtifact }) => {
 	const [anchorEl, setAnchorEl] = React.useState(null);
 
 	const handleClick = (event) => {
-		("clicked");
 		setAnchorEl(anchorEl ? null : event.currentTarget);
 	};
 

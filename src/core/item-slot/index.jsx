@@ -4,8 +4,7 @@ import * as React from "react";
 import style from "./itemSlot.style";
 import Item from "../item";
 import ItemIcon from "../item-icon";
-import ClickAwayListener from "@mui/base/ClickAwayListener";
-import { Popper } from "@mui/base";
+import { ClickAwayListener, Popper } from "@mui/base";
 
 const ItemSlot = ({ item, setItem }) => {
 	const [anchorEl, setAnchorEl] = React.useState(null);
@@ -31,7 +30,7 @@ const ItemSlot = ({ item, setItem }) => {
 					css={style.background("empty")}
 					onClick={handleClick}
 				>
-					{item?.rank && <ItemIcon item={item}></ItemIcon>}
+					{"rank" in item && <ItemIcon item={item}></ItemIcon>}
 				</button>
 				{open ? (
 					<Popper
@@ -42,7 +41,7 @@ const ItemSlot = ({ item, setItem }) => {
 					>
 						<Item
 							item={item}
-							setItem={setItem}
+							setItem={(newItem) => setItem(newItem)}
 							removeItem={removeItem}
 						></Item>
 					</Popper>

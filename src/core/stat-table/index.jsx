@@ -70,7 +70,7 @@ const calculateBonusStats = (heroBaseStats, bonusStats) => {
 	return calculatedStats;
 };
 
-const StatTable = React.memo(({ hero, artifact }) => {
+const StatTable = React.memo(({ hero, artifact, items }) => {
 	let newStats = {};
 
 	var heroBaseStats = heroes.getBaseStats(hero.name, 60);
