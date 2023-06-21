@@ -9,6 +9,7 @@ import heroes from "../../../json/heroes";
 import HeroIcon from "../../../core/hero-icon";
 import StatTable from "../../../core/stat-table";
 import Dropdown from "../../../core/dropdown";
+import ImprintSlot from "../../../core/imprint-slot";
 
 const EncodeItem = (item) => {
 	return JSON.stringify(item);
@@ -19,7 +20,7 @@ const DecodeItem = (encodedItem) => {
 };
 
 const baseBuild = {
-	hero: { name: "Abigail" },
+	hero: { name: "Abigail", grade: "N" },
 	artifact: {},
 	items: { item0: {}, item1: {}, item2: {}, item3: {}, item4: {}, item5: {} },
 };
@@ -28,7 +29,10 @@ const parseURLifiedBuild = (searchParams) => {
 	let build = baseBuild;
 
 	if (searchParams.get("hero")) {
-		build.hero = { name: searchParams.get("hero") };
+		build.hero = {
+			name: searchParams.get("hero"),
+			grade: searchParams.get("heroGrade"),
+		};
 	}
 
 	if (searchParams.get("artifact")) {
@@ -78,6 +82,7 @@ const Hero = () => {
 		setSearchParams((prevSearchParams) => {
 			const updatedParams = new URLSearchParams(prevSearchParams);
 			updatedParams.set("hero", newHero.name);
+			updatedParams.set("heroGrade", newHero.grade);
 			return updatedParams.toString();
 		});
 	};
@@ -85,7 +90,9 @@ const Hero = () => {
 	const handleItem = (newItem, index) => {
 		setSearchParams((prevSearchParams) => {
 			const updatedParams = new URLSearchParams(prevSearchParams);
+
 			updatedParams.set("item" + index, EncodeItem(newItem));
+
 			return updatedParams.toString();
 		});
 	};
@@ -100,7 +107,21 @@ const Hero = () => {
 
 	return (
 		<div css={style.background}>
-			<div css={style.stats}>
+			<div css={[style.stats]}>
+				<div style={{ color: "#ffffff" }}>
+					<Dropdown
+						options={Object.keys(heroes.data)}
+						value={hero.name}
+						setValue={(newHeroName) =>
+							handleHero({ name: newHeroName, grade: "N" })
+						}
+					/>
+				</div>
+
+				<ImprintSlot
+					hero={hero}
+					setHero={(newHero) => handleHero(newHero)}
+				/>
 				<StatTable hero={hero} artifact={artifact} items={items} />
 			</div>
 
@@ -120,15 +141,6 @@ const Hero = () => {
 					artifact={artifact}
 					setArtifact={(newArtifact) => handleArtifact(newArtifact)}
 				/>
-			</div>
-			<div css={style.characters}>
-				<Dropdown
-					options={Object.keys(heroes.data)}
-					value={hero.name}
-					setValue={(newHeroName) =>
-						handleHero({ name: newHeroName })
-					}
-				></Dropdown>
 			</div>
 		</div>
 	);

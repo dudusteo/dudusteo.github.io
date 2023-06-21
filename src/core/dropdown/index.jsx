@@ -1,22 +1,31 @@
-import * as React from 'react'
+import * as React from "react";
 
 /** @jsxImportSource @emotion/react */
-import style from './dropdown.style';
+import style from "./dropdown.style";
 
 const Dropdown = (props) => {
-    const { options = [], value, setValue } = props;
+	const { options = [], value, setValue } = props;
 
-    return (
-        <select css={[style.dropdown]} value={value} onChange={(e) => setValue(e.target.value)}>
-            {options.map((item, index) =>
-                <option
-                    css={[typeof item === "string" && style.color(item.toLowerCase())]}
-                    key={index}
-                    value={item}>
-                    {item}
-                </option>)}
-        </select>
-    )
-}
+	return (
+		<select
+			css={[style.dropdown]}
+			value={value}
+			onChange={(e) => setValue(e.target.value)}
+		>
+			{options.map((item, index) => (
+				<option
+					css={[
+						typeof item === "string" &&
+							style.color(item.toLowerCase()),
+					]}
+					key={index}
+					value={item}
+				>
+					{item}
+				</option>
+			))}
+		</select>
+	);
+};
 
-export default Dropdown
+export default Dropdown;

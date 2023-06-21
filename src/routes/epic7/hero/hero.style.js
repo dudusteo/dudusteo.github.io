@@ -5,8 +5,8 @@ const style = {
 		css`
 			padding: 3em;
 			display: grid;
-			grid-template-columns: 1fr 2fr 1fr;
-			grid-template-areas: "left middle right";
+			grid-template-columns: 1fr 3fr;
+			grid-template-areas: "left right";
 			height: 40em;
 
 			background: linear-gradient(
@@ -27,18 +27,18 @@ const style = {
 	stats: (input) => (theme) =>
 		css`
 			grid-area: left;
-
+			min-width: 450px;
 			display: grid;
 			grid-template-rows: 3fr 2fr;
 			grid-template-areas: "top" "bottom";
-			& > div {
+			& > div:nth-of-type(2) {
 				align-self: end;
 				grid-area: bottom;
 			}
 		`,
 	hero: (input) => (theme) =>
 		css`
-			grid-area: middle;
+			grid-area: right;
 			height: 34em;
 			& > * {
 				height: 100%;
@@ -47,7 +47,7 @@ const style = {
 	items: (input) => (theme) =>
 		css`
 			display: grid;
-			grid-area: middle;
+			grid-area: right;
 			grid-template-rows: repeat(4, 1fr);
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-areas:
@@ -89,12 +89,6 @@ const style = {
 					justify-self: end;
 				}
 			}
-		`,
-	characters: (input) => (theme) =>
-		css`
-			z-index: 1;
-			grid-area: right;
-			color: #ffffff;
 		`,
 };
 
