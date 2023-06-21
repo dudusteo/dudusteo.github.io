@@ -2,7 +2,6 @@ import * as React from "react";
 
 /** @jsxImportSource @emotion/react */
 import style from "./statTable.style";
-import align from "../../styles/align.style";
 import heroes from "../../json/heroes";
 import artifacts from "../../json/artifacts";
 
@@ -76,11 +75,11 @@ const calculateBonusStats = (heroBaseStats, bonusStats) => {
 	return calculatedStats;
 };
 
-const calculateItemBonusStats = (heroBaseStats, item) => {
-	const combinedItemStats = [item.main, ...item.substats];
+// Array of { type, value }
+const calculateStatsFromArray = (heroBaseStats, array) => {
 	const calculatedStats = {};
 
-	combinedItemStats.forEach((stat) => {
+	array.forEach((stat) => {
 		const [statKey, statValue] = apply[stat.type](
 			heroBaseStats,
 			stat.value
@@ -96,6 +95,21 @@ const calculateItemBonusStats = (heroBaseStats, item) => {
 	return calculatedStats;
 };
 
+const calculateItemBonusStats = (heroBaseStats, item) => {
+	const combinedItemStats = [item.main, ...item.substats];
+
+	return calculateStatsFromArray(heroBaseStats, combinedItemStats);
+};
+
+const addToAdditionalStats = (bonusStats, additionalStats) => {
+	Object.entries(bonusStats).forEach(([key, value]) =>
+		additionalStats[key]
+			? (additionalStats[key] += value)
+			: (additionalStats[key] = value)
+	);
+	return additionalStats;
+};
+
 const StatTable = React.memo(({ hero, artifact, items }) => {
 	let newStats = {};
 
@@ -105,13 +119,16 @@ const StatTable = React.memo(({ hero, artifact, items }) => {
 		([key, value]) => (newStats[key] = value)
 	);
 
-	const heroBonusStats = heroes.getBonusStats(hero.name, 60);
-	const bonusStats = calculateBonusStats(heroBaseStats, heroBonusStats);
-	Object.entries(bonusStats).forEach(([key, value]) => {
-		additionalStats[key]
-			? (additionalStats[key] += value)
-			: (additionalStats[key] = value);
-	});
+	const bonusStats = calculateBonusStats(
+		heroBaseStats,
+		heroes.getBonusStats(hero.name, 60)
+	);
+	additionalStats = addToAdditionalStats(bonusStats, additionalStats);
+
+	const imprintStats = calculateStatsFromArray(heroBaseStats, [
+		heroes.getImprintStats(hero.name, hero.grade),
+	]);
+	additionalStats = addToAdditionalStats(imprintStats, additionalStats);
 
 	Object.entries(items).forEach(([key, value]) => {
 		if ("rank" in value) {
@@ -119,10 +136,9 @@ const StatTable = React.memo(({ hero, artifact, items }) => {
 				heroBaseStats,
 				value
 			);
-			Object.entries(itemBonusStats).forEach(([key, value]) =>
-				additionalStats[key]
-					? (additionalStats[key] += value)
-					: (additionalStats[key] = value)
+			additionalStats = addToAdditionalStats(
+				itemBonusStats,
+				additionalStats
 			);
 		}
 	});
@@ -132,11 +148,7 @@ const StatTable = React.memo(({ hero, artifact, items }) => {
 			artifact.name,
 			artifact.enhance
 		);
-		Object.entries(artifactStats).forEach(([key, value]) =>
-			additionalStats[key]
-				? (additionalStats[key] += value)
-				: (additionalStats[key] = value)
-		);
+		additionalStats = addToAdditionalStats(artifactStats, additionalStats);
 	}
 
 	return (

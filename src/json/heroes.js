@@ -1,7 +1,15 @@
 import data from "./cache/herodata.json";
 
 const imprintMap = {
-	cri: "Critical Hit Chance",
+	cri: "CriticalHitChancePercent",
+	max_hp_rate: "HealthPercent",
+	max_hp: "Health",
+	att_rate: "AttackPercent",
+	att: "Attack",
+	def_rate: "DefensePercent",
+	def: "Defense",
+	acc: "EffectivenessPercent",
+	res: "EffectResistancePercent",
 };
 
 const heroes = {
@@ -9,7 +17,9 @@ const heroes = {
 	getImprintStats: (heroName, heroGrade) => {
 		return {
 			type: imprintMap[data[heroName].self_devotion.type],
-			value: data[heroName].self_devotion.grades[heroGrade],
+			value: (
+				data[heroName].self_devotion.grades[heroGrade] * 100 || 0
+			).toFixed(1),
 		};
 	},
 	getImprintOptions: (name) => {
@@ -23,7 +33,7 @@ const heroes = {
 						imprintMap[data[name].self_devotion.type] +
 						" " +
 						(value * 100).toFixed(1),
-					value: value,
+					value: (value * 100).toFixed(1),
 					type: imprintMap[data[name].self_devotion.type],
 					grade: key,
 				});
