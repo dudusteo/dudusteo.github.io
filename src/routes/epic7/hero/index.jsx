@@ -21,7 +21,7 @@ const DecodeItem = (encodedItem) => {
 };
 
 const baseBuild = {
-	hero: { name: "Abigail", grade: "N" },
+	hero: { name: "Abigail" },
 	artifact: {},
 	items: { item0: {}, item1: {}, item2: {}, item3: {}, item4: {}, item5: {} },
 };
@@ -67,7 +67,9 @@ const parseURLifiedBuild = (searchParams) => {
 };
 
 const Hero = () => {
-	const [hero, setHero] = React.useState(baseBuild.hero);
+	const [heroName, setHeroName] = React.useState(baseBuild.hero.name);
+	const [heroGrade, setHeroGrade] = React.useState("");
+	const [heroEE, setHeroEE] = React.useState("");
 	const [artifact, setArtifact] = React.useState(baseBuild.artifact);
 	const [items, setItems] = React.useState(baseBuild.items);
 
@@ -83,24 +85,33 @@ const Hero = () => {
 				: parsedURLBuild.artifact
 		);
 
-		setHero((prevHero) =>
-			JSON.stringify(prevHero) === JSON.stringify(parsedURLBuild.hero)
-				? prevHero
-				: parsedURLBuild.hero
-		);
+		setHeroName(parsedURLBuild.hero.name);
+		setHeroGrade(parsedURLBuild.hero.grade || "");
+		setHeroEE(parsedURLBuild.hero.ee || "");
 
 		setItems((prevItems) => ({ ...prevItems, ...parsedURLBuild.items }));
 	}, [searchParams]);
 
-	const handleHero = (newHero) => {
+	const handleHeroName = (newHeroName) => {
 		setSearchParams((prevSearchParams) => {
 			const updatedParams = new URLSearchParams(prevSearchParams);
-			updatedParams.set("hero", newHero.name);
-			updatedParams.set("heroGrade", newHero.grade);
-			if (newHero.ee) {
-				updatedParams.set("ee", newHero.ee);
-			}
+			updatedParams.set("hero", newHeroName);
+			return updatedParams.toString();
+		});
+	};
 
+	const handleHeroGrade = (newHeroGrade) => {
+		setSearchParams((prevSearchParams) => {
+			const updatedParams = new URLSearchParams(prevSearchParams);
+			updatedParams.set("heroGrade", newHeroGrade);
+			return updatedParams.toString();
+		});
+	};
+
+	const handleHeroEE = (newHero) => {
+		setSearchParams((prevSearchParams) => {
+			const updatedParams = new URLSearchParams(prevSearchParams);
+			updatedParams.set("ee", newHero.ee);
 			return updatedParams.toString();
 		});
 	};
@@ -129,26 +140,32 @@ const Hero = () => {
 				<div style={{ color: "#ffffff" }}>
 					<Dropdown
 						options={Object.keys(heroes.data)}
-						value={hero.name}
-						setValue={(newHeroName) =>
-							handleHero({ name: newHeroName, grade: "N" })
-						}
+						value={heroName}
+						setValue={handleHeroName}
 					/>
 				</div>
 				<ExclusiveEquipmentSlot
-					hero={hero}
-					setHero={(newHero) => handleHero(newHero)}
+					heroName={heroName}
+					heroEE={heroEE}
+					setEE={handleHeroEE}
 				/>
 
 				<ImprintSlot
-					hero={hero}
-					setHero={(newHero) => handleHero(newHero)}
+					heroName={heroName}
+					heroGrade={heroGrade}
+					setGrade={handleHeroGrade}
 				/>
-				<StatTable hero={hero} artifact={artifact} items={items} />
+				<StatTable
+					heroName={heroName}
+					heroGrade={heroGrade}
+					heroEE={heroEE}
+					artifact={artifact}
+					items={items}
+				/>
 			</div>
 
 			<div css={style.hero}>
-				<HeroIcon hero={hero} />
+				<HeroIcon heroName={heroName} />
 			</div>
 
 			<div css={style.items}>

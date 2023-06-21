@@ -6,7 +6,7 @@ import { SpinePlayer } from "@esotericsoftware/spine-player";
 /** @jsxImportSource @emotion/react */
 import style from "./heroIcon.style";
 
-const HeroIcon = React.memo(({ hero }) => {
+const HeroIcon = React.memo(({ heroName }) => {
 	const [, setSpineWidget] = React.useState();
 	const [isError, setIsError] = React.useState(false);
 
@@ -26,12 +26,8 @@ const HeroIcon = React.memo(({ hero }) => {
 					height: 800,
 				},
 				showControls: false,
-				jsonUrl: `https://www.e7vau.lt/static/game/portrait/${
-					heroes.data[hero.name].code
-				}.json`,
-				atlasUrl: `https://www.e7vau.lt/static/game/portrait/${
-					heroes.data[hero.name].code
-				}.atlas`,
+				jsonUrl: `https://www.e7vau.lt/static/game/portrait/${heroes.data[heroName].code}.json`,
+				atlasUrl: `https://www.e7vau.lt/static/game/portrait/${heroes.data[heroName].code}.atlas`,
 				showLoading: false,
 				skin: "normal",
 				animation: "idle",
@@ -40,13 +36,13 @@ const HeroIcon = React.memo(({ hero }) => {
 				},
 			});
 		});
-	}, [hero]);
+	}, [heroName]);
 
 	return (
 		<>
 			{isError && (
 				<div css={style.image}>
-					<img alt="" src={heroes.data[hero.name].assets.icon}></img>
+					<img alt="" src={heroes.data[heroName].assets.icon}></img>
 				</div>
 			)}
 			<div css={style.spine} id="spine-widget"></div>

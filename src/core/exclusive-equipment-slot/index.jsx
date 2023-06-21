@@ -5,8 +5,8 @@ import style from "./exclusiveEquipmentSlot.style";
 import Autocomplete from "../autocomplete";
 import heroes from "../../json/heroes";
 
-const ExclusiveEquipmentSlot = ({ hero, setHero }) => {
-	const options = heroes.getExclusiveEquipmentOptions(hero.name);
+const ExclusiveEquipmentSlot = ({ heroName, heroEE, setEE }) => {
+	const options = heroes.getExclusiveEquipmentOptions(heroName);
 
 	return (
 		<div css={style.exclusiveEquipmentSlot}>
@@ -14,15 +14,11 @@ const ExclusiveEquipmentSlot = ({ hero, setHero }) => {
 				<Autocomplete
 					options={options}
 					value={options.find((option) => {
-						return option.value === hero.ee;
+						return option.value === heroEE;
 					})}
 					setValue={(value) => {
 						if (value) {
-							setHero({
-								name: hero.name,
-								grade: hero.grade,
-								ee: value.value,
-							});
+							setEE(value.value);
 						}
 					}}
 				/>

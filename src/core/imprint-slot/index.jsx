@@ -6,18 +6,16 @@ import style from "./imprintSlot.style";
 import heroes from "../../json/heroes";
 import Autocomplete from "../autocomplete";
 
-const ImprintSlot = ({ hero, setHero }) => {
-	const options = heroes.getImprintOptions(hero.name);
+const ImprintSlot = ({ heroName, heroGrade, setGrade }) => {
+	const options = heroes.getImprintOptions(heroName);
 
 	return (
 		<div css={style.imprintSlot}>
 			<Autocomplete
 				options={options}
-				value={options.find((option) => option.grade === hero.grade)}
+				value={options.find((option) => option.grade === heroGrade)}
 				setValue={(value) => {
-					if (value) {
-						setHero({ name: hero.name, grade: value.grade });
-					}
+					setGrade(value.grade || "");
 				}}
 			/>
 		</div>

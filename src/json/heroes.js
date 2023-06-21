@@ -1,15 +1,21 @@
 import data from "./cache/herodata.json";
 
-const imprintMap = {
-	cri: "CriticalHitChancePercent",
-	max_hp_rate: "HealthPercent",
-	max_hp: "Health",
-	att_rate: "AttackPercent",
-	att: "Attack",
-	def_rate: "DefensePercent",
-	def: "Defense",
-	acc: "EffectivenessPercent",
-	res: "EffectResistancePercent",
+const createUniversalNotation = {
+	att_rate: (statValue) => ["AttackPercent", (statValue * 100).toFixed(1)],
+	def_rate: (statValue) => ["DefensePercent", (statValue * 100).toFixed(1)],
+	max_hp_rate: (statValue) => ["HealthPercent", (statValue * 100).toFixed(1)],
+	att: (statValue) => ["Attack", statValue],
+	def: (statValue) => ["Defense", statValue],
+	max_hp: (statValue) => ["Health", statValue],
+	cri: (statValue) => [
+		"CriticalHitChancePercent",
+		(statValue * 100).toFixed(1),
+	],
+	acc: (statValue) => ["EffectivenessPercent", (statValue * 100).toFixed(1)],
+	res: (statValue) => [
+		"EffectResistancePercent",
+		(statValue * 100).toFixed(1),
+	],
 };
 
 const heroes = {
@@ -17,9 +23,14 @@ const heroes = {
 	getExclusiveEquipmentStats: (heroName, heroEEValue) => {
 		const exclusiveEquipments = data[heroName].ex_equip;
 
+		const [type, value] =
+			createUniversalNotation[exclusiveEquipments[0].stat.type](
+				heroEEValue
+			);
+
 		return {
-			type: imprintMap[exclusiveEquipments[0].stat.type],
-			value: heroEEValue,
+			type: type,
+			value: value,
 		};
 	},
 	getExclusiveEquipmentOptions: (heroName) => {
@@ -30,40 +41,47 @@ const heroes = {
 		const maxValue = minValue * 2;
 
 		const exclusiveEqupimentOptions = [];
+
 		for (let stepValue = minValue; stepValue <= maxValue; stepValue++) {
+			const [type, value] =
+				createUniversalNotation[exclusiveEquipments[0].stat.type](
+					stepValue
+				);
+
 			exclusiveEqupimentOptions.push({
-				label:
-					imprintMap[exclusiveEquipments[0].stat.type] +
-					" " +
-					stepValue,
-				type: imprintMap[exclusiveEquipments[0].stat.type],
-				value: stepValue.toFixed(1),
+				label: type + " " + value,
+				type: type,
+				value: value,
 			});
 		}
 
 		return exclusiveEqupimentOptions;
 	},
 	getImprintStats: (heroName, heroGrade) => {
+		const imprintType = data[heroName].self_devotion.type;
+		const imprintValue = data[heroName].self_devotion.grades[heroGrade];
+
+		const [type, value] =
+			createUniversalNotation[imprintType](imprintValue);
+
 		return {
-			type: imprintMap[data[heroName].self_devotion.type],
-			value: (
-				data[heroName].self_devotion.grades[heroGrade] * 100 || 0
-			).toFixed(1),
+			type: type,
+			value: value,
 		};
 	},
-	getImprintOptions: (name) => {
-		const imprintOptions = [{ label: "Locked", value: 0, grade: "N" }];
-		Object.entries(data[name].self_devotion.grades).forEach(
+	getImprintOptions: (heroName) => {
+		const imprintOptions = [];
+		Object.entries(data[heroName].self_devotion.grades).forEach(
 			([key, value]) => {
+				const imprintType = data[heroName].self_devotion.type;
+
+				const [imprintName, imprintValue] =
+					createUniversalNotation[imprintType](value);
+
 				imprintOptions.push({
-					label:
-						key +
-						" " +
-						imprintMap[data[name].self_devotion.type] +
-						" " +
-						(value * 100).toFixed(1),
-					value: (value * 100).toFixed(1),
-					type: imprintMap[data[name].self_devotion.type],
+					label: key + " " + imprintName + " " + imprintValue,
+					value: imprintValue,
+					type: imprintName,
 					grade: key,
 				});
 			}

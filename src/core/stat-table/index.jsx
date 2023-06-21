@@ -110,80 +110,94 @@ const addToAdditionalStats = (bonusStats, additionalStats) => {
 	return additionalStats;
 };
 
-const StatTable = React.memo(({ hero, artifact, items }) => {
-	let newStats = {};
+const StatTable = React.memo(
+	({ heroName, heroGrade, heroEE, artifact, items }) => {
+		let newStats = {};
 
-	const heroBaseStats = heroes.getBaseStats(hero.name, 60);
-	let additionalStats = {};
-	Object.entries(heroBaseStats).forEach(
-		([key, value]) => (newStats[key] = value)
-	);
-
-	const bonusStats = calculateBonusStats(
-		heroBaseStats,
-		heroes.getBonusStats(hero.name, 60)
-	);
-	additionalStats = addToAdditionalStats(bonusStats, additionalStats);
-
-	const imprintStats = calculateStatsFromArray(heroBaseStats, [
-		heroes.getImprintStats(hero.name, hero.grade),
-	]);
-	additionalStats = addToAdditionalStats(imprintStats, additionalStats);
-
-	if ("ee" in hero) {
-		const exclusiveEquipmentStats = calculateStatsFromArray(heroBaseStats, [
-			heroes.getExclusiveEquipmentStats(hero.name, hero.ee),
-		]);
-		additionalStats = addToAdditionalStats(
-			exclusiveEquipmentStats,
-			additionalStats
+		const heroBaseStats = heroes.getBaseStats(heroName, 60);
+		let additionalStats = {};
+		Object.entries(heroBaseStats).forEach(
+			([key, value]) => (newStats[key] = value)
 		);
-	}
 
-	Object.entries(items).forEach(([key, value]) => {
-		if ("rank" in value) {
-			const itemBonusStats = calculateItemBonusStats(
-				heroBaseStats,
-				value
-			);
+		const bonusStats = calculateBonusStats(
+			heroBaseStats,
+			heroes.getBonusStats(heroName, 60)
+		);
+		additionalStats = addToAdditionalStats(bonusStats, additionalStats);
+
+		if (heroGrade) {
+			const imprintStats = calculateStatsFromArray(heroBaseStats, [
+				heroes.getImprintStats(heroName, heroGrade),
+			]);
 			additionalStats = addToAdditionalStats(
-				itemBonusStats,
+				imprintStats,
 				additionalStats
 			);
 		}
-	});
 
-	if ("name" in artifact) {
-		var artifactStats = artifacts.getBaseStats(
-			artifact.name,
-			artifact.enhance
+		if (heroEE) {
+			const exclusiveEquipmentStats = calculateStatsFromArray(
+				heroBaseStats,
+				[heroes.getExclusiveEquipmentStats(heroName, heroEE)]
+			);
+			additionalStats = addToAdditionalStats(
+				exclusiveEquipmentStats,
+				additionalStats
+			);
+		}
+
+		Object.entries(items).forEach(([key, value]) => {
+			if ("rank" in value) {
+				const itemBonusStats = calculateItemBonusStats(
+					heroBaseStats,
+					value
+				);
+				additionalStats = addToAdditionalStats(
+					itemBonusStats,
+					additionalStats
+				);
+			}
+		});
+
+		if ("name" in artifact) {
+			var artifactStats = artifacts.getBaseStats(
+				artifact.name,
+				artifact.enhance
+			);
+			additionalStats = addToAdditionalStats(
+				artifactStats,
+				additionalStats
+			);
+		}
+
+		return (
+			<div css={style.statTable}>
+				{Object.entries(newStats).map(([key, value], index) => (
+					<div
+						css={[style.text("else", "small"), style.statRow]}
+						key={index}
+					>
+						<span>{toUpperCaseWord(key)}</span>
+						<span>
+							{toViewFormat(
+								key,
+								value + (additionalStats[key] || 0)
+							)}
+						</span>
+						{additionalStats[key] && (
+							<>
+								<span>^</span>
+								<span>
+									{toViewFormat(key, additionalStats[key])}
+								</span>
+							</>
+						)}
+					</div>
+				))}
+			</div>
 		);
-		additionalStats = addToAdditionalStats(artifactStats, additionalStats);
 	}
-
-	return (
-		<div css={style.statTable}>
-			{Object.entries(newStats).map(([key, value], index) => (
-				<div
-					css={[style.text("else", "small"), style.statRow]}
-					key={index}
-				>
-					<span>{toUpperCaseWord(key)}</span>
-					<span>
-						{toViewFormat(key, value + (additionalStats[key] || 0))}
-					</span>
-					{additionalStats[key] && (
-						<>
-							<span>^</span>
-							<span>
-								{toViewFormat(key, additionalStats[key])}
-							</span>
-						</>
-					)}
-				</div>
-			))}
-		</div>
-	);
-});
+);
 
 export default StatTable;
