@@ -18,7 +18,7 @@ export default function Autocomplete({ options = [], value, setValue }) {
 			setValue(newValue);
 		},
 		getOptionLabel: (option) => option.label,
-		isOptionEqualToValue: (option, value) => option.label === value.label,
+		isOptionEqualToValue: (option, value) => option.value === value.value,
 	});
 
 	return (

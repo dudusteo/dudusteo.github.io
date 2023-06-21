@@ -130,6 +130,16 @@ const StatTable = React.memo(({ hero, artifact, items }) => {
 	]);
 	additionalStats = addToAdditionalStats(imprintStats, additionalStats);
 
+	if ("ee" in hero) {
+		const exclusiveEquipmentStats = calculateStatsFromArray(heroBaseStats, [
+			heroes.getExclusiveEquipmentStats(hero.name, hero.ee),
+		]);
+		additionalStats = addToAdditionalStats(
+			exclusiveEquipmentStats,
+			additionalStats
+		);
+	}
+
 	Object.entries(items).forEach(([key, value]) => {
 		if ("rank" in value) {
 			const itemBonusStats = calculateItemBonusStats(

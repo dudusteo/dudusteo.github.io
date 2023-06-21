@@ -14,6 +14,35 @@ const imprintMap = {
 
 const heroes = {
 	data,
+	getExclusiveEquipmentStats: (heroName, heroEEValue) => {
+		const exclusiveEquipments = data[heroName].ex_equip;
+
+		return {
+			type: imprintMap[exclusiveEquipments[0].stat.type],
+			value: heroEEValue,
+		};
+	},
+	getExclusiveEquipmentOptions: (heroName) => {
+		const exclusiveEquipments = data[heroName].ex_equip;
+		if (exclusiveEquipments.length === 0) return [];
+
+		const minValue = exclusiveEquipments[0].stat.value * 100;
+		const maxValue = minValue * 2;
+
+		const exclusiveEqupimentOptions = [];
+		for (let stepValue = minValue; stepValue <= maxValue; stepValue++) {
+			exclusiveEqupimentOptions.push({
+				label:
+					imprintMap[exclusiveEquipments[0].stat.type] +
+					" " +
+					stepValue,
+				type: imprintMap[exclusiveEquipments[0].stat.type],
+				value: stepValue.toFixed(1),
+			});
+		}
+
+		return exclusiveEqupimentOptions;
+	},
 	getImprintStats: (heroName, heroGrade) => {
 		return {
 			type: imprintMap[data[heroName].self_devotion.type],

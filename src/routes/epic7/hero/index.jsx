@@ -10,6 +10,7 @@ import HeroIcon from "../../../core/hero-icon";
 import StatTable from "../../../core/stat-table";
 import Dropdown from "../../../core/dropdown";
 import ImprintSlot from "../../../core/imprint-slot";
+import ExclusiveEquipmentSlot from "../../../core/exclusive-equipment-slot";
 
 const EncodeItem = (item) => {
 	return JSON.stringify(item);
@@ -31,7 +32,20 @@ const parseURLifiedBuild = (searchParams) => {
 	if (searchParams.get("hero")) {
 		build.hero = {
 			name: searchParams.get("hero"),
+		};
+	}
+
+	if (searchParams.get("heroGrade")) {
+		build.hero = {
+			...build.hero,
 			grade: searchParams.get("heroGrade"),
+		};
+	}
+
+	if (searchParams.get("ee")) {
+		build.hero = {
+			...build.hero,
+			ee: searchParams.get("ee"),
 		};
 	}
 
@@ -83,6 +97,10 @@ const Hero = () => {
 			const updatedParams = new URLSearchParams(prevSearchParams);
 			updatedParams.set("hero", newHero.name);
 			updatedParams.set("heroGrade", newHero.grade);
+			if (newHero.ee) {
+				updatedParams.set("ee", newHero.ee);
+			}
+
 			return updatedParams.toString();
 		});
 	};
@@ -117,6 +135,10 @@ const Hero = () => {
 						}
 					/>
 				</div>
+				<ExclusiveEquipmentSlot
+					hero={hero}
+					setHero={(newHero) => handleHero(newHero)}
+				/>
 
 				<ImprintSlot
 					hero={hero}

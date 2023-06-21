@@ -29,9 +29,9 @@ const style = {
 			grid-area: left;
 			min-width: 450px;
 			display: grid;
-			grid-template-rows: 3fr 2fr;
-			grid-template-areas: "top" "bottom";
-			& > div:nth-of-type(2) {
+			grid-template-rows: 1fr 0.5fr 0.5fr 2fr;
+			grid-template-areas: "top" "." "." "bottom";
+			& > div:nth-of-type(4) {
 				align-self: end;
 				grid-area: bottom;
 			}
