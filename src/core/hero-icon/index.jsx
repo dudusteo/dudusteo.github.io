@@ -21,7 +21,7 @@ const HeroIcon = React.memo(({ heroName }) => {
 				alpha: true,
 				viewport: {
 					x: -400,
-					y: -50,
+					y: 0,
 					width: 800,
 					height: 800,
 				},

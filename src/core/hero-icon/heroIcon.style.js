@@ -8,9 +8,12 @@ const style = {
 		}
 	`,
 	image: (theme) => css`
-		margin-top: 100px;
 		display: flex;
 		justify-content: center;
+		img {
+			margin: auto;
+			height: 200px;
+		}
 	`,
 };
 

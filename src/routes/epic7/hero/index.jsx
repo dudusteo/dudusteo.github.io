@@ -136,50 +136,54 @@ const Hero = () => {
 
 	return (
 		<div css={style.background}>
-			<div css={[style.stats]}>
-				<div style={{ color: "#ffffff" }}>
-					<Dropdown
-						options={Object.keys(heroes.data)}
-						value={heroName}
-						setValue={handleHeroName}
+			<div css={style.build}>
+				<div css={[style.stats]}>
+					<div style={{ color: "#ffffff" }}>
+						<Dropdown
+							options={Object.keys(heroes.data)}
+							value={heroName}
+							setValue={handleHeroName}
+						/>
+					</div>
+					<ExclusiveEquipmentSlot
+						heroName={heroName}
+						heroEE={heroEE}
+						setEE={handleHeroEE}
+					/>
+
+					<ImprintSlot
+						heroName={heroName}
+						heroGrade={heroGrade}
+						setGrade={handleHeroGrade}
+					/>
+					<StatTable
+						heroName={heroName}
+						heroGrade={heroGrade}
+						heroEE={heroEE}
+						artifact={artifact}
+						items={items}
 					/>
 				</div>
-				<ExclusiveEquipmentSlot
-					heroName={heroName}
-					heroEE={heroEE}
-					setEE={handleHeroEE}
-				/>
 
-				<ImprintSlot
-					heroName={heroName}
-					heroGrade={heroGrade}
-					setGrade={handleHeroGrade}
-				/>
-				<StatTable
-					heroName={heroName}
-					heroGrade={heroGrade}
-					heroEE={heroEE}
-					artifact={artifact}
-					items={items}
-				/>
-			</div>
+				<div css={style.hero}>
+					<HeroIcon heroName={heroName} />
+				</div>
 
-			<div css={style.hero}>
-				<HeroIcon heroName={heroName} />
-			</div>
-
-			<div css={style.items}>
-				{Object.keys(items).map((key, index) => (
-					<ItemSlot
-						key={index}
-						item={items[key]}
-						setItem={(item) => handleItem(item, index)}
+				<div css={style.items}>
+					{Object.keys(items).map((key, index) => (
+						<ItemSlot
+							key={index}
+							item={items[key]}
+							setItem={(item) => handleItem(item, index)}
+						/>
+					))}
+					<ArtifactSlot
+						artifact={artifact}
+						setArtifact={(newArtifact) =>
+							handleArtifact(newArtifact)
+						}
 					/>
-				))}
-				<ArtifactSlot
-					artifact={artifact}
-					setArtifact={(newArtifact) => handleArtifact(newArtifact)}
-				/>
+				</div>
 			</div>
 		</div>
 	);

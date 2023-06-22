@@ -3,12 +3,6 @@ import { css } from "@emotion/react/macro";
 const style = {
 	background: (input) => (theme) =>
 		css`
-			padding: 3em;
-			display: grid;
-			grid-template-columns: 1fr 3fr;
-			grid-template-areas: "left right";
-			height: 40em;
-
 			background: linear-gradient(
 					to bottom,
 					#000000ff,
@@ -24,13 +18,22 @@ const style = {
 					#000000ff 100%
 				);
 		`,
+	build: (input) => (theme) =>
+		css`
+			margin: auto auto;
+			padding: 3em;
+			display: grid;
+			grid-template-columns: 28em 40em;
+			grid-template-areas: "left right";
+			grid-template-rows: 39em;
+		`,
 	stats: (input) => (theme) =>
 		css`
 			grid-area: left;
-			min-width: 450px;
 			display: grid;
 			grid-template-rows: 1fr 0.5fr 0.5fr 2fr;
 			grid-template-areas: "top" "." "." "bottom";
+
 			& > div:nth-of-type(4) {
 				align-self: end;
 				grid-area: bottom;
@@ -38,8 +41,11 @@ const style = {
 		`,
 	hero: (input) => (theme) =>
 		css`
+			margin: -3em -9em;
 			grid-area: right;
-			height: 34em;
+
+			height: 45em;
+			min-width: 57em;
 			& > * {
 				height: 100%;
 			}
