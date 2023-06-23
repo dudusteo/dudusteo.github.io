@@ -3,6 +3,7 @@ import { css } from "@emotion/react/macro";
 const style = {
 	background: (rank) => (theme) =>
 		css`
+			cursor: pointer;
 			border: 2px solid ${theme.border.secondary};
 			border-radius: 15px;
 			height: 6em;

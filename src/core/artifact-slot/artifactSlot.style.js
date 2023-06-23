@@ -3,6 +3,7 @@ import { css } from "@emotion/react/macro";
 const style = {
 	artifactSlot: (input) => (theme) =>
 		css`
+			cursor: pointer;
 			height: 8em;
 			width: 8em;
 
