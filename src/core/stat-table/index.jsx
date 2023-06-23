@@ -174,10 +174,7 @@ const StatTable = React.memo(
 		return (
 			<div css={style.statTable}>
 				{Object.entries(newStats).map(([key, value], index) => (
-					<div
-						css={[style.text("else", "small"), style.statRow]}
-						key={index}
-					>
+					<div css={[style.text, style.statRow]} key={index}>
 						<span>{toUpperCaseWord(key)}</span>
 						<span>
 							{toViewFormat(
@@ -185,13 +182,15 @@ const StatTable = React.memo(
 								value + (additionalStats[key] || 0)
 							)}
 						</span>
-						{additionalStats[key] && (
-							<>
+						{additionalStats[key] ? (
+							<div css={style.additionalText}>
 								<span>^</span>
 								<span>
 									{toViewFormat(key, additionalStats[key])}
 								</span>
-							</>
+							</div>
+						) : (
+							<div />
 						)}
 					</div>
 				))}

@@ -2,6 +2,9 @@ import { css } from "@emotion/react/macro";
 
 const style = {
 	spine: (theme) => css`
+		canvas {
+			position: absolute;
+		}
 		.spine-player-error {
 			display: none !important;
 			opacity: 0;

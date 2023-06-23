@@ -23,9 +23,16 @@ const style = {
 			margin: auto auto;
 			padding: 3em;
 			display: grid;
-			grid-template-columns: 28em 40em;
-			grid-template-areas: "left right";
-			grid-template-rows: 39em;
+			grid-template-rows: auto;
+			grid-template-columns:
+				auto minmax(20em, 36em) minmax(20em, 40em)
+				auto;
+			grid-template-areas: ". left right .";
+
+			@media (width <= 46em) {
+				grid-template-columns: auto;
+				grid-template-areas: "right" "left";
+			}
 		`,
 	stats: (input) => (theme) =>
 		css`
@@ -41,13 +48,10 @@ const style = {
 		`,
 	hero: (input) => (theme) =>
 		css`
-			margin: -3em -9em;
 			grid-area: right;
 
-			height: 45em;
-			min-width: 57em;
 			& > * {
-				height: 100%;
+				height: 45em;
 			}
 		`,
 	items: (input) => (theme) =>
