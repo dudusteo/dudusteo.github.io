@@ -12,10 +12,12 @@ import Home from "./routes/home";
 import Epic7 from "./routes/epic7";
 import GearScoreCalculator from "./routes/epic7/gear-score-calculator";
 import Hero from "./routes/epic7/hero";
+import NavBar from "./core/nav-bar";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<ThemeProvider theme={theme}>
 		<HashRouter>
+			<NavBar />
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/epic7" element={<Epic7 />} />

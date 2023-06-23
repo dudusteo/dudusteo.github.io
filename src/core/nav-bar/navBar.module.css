@@ -1,0 +1,29 @@
+.nav_bar {
+	height: 50px;
+	background-color: var(--primary-color);
+	display: flex;
+	border-bottom: 1px solid var(--secondary-color);
+}
+
+.button {
+	cursor: pointer;
+	color: var(--primary-text);
+	padding: 1em;
+	position: relative;
+}
+
+.button::before {
+	background: linear-gradient(to right, transparent, var(--secondary-color));
+	opacity: 0.5;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+}
+
+.button:hover::before {
+	transition: width 400ms ease;
+	width: 100%;
+}
