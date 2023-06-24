@@ -1,15 +1,16 @@
 import * as React from "react";
 
-import styles from "./navBar.module.css";
+/** @jsxImportSource @emotion/react */
+import style from "./navBar.style";
 
 const NavBar = () => {
 	return (
-		<ul className={styles.nav_bar}>
-			<a href="#/epic7/gear-score-calculator">
-				<button className={styles.button}>Gear Score Calculator</button>
-			</a>
-			<a className={styles.item} href="#/epic7/hero">
-				<button className={styles.button}>Builder</button>
+		<ul css={style.navBar}>
+			{/* <a href="#/epic7/gear-score-calculator">
+				<button css={style.button}>Gear Score Calculator</button>
+			</a> */}
+			<a href="#/epic7/hero">
+				<button css={style.button}>Builder</button>
 			</a>
 		</ul>
 	);

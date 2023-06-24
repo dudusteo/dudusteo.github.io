@@ -1,5 +1,9 @@
 import { css } from "@emotion/react/macro";
 
+// 46 -> 82
+
+// 462px -> 46
+
 const style = {
 	background: (input) => (theme) =>
 		css`
@@ -23,13 +27,14 @@ const style = {
 			margin: auto auto;
 			padding: 3em;
 			display: grid;
-			grid-template-rows: auto;
+			grid-template-rows: clamp(20rem, -11.9444rem + 69.4444vw, 45rem);
 			grid-template-columns:
 				auto minmax(20em, 36em) minmax(20em, 40em)
 				auto;
 			grid-template-areas: ". left right .";
 
 			@media (width <= 46em) {
+				grid-template-rows: clamp(20rem, 3.1387rem + 58.3942vw, 30rem);
 				grid-template-columns: auto;
 				grid-template-areas: "right" "left";
 			}
@@ -51,7 +56,10 @@ const style = {
 			grid-area: right;
 
 			& > * {
-				height: 45em;
+				height: clamp(20rem, -11.9444rem + 69.4444vw, 45rem);
+				@media (width <= 46em) {
+					height: clamp(20rem, 3.1387rem + 58.3942vw, 30rem);
+				}
 			}
 		`,
 	items: (input) => (theme) =>
