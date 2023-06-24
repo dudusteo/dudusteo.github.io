@@ -5,16 +5,25 @@ import Artifact from "../artifact";
 import ArtifactIcon from "../artifact-icon";
 import { ClickAwayListener, Popper } from "@mui/base";
 
-const ArtifactSlot = ({ artifact, setArtifact }) => {
-	const [anchorEl, setAnchorEl] = React.useState(null);
+interface ArtifactSlotProps {
+	artifact: Artifact | null;
+	setArtifact: (newArtifact: Artifact) => void;
+}
 
-	const handleClick = (event) => {
+const ArtifactSlot = ({ artifact, setArtifact }: ArtifactSlotProps) => {
+	const [anchorEl, setAnchorEl] = React.useState<
+		(EventTarget & SVGSVGElement) | null
+	>(null);
+
+	const handleClick = (
+		event: React.MouseEvent<SVGSVGElement, MouseEvent>
+	) => {
 		setAnchorEl(anchorEl ? null : event.currentTarget);
 	};
 
 	const removeArtifact = () => {
 		setAnchorEl(null);
-		setArtifact({});
+		setArtifact(null);
 	};
 
 	const open = Boolean(anchorEl);
@@ -34,8 +43,7 @@ const ArtifactSlot = ({ artifact, setArtifact }) => {
 						<path d="M 96 32 L 96 76 A 12 12 90 0 1 88 88 L 54 106 A 12 12 90 0 1 42 106 L 8 88 A 12 12 90 0 1 0 76 L 0 32 A 12 12 90 0 1 8 20 L 42 2 A 12 12 90 0 1 54 2 L 88 20 A 12 12 90 0 1 96 32" />
 					</svg>
 
-					{"name" in artifact && <ArtifactIcon artifact={artifact} />}
-					<div>{artifact.enhance}</div>
+					{artifact && <ArtifactIcon artifact={artifact} />}
 				</div>
 				{open ? (
 					<Popper
@@ -47,9 +55,7 @@ const ArtifactSlot = ({ artifact, setArtifact }) => {
 					>
 						<Artifact
 							artifact={artifact}
-							setArtifact={(newArtifact) =>
-								setArtifact(newArtifact)
-							}
+							setArtifact={setArtifact}
 							removeArtifact={removeArtifact}
 						/>
 					</Popper>

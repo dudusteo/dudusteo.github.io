@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import style from "./itemIcon.style";
 
 const ItemIcon = ({ item }) => {

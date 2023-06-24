@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import style from "./exclusiveEquipmentSlot.style";
 import Autocomplete from "../autocomplete";
 import heroes from "../../json/heroes";
@@ -16,7 +14,7 @@ const ExclusiveEquipmentSlot = ({ heroName, heroEE, setEE }) => {
 						return option.value === heroEE;
 					})}
 					setValue={(value) => {
-						setEE(value.value || "");
+						setEE(value.value || null);
 					}}
 				/>
 			)}

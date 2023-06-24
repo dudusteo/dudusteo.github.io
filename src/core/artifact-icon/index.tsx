@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import style from "./artifactIcon.style";
 import artifacts from "../../json/artifacts";
 

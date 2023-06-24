@@ -1,4 +1,3 @@
-import * as React from "react";
 import useAutocomplete from "@mui/base/useAutocomplete";
 
 import style from "./autocomplete.style";
@@ -22,7 +21,7 @@ export default function Autocomplete({ options = [], value = null, setValue }) {
 
 	return (
 		<>
-			<div {...getRootProps()}>
+			<div css={style.autocomplete} {...getRootProps()}>
 				<input {...getInputProps()} />
 			</div>
 			{groupedOptions.length > 0 && (

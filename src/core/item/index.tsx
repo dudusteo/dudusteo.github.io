@@ -14,19 +14,19 @@ import {
 } from "../../json/gear";
 
 interface ItemProps {
-	item: any;
-	setItem: any;
-	removeItem: any;
+	item: Item | null;
+	setItem: (newItem: Item) => void;
+	removeItem: () => void;
 }
 
 const Item = React.memo(({ item, setItem, removeItem }: ItemProps) => {
 	React.useEffect(() => {
-		if (Object.keys(item).length === 0) {
-			setItem(getBaseItem(85, "Epic"));
+		if (!item) {
+			setItem(getBaseItem(90, "Epic"));
 		}
 	}, []);
 
-	if (Object.keys(item).length === 0) {
+	if (!item) {
 		return <div>loading ...</div>;
 	}
 

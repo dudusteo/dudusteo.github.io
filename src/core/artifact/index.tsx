@@ -10,20 +10,20 @@ const getBaseArtifact = () => {
 };
 
 interface ArtifactProps {
-	artifact: any;
-	setArtifact: any;
-	removeArtifact: any;
+	artifact: Artifact | null;
+	setArtifact: (newArtifact: Artifact) => void;
+	removeArtifact: () => void;
 }
 
 const Artifact = React.memo(
 	({ artifact, setArtifact, removeArtifact }: ArtifactProps) => {
 		React.useEffect(() => {
-			if (Object.keys(artifact).length === 0) {
+			if (!artifact) {
 				setArtifact(getBaseArtifact());
 			}
 		}, []);
 
-		if (Object.keys(artifact).length === 0) {
+		if (!artifact) {
 			return <div>loading ...</div>;
 		}
 

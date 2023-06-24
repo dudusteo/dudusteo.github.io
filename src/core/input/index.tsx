@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import style from "./input.style";
 
 const Input = (props) => {

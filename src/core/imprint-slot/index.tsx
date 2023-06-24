@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import style from "./imprintSlot.style";
 
 import heroes from "../../json/heroes";
@@ -13,9 +11,7 @@ const ImprintSlot = ({ heroName, heroGrade, setGrade }) => {
 			<Autocomplete
 				options={options}
 				value={options.find((option) => option.grade === heroGrade)}
-				setValue={(value) => {
-					setGrade(value.grade || "");
-				}}
+				setValue={(value) => setGrade(value.grade || null)}
 			/>
 		</div>
 	);

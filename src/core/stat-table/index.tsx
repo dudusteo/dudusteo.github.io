@@ -109,93 +109,87 @@ const addToAdditionalStats = (bonusStats, additionalStats) => {
 	return additionalStats;
 };
 
-const StatTable = React.memo(
-	({ heroName, heroGrade, heroEE, artifact, items }) => {
-		let newStats = {};
+interface StatTableProps {
+	hero: Hero;
+	artifact: Artifact | null;
+	items: any;
+}
 
-		const heroBaseStats = heroes.getBaseStats(heroName, 60);
-		let additionalStats = {};
-		Object.entries(heroBaseStats).forEach(
-			([key, value]) => (newStats[key] = value)
-		);
+const StatTable = React.memo(({ hero, artifact, items }: StatTableProps) => {
+	const newStats = {};
 
-		const bonusStats = calculateBonusStats(
-			heroBaseStats,
-			heroes.getBonusStats(heroName, 60)
-		);
-		additionalStats = addToAdditionalStats(bonusStats, additionalStats);
+	const heroBaseStats = heroes.getBaseStats(hero.name, 60);
+	let additionalStats = {};
+	Object.entries(heroBaseStats).forEach(
+		([key, value]) => (newStats[key] = value)
+	);
 
-		if (heroGrade) {
-			const imprintStats = calculateStatsFromArray(heroBaseStats, [
-				heroes.getImprintStats(heroName, heroGrade),
-			]);
-			additionalStats = addToAdditionalStats(
-				imprintStats,
-				additionalStats
-			);
-		}
+	const bonusStats = calculateBonusStats(
+		heroBaseStats,
+		heroes.getBonusStats(hero.name, 60)
+	);
+	additionalStats = addToAdditionalStats(bonusStats, additionalStats);
 
-		if (heroEE) {
-			const exclusiveEquipmentStats = calculateStatsFromArray(
-				heroBaseStats,
-				[heroes.getExclusiveEquipmentStats(heroName, heroEE)]
-			);
-			additionalStats = addToAdditionalStats(
-				exclusiveEquipmentStats,
-				additionalStats
-			);
-		}
+	if (hero.grade) {
+		const imprintStats = calculateStatsFromArray(heroBaseStats, [
+			heroes.getImprintStats(hero.name, hero.grade),
+		]);
+		additionalStats = addToAdditionalStats(imprintStats, additionalStats);
+	}
 
-		Object.entries(items).forEach(([key, value]) => {
-			if ("rank" in value) {
-				const itemBonusStats = calculateItemBonusStats(
-					heroBaseStats,
-					value
-				);
-				additionalStats = addToAdditionalStats(
-					itemBonusStats,
-					additionalStats
-				);
-			}
-		});
-
-		if ("name" in artifact) {
-			var artifactStats = artifacts.getBaseStats(
-				artifact.name,
-				artifact.enhance
-			);
-			additionalStats = addToAdditionalStats(
-				artifactStats,
-				additionalStats
-			);
-		}
-
-		return (
-			<div css={style.statTable}>
-				{Object.entries(newStats).map(([key, value], index) => (
-					<div css={[style.text, style.statRow]} key={index}>
-						<span>{toUpperCaseWord(key)}</span>
-						<span>
-							{toViewFormat(
-								key,
-								value + (additionalStats[key] || 0)
-							)}
-						</span>
-						{additionalStats[key] ? (
-							<div css={style.additionalText}>
-								<span>^</span>
-								<span>
-									{toViewFormat(key, additionalStats[key])}
-								</span>
-							</div>
-						) : (
-							<div />
-						)}
-					</div>
-				))}
-			</div>
+	if (hero.ee) {
+		const exclusiveEquipmentStats = calculateStatsFromArray(heroBaseStats, [
+			heroes.getExclusiveEquipmentStats(hero.name, hero.ee),
+		]);
+		additionalStats = addToAdditionalStats(
+			exclusiveEquipmentStats,
+			additionalStats
 		);
 	}
-);
+
+	Object.entries(items).forEach(([, value]) => {
+		if (value) {
+			const itemBonusStats = calculateItemBonusStats(
+				heroBaseStats,
+				value
+			);
+			additionalStats = addToAdditionalStats(
+				itemBonusStats,
+				additionalStats
+			);
+		}
+	});
+
+	if (artifact) {
+		const artifactStats = artifacts.getBaseStats(
+			artifact.name,
+			artifact.enhance
+		);
+		additionalStats = addToAdditionalStats(artifactStats, additionalStats);
+	}
+
+	return (
+		<div css={style.statTable}>
+			{Object.entries(newStats).map(([key, value], index) => (
+				<div css={[style.text, style.statRow]} key={index}>
+					<span>{toUpperCaseWord(key)}</span>
+					<span>
+						{toViewFormat(key, value + (additionalStats[key] || 0))}
+					</span>
+					{additionalStats[key] ? (
+						<div css={style.additionalText}>
+							<span>^</span>
+							<span>
+								{toViewFormat(key, additionalStats[key])}
+							</span>
+						</div>
+					) : (
+						<div />
+					)}
+				</div>
+			))}
+		</div>
+	);
+});
 
 export default StatTable;

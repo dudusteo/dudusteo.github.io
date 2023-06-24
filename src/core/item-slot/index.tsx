@@ -5,16 +5,25 @@ import Item from "../item";
 import ItemIcon from "../item-icon";
 import { ClickAwayListener, Popper } from "@mui/base";
 
-const ItemSlot = ({ item, setItem }) => {
-	const [anchorEl, setAnchorEl] = React.useState(null);
+interface ItemSlotProps {
+	item: Item | null;
+	setItem: (newItem: Item) => void;
+}
 
-	const handleClick = (event) => {
+const ItemSlot = ({ item, setItem }: ItemSlotProps) => {
+	const [anchorEl, setAnchorEl] = React.useState<
+		(EventTarget & HTMLButtonElement) | null
+	>(null);
+
+	const handleClick = (
+		event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+	) => {
 		setAnchorEl(anchorEl ? null : event.currentTarget);
 	};
 
-	const removeItem = (event) => {
+	const removeItem = () => {
 		setAnchorEl(null);
-		setItem({});
+		setItem(null);
 	};
 
 	const open = Boolean(anchorEl);
@@ -29,7 +38,7 @@ const ItemSlot = ({ item, setItem }) => {
 					css={style.background("empty")}
 					onClick={handleClick}
 				>
-					{"rank" in item && <ItemIcon item={item}></ItemIcon>}
+					{item && <ItemIcon item={item}></ItemIcon>}
 				</button>
 				{open ? (
 					<Popper
@@ -41,7 +50,7 @@ const ItemSlot = ({ item, setItem }) => {
 					>
 						<Item
 							item={item}
-							setItem={(newItem) => setItem(newItem)}
+							setItem={setItem}
 							removeItem={removeItem}
 						></Item>
 					</Popper>

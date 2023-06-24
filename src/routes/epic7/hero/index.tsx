@@ -21,32 +21,22 @@ const DecodeItem = (encodedItem) => {
 
 const baseBuild = {
 	hero: { name: "Abigail", grade: null, ee: null },
-	artifact: {},
-	items: { item0: {}, item1: {}, item2: {}, item3: {}, item4: {}, item5: {} },
+	artifact: null,
+	items: {
+		item0: null,
+		item1: null,
+		item2: null,
+		item3: null,
+		item4: null,
+		item5: null,
+	},
 };
 
 const parseURLifiedBuild = (searchParams) => {
 	const build = baseBuild;
 
 	if (searchParams.get("hero")) {
-		build.hero = {
-			...build.hero,
-			name: searchParams.get("hero"),
-		};
-	}
-
-	if (searchParams.get("heroGrade")) {
-		build.hero = {
-			...build.hero,
-			grade: searchParams.get("heroGrade"),
-		};
-	}
-
-	if (searchParams.get("ee")) {
-		build.hero = {
-			...build.hero,
-			ee: searchParams.get("ee"),
-		};
+		build.hero = DecodeItem(searchParams.get("hero"));
 	}
 
 	if (searchParams.get("artifact")) {
@@ -67,10 +57,8 @@ const parseURLifiedBuild = (searchParams) => {
 };
 
 const Hero = () => {
-	const [heroName, setHeroName] = React.useState(baseBuild.hero.name);
-	const [heroGrade, setHeroGrade] = React.useState("");
-	const [heroEE, setHeroEE] = React.useState("");
-	const [artifact, setArtifact] = React.useState(baseBuild.artifact);
+	const [hero, setHero] = React.useState<Hero>(baseBuild.hero);
+	const [artifact, setArtifact] = React.useState<Artifact | null>(null);
 	const [items, setItems] = React.useState(baseBuild.items);
 
 	const [searchParams, setSearchParams] = useSearchParams();
@@ -78,46 +66,60 @@ const Hero = () => {
 	React.useEffect(() => {
 		const parsedURLBuild = parseURLifiedBuild(searchParams);
 
-		setArtifact((prevArtifact) =>
-			JSON.stringify(prevArtifact) ===
-			JSON.stringify(parsedURLBuild.artifact)
+		setArtifact((prevArtifact: Artifact) =>
+			EncodeItem(prevArtifact) === EncodeItem(parsedURLBuild.artifact)
 				? prevArtifact
 				: parsedURLBuild.artifact
 		);
 
-		setHeroName(parsedURLBuild.hero.name);
-		setHeroGrade(parsedURLBuild.hero.grade || "");
-		setHeroEE(parsedURLBuild.hero.ee || "");
+		setHero((prevHero: Hero) =>
+			EncodeItem(prevHero) === EncodeItem(parsedURLBuild.hero)
+				? prevHero
+				: parsedURLBuild.hero
+		);
 
 		setItems((prevItems) => ({ ...prevItems, ...parsedURLBuild.items }));
 	}, [searchParams]);
 
-	const handleHeroName = (newHeroName) => {
+	const handleHeroName = (newHeroName: string) => {
 		setSearchParams((prevSearchParams) => {
 			const updatedParams = new URLSearchParams(prevSearchParams);
-			updatedParams.set("hero", newHeroName.label);
+			const newHero = {
+				name: newHeroName,
+				grade: null,
+				ee: null,
+			};
+			updatedParams.set("hero", EncodeItem(newHero));
 			return updatedParams.toString();
 		});
 	};
 
-	const handleHeroGrade = (newHeroGrade) => {
+	const handleHeroGrade = (newHeroGrade: string | null) => {
 		setSearchParams((prevSearchParams) => {
 			const updatedParams = new URLSearchParams(prevSearchParams);
-			updatedParams.set("heroGrade", newHeroGrade);
+			const newHero = {
+				...hero,
+				grade: newHeroGrade,
+			};
+			updatedParams.set("hero", EncodeItem(newHero));
 			return updatedParams.toString();
 		});
 	};
 
-	const handleHeroEE = (newEE) => {
+	const handleHeroEE = (newEE: number | null) => {
 		setSearchParams((prevSearchParams) => {
 			const updatedParams = new URLSearchParams(prevSearchParams);
-			updatedParams.set("ee", newEE);
+			const newHero = {
+				...hero,
+				ee: newEE,
+			};
+			updatedParams.set("hero", EncodeItem(newHero));
 			return updatedParams.toString();
 		});
 	};
 
 	const handleItem = (newItem, index) => {
-		setSearchParams((prevSearchParams) => {
+		setSearchParams((prevSearchParams: URLSearchParams) => {
 			const updatedParams = new URLSearchParams(prevSearchParams);
 
 			updatedParams.set("item" + index, EncodeItem(newItem));
@@ -126,13 +128,15 @@ const Hero = () => {
 		});
 	};
 
-	const handleArtifact = (newArtifact) => {
+	const handleArtifact = (newArtifact: Artifact | null) => {
 		setSearchParams((prevSearchParams) => {
 			const updatedParams = new URLSearchParams(prevSearchParams);
 			updatedParams.set("artifact", EncodeItem(newArtifact));
 			return updatedParams.toString();
 		});
 	};
+
+	console.log(items.item0);
 
 	return (
 		<div css={style.background}>
@@ -143,32 +147,26 @@ const Hero = () => {
 							options={heroes.getHeroOptions()}
 							value={heroes
 								.getHeroOptions()
-								.find((option) => option.label === heroName)}
-							setValue={handleHeroName}
+								.find((option) => option.label === hero.name)}
+							setValue={(value) => handleHeroName(value.label)}
 						/>
 					</div>
 					<ExclusiveEquipmentSlot
-						heroName={heroName}
-						heroEE={heroEE}
+						heroName={hero.name}
+						heroEE={hero.ee}
 						setEE={handleHeroEE}
 					/>
 
 					<ImprintSlot
-						heroName={heroName}
-						heroGrade={heroGrade}
+						heroName={hero.name}
+						heroGrade={hero.grade}
 						setGrade={handleHeroGrade}
 					/>
-					<StatTable
-						heroName={heroName}
-						heroGrade={heroGrade}
-						heroEE={heroEE}
-						artifact={artifact}
-						items={items}
-					/>
+					<StatTable hero={hero} artifact={artifact} items={items} />
 				</div>
 
 				<div css={style.hero}>
-					<HeroIcon heroName={heroName} />
+					<HeroIcon heroName={hero.name} />
 				</div>
 
 				<div css={style.items}>
@@ -181,9 +179,7 @@ const Hero = () => {
 					))}
 					<ArtifactSlot
 						artifact={artifact}
-						setArtifact={(newArtifact) =>
-							handleArtifact(newArtifact)
-						}
+						setArtifact={handleArtifact}
 					/>
 				</div>
 			</div>

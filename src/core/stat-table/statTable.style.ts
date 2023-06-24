@@ -1,11 +1,11 @@
-import { css } from "@emotion/react";
+import { Theme, css } from "@emotion/react";
 
 const style = {
-	statTable: (input) => (theme) =>
+	statTable: () => () =>
 		css`
 			height: fit-content;
 		`,
-	statRow: (input) => (theme) =>
+	statRow: () => () =>
 		css`
 			display: grid;
 			grid-template-columns: 2.5fr 1fr 1.2fr;
@@ -13,12 +13,12 @@ const style = {
 				justify-self: end;
 			}
 		`,
-	text: (type, size) => (theme) =>
+	text: () => (theme: Theme) =>
 		css`
-			color: ${theme.text.gray};
+			color: ${theme.text.color.gray};
 			font-size: clamp(1rem, -0.0222rem + 2.2222vw, 1.8rem);
 		`,
-	additionalText: (input) => (theme) =>
+	additionalText: () => () =>
 		css`
 			margin-left: 0.5em;
 			color: #ac5002;

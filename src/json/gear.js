@@ -175,7 +175,7 @@ export const getBaseItem = (level, rank) => {
 		level: level,
 		rank: rank,
 		enhance: 0,
-		main: { type: "Attack", value: mainStatValues[85].Attack },
+		main: { type: "Attack", value: mainStatValues[level].Attack },
 		substats: [],
 	};
 	for (var i = 0; i < rankInfo[rank].rolls.min; i++) {

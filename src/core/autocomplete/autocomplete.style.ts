@@ -1,7 +1,11 @@
 import { css } from "@emotion/react";
 
 const style = {
-	base: (input) => (theme) => css``,
+	autocomplete: () => () =>
+		css`
+			background-color: #00000040;
+			color: white;
+		`,
 };
 
 export default style;
