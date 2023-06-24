@@ -11,6 +11,7 @@ import StatTable from "../../../core/stat-table";
 import Dropdown from "../../../core/dropdown";
 import ImprintSlot from "../../../core/imprint-slot";
 import ExclusiveEquipmentSlot from "../../../core/exclusive-equipment-slot";
+import Autocomplete from "../../../core/autocomplete";
 
 const EncodeItem = (item) => {
 	return JSON.stringify(item);
@@ -95,7 +96,7 @@ const Hero = () => {
 	const handleHeroName = (newHeroName) => {
 		setSearchParams((prevSearchParams) => {
 			const updatedParams = new URLSearchParams(prevSearchParams);
-			updatedParams.set("hero", newHeroName);
+			updatedParams.set("hero", newHeroName.label);
 			return updatedParams.toString();
 		});
 	};
@@ -108,10 +109,10 @@ const Hero = () => {
 		});
 	};
 
-	const handleHeroEE = (newHero) => {
+	const handleHeroEE = (newEE) => {
 		setSearchParams((prevSearchParams) => {
 			const updatedParams = new URLSearchParams(prevSearchParams);
-			updatedParams.set("ee", newHero.ee);
+			updatedParams.set("ee", newEE);
 			return updatedParams.toString();
 		});
 	};
@@ -139,9 +140,11 @@ const Hero = () => {
 			<div css={style.build}>
 				<div css={[style.stats]}>
 					<div style={{ color: "#ffffff" }}>
-						<Dropdown
-							options={Object.keys(heroes.data)}
-							value={heroName}
+						<Autocomplete
+							options={heroes.getHeroOptions()}
+							value={heroes
+								.getHeroOptions()
+								.find((option) => option.label === heroName)}
 							setValue={handleHeroName}
 						/>
 					</div>

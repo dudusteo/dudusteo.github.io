@@ -4,7 +4,7 @@ import useAutocomplete from "@mui/base/useAutocomplete";
 /** @jsxImportSource @emotion/react */
 import style from "./autocomplete.style";
 
-export default function Autocomplete({ options = [], value, setValue }) {
+export default function Autocomplete({ options = [], value = null, setValue }) {
 	const {
 		getRootProps,
 		getInputProps,

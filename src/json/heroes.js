@@ -4,9 +4,10 @@ const createUniversalNotation = {
 	att_rate: (statValue) => ["AttackPercent", (statValue * 100).toFixed(1)],
 	def_rate: (statValue) => ["DefensePercent", (statValue * 100).toFixed(1)],
 	max_hp_rate: (statValue) => ["HealthPercent", (statValue * 100).toFixed(1)],
-	att: (statValue) => ["Attack", statValue],
-	def: (statValue) => ["Defense", statValue],
-	max_hp: (statValue) => ["Health", statValue],
+	att: (statValue) => ["Attack", parseInt(statValue)],
+	def: (statValue) => ["Defense", parseInt(statValue)],
+	max_hp: (statValue) => ["Health", parseInt(statValue)],
+	speed: (statValue) => ["Speed", parseInt(statValue)],
 	cri: (statValue) => [
 		"CriticalHitChancePercent",
 		(statValue * 100).toFixed(1),
@@ -20,6 +21,13 @@ const createUniversalNotation = {
 
 const heroes = {
 	data,
+	getHeroOptions: () => {
+		const heroOptions = [];
+		Object.entries(data).forEach(([key, value]) => {
+			heroOptions.push({ label: key, value: value.code });
+		});
+		return heroOptions;
+	},
 	getExclusiveEquipmentStats: (heroName, heroEEValue) => {
 		const exclusiveEquipments = data[heroName].ex_equip;
 
@@ -37,7 +45,9 @@ const heroes = {
 		const exclusiveEquipments = data[heroName].ex_equip;
 		if (exclusiveEquipments.length === 0) return [];
 
-		const minValue = exclusiveEquipments[0].stat.value * 100;
+		const minValue = createUniversalNotation[
+			exclusiveEquipments[0].stat.type
+		](exclusiveEquipments[0].stat.value)[1];
 		const maxValue = minValue * 2;
 
 		const exclusiveEqupimentOptions = [];
