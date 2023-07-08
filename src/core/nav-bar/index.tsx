@@ -9,6 +9,9 @@ const NavBar = () => {
 			<a href="#/epic7/hero">
 				<button css={style.button}>Builder</button>
 			</a>
+			<a href="#/epic7/stats">
+				<button css={style.button}>Stats</button>
+			</a>
 		</ul>
 	);
 };

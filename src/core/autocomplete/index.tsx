@@ -20,7 +20,7 @@ export default function Autocomplete({ options = [], value = null, setValue }) {
 	});
 
 	return (
-		<>
+		<div className="autocomplete">
 			<div css={style.autocomplete} {...getRootProps()}>
 				<input {...getInputProps()} />
 			</div>
@@ -33,6 +33,6 @@ export default function Autocomplete({ options = [], value = null, setValue }) {
 					))}
 				</ul>
 			)}
-		</>
+		</div>
 	);
 }

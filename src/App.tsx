@@ -4,6 +4,7 @@ import { Theme, ThemeProvider } from "@emotion/react";
 
 import NavBar from "./core/nav-bar";
 import Hero from "./routes/epic7/hero";
+import Stats from "./routes/epic7/stats";
 
 const theme: Theme = {
 	primary: "#101010",
@@ -40,6 +41,7 @@ const App = () => {
 				<NavBar />
 				<Routes>
 					<Route path="/epic7/hero" element={<Hero />} />
+					<Route path="/epic7/stats" element={<Stats />} />
 				</Routes>
 			</HashRouter>
 		</ThemeProvider>
