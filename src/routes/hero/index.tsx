@@ -1,15 +1,15 @@
 import * as React from "react";
 
 import style from "./hero.style";
-import ItemSlot from "../../../core/item-slot";
-import ArtifactSlot from "../../../core/artifact-slot";
+import ItemSlot from "../../core/item-slot";
+import ArtifactSlot from "../../core/artifact-slot";
 import { useSearchParams } from "react-router-dom";
-import heroes from "../../../json/heroes";
-import HeroIcon from "../../../core/hero-icon";
-import StatTable from "../../../core/stat-table";
-import ImprintSlot from "../../../core/imprint-slot";
-import ExclusiveEquipmentSlot from "../../../core/exclusive-equipment-slot";
-import Autocomplete from "../../../core/autocomplete";
+import heroes from "../../json/heroes";
+import HeroIcon from "../../core/hero-icon";
+import StatTable from "../../core/stat-table";
+import ImprintSlot from "../../core/imprint-slot";
+import ExclusiveEquipmentSlot from "../../core/exclusive-equipment-slot";
+import Autocomplete from "../../core/autocomplete";
 
 const EncodeItem = (item) => {
 	return JSON.stringify(item);
@@ -135,8 +135,6 @@ const Hero = () => {
 			return updatedParams.toString();
 		});
 	};
-
-	console.log(items.item0);
 
 	return (
 		<div css={style.background}>

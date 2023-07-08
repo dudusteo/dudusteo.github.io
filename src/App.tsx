@@ -3,8 +3,8 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import { Theme, ThemeProvider } from "@emotion/react";
 
 import NavBar from "./core/nav-bar";
-import Hero from "./routes/epic7/hero";
-import Stats from "./routes/epic7/stats";
+import Hero from "./routes/hero";
+import Stats from "./routes/stats";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
 
@@ -43,8 +43,8 @@ const App = () => {
 				<HashRouter>
 					<NavBar />
 					<Routes>
-						<Route path="/epic7/hero" element={<Hero />} />
-						<Route path="/epic7/stats" element={<Stats />} />
+						<Route path="/hero" element={<Hero />} />
+						<Route path="/stats" element={<Stats />} />
 					</Routes>
 				</HashRouter>
 			</Provider>
