@@ -22,7 +22,7 @@ const style = {
 					${theme.button.color[color].end + "f0"} 50%,
 					${theme.button.color[color].start + "ff"} 100%
 				);
-			color: ${theme.text.white};
+			color: ${theme.text.color.white};
 			font-size: ${theme.text.size[size] + "px"};
 
 			&:hover {

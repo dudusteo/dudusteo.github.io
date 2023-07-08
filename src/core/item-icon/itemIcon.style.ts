@@ -22,7 +22,7 @@ const style = {
 		`,
 	text: (rank) => (theme) =>
 		css`
-			color: ${theme.text.gold};
+			color: ${theme.text.color.gold};
 		`,
 };
 

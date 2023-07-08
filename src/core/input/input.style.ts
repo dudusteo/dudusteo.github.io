@@ -4,7 +4,7 @@ const style = {
 	container: (theme) => css`
 		& > input {
 			text-align: right;
-			color: ${theme.text.gray};
+			color: ${theme.text.color.gray};
 			opacity: 1;
 			width: 100px;
 			&:hover {
