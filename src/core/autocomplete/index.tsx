@@ -7,7 +7,8 @@ import { Interpolation, Theme } from "@emotion/react";
 
 interface Option {
 	label: string;
-	value: string | number;
+	value: string;
+	[x: string]: string;
 }
 
 interface AutocompleteProps {
@@ -20,13 +21,7 @@ interface AutocompleteProps {
 
 const Autocomplete = React.forwardRef(
 	(
-		{
-			options = [],
-			value = null,
-			onChange,
-			inputCss,
-			listboxCss,
-		}: AutocompleteProps,
+		{ options = [], value = null, onChange, listboxCss }: AutocompleteProps,
 		ref: React.ForwardedRef<HTMLDivElement>
 	) => {
 		const {

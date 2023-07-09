@@ -44,7 +44,7 @@ const style = {
 			//update
 			& > * {
 				margin-top: -7%;
-				margin-left: -42%;
+				margin-left: -50%;
 				width: clamp(18.5rem, 0rem + 246.6667vw, 74rem);
 				height: clamp(18.5rem, 0rem + 246.6667vw, 74rem);
 			}
