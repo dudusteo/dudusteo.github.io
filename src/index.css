@@ -1,3 +1,9 @@
+@font-face {
+	font-family: "Linotype Ordinar Regular";
+	src: url("../linotype-ordinar-regular.ttf") format("truetype");
+}
+
 body {
+	font-family: "Linotype Ordinar Regular";
 	background-color: #101010;
 }

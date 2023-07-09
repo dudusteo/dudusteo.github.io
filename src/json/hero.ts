@@ -37,6 +37,7 @@ interface HeroController {
 	getBaseStats: (heroName: string, heroLevel: number) => any;
 	getBonusStats: (heroName: string, heroLevel: number) => any;
 	getClassImage: (heroClass: string) => string;
+	getAttributeImage: (heroAttribute: string) => string;
 }
 
 const hero = {
@@ -162,6 +163,9 @@ const hero = {
 	},
 	getClassImage: (heroClass: string) => {
 		return Image.heroClass[heroClass];
+	},
+	getAttributeImage: (heroAttribute: string) => {
+		return Image.attribute[heroAttribute];
 	},
 };
 

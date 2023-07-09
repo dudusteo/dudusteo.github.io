@@ -12213,7 +12213,7 @@
 		}
 	},
 	"Juni": {
-		"code": "c2013",
+		"code": "c3151",
 		"_id": "juni",
 		"name": "Juni",
 		"moonlight": false,
@@ -17227,6 +17227,78 @@
 			}
 		}
 	},
+	"Ocean Breeze Luluca": {
+		"code": "c5082",
+		"_id": "ocean-breeze-luluca",
+		"name": "Ocean Breeze Luluca",
+		"moonlight": false,
+		"rarity": 5,
+		"attribute": "wind",
+		"role": "manauser",
+		"zodiac": "twins",
+		"self_devotion": {
+			"type": "res",
+			"grades": {
+				"B": 0.09,
+				"A": 0.135,
+				"S": 0.18,
+				"SS": 0.225,
+				"SSS": 0.27
+			}
+		},
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c5082_s.png",
+			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
+			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c5082_l.png"
+		},
+		"ex_equip": [],
+		"skills": {
+			"S1": {
+				"hitTypes": ["crit", "crushing", "normal", "miss"],
+				"rate": 1,
+				"pow": 1,
+				"targets": 1,
+				"options": []
+			},
+			"S2": {
+				"hitTypes": ["crit", "crushing", "normal", "miss"],
+				"rate": 1,
+				"pow": 1,
+				"targets": 3,
+				"options": []
+			},
+			"S3": {
+				"hitTypes": [],
+				"options": []
+			}
+		},
+		"calculatedStatus": {
+			"lv50FiveStarFullyAwakened": {
+				"cp": 15706,
+				"atk": 520,
+				"hp": 3972,
+				"spd": 105,
+				"def": 559,
+				"chc": 0.15,
+				"chd": 1.5,
+				"dac": 0.03,
+				"eff": 0,
+				"efr": 0.3
+			},
+			"lv60SixStarFullyAwakened": {
+				"cp": 19986,
+				"atk": 649,
+				"hp": 5254,
+				"spd": 105,
+				"def": 694,
+				"chc": 0.15,
+				"chd": 1.5,
+				"dac": 0.03,
+				"eff": 0,
+				"efr": 0.3
+			}
+		}
+	},
 	"Operator Sigret": {
 		"code": "c2072",
 		"_id": "operator-sigret",
@@ -20534,7 +20606,25 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c5071_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": [
+			{
+				"_id": "exc106601",
+				"id": "exc106601",
+				"name": "Dragon Emerald",
+				"description": "Jewelry that Luna's father passed on to her. It is the only thing her mother left behind when she left.",
+				"unit": "c1066",
+				"role": "warrior",
+				"rarity": 5,
+				"stat": {
+					"type": "att_rate",
+					"value": 0.07
+				},
+				"skills": [],
+				"assets": {
+					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1066.png"
+				}
+			}
+		],
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -22563,7 +22653,7 @@
 				"overrideAtk": 0,
 				"overrideHp": 0,
 				"overrideDef": 0,
-				"overrideAdditionalCr": 0.2,
+				"overrideAdditionalCr": 0.3,
 				"overrideAdditionalCd": 0,
 				"overrideAdditionalSpd": 0,
 				"overrideAdditionalEff": 0,
@@ -22586,7 +22676,7 @@
 				"overrideAtk": 0,
 				"overrideHp": 0,
 				"overrideDef": 0,
-				"overrideAdditionalCr": 0.2,
+				"overrideAdditionalCr": 0.3,
 				"overrideAdditionalCd": 0,
 				"overrideAdditionalSpd": 0,
 				"overrideAdditionalEff": 0,
@@ -23566,7 +23656,25 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2065_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": [
+			{
+				"_id": "exc109501",
+				"id": "exc109501",
+				"name": "Soul Tailor",
+				"description": "A medal bestowed only to the most talented of tailors. As it is a family heirloom, Lilibet received it from her mother, with whom she has been separated from childhood.",
+				"unit": "c1095",
+				"role": "warrior",
+				"rarity": 5,
+				"stat": {
+					"type": "cri",
+					"value": 0.06
+				},
+				"skills": [],
+				"assets": {
+					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1095.png"
+				}
+			}
+		],
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],

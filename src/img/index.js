@@ -34,10 +34,6 @@ const stat = {
 	Health,
 };
 
-// Styling
-import section_divider from "./section_divider.png";
-import epic7_logo from "./epic7_logo.png";
-
 import assassin from "./class/assassin.png";
 import knight from "./class/knight.png";
 import mage from "./class/mage.png";
@@ -54,4 +50,22 @@ const heroClass = {
 	warrior,
 };
 
-export { heroClass, stat, section_divider, epic7_logo };
+import dark from "./attribute/dark.png";
+import light from "./attribute/light.png";
+import earth from "./attribute/earth.png";
+import fire from "./attribute/fire.png";
+import ice from "./attribute/ice.png";
+
+const attribute = {
+	dark,
+	light,
+	earth,
+	fire,
+	ice,
+};
+
+// Styling
+import section_divider from "./section_divider.png";
+import epic7_logo from "./epic7_logo.png";
+
+export { heroClass, stat, attribute, section_divider, epic7_logo };

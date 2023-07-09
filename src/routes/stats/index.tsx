@@ -11,6 +11,7 @@ import style from "./stats.style";
 import ManualStats from "../../core/manual-stats";
 import Divider from "../../core/divider";
 import hero from "../../json/hero";
+import HeroIcon from "../../core/hero-icon";
 
 const Stats = () => {
 	const heroName = useAppSelector((state) => state.build.name);
@@ -19,11 +20,12 @@ const Stats = () => {
 
 	const heroInfo = heroes.getHeroInfo(heroName);
 
-	console.log(heroInfo);
-
 	return (
 		<div css={style.stats}>
 			<div css={style.build}>
+				<div css={style.heroBackground}>
+					<HeroIcon heroName={heroName} />
+				</div>
 				<div css={style.topCard}>
 					<Autocomplete
 						options={heroes.getHeroOptions()}
@@ -54,7 +56,9 @@ const Stats = () => {
 						<div>left</div>
 						<div>
 							<img src={hero.getClassImage(heroInfo.role)} />
-							<span>{heroInfo.attribute}</span>
+							<img
+								src={hero.getAttributeImage(heroInfo.attribute)}
+							/>
 						</div>
 					</div>
 				</div>

@@ -13,25 +13,51 @@ const style = {
 		`,
 	build: () => (theme: Theme) =>
 		css`
+			background: linear-gradient(
+				to right,
+				#000000a0,
+				#000000a0 40%,
+				#0000000f 80%,
+				#00000000 100%
+			);
 			border: 1px solid ${theme.border.primary};
 			border-radius: 0.5rem;
 
 			display: grid;
-			grid-template-columns: clamp(7.5rem, -1.875rem + 93.75vw, 30rem);
 
+			grid-template-columns: clamp(7.5rem, 0rem + 100vw, 30rem);
 			grid-template-rows:
-				clamp(1.25rem, -0.7292rem + 19.7917vw, 6rem)
-				clamp(7rem, -1.75rem + 87.5vw, 28rem)
-				clamp(4.5rem, -1.125rem + 56.25vw, 18rem);
+				clamp(1.5rem, 0rem + 20vw, 6rem)
+				clamp(7.5rem, 0rem + 100vw, 30rem)
+				clamp(4rem, 0rem + 53.3333vw, 16rem);
 			grid-template-areas: "top" "mid" "bottom";
+		`,
+	heroBackground: () => () =>
+		css`
+			position: absolute;
+			z-index: -1;
+
+			width: clamp(7.5rem, 0rem + 100vw, 30rem);
+			height: clamp(13rem, 0rem + 173.3333vw, 52rem);
+			overflow: hidden;
+
+			//update
+			& > * {
+				margin-top: -7%;
+				margin-left: -42%;
+				width: clamp(18.5rem, 0rem + 246.6667vw, 74rem);
+				height: clamp(18.5rem, 0rem + 246.6667vw, 74rem);
+			}
 		`,
 	// 0 / 850 size of 6 rem
 	topCard: () => (theme: Theme) =>
 		css`
-			background: linear-gradient(to right, #000000d0, #00000080 100%);
+			background: #00000060;
 
 			grid-area: top;
-			padding: 1rem 1.5rem;
+
+			padding: clamp(0.25rem, 0rem + 3.3333vw, 1rem)
+				clamp(0.375rem, 0rem + 5vw, 1.5rem);
 
 			font-weight: bold;
 
@@ -40,56 +66,54 @@ const style = {
 
 			.autocomplete {
 				color: ${theme.text.color.yellow};
-				font-size: clamp(0.5rem, -0.125rem + 6.25vw, 2rem);
+				font-size: clamp(0.625rem, 0rem + 8.3333vw, 2.5rem);
 			}
 		`,
 	autocompleteListbox: () => (theme: Theme) =>
 		css`
 			color: ${theme.text.color.yellow};
 		`,
-	// 95 / 850 size of 28 rem
+	// 95 / 850 size of 30 rem
 	middleCard: () => (theme: Theme) =>
 		css`
 			color: ${theme.text.color.white};
 			grid-area: mid;
 
 			.manual-stats {
-				padding: 0.5rem 1rem;
+				padding: clamp(0.125rem, 0rem + 1.6667vw, 0.5rem)
+					clamp(0.25rem, 0rem + 3.3333vw, 1rem);
 				display: grid;
+
 				grid-template-columns: 1fr;
 				grid-template-rows: repeat(
 					9,
-					clamp(0.75rem, -0.1875rem + 9.375vw, 3rem)
+					clamp(0.805rem, 0rem + 10.7333vw, 3.22rem)
 				);
 				& > div {
 					display: flex;
 					img {
 						padding-right: 0.75rem;
-						height: clamp(0.75rem, -0.1875rem + 9.375vw, 3rem);
+						height: clamp(0.805rem, 0rem + 10.7333vw, 3.22rem);
 						filter: brightness(255);
 					}
 					input {
-						font-size: clamp(
-							0.375rem,
-							-0.0938rem + 4.6875vw,
-							1.5rem
-						);
+						font-size: clamp(0.625rem, 0rem + 8.3333vw, 2.5rem);
 						color: ${theme.text.color.white};
 					}
 				}
 			}
 		`,
-	// 565 / 850 size of 18 rem
-	bottomCard: () => (theme: Theme) =>
+	// 565 / 850 size of 16 rem
+	bottomCard: () => () =>
 		css`
-			background: linear-gradient(to right, #000000d0, #00000080 100%);
+			background: #00000060;
 
 			grid-area: bottom;
-			padding: 1rem;
+			padding: clamp(0.25rem, 0rem + 3.3333vw, 1rem);
 			.top-section {
 				.artifact-slot {
-					height: clamp(2.75rem, -0.6875rem + 34.375vw, 11rem);
-					width: clamp(2.75rem, -0.6875rem + 34.375vw, 11rem);
+					height: clamp(2.5rem, 0rem + 33.3333vw, 10rem);
+					width: clamp(2.5rem, 0rem + 33.3333vw, 10rem);
 				}
 			}
 
@@ -97,7 +121,10 @@ const style = {
 				display: flex;
 				justify-content: space-between;
 
-				color: white;
+				& > * {
+					display: flex;
+					align-items: center;
+				}
 			}
 		`,
 };
