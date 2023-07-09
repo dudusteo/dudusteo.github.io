@@ -1,26 +1,22 @@
 // Stats Icons
-import AttackPercent from "./stat_atk.png";
-import CriticalHitChancePercent from "./stat_cr.png";
-import CriticalHitDamagePercent from "./stat_cd.png";
-import DefensePercent from "./stat_def.png";
-import EffectivenessPercent from "./stat_eff.png";
-import EffectResistancePercent from "./stat_res.png";
-import HealthPercent from "./stat_hp.png";
-import Speed from "./stat_spd.png";
-import Attack from "./stat_atk.png";
-import Defense from "./stat_def.png";
-import Health from "./stat_hp.png";
-
-// Styling
-import section_divider from "./section_divider.png";
-import epic7_logo from "./epic7_logo.png";
+import AttackPercent from "./stat/stat_atk.png";
+import CriticalHitChancePercent from "./stat/stat_cr.png";
+import CriticalHitDamagePercent from "./stat/stat_cd.png";
+import DefensePercent from "./stat/stat_def.png";
+import EffectivenessPercent from "./stat/stat_eff.png";
+import EffectResistancePercent from "./stat/stat_res.png";
+import HealthPercent from "./stat/stat_hp.png";
+import Speed from "./stat/stat_spd.png";
+import Attack from "./stat/stat_atk.png";
+import Defense from "./stat/stat_def.png";
+import Health from "./stat/stat_hp.png";
 
 const CriticalHitChance = CriticalHitChancePercent;
 const CriticalHitDamage = CriticalHitDamagePercent;
 const Effectiveness = EffectivenessPercent;
 const EffectResistance = EffectResistancePercent;
 
-export {
+const stat = {
 	AttackPercent,
 	CriticalHitChance,
 	CriticalHitChancePercent,
@@ -36,6 +32,26 @@ export {
 	Attack,
 	Defense,
 	Health,
-	section_divider,
-	epic7_logo,
 };
+
+// Styling
+import section_divider from "./section_divider.png";
+import epic7_logo from "./epic7_logo.png";
+
+import assassin from "./class/assassin.png";
+import knight from "./class/knight.png";
+import mage from "./class/mage.png";
+import manauser from "./class/manauser.png";
+import ranger from "./class/ranger.png";
+import warrior from "./class/warrior.png";
+
+const heroClass = {
+	assassin,
+	knight,
+	mage,
+	manauser,
+	ranger,
+	warrior,
+};
+
+export { heroClass, stat, section_divider, epic7_logo };

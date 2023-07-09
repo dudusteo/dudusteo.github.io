@@ -175,6 +175,7 @@ const Hero = () => {
 							setItem={(item) => handleItem(item, index)}
 						/>
 					))}
+
 					<ArtifactSlot
 						artifact={artifact}
 						setArtifact={handleArtifact}

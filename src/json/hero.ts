@@ -1,4 +1,5 @@
 import data from "./cache/herodata.json";
+import * as Image from "../img";
 
 const createUniversalNotation = {
 	att_rate: (statValue) => ["AttackPercent", (statValue * 100).toFixed(1)],
@@ -21,6 +22,7 @@ const createUniversalNotation = {
 
 interface HeroController {
 	data: any;
+	getHeroInfo: (heroName: string) => any;
 	getHeroOptions: () => any;
 	getExclusiveEquipmentStats: (
 		heroName: string,
@@ -34,10 +36,15 @@ interface HeroController {
 	getImprintOptions: (heroName: string) => any;
 	getBaseStats: (heroName: string, heroLevel: number) => any;
 	getBonusStats: (heroName: string, heroLevel: number) => any;
+	getClassImage: (heroClass: string) => string;
 }
 
 const hero = {
 	data,
+	getHeroInfo: (heroName: string) => {
+		const hero = data[heroName];
+		return hero;
+	},
 	getHeroOptions: () => {
 		const heroOptions = [];
 		Object.entries(data).forEach(([key, value]) => {
@@ -152,6 +159,9 @@ const hero = {
 			EffectivenessPercent: bonusStats.overrideAdditionalEff * 100,
 			EffectResistancePercent: bonusStats.overrideAdditionalRes * 100,
 		};
+	},
+	getClassImage: (heroClass: string) => {
+		return Image.heroClass[heroClass];
 	},
 };
 

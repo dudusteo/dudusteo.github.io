@@ -4,22 +4,27 @@ const style = {
 	artifactSlot: () => () =>
 		css`
 			cursor: pointer;
-			height: 8em;
-			width: 8em;
+			position: relative;
+			height: 100%;
 
 			svg {
-				width: 8em;
+				margin: -1px 0;
 				position: absolute;
-			}
-		`,
-	background: () => () =>
-		css`
-			height: 8em;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
 
-			path {
-				stroke: #777;
-				stroke-width: 2px;
-				fill: #30303030;
+				path {
+					stroke: #777;
+					stroke-width: 2px;
+					fill: #30303030;
+				}
+			}
+
+			img {
+				margin: 0% 5%;
+				height: 100%;
 			}
 		`,
 };

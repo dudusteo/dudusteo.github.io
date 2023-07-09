@@ -9,7 +9,7 @@ interface StatController {
 
 const stat = {
 	getImage: (statName: string) => {
-		return Image[toUpperCaseWord(statName)];
+		return Image.stat[toUpperCaseWord(statName)];
 	},
 };
 

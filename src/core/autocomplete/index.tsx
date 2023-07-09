@@ -53,12 +53,7 @@ const Autocomplete = React.forwardRef(
 
 		return (
 			<>
-				<div
-					className="autocomplete"
-					css={inputCss}
-					{...getRootProps()}
-					ref={rootRef}
-				>
+				<div className="autocomplete" {...getRootProps()} ref={rootRef}>
 					<input {...getInputProps()} />
 				</div>
 				{anchorEl && (

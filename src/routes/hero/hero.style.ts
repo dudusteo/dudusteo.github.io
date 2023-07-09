@@ -74,6 +74,8 @@ const style = {
 				"item3 item6";
 
 			.artifact-slot {
+				height: 8rem;
+				width: 8rem;
 				grid-area: artifact;
 				justify-self: end;
 			}

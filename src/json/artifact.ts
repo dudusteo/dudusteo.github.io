@@ -14,7 +14,7 @@ interface ArtifactController {
 	getImage: (artifactName: string) => string;
 }
 
-const artifact = {
+const artifactController = {
 	data,
 	getBaseStats: (artifactName: string, artifactLevel: number) => {
 		const artifact = data[artifactName];
@@ -42,4 +42,4 @@ const artifact = {
 	},
 };
 
-export default artifact as ArtifactController;
+export default artifactController as ArtifactController;
