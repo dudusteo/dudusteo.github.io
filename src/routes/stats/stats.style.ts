@@ -9,7 +9,6 @@ const style = {
 	stats: () => () =>
 		css`
 			display: flex;
-
 			justify-content: center;
 		`,
 	build: () => (theme: Theme) =>
@@ -36,12 +35,11 @@ const style = {
 
 				grid-area: top;
 				padding: 1rem;
-				color: ${theme.text.color.yellow};
+
 				font-weight: bold;
 
-				.autocomplete-input {
-					font-size: 2rem;
-				}
+				display: flex;
+				align-items: center;
 			}
 
 			// 95 / 850 size of 28 rem
@@ -51,7 +49,6 @@ const style = {
 			}
 
 			// 565 / 850 size of 18 rem
-
 			.bottom-card {
 				background: linear-gradient(
 					to right,
@@ -61,6 +58,15 @@ const style = {
 				grid-area: bottom;
 				padding: 1rem;
 			}
+		`,
+	autocompleteInput: () => (theme: Theme) =>
+		css`
+			color: ${theme.text.color.yellow};
+			font-size: 2rem;
+		`,
+	autocompleteListbox: () => (theme: Theme) =>
+		css`
+			color: ${theme.text.color.yellow};
 		`,
 };
 

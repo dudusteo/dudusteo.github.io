@@ -26,6 +26,8 @@ const Stats = () => {
 						onChange={(hero) =>
 							dispatch(changeHeroName(hero.label))
 						}
+						inputCss={style.autocompleteInput}
+						listboxCss={style.autocompleteListbox}
 					/>
 				</div>
 				<div className="middle-card">{heroName}</div>
