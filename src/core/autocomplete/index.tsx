@@ -1,7 +1,5 @@
 import useAutocomplete from "@mui/base/useAutocomplete";
 
-import style from "./autocomplete.style";
-
 export default function Autocomplete({ options = [], value = null, setValue }) {
 	const {
 		getRootProps,
@@ -21,11 +19,11 @@ export default function Autocomplete({ options = [], value = null, setValue }) {
 
 	return (
 		<div className="autocomplete">
-			<div css={style.autocomplete} {...getRootProps()}>
+			<div {...getRootProps()} className="autocomplete-input">
 				<input {...getInputProps()} />
 			</div>
 			{groupedOptions.length > 0 && (
-				<ul {...getListboxProps()}>
+				<ul {...getListboxProps()} className="autocomplete-listbox">
 					{groupedOptions.map((option, index) => (
 						<li {...getOptionProps({ option, index })}>
 							{option.label}

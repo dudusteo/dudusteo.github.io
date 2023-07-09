@@ -18,6 +18,7 @@ const theme: Theme = {
 			white: "#FFFFFF",
 			gray: "#5D5D5D",
 			gold: "#765E40",
+			yellow: "#F2DE9E",
 		},
 	},
 	button: {

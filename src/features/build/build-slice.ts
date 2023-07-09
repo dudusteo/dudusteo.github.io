@@ -14,8 +14,8 @@ const buildSlice = createSlice({
 	name: "build",
 	initialState,
 	reducers: {
-		changeHeroName: (state) => {
-			state.name = "Senya";
+		changeHeroName: (state, action: PayloadAction<string>) => {
+			state.name = action.payload;
 		},
 		changeArtifact: (state, action: PayloadAction<Artifact | null>) => {
 			state.artifact = action.payload;

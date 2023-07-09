@@ -31,7 +31,7 @@ const ArtifactSlot = ({ artifact, setArtifact }: ArtifactSlotProps) => {
 
 	return (
 		<ClickAwayListener onClickAway={() => setAnchorEl(null)}>
-			<div className="artifactSlot">
+			<div className="artifact-slot">
 				<div css={style.artifactSlot}>
 					<svg
 						aria-describedby={id}

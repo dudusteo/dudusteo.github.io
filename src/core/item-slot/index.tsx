@@ -31,7 +31,7 @@ const ItemSlot = ({ item, setItem }: ItemSlotProps) => {
 
 	return (
 		<ClickAwayListener onClickAway={() => setAnchorEl(null)}>
-			<div className="itemSlot">
+			<div className="item-slot">
 				<button
 					aria-describedby={id}
 					type="button"

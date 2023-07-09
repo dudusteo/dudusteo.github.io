@@ -1,5 +1,8 @@
 import { css } from "@emotion/react";
 
+// minimum VP 46EM max 82EM
+// max height 51EM
+
 const style = {
 	background: () => () =>
 		css`
@@ -70,11 +73,11 @@ const style = {
 				"item2 item5"
 				"item3 item6";
 
-			.artifactSlot {
+			.artifact-slot {
 				grid-area: artifact;
 				justify-self: end;
 			}
-			.itemSlot {
+			.item-slot {
 				margin: 0em 0.6em;
 				z-index: 1;
 				align-self: center;
