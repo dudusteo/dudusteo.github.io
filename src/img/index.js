@@ -52,14 +52,14 @@ const heroClass = {
 
 import dark from "./attribute/dark.png";
 import light from "./attribute/light.png";
-import earth from "./attribute/earth.png";
+import wind from "./attribute/wind.png";
 import fire from "./attribute/fire.png";
 import ice from "./attribute/ice.png";
 
 const attribute = {
 	dark,
 	light,
-	earth,
+	wind,
 	fire,
 	ice,
 };
