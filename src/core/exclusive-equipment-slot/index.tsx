@@ -1,6 +1,6 @@
 import style from "./exclusiveEquipmentSlot.style";
 import Autocomplete from "../autocomplete";
-import heroes from "../../json/heroes";
+import heroes from "../../json/hero";
 
 const ExclusiveEquipmentSlot = ({ heroName, heroEE, setEE }) => {
 	const options = heroes.getExclusiveEquipmentOptions(heroName);

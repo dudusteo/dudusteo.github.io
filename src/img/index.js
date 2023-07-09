@@ -15,12 +15,21 @@ import Health from "./stat_hp.png";
 import section_divider from "./section_divider.png";
 import epic7_logo from "./epic7_logo.png";
 
+const CriticalHitChance = CriticalHitChancePercent;
+const CriticalHitDamage = CriticalHitDamagePercent;
+const Effectiveness = EffectivenessPercent;
+const EffectResistance = EffectResistancePercent;
+
 export {
 	AttackPercent,
+	CriticalHitChance,
 	CriticalHitChancePercent,
+	CriticalHitDamage,
 	CriticalHitDamagePercent,
 	DefensePercent,
+	Effectiveness,
 	EffectivenessPercent,
+	EffectResistance,
 	EffectResistancePercent,
 	HealthPercent,
 	Speed,

@@ -4,7 +4,7 @@ import style from "./hero.style";
 import ItemSlot from "../../core/item-slot";
 import ArtifactSlot from "../../core/artifact-slot";
 import { useSearchParams } from "react-router-dom";
-import heroes from "../../json/heroes";
+import heroes from "../../json/hero";
 import HeroIcon from "../../core/hero-icon";
 import StatTable from "../../core/stat-table";
 import ImprintSlot from "../../core/imprint-slot";

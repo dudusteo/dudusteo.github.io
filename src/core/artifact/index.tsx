@@ -2,7 +2,7 @@ import * as React from "react";
 
 import style from "./artifact.style";
 import Dropdown from "../dropdown";
-import artifacts, { artifactEnhanceOptions } from "../../json/artifacts";
+import artifacts, { artifactEnhanceOptions } from "../../json/artifact";
 import Button from "../button";
 
 const getBaseArtifact = () => {

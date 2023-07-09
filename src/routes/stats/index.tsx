@@ -6,8 +6,9 @@ import {
 	changeArtifact,
 } from "../../features/build/build-slice";
 import Autocomplete from "../../core/autocomplete";
-import heroes from "../../json/heroes";
+import heroes from "../../json/hero";
 import style from "./stats.style";
+import ManualStats from "../../core/manual-stats";
 
 const Stats = () => {
 	const heroName = useAppSelector((state) => state.build.name);
@@ -30,7 +31,9 @@ const Stats = () => {
 						listboxCss={style.autocompleteListbox}
 					/>
 				</div>
-				<div className="middle-card">{heroName}</div>
+				<div className="middle-card">
+					<ManualStats heroName={heroName} />
+				</div>
 
 				<div className="bottom-card">
 					<ArtifactSlot

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import heroes from "../../json/heroes";
+import heroes from "../../json/hero";
 import { SpinePlayer, SpinePlayerConfig } from "@esotericsoftware/spine-player";
 
 import style from "./heroIcon.style";

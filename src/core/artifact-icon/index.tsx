@@ -1,17 +1,14 @@
+import artifacts from "../../json/artifact";
 import style from "./artifactIcon.style";
-import artifacts from "../../json/artifacts";
 
-const ArtifactIcon = ({ artifact }) => {
+interface ArtifaceIconProps {
+	artifact: Artifact;
+}
+
+const ArtifactIcon = ({ artifact }: ArtifaceIconProps) => {
 	return (
 		<div css={style.artifact}>
-			<img
-				alt=""
-				src={
-					"https://static.smilegatemegaport.com/event/live/epic7/guide/wearingStatus/images/artifact/" +
-					artifacts.data[artifact.name].code +
-					"_ico.png"
-				}
-			/>
+			<img alt="" src={artifacts.getImage(artifact.name)} />
 		</div>
 	);
 };

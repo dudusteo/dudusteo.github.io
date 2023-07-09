@@ -12,6 +12,7 @@ import {
 	getBaseItem,
 	gear,
 } from "../../json/gear";
+import stat from "../../json/stat";
 
 interface ItemProps {
 	item: Item | null;
@@ -85,7 +86,7 @@ const Item = React.memo(({ item, setItem, removeItem }: ItemProps) => {
 				</div>
 				<Divider />
 				<div css={[style.text("title", "medium")]}>
-					<img src={gear.getImage(item.main.type)} alt=""></img>
+					<img src={stat.getImage(item.main.type)} alt=""></img>
 					<Dropdown
 						options={gear.options}
 						value={item.main.type}
@@ -104,7 +105,7 @@ const Item = React.memo(({ item, setItem, removeItem }: ItemProps) => {
 								key={index}
 							>
 								<img
-									src={gear.getImage(substat.type)}
+									src={stat.getImage(substat.type)}
 									alt=""
 								></img>
 								<Dropdown

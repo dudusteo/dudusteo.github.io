@@ -1,6 +1,6 @@
 import style from "./imprintSlot.style";
 
-import heroes from "../../json/heroes";
+import heroes from "../../json/hero";
 import Autocomplete from "../autocomplete";
 
 const ImprintSlot = ({ heroName, heroGrade, setGrade }) => {

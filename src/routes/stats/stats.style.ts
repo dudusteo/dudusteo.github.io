@@ -2,8 +2,8 @@ import { Theme, css } from "@emotion/react";
 
 //480 840 1 : 0.58 // 30rem  x 52rem
 
-// 34 (32 + 2x1) REM max
-// 10 (8 + 2x1) REM min
+// 10 (8 + 2x1) REM min (1x)
+// 34 (32 + 2x1) REM max (4x)
 
 const style = {
 	stats: () => () =>
@@ -62,7 +62,7 @@ const style = {
 	autocompleteInput: () => (theme: Theme) =>
 		css`
 			color: ${theme.text.color.yellow};
-			font-size: 2rem;
+			font-size: clamp(0.5rem, -0.125rem + 6.25vw, 2rem);
 		`,
 	autocompleteListbox: () => (theme: Theme) =>
 		css`

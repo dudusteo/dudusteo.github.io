@@ -1,8 +1,8 @@
 import * as React from "react";
 
 import style from "./statTable.style";
-import heroes from "../../json/heroes";
-import artifacts from "../../json/artifacts";
+import heroes from "../../json/hero";
+import artifacts from "../../json/artifact";
 
 const toUpperCaseWord = (text) =>
 	text.replace(/(^\w|\s\w)/g, (m) => m.toUpperCase());

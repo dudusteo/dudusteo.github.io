@@ -19,7 +19,24 @@ const createUniversalNotation = {
 	],
 };
 
-const heroes = {
+interface HeroController {
+	data: any;
+	getHeroOptions: () => any;
+	getExclusiveEquipmentStats: (
+		heroName: string,
+		heroEEValue: number
+	) => {
+		type: string;
+		value: number;
+	};
+	getExclusiveEquipmentOptions: (heroName: string) => any;
+	getImprintStats: (heroName: string, heroGrade: string) => any;
+	getImprintOptions: (heroName: string) => any;
+	getBaseStats: (heroName: string, heroLevel: number) => any;
+	getBonusStats: (heroName: string, heroLevel: number) => any;
+}
+
+const hero = {
 	data,
 	getHeroOptions: () => {
 		const heroOptions = [];
@@ -28,7 +45,7 @@ const heroes = {
 		});
 		return heroOptions;
 	},
-	getExclusiveEquipmentStats: (heroName, heroEEValue) => {
+	getExclusiveEquipmentStats: (heroName: string, heroEEValue: number) => {
 		const exclusiveEquipments = data[heroName].ex_equip;
 
 		const [type, value] =
@@ -41,7 +58,7 @@ const heroes = {
 			value: value,
 		};
 	},
-	getExclusiveEquipmentOptions: (heroName) => {
+	getExclusiveEquipmentOptions: (heroName: string) => {
 		const exclusiveEquipments = data[heroName].ex_equip;
 		if (exclusiveEquipments.length === 0) return [];
 
@@ -67,7 +84,7 @@ const heroes = {
 
 		return exclusiveEqupimentOptions;
 	},
-	getImprintStats: (heroName, heroGrade) => {
+	getImprintStats: (heroName: string, heroGrade: string) => {
 		const imprintType = data[heroName].self_devotion.type;
 		const imprintValue = data[heroName].self_devotion.grades[heroGrade];
 
@@ -79,7 +96,7 @@ const heroes = {
 			value: value,
 		};
 	},
-	getImprintOptions: (heroName) => {
+	getImprintOptions: (heroName: string) => {
 		const imprintOptions = [];
 		Object.entries(data[heroName].self_devotion.grades).forEach(
 			([key, value]) => {
@@ -98,11 +115,11 @@ const heroes = {
 		);
 		return imprintOptions;
 	},
-	getBaseStats: (name, level) => {
+	getBaseStats: (heroName: string, heroLevel: number) => {
 		const baseStats =
-			level === 60
-				? data[name].calculatedStatus.lv60SixStarFullyAwakened
-				: data[name].calculatedStatus.lv50SixStarFullyAwakened;
+			heroLevel === 60
+				? data[heroName].calculatedStatus.lv60SixStarFullyAwakened
+				: data[heroName].calculatedStatus.lv50SixStarFullyAwakened;
 
 		return {
 			attack: baseStats.atk,
@@ -117,11 +134,11 @@ const heroes = {
 		};
 	},
 
-	getBonusStats: (name, level) => {
+	getBonusStats: (heroName: string, heroLevel: number) => {
 		const bonusStats =
-			level === 60
-				? data[name].calculatedStatus.lv60SixStarFullyAwakened
-				: data[name].calculatedStatus.lv50SixStarFullyAwakened;
+			heroLevel === 60
+				? data[heroName].calculatedStatus.lv60SixStarFullyAwakened
+				: data[heroName].calculatedStatus.lv50SixStarFullyAwakened;
 		return {
 			AttackPercent: bonusStats.bonusMaxAtkPercent,
 			DefensePercent: bonusStats.bonusMaxDefPercent,
@@ -138,4 +155,4 @@ const heroes = {
 	},
 };
 
-export default heroes;
+export default hero as HeroController;
