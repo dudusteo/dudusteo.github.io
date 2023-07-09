@@ -146,7 +146,7 @@ const Hero = () => {
 							value={heroes
 								.getHeroOptions()
 								.find((option) => option.label === hero.name)}
-							setValue={(value) => handleHeroName(value.label)}
+							onChange={(value) => handleHeroName(value.label)}
 						/>
 					</div>
 					<ExclusiveEquipmentSlot

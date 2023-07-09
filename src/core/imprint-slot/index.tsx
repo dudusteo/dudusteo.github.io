@@ -11,7 +11,7 @@ const ImprintSlot = ({ heroName, heroGrade, setGrade }) => {
 			<Autocomplete
 				options={options}
 				value={options.find((option) => option.grade === heroGrade)}
-				setValue={(value) => setGrade(value.grade || null)}
+				onChange={(value) => setGrade(value.grade || null)}
 			/>
 		</div>
 	);

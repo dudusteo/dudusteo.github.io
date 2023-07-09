@@ -1,4 +1,3 @@
-import React from "react";
 import ArtifactSlot from "../../core/artifact-slot";
 
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
@@ -21,7 +20,10 @@ const Stats = () => {
 				<div className="top-card">
 					<Autocomplete
 						options={heroes.getHeroOptions()}
-						setValue={(hero) =>
+						value={heroes
+							.getHeroOptions()
+							.find((option) => option.label === heroName)}
+						onChange={(hero) =>
 							dispatch(changeHeroName(hero.label))
 						}
 					/>

@@ -33,10 +33,15 @@ const style = {
 					#000000d0,
 					#00000080 100%
 				);
+
 				grid-area: top;
 				padding: 1rem;
 				color: ${theme.text.color.yellow};
 				font-weight: bold;
+
+				.autocomplete-input {
+					font-size: 2rem;
+				}
 			}
 
 			// 95 / 850 size of 28 rem

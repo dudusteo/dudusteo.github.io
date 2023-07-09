@@ -13,7 +13,7 @@ const ExclusiveEquipmentSlot = ({ heroName, heroEE, setEE }) => {
 					value={options.find((option) => {
 						return option.value === heroEE;
 					})}
-					setValue={(value) => {
+					onChange={(value) => {
 						setEE(value.value || null);
 					}}
 				/>
