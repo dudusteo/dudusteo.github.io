@@ -8,15 +8,16 @@ const style = {
 		`,
 	draftModeList: () => (theme: Theme) =>
 		css`
+			//height: clamp(13rem, 0rem + 173.3333vw, 52rem);
 			width: 100%;
 			border: 1px solid ${theme.border.primary};
 			border-radius: 0.5rem;
+			padding: 0.5rem;
 			display: grid;
-			grid-template-rows: repeat(4, clamp(3rem, 0rem + 40vw, 12rem));
-			grid-template-columns: repeat(
-				auto-fit,
-				clamp(3rem, 0rem + 40vw, 12rem)
-			);
+			grid-gap: 0.5rem;
+			grid-template-rows: repeat(auto-fit, 9rem);
+			grid-template-columns: repeat(auto-fit, 9rem);
+			//overflow: scroll;
 
 			& > button {
 				cursor: pointer;
