@@ -8,6 +8,7 @@ import { Theme, css } from "@emotion/react";
 const style = {
 	card: () => (theme: Theme) =>
 		css`
+			height: fit-content;
 			width: fit-content;
 			background: linear-gradient(
 				to right,
