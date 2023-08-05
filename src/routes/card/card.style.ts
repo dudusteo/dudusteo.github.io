@@ -6,13 +6,9 @@ import { Theme, css } from "@emotion/react";
 // 34 (32 + 2x1) REM max (4x)
 
 const style = {
-	stats: () => () =>
+	card: () => (theme: Theme) =>
 		css`
-			display: flex;
-			justify-content: center;
-		`,
-	build: () => (theme: Theme) =>
-		css`
+			width: fit-content;
 			background: linear-gradient(
 				to right,
 				#000000a0,

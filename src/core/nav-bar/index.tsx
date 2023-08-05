@@ -9,8 +9,11 @@ const NavBar = () => {
 			<a href="#/hero">
 				<button css={style.button}>Builder</button>
 			</a>
-			<a href="#/stats">
-				<button css={style.button}>Stats</button>
+			<a href="#/card">
+				<button css={style.button}>Card</button>
+			</a>
+			<a href="#/draftmode">
+				<button css={style.button}>Draft Mode</button>
 			</a>
 		</ul>
 	);

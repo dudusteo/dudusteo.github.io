@@ -1,4 +1,5 @@
 import data from "./cache/herodata.json";
+import draftData from "./cache/draftmode.json";
 import * as Image from "../img";
 
 const createUniversalNotation = {
@@ -22,6 +23,8 @@ const createUniversalNotation = {
 
 interface HeroController {
 	data: any;
+	getDraftModeHeroInfo: (heroName: string) => any;
+	getDraftModeHeroOptions: () => any;
 	getHeroInfo: (heroName: string) => any;
 	getHeroOptions: () => any;
 	getExclusiveEquipmentStats: (
@@ -36,12 +39,23 @@ interface HeroController {
 	getImprintOptions: (heroName: string) => any;
 	getBaseStats: (heroName: string, heroLevel: number) => any;
 	getBonusStats: (heroName: string, heroLevel: number) => any;
-	getClassImage: (heroClass: string) => string;
-	getAttributeImage: (heroAttribute: string) => string;
+	getHeroImage: (heroName: string) => string;
+	getClassImage: (heroName: string) => string;
+	getAttributeImage: (heroName: string) => string;
 }
 
 const hero = {
 	data,
+	getDraftModeHeroInfo: () => {
+		return draftData;
+	},
+	getDraftModeHeroOptions: () => {
+		const draftModeHeroOptions = [];
+		Object.entries(draftData).forEach(([key, value]) => {
+			draftModeHeroOptions.push({ label: key });
+		});
+		return draftModeHeroOptions;
+	},
 	getHeroInfo: (heroName: string) => {
 		const hero = data[heroName];
 		return hero;
@@ -161,11 +175,16 @@ const hero = {
 			EffectResistancePercent: bonusStats.overrideAdditionalRes * 100,
 		};
 	},
-	getClassImage: (heroClass: string) => {
-		return Image.heroClass[heroClass];
+	getHeroImage: (heroName: string) => {
+		return data[heroName].assets.icon;
 	},
-	getAttributeImage: (heroAttribute: string) => {
-		return Image.attribute[heroAttribute];
+	getClassImage: (heroName: string) => {
+		const hero = data[heroName];
+		return Image.heroClass[hero.role];
+	},
+	getAttributeImage: (heroName: string) => {
+		const hero = data[heroName];
+		return Image.attribute[hero.attribute];
 	},
 };
 
