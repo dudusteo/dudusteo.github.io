@@ -223,5 +223,1094 @@
 		"ee": 2,
 		"imprint": "Self",
 		"sets": ["Speed", "Penetration"]
+	},
+	"Senya": {
+		"stats": {
+			"atk": 4171,
+			"def": 1609,
+			"hp": 20648,
+			"spd": 200,
+			"chc": 0.15,
+			"chd": 1.5,
+			"eff": 0.0,
+			"efr": 0.98,
+			"dac": 0.03
+		},
+		"tag": "Bruiser",
+		"tooltip": "Countersttacks the enemy, provoking them, and when using a basic skill, deals additional damage.",
+		"artifact": "Spear of a New Dawn",
+		"ee": 3,
+		"imprint": "Self",
+		"sets": ["Speed", "Immunity"]
+	},
+	"Landy": {
+		"stats": {
+			"atk": 3705,
+			"def": 1063,
+			"hp": 14042,
+			"spd": 208,
+			"chc": 1.0,
+			"chd": 3.5,
+			"eff": 0.0,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Deals stronger damage to enemies as the number of buffs granted to all enemies increases.",
+		"artifact": "Guiding Light",
+		"imprint": "Self",
+		"sets": ["Destruction", "Critical"]
+	},
+	"Eda": {
+		"stats": {
+			"atk": 3623,
+			"def": 1083,
+			"hp": 8436,
+			"spd": 250,
+			"chc": 1.0,
+			"chd": 2.62,
+			"eff": 0.67,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Attacks all enemies, delaying their turn, and stunning for 1 turn.",
+		"artifact": "Tagehel's Ancient Book",
+		"imprint": "Self",
+		"sets": ["Speed", "Critical"]
+	},
+	"Politis": {
+		"stats": {
+			"atk": 3648,
+			"def": 1133,
+			"hp": 8411,
+			"spd": 200,
+			"chc": 1.0,
+			"chd": 3.07,
+			"eff": 0.66,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Debuffer",
+		"tooltip": "Decreases Combat Readiness increase effect of the enemy by half, and inflicts various debuffs.",
+		"artifact": "Tagehel's Ancient Book",
+		"imprint": "Self",
+		"sets": ["Speed", "Immunity"]
+	},
+	"Ilynav": {
+		"stats": {
+			"atk": 1677,
+			"def": 1397,
+			"hp": 18954,
+			"spd": 215,
+			"chc": 1.0,
+			"chd": 2.72,
+			"eff": 0.0,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Attacks all enemies, decreasing max Health cumulatively, while granting buffs to all allies.",
+		"artifact": "Elbris Ritual Sword",
+		"ee": 3,
+		"imprint": "Self",
+		"sets": ["Lifesteal", "Penetration"]
+	},
+	"Belian": {
+		"stats": {
+			"atk": 1772,
+			"def": 1332,
+			"hp": 26565,
+			"spd": 128,
+			"chc": 0.88,
+			"chd": 2.66,
+			"eff": 0.33,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Bruiser",
+		"tooltip": "Limits the number of Soul gained by the enemy, and when an ally is attacked, has a chance to counterattack all enemies.",
+		"artifact": "Elbris Ritual Sword",
+		"imprint": "Self",
+		"sets": ["Counter", "Immunity"]
+	},
+	"Ran": {
+		"stats": {
+			"atk": 3495,
+			"def": 826,
+			"hp": 8671,
+			"spd": 305,
+			"chc": 0.85,
+			"chd": 2.71,
+			"eff": 0.0,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Attacks all enemies, dealing huge damage. Has very high Speed.",
+		"artifact": "Rhianna & Luciella",
+		"imprint": "Self",
+		"sets": ["Speed", "Critical"]
+	},
+	"Zahhak": {
+		"stats": {
+			"atk": 3969,
+			"def": 1034,
+			"hp": 9382,
+			"spd": 284,
+			"chc": 0.5,
+			"chd": 2.72,
+			"eff": 0.0,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Deals great damage against a single enemy that ignores their element. Has high Speed.",
+		"artifact": "A Symbol of Unity",
+		"ee": 1,
+		"imprint": "Self",
+		"sets": ["Speed", "Penetration"]
+	},
+	"Peira": {
+		"stats": {
+			"atk": 1817,
+			"def": 1258,
+			"hp": 14517,
+			"spd": 306,
+			"chc": 0.2,
+			"chd": 1.5,
+			"eff": 1.645,
+			"efr": 0.41,
+			"dac": 0.03
+		},
+		"tag": "Supporter",
+		"tooltip": "Inflicts various debuffs on all enemies, and takes a portion of damage suffered by allies in their place. Has very high Speed.",
+		"artifact": "Goblet of Oath",
+		"imprint": "Self",
+		"sets": ["Speed", "Hit"]
+	},
+	"Lua": {
+		"stats": {
+			"atk": 1283,
+			"def": 1342,
+			"hp": 13068,
+			"spd": 290,
+			"chc": 0.21,
+			"chd": 1.5,
+			"eff": 1.34,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Debuffer",
+		"tooltip": "Puts a single enemy to sleep and increases skill cooldown of all enemies. Has very high Speed.",
+		"artifact": "Guiding Light",
+		"imprint": "Self",
+		"sets": ["Speed", "Hit"]
+	},
+	"Aria": {
+		"stats": {
+			"atk": 1837,
+			"def": 2059,
+			"hp": 13552,
+			"spd": 170,
+			"chc": 1.0,
+			"chd": 2.58,
+			"eff": 0.18,
+			"efr": 1.34,
+			"dac": 0.03
+		},
+		"tag": "Bruiser",
+		"tooltip": "Grants stealth to all allies except for the caster, and when the caster is attacked, counterattacks the target.",
+		"artifact": "Etica's Scepter",
+		"imprint": "Self",
+		"sets": ["Lifesteal", "Critical"]
+	},
+	"Yulha": {
+		"stats": {
+			"atk": 1500,
+			"def": 1639,
+			"hp": 34175,
+			"spd": 204,
+			"chc": 0.21,
+			"chd": 1.57,
+			"eff": 0.69,
+			"efr": 0.41,
+			"dac": 0.03
+		},
+		"tag": "Bruiser",
+		"tooltip": "Deals great damage against a single enemy proportional to the caster's lost Health, and provokes the enemy to protect allies.",
+		"artifact": "Aurius",
+		"imprint": "Self",
+		"sets": ["Speed", "Health"]
+	},
+	"Sharun": {
+		"stats": {
+			"atk": 1284,
+			"def": 1665,
+			"hp": 19420,
+			"spd": 226,
+			"chc": 0.15,
+			"chd": 1.5,
+			"eff": 1.65,
+			"efr": 0.33,
+			"dac": 0.03
+		},
+		"tag": "Debuffer",
+		"tooltip": "At the start of an enemy's turn, inflicts venom effects that deal damage proportional to Health.",
+		"artifact": "Celestine",
+		"ee": 3,
+		"imprint": "Self",
+		"sets": ["Speed", "Hit"]
+	},
+	"Zio": {
+		"stats": {
+			"atk": 2245,
+			"def": 1177,
+			"hp": 9752,
+			"spd": 260,
+			"chc": 0.5,
+			"chd": 2.49,
+			"eff": 2.16,
+			"efr": 0.13,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Takes a turn first at the start of battle to keep the opponent's main Hero in check.",
+		"artifact": "Tagehel's Ancient Book",
+		"imprint": "Self",
+		"sets": ["Speed", "Hit"]
+	},
+	"Amid": {
+		"stats": {
+			"atk": 1923,
+			"def": 1351,
+			"hp": 13800,
+			"spd": 290,
+			"chc": 0.3,
+			"chd": 1.55,
+			"eff": 0.2,
+			"efr": 0.97,
+			"dac": 0.03
+		},
+		"tag": "Supporter",
+		"tooltip": "Greatly increases the offensive capabilities of an ally. Has very high Speed.",
+		"artifact": "Fan of Light and Dark",
+		"imprint": "Self",
+		"sets": ["Speed", "Hit"]
+	},
+	"Abigail": {
+		"stats": {
+			"atk": 1616,
+			"def": 1422,
+			"hp": 23045,
+			"spd": 215,
+			"chc": 0.318,
+			"chd": 1.5,
+			"eff": 0.95,
+			"efr": 0.64,
+			"dac": 0.03
+		},
+		"tag": "Supporter",
+		"tooltip": "When the ally in the back row receives lethal damage, protects them by consuming the caster's Health.",
+		"artifact": "Proof of Valor",
+		"imprint": "Self",
+		"sets": ["Speed", "Hit"]
+	},
+	"Fallen Cecilia": {
+		"stats": {
+			"atk": 1572,
+			"def": 1647,
+			"hp": 31400,
+			"spd": 188,
+			"chc": 0.15,
+			"chd": 1.5,
+			"eff": 0.26,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Tanker",
+		"tooltip": "Protects allies by provoking the enemy or granting a barrier.",
+		"artifact": "Aurius",
+		"imprint": "Self",
+		"sets": ["Speed", "Immunity"]
+	},
+	"Arbiter Vildred": {
+		"stats": {
+			"atk": 4592,
+			"def": 832,
+			"hp": 8389,
+			"spd": 231,
+			"chc": 1.0,
+			"chd": 3.06,
+			"eff": 0.0,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Revives upon death, and attacks all enemies, dealing huge damage.",
+		"artifact": "Alexa's Basket",
+		"imprint": "Self",
+		"sets": ["Speed", "Critical"]
+	},
+	"Little Queen Charlotte": {
+		"stats": {
+			"atk": 4316,
+			"def": 1525,
+			"hp": 17566,
+			"spd": 132,
+			"chc": 0.7,
+			"chd": 2.77,
+			"eff": 0.0,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Bruiser",
+		"tooltip": "Deals huge, single target damage to enemies. If the target is a Dark elemental, greatly increase damage dealth, and deals additional damage to all enemies.",
+		"artifact": "Hell Cutter",
+		"imprint": "Self",
+		"sets": ["Attack", "Immunity"]
+	},
+	"Sage Baal & Sezan": {
+		"stats": {
+			"atk": 1681,
+			"def": 1496,
+			"hp": 16950,
+			"spd": 246,
+			"chc": 0.15,
+			"chd": 1.5,
+			"eff": 0.45,
+			"efr": 2.03,
+			"dac": 0.03
+		},
+		"tag": "Debuffer",
+		"tooltip": "At the end of the enemy's turn, increases Combat Readiness of the caster, and puts the enemy to sleep.",
+		"artifact": "Bastion of Hope",
+		"imprint": "Self",
+		"sets": ["Speed", "Resist"]
+	},
+	"Apocalypse Ravi": {
+		"stats": {
+			"atk": 1617,
+			"def": 1496,
+			"hp": 26748,
+			"spd": 203,
+			"chc": 1.0,
+			"chd": 2.54,
+			"eff": 0.0,
+			"efr": 0.27,
+			"dac": 0.03
+		},
+		"tag": "Bruiser",
+		"tooltip": "When attacking and when attacked, recovers the caster's Health, and when an enemy is defeated, revives a dead ally.",
+		"artifact": "Proof of Valor",
+		"imprint": "Self",
+		"sets": ["Speed", "Penetration"]
+	},
+	"Destina": {
+		"stats": {
+			"atk": 1314,
+			"def": 1674,
+			"hp": 19460,
+			"spd": 223,
+			"chc": 0.15,
+			"chd": 1.5,
+			"eff": 0.09,
+			"efr": 2.47,
+			"dac": 0.03
+		},
+		"tag": "Healer",
+		"tooltip": "Supports allies by reviving all dead allies or recovering Health.",
+		"artifact": "Unfading Memories",
+		"ee": 3,
+		"imprint": "Self",
+		"sets": ["Speed", "Resist"]
+	},
+	"Twisted Eidolon Kayron": {
+		"stats": {
+			"atk": 3519,
+			"def": 1172,
+			"hp": 17523,
+			"spd": 126,
+			"chc": 1.0,
+			"chd": 2.32,
+			"eff": 0.0,
+			"efr": 1.02,
+			"dac": 0.03
+		},
+		"tag": "Bruiser",
+		"tooltip": "When suffering a critical hit from the enemy, decreases damage suffered, and counterattacks with an attack that targets all enemies.",
+		"artifact": "Bastion of Hope",
+		"imprint": "Self",
+		"sets": ["Lifesteal", "Resist"]
+	},
+	"Briar Witch Iseria": {
+		"stats": {
+			"atk": 4484,
+			"def": 909,
+			"hp": 9503,
+			"spd": 222,
+			"chc": 1.0,
+			"chd": 2.63,
+			"eff": 0.4,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Debuffer",
+		"tooltip": "When attacking, decreases Evasion of the enemy, and a successful hit deals additional damage. While this Hero is alive, all Heroes on the battlefield cannot revive.",
+		"artifact": "Guiding Light",
+		"imprint": "Self",
+		"sets": ["Speed", "Immunity"]
+	},
+	"Closer Charles": {
+		"stats": {
+			"atk": 3541,
+			"def": 783,
+			"hp": 10421,
+			"spd": 280,
+			"chc": 1.0,
+			"chd": 2.6,
+			"eff": 0.08,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Attacks all enemies, increases Attack and Combat Readiness of all allies. Has high Speed.",
+		"artifact": "Shepherd of the Hollow",
+		"imprint": "Self",
+		"sets": ["Speed", "Penetration"]
+	},
+	"Ambitious Tywin": {
+		"stats": {
+			"atk": 1580,
+			"def": 1550,
+			"hp": 25952,
+			"spd": 252,
+			"chc": 1.0,
+			"chd": 1.97,
+			"eff": 0.0,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Bruiser",
+		"tooltip": "When attacked, dispels debuffs from all allies, and attacks all enemies, stunning for 1 turn.",
+		"artifact": "Aurius",
+		"imprint": "Self",
+		"sets": ["Speed", "Critical"]
+	},
+	"Faithless Lidica": {
+		"stats": {
+			"atk": 3051,
+			"def": 1058,
+			"hp": 10146,
+			"spd": 276,
+			"chc": 1.0,
+			"chd": 1.86,
+			"eff": 0.59,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Supporter",
+		"tooltip": "Dispels buffs from all enemies and increases skill cooldowns of a single enemy target to the max. Has high Speed.",
+		"artifact": "Guiding Light",
+		"imprint": "Self",
+		"sets": ["Speed", "Critical"]
+	},
+	"Silver Blade Aramintha": {
+		"stats": {
+			"atk": 1810,
+			"def": 1230,
+			"hp": 16909,
+			"spd": 265,
+			"chc": 0.2,
+			"chd": 1.5,
+			"eff": 1.8,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Debuffer",
+		"tooltip": "Attacks all enemies, inflicting DoTs and stunning for 1 turn.",
+		"artifact": "Abyssal Crown",
+		"imprint": "Self",
+		"sets": ["Speed", "Hit"]
+	},
+	"Maid Chloe": {
+		"stats": {
+			"atk": 1360,
+			"def": 1640,
+			"hp": 18083,
+			"spd": 208,
+			"chc": 0.15,
+			"chd": 1.5,
+			"eff": 0.18,
+			"efr": 2.12,
+			"dac": 0.03
+		},
+		"tag": "Healer",
+		"tooltip": "Supports allies by reviving all dead allies or recovering Health.",
+		"artifact": "Shimadra Staff",
+		"imprint": "Self",
+		"sets": ["Speed", "Resist"]
+	},
+	"Specter Tenebria": {
+		"stats": {
+			"atk": 4026,
+			"def": 1266,
+			"hp": 10299,
+			"spd": 182,
+			"chc": 1.0,
+			"chd": 2.94,
+			"eff": 0.3,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "When there is a surviving ally, cannot be selected as the target for attacks and deals great damage to enemies.",
+		"artifact": "Tagehel's Ancient Book",
+		"imprint": "Self",
+		"sets": ["Destruction", "Penetration"]
+	},
+	"Desert Jewel Basar": {
+		"stats": {
+			"atk": 1632,
+			"def": 1429,
+			"hp": 13912,
+			"spd": 255,
+			"chc": 0.15,
+			"chd": 1.5,
+			"eff": 0.3,
+			"efr": 2.005,
+			"dac": 0.03
+		},
+		"tag": "Supporter",
+		"tooltip": "Dispels debuffs from all allies and increases Combat Readiness. Has high Speed.",
+		"artifact": "Eternus",
+		"imprint": "Self",
+		"sets": ["Speed", "Resist"]
+	},
+	"Last Rider Krau": {
+		"stats": {
+			"atk": 1459,
+			"def": 1611,
+			"hp": 28139,
+			"spd": 220,
+			"chc": 0.15,
+			"chd": 1.5,
+			"eff": 0.0,
+			"efr": 0.72,
+			"dac": 0.03
+		},
+		"tag": "Bruiser",
+		"tooltip": "Protects allies from attacks that target all allies, and deals huge damage to all enemies.",
+		"artifact": "Crown of Glory",
+		"imprint": "Self",
+		"sets": ["Speed", "Immunity"]
+	},
+	"Mediator Kawerik": {
+		"stats": {
+			"atk": 1762,
+			"def": 1672,
+			"hp": 25706,
+			"spd": 248,
+			"chc": 0.21,
+			"chd": 1.56,
+			"eff": 0.07,
+			"efr": 0.35,
+			"dac": 0.03
+		},
+		"tag": "Supporter",
+		"tooltip": "Dispels debuffs from all allies and grants increased Attack and Immunity.",
+		"artifact": "War Horn",
+		"imprint": "Self",
+		"sets": ["Speed", "Immunity"]
+	},
+	"Remnant Violet": {
+		"stats": {
+			"atk": 4000,
+			"def": 1072,
+			"hp": 12668,
+			"spd": 194,
+			"chc": 1.0,
+			"chd": 2.85,
+			"eff": 0.0,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Deals great damage to a single enemy and at the end of the turn, increases Evasion of the caster.",
+		"artifact": "Shepherd of the Hollow",
+		"imprint": "Self",
+		"sets": ["Lifesteal", "Penetration"]
+	},
+	"Lionheart Cermia": {
+		"stats": {
+			"atk": 1598,
+			"def": 2104,
+			"hp": 14782,
+			"spd": 191,
+			"chc": 1.0,
+			"chd": 2.85,
+			"eff": 0.0,
+			"efr": 0.3,
+			"dac": 0.03
+		},
+		"tag": "Bruiser",
+		"tooltip": "When an ally is attacked by a counterattack, Dual Attack, or extra attack, strengthens the caster's ability, and on the caster's turn deals devastating damage to all enemies.",
+		"artifact": "Draco Plate",
+		"imprint": "Self",
+		"sets": ["Lifesteal", "Critical"]
+	},
+	"Commander Pavel": {
+		"stats": {
+			"atk": 5644,
+			"def": 817,
+			"hp": 7260,
+			"spd": 160,
+			"chc": 1.0,
+			"chd": 2.95,
+			"eff": 0.0,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "When an ally makes a critical hit, deals additional AoE damage, and deals huge damage against a single enemy target.",
+		"artifact": "Guiding Light",
+		"imprint": "Self",
+		"sets": ["Speed", "Torrent"]
+	},
+	"Top Model Luluca": {
+		"stats": {
+			"atk": 3131,
+			"def": 1063,
+			"hp": 8445,
+			"spd": 274,
+			"chc": 1.0,
+			"chd": 2.6,
+			"eff": 0.0,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Increases Attack and Combat Readiness of all allies and deals huge damage against a single enemy. Has high Speed.",
+		"artifact": "Tagehel's Ancient Book",
+		"imprint": "Self",
+		"sets": ["Speed", "Critical"]
+	},
+	"Sylvan Sage Vivian": {
+		"stats": {
+			"atk": 3600,
+			"def": 1272,
+			"hp": 10069,
+			"spd": 197,
+			"chc": 1.0,
+			"chd": 2.94,
+			"eff": 0.0,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Attacks all enemies, dealing damage, and grants buffs to the ally while recovering Health.",
+		"artifact": "Time Matter",
+		"imprint": "Self",
+		"sets": ["Lifesteal", "Critical"]
+	},
+	"Conqueror Lilias": {
+		"stats": {
+			"atk": 1552,
+			"def": 1361,
+			"hp": 21874,
+			"spd": 295,
+			"chc": 0.15,
+			"chd": 1.5,
+			"eff": 1.03,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Supporter",
+		"tooltip": "Increases Attack and Defense of all allies, and when attacking, triggers a Dual Attack from a random ally. Has very high Speed.",
+		"artifact": "Nostalgic Music Box",
+		"imprint": "Self",
+		"sets": ["Speed", "Immunity"]
+	},
+	"Death Dealer Ray": {
+		"stats": {
+			"atk": 1500,
+			"def": 1639,
+			"hp": 22782,
+			"spd": 229,
+			"chc": 0.15,
+			"chd": 1.5,
+			"eff": 0.91,
+			"efr": 0.8,
+			"dac": 0.03
+		},
+		"tag": "Debuffer",
+		"tooltip": "Puts all enemies to sleep, and at the start of the enemy's turn, inflicts venom effects that deal damage equivalent to 10% of max Health.",
+		"artifact": "Wondrous Potion Vial",
+		"imprint": "Self",
+		"sets": ["Counter", "Health"]
+	},
+	"Designer Lilibet": {
+		"stats": {
+			"atk": 1772,
+			"def": 2011,
+			"hp": 14375,
+			"spd": 224,
+			"chc": 1.0,
+			"chd": 2.77,
+			"eff": 0.0,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Bruiser",
+		"tooltip": "Decreases debuff durations of all allies, and increases skill cooldowns of all enemies by attacking them.",
+		"artifact": "Draco Plate",
+		"imprint": "Self",
+		"sets": ["Speed", "Critical"]
+	},
+	"Architect Laika": {
+		"stats": {
+			"atk": 4335,
+			"def": 1072,
+			"hp": 7668,
+			"spd": 264,
+			"chc": 1.0,
+			"chd": 2.72,
+			"eff": 0.08,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Enhances the caster's Attack and deals huge damage to all enemies.",
+		"artifact": "Tagehel's Ancient Book",
+		"imprint": "Self",
+		"sets": ["Speed", "Critical"]
+	},
+	"Requiem Roana": {
+		"stats": {
+			"atk": 5592,
+			"def": 1553,
+			"hp": 14206,
+			"spd": 116,
+			"chc": 0.2,
+			"chd": 1.5,
+			"eff": 2.3,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Increases skill cooldowns of all enemies and decreases Combat Readiness. At the start of the foremost Hero's turn, increaes Combat Readiness by 100%.",
+		"artifact": "Etica's Scepter",
+		"imprint": "Self",
+		"sets": ["Attack", "Hit"]
+	},
+	"Spirit Eye Celine": {
+		"stats": {
+			"atk": 3405,
+			"def": 895,
+			"hp": 8267,
+			"spd": 242,
+			"chc": 1.0,
+			"chd": 3.19,
+			"eff": 0.0,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Revives all allies or keeps them from dying, and when suffering critical hit, counterattacks, dealing huge damage.",
+		"artifact": "Dust Devil",
+		"imprint": "Self",
+		"sets": ["Speed", "Penetration"]
+	},
+	"Pirate Captain Flan": {
+		"stats": {
+			"atk": 2914,
+			"def": 1427,
+			"hp": 17626,
+			"spd": 235,
+			"chc": 0.15,
+			"chd": 1.5,
+			"eff": 2.0,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Debuffer",
+		"tooltip": "Plants a bomb on the enemy, and at the end of the turn, detonates. Bomb inflicts huge damage to the target and stuns for 1 turn.",
+		"artifact": "Star of the Deep Sea",
+		"imprint": "Self",
+		"sets": ["Speed", "Hit"]
+	},
+	"Solitaria of the Snow": {
+		"stats": {
+			"atk": 3177,
+			"def": 983,
+			"hp": 10192,
+			"spd": 266,
+			"chc": 1.0,
+			"chd": 2.73,
+			"eff": 0.45,
+			"efr": 0.18,
+			"dac": 0.03
+		},
+		"tag": "Debuffer",
+		"tooltip": "Attacks all enemies, with a low chance to stun, and evades enemy attacks with stealth.",
+		"artifact": "Fairy Tale for a Nightmare",
+		"imprint": "Self",
+		"sets": ["Speed", "Critical"]
+	},
+	"Archdemon's Shadow": {
+		"stats": {
+			"atk": 2744,
+			"def": 1418,
+			"hp": 19694,
+			"spd": 190,
+			"chc": 0.15,
+			"chd": 1.5,
+			"eff": 0.46,
+			"efr": 1.24,
+			"dac": 0.03
+		},
+		"tag": "Debuffer",
+		"tooltip": "Inflicts a seal effect that blocks passive skills of enemies from activating.",
+		"artifact": "Fairy Tale for a Nightmare",
+		"imprint": "Self",
+		"sets": ["Counter", "Hit"]
+	},
+	"Summer Break Charlotte": {
+		"stats": {
+			"atk": 3584,
+			"def": 1232,
+			"hp": 12615,
+			"spd": 212,
+			"chc": 1.0,
+			"chd": 3.02,
+			"eff": 0.0,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Bruiser",
+		"tooltip": "When an other ally uses a skill, triggers a Dual Attack from the caster, attacking all enemies.",
+		"artifact": "Mature Sunglasses",
+		"imprint": "Self",
+		"sets": ["Speed", "Torrent"]
+	},
+	"Summertime Iseria": {
+		"stats": {
+			"atk": 4915,
+			"def": 1093,
+			"hp": 11004,
+			"spd": 265,
+			"chc": 0.15,
+			"chd": 1.5,
+			"eff": 2.265,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Debuffer",
+		"tooltip": "Plants a bomb on the enemy. Bomb inflicts huge damage on the enemy and stuns for 1 turn.",
+		"artifact": "Star of the Deep Sea",
+		"imprint": "Self",
+		"sets": ["Speed", "Hit"]
+	},
+	"Ocean Breeze Luluca": {
+		"stats": {
+			"atk": 1214,
+			"def": 1446,
+			"hp": 18011,
+			"spd": 252,
+			"chc": 0.15,
+			"chd": 1.5,
+			"eff": 0.0,
+			"efr": 1.97,
+			"dac": 0.03
+		},
+		"tag": "Supporter",
+		"tooltip": "Dispels all buffs from all enemies and disables skill usage. Additionally, dispels debuffs from allies and grants buffs.",
+		"artifact": "Sole Consolation",
+		"imprint": "Self",
+		"sets": ["Speed", "Resist"]
+	},
+	"Cidd": {
+		"stats": {
+			"atk": 3790,
+			"def": 773,
+			"hp": 9461,
+			"spd": 255,
+			"chc": 0.85,
+			"chd": 2.95,
+			"eff": 0.34,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Increases basic Speed of other allies, and deals huge damage against a single enemy.",
+		"artifact": "Wind Rider",
+		"ee": 3,
+		"imprint": "Team",
+		"sets": ["Speed", "Penetration"]
+	},
+	"Wanderer Silk": {
+		"stats": {
+			"atk": 1783,
+			"def": 1045,
+			"hp": 12057,
+			"spd": 285,
+			"chc": 0.4,
+			"chd": 1.62,
+			"eff": 1.5,
+			"efr": 0.05,
+			"dac": 0.03
+		},
+		"tag": "Debuffer",
+		"tooltip": "Increases basic Speed of other allies, and neutralizes a single enemy from acting. Has very high Speed.",
+		"artifact": "Guiding Light",
+		"ee": 2,
+		"imprint": "Team",
+		"sets": ["Speed", "Immunity"]
+	},
+	"Crimson Armin": {
+		"stats": {
+			"atk": 1373,
+			"def": 2293,
+			"hp": 22364,
+			"spd": 213,
+			"chc": 0.15,
+			"chd": 1.5,
+			"eff": 0.05,
+			"efr": 1.12,
+			"dac": 0.03
+		},
+		"tag": "Tanker",
+		"tooltip": "Decreases damage suffered of all allies and grants invincibility.",
+		"artifact": "Aurius",
+		"imprint": "Self",
+		"sets": ["Speed", "Resist"]
+	},
+	"Blood Blade Karin": {
+		"stats": {
+			"atk": 4007,
+			"def": 839,
+			"hp": 9327,
+			"spd": 134,
+			"chc": 1.0,
+			"chd": 3.47,
+			"eff": 0.0,
+			"efr": 0.86,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Increases Attack, Defense, and Speed as the Health gets lower. Recovers the caster's Health proportional to damage dealt.",
+		"artifact": "Wind Rider",
+		"imprint": "Self",
+		"sets": ["Destruction", "Immunity"]
+	},
+	"Assassin Cartuja": {
+		"stats": {
+			"atk": 1934,
+			"def": 1455,
+			"hp": 19835,
+			"spd": 232,
+			"chc": 0.15,
+			"chd": 1.5,
+			"eff": 2.058,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Bruiser",
+		"tooltip": "Increases Evasion of all allies, and either provokes or stuns the enemy.",
+		"artifact": "Durandal",
+		"ee": 1,
+		"imprint": "Self",
+		"sets": ["Speed", "Hit"]
+	},
+	"Troublemaker Crozet": {
+		"stats": {
+			"atk": 1470,
+			"def": 1683,
+			"hp": 20983,
+			"spd": 235,
+			"chc": 0.19,
+			"chd": 1.5,
+			"eff": 0.2,
+			"efr": 1.02,
+			"dac": 0.03
+		},
+		"tag": "Tanker",
+		"tooltip": "Receives a portion of the damage suffered by the ally in the back row in their place, and protects allies by stunning enemies.",
+		"artifact": "Hilag Lance",
+		"ee": 3,
+		"imprint": "Self",
+		"sets": ["Speed", "Resist"]
+	},
+	"Last Piece Karin": {
+		"stats": {
+			"atk": 3181,
+			"def": 815,
+			"hp": 8575,
+			"spd": 284,
+			"chc": 1.0,
+			"chd": 2.77,
+			"eff": 0.06,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Deals huge damage to a single enemy, and evades enemy attacks with stealth.",
+		"artifact": "A Symbol of Unity",
+		"imprint": "Self",
+		"sets": ["Speed", "Penetration"]
+	},
+	"Angel of Light Angelica": {
+		"stats": {
+			"atk": 1699,
+			"def": 1531,
+			"hp": 17855,
+			"spd": 228,
+			"chc": 0.19,
+			"chd": 1.5,
+			"eff": 1.938,
+			"efr": 0.66,
+			"dac": 0.03
+		},
+		"tag": "Debuffer",
+		"tooltip": "Supports allies by dispelling debuffs from all allies, or by inflicting strong debuffs on enemies.",
+		"artifact": "Tagehel's Ancient Book",
+		"imprint": "Self",
+		"sets": ["Speed", "Immunity"]
+	},
+	"Unbound Knight Arowell": {
+		"stats": {
+			"atk": 1247,
+			"def": 1590,
+			"hp": 26328,
+			"spd": 175,
+			"chc": 0.15,
+			"chd": 1.5,
+			"eff": 0.54,
+			"efr": 1.35,
+			"dac": 0.03
+		},
+		"tag": "Tanker",
+		"tooltip": "Receives a portion of the damage suffered by all allies in their place, and protects allies by stunning enemies.",
+		"artifact": "Adamant Shield",
+		"imprint": "Self",
+		"sets": ["Counter", "Health"]
+	},
+	"Savior Adin": {
+		"stats": {
+			"atk": 3802,
+			"def": 902,
+			"hp": 8897,
+			"spd": 229,
+			"chc": 1.0,
+			"chd": 2.98,
+			"eff": 0.0,
+			"efr": 0.0,
+			"dac": 0.03
+		},
+		"tag": "Attacker",
+		"tooltip": "Has high chance to evade enemy attacks, and when successfully evading, counterattacks, dealing damage to all enemies.",
+		"artifact": "Shepherd of the Hollow",
+		"imprint": "Self",
+		"sets": ["Speed", "Penetration"]
 	}
 }
