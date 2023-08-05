@@ -6,15 +6,21 @@ import HeroBadge from "../../core/hero-badge";
 
 const DraftMode = () => {
 	const heroOptions = hero.getDraftModeHeroOptions();
+	const [heroName, setHeroName] = React.useState("Abigail");
 
 	return (
 		<div css={style.draftMode}>
+			<Card heroName={heroName}></Card>
 			<div css={style.draftModeList}>
 				{heroOptions.map((heroOption, index) => (
-					<HeroBadge key={index} heroName={heroOption.label} />
+					<button
+						key={index}
+						onClick={() => setHeroName(heroOption.label)}
+					>
+						<HeroBadge heroName={heroOption.label} />
+					</button>
 				))}
 			</div>
-			<Card></Card>
 		</div>
 	);
 };

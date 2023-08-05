@@ -13,12 +13,13 @@ import Divider from "../../core/divider";
 import hero from "../../json/hero";
 import HeroIcon from "../../core/hero-icon";
 
-const Card = () => {
-	const heroName = useAppSelector((state) => state.build.name);
+interface CardProps {
+	heroName: string;
+}
+
+const Card = ({ heroName }: CardProps) => {
 	const artifact = useAppSelector((state) => state.build.artifact);
 	const dispatch = useAppDispatch();
-
-	const heroInfo = heroes.getHeroInfo(heroName);
 
 	return (
 		<div css={style.card}>

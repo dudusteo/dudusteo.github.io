@@ -7,15 +7,17 @@ interface HeroBadgeProps {
 }
 
 const HeroBadge = ({ heroName }: HeroBadgeProps) => {
-	const heroInfo = hero.getHeroInfo(heroName);
-
-	console.log(heroInfo);
 	return (
-		<div css={style.image}>
-			<img alt="" src={hero.getHeroImage(heroName)}></img>
-			<div>
-				<img src={hero.getClassImage(heroName)} />
-				<img src={hero.getAttributeImage(heroName)} />
+		<div css={style.heroBadge}>
+			<div css={style.image}>
+				<img alt={heroName} src={hero.getHeroImage(heroName)} />
+			</div>
+			<div css={[style.elevatedIcons, style.topSection]}>
+				<img alt={heroName} src={hero.getClassImage(heroName)} />
+				<img alt={heroName} src={hero.getAttributeImage(heroName)} />
+			</div>
+			<div css={[style.elevatedIcons, style.bottomSection]}>
+				<img alt={heroName} src={hero.getStarImage(heroName)} />
 			</div>
 		</div>
 	);

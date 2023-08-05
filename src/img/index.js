@@ -64,8 +64,18 @@ const attribute = {
 	ice,
 };
 
+import five from "./star/5.png";
+import four from "./star/4.png";
+import three from "./star/3.png";
+
+const star = {
+	5: five,
+	4: four,
+	3: three,
+};
+
 // Styling
 import section_divider from "./section_divider.png";
 import epic7_logo from "./epic7_logo.png";
 
-export { heroClass, stat, attribute, section_divider, epic7_logo };
+export { heroClass, stat, attribute, star, section_divider, epic7_logo };

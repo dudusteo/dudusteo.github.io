@@ -6,12 +6,12 @@ const NavBar = () => {
 			{/* <a href="#/epic7/gear-score-calculator">
 				<button css={style.button}>Gear Score Calculator</button>
 			</a> */}
-			<a href="#/hero">
+			{/* <a href="#/hero">
 				<button css={style.button}>Builder</button>
-			</a>
-			<a href="#/card">
+			</a> */}
+			{/* <a href="#/card">
 				<button css={style.button}>Card</button>
-			</a>
+			</a> */}
 			<a href="#/draftmode">
 				<button css={style.button}>Draft Mode</button>
 			</a>

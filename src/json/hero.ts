@@ -42,6 +42,7 @@ interface HeroController {
 	getHeroImage: (heroName: string) => string;
 	getClassImage: (heroName: string) => string;
 	getAttributeImage: (heroName: string) => string;
+	getStarImage: (heroName: string) => string;
 }
 
 const hero = {
@@ -185,6 +186,10 @@ const hero = {
 	getAttributeImage: (heroName: string) => {
 		const hero = data[heroName];
 		return Image.attribute[hero.attribute];
+	},
+	getStarImage: (heroName: string) => {
+		const hero = data[heroName];
+		return Image.star[hero.rarity];
 	},
 };
 
