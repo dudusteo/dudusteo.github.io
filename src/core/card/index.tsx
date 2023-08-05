@@ -11,7 +11,7 @@ interface CardProps {
 	heroName: string;
 	artifactName: string;
 	sets: string[];
-	stats: Stats;
+	stats: FormattedStats;
 }
 
 const Card = ({ heroName, artifactName, sets, stats }: CardProps) => {
@@ -36,8 +36,8 @@ const Card = ({ heroName, artifactName, sets, stats }: CardProps) => {
 				<Divider />
 				<div className="bottom-section">
 					<div>
-						{sets.map((set) => (
-							<img src={gear.getSetImage(set)} />
+						{sets.map((set, index) => (
+							<img key={index} src={gear.getSetImage(set)} />
 						))}
 					</div>
 					<div>

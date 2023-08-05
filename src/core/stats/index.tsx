@@ -1,7 +1,7 @@
 import stat from "../../json/stat";
 
 interface ManualStatsProps {
-	stats: Stats;
+	stats: FormattedStats;
 }
 
 const Stats = ({ stats }: ManualStatsProps) => {
@@ -10,7 +10,7 @@ const Stats = ({ stats }: ManualStatsProps) => {
 			{Object.entries(stats).map(([key, value]) => (
 				<div key={key}>
 					<img src={stat.getImage(key)} />
-					<span>{value as string}</span>
+					<span>{value}</span>
 				</div>
 			))}
 		</div>

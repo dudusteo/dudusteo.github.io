@@ -33,3 +33,15 @@ interface Stats {
 	efr: number;
 	dac: number;
 }
+
+interface FormattedStats {
+	atk: number;
+	def: number;
+	hp: number;
+	spd: number;
+	chc: string;
+	chd: string;
+	eff: string;
+	efr: string;
+	dac: string;
+}

@@ -24,8 +24,8 @@ const style = {
 			grid-template-columns: clamp(7.5rem, 0rem + 100vw, 30rem);
 			grid-template-rows:
 				clamp(1.5rem, 0rem + 20vw, 6rem)
-				clamp(7.5rem, 0rem + 100vw, 30rem)
-				clamp(4rem, 0rem + 53.3333vw, 16rem);
+				clamp(7rem, 0rem + 93.3333vw, 28rem)
+				clamp(4.5rem, 0rem + 60vw, 18rem);
 			grid-template-areas: "top" "mid" "bottom";
 		`,
 	heroBackground: () => () =>
@@ -81,14 +81,15 @@ const style = {
 				grid-template-columns: 1fr;
 				grid-template-rows: repeat(
 					9,
-					clamp(0.805rem, 0rem + 10.7333vw, 3.22rem)
+					clamp(0.75rem, 0rem + 10vw, 3rem)
 				);
 
 				& > div {
 					display: flex;
+					align-items: center;
 					img {
 						padding-right: 0.75rem;
-						height: clamp(0.805rem, 0rem + 10.7333vw, 3.22rem);
+						height: clamp(0.75rem, 0rem + 10vw, 3rem);
 						filter: brightness(255);
 					}
 					span,
@@ -114,12 +115,16 @@ const style = {
 			}
 
 			.bottom-section {
+				height: inherit;
 				display: flex;
 				justify-content: space-between;
-
 				& > * {
 					display: flex;
+					gap: 0.3rem;
 					align-items: center;
+					& > img {
+						height: clamp(1.125rem, 0rem + 15vw, 4.5rem);
+					}
 				}
 			}
 		`,

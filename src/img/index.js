@@ -77,26 +77,25 @@ const star = {
 	3: three,
 };
 
-// Set Icons
-import attack from "./set/attack.png";
-import counter from "./set/counter.png";
-import critical from "./set/critical.png";
-import defense from "./set/defense.png";
-import destruction from "./set/destruction.png";
-import heal from "./set/heal.png";
-import health from "./set/health.png";
-import hit from "./set/hit.png";
-import immunity from "./set/immunity.png";
-import injury from "./set/injury.png";
-import lifesteal from "./set/lifesteal.png";
-import penetration from "./set/penetration.png";
+// Set Icons https://static.smilegatemegaport.com/event/live/epic7/guide/wearingStatus/images/sets/
+import attack from "./set/set_att.png";
+import counter from "./set/set_counter.png";
+import critical from "./set/set_cri.png";
+import defense from "./set/set_def.png";
+import destruction from "./set/set_cri_dmg.png";
+import health from "./set/set_max_hp.png";
+import hit from "./set/set_acc.png";
+import immunity from "./set/set_immune.png";
+import injury from "./set/set_scar.png";
+import lifesteal from "./set/set_vampire.png";
+import penetration from "./set/set_penetrate.png";
 import protection from "./set/protection.png";
-import rage from "./set/rage.png";
-import resist from "./set/resist.png";
-import revenge from "./set/revenge.png";
-import speed from "./set/speed.png";
-import torrent from "./set/torrent.png";
-import unity from "./set/unity.png";
+import rage from "./set/set_rage.png";
+import resist from "./set/set_res.png";
+import revenge from "./set/set_revenge.png";
+import speed from "./set/set_speed.png";
+import torrent from "./set/set_torrent.png";
+import unity from "./set/set_coop.png";
 
 const set = {
 	attack,
@@ -104,7 +103,6 @@ const set = {
 	critical,
 	defense,
 	destruction,
-	heal,
 	health,
 	hit,
 	immunity,

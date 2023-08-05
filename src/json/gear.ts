@@ -6,7 +6,7 @@ interface GearController {
 
 const gear = {
 	getSetImage: (setName: string) => {
-		return Image.set[setName];
+		return Image.set[setName.toLowerCase()];
 	},
 };
 

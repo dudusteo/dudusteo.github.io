@@ -1,5 +1,6 @@
 import Card from "../card";
 import hero from "../../json/hero";
+import stat from "../../json/stat";
 
 interface DraftCardProps {
 	heroName: string;
@@ -8,14 +9,12 @@ interface DraftCardProps {
 const DraftCard = ({ heroName }: DraftCardProps) => {
 	const draftModeHeroInfo = hero.getDraftModeHeroInfo(heroName);
 
-	console.log(draftModeHeroInfo);
-
 	return (
 		<Card
 			heroName={heroName}
 			artifactName={draftModeHeroInfo.artifact}
 			sets={draftModeHeroInfo.sets}
-			stats={draftModeHeroInfo.stats}
+			stats={stat.getFormattedStats(draftModeHeroInfo.stats)}
 		/>
 	);
 };
