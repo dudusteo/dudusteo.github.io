@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./heroBadge.style";
 import hero from "../../json/hero";
 

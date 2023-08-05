@@ -47,8 +47,9 @@ interface HeroController {
 
 const hero = {
 	data,
-	getDraftModeHeroInfo: () => {
-		return draftData;
+	getDraftModeHeroInfo: (heroName: string) => {
+		const draftModeHero = draftData[heroName];
+		return draftModeHero;
 	},
 	getDraftModeHeroOptions: () => {
 		const draftModeHeroOptions = [];

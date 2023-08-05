@@ -1,17 +1,17 @@
-import ArtifactSlot from "../../core/artifact-slot";
+import ArtifactSlot from "../artifact-slot";
 
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import {
 	changeHeroName,
 	changeArtifact,
 } from "../../features/build/build-slice";
-import Autocomplete from "../../core/autocomplete";
+import Autocomplete from "../autocomplete";
 import heroes from "../../json/hero";
 import style from "./card.style";
-import ManualStats from "../../core/manual-stats";
-import Divider from "../../core/divider";
+import ManualStats from "../manual-stats";
+import Divider from "../divider";
 import hero from "../../json/hero";
-import HeroIcon from "../../core/hero-icon";
+import HeroIcon from "../hero-icon";
 
 interface CardProps {
 	heroName: string;

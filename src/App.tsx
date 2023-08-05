@@ -4,10 +4,10 @@ import { Theme, ThemeProvider } from "@emotion/react";
 
 import NavBar from "./core/nav-bar";
 import Hero from "./routes/hero";
-import Card from "./routes/card";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
 import DraftMode from "./routes/draft-mode";
+import Home from "./routes/home";
 
 const theme: Theme = {
 	primary: "#101010",
@@ -45,8 +45,8 @@ const App = () => {
 				<HashRouter>
 					<NavBar />
 					<Routes>
+						<Route path="/" element={<Home />} />
 						<Route path="/hero" element={<Hero />} />
-						<Route path="/card" element={<Card />} />
 						<Route path="/draftmode" element={<DraftMode />} />
 					</Routes>
 				</HashRouter>

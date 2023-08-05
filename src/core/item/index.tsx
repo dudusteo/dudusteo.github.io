@@ -11,7 +11,7 @@ import {
 	gearRarityOptions,
 	getBaseItem,
 	gear,
-} from "../../json/gear";
+} from "../../json/utils";
 import stat from "../../json/stat";
 
 interface ItemProps {

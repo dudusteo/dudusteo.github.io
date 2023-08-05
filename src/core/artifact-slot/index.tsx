@@ -7,10 +7,15 @@ import artifactController from "../../json/artifact";
 
 interface ArtifactSlotProps {
 	artifact: Artifact | null;
-	setArtifact: (newArtifact: Artifact) => void;
+	setArtifact?: (newArtifact: Artifact) => void;
 }
 
-const ArtifactSlot = ({ artifact, setArtifact }: ArtifactSlotProps) => {
+const ArtifactSlot = ({
+	artifact,
+	setArtifact = () => {
+		return;
+	},
+}: ArtifactSlotProps) => {
 	const [anchorEl, setAnchorEl] = React.useState<
 		(EventTarget & SVGSVGElement) | null
 	>(null);

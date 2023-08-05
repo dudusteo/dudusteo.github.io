@@ -1,16 +1,16 @@
 import React from "react";
-import Card from "../card";
 import style from "./draftMode.style";
 import hero from "../../json/hero";
 import HeroBadge from "../../core/hero-badge";
+import DraftCard from "../../core/draft-card";
 
 const DraftMode = () => {
 	const heroOptions = hero.getDraftModeHeroOptions();
-	const [heroName, setHeroName] = React.useState("Abigail");
+	const [heroName, setHeroName] = React.useState("Vildred");
 
 	return (
 		<div css={style.draftMode}>
-			<Card heroName={heroName}></Card>
+			<DraftCard heroName={heroName} />
 			<div css={style.draftModeList}>
 				{heroOptions.map((heroOption, index) => (
 					<button

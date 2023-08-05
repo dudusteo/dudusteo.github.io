@@ -21,3 +21,15 @@ interface Item {
 	main: Stat;
 	substats: Stat[];
 }
+
+interface Stats {
+	atk: number;
+	def: number;
+	hp: number;
+	spd: number;
+	chc: number;
+	chd: number;
+	eff: number;
+	efr: number;
+	dac: number;
+}
