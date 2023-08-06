@@ -8,6 +8,7 @@ import { Provider } from "react-redux";
 import { store } from "./app/store";
 import DraftMode from "./routes/draft-mode";
 import Home from "./routes/home";
+import Footer from "./core/footer";
 
 const theme: Theme = {
 	primary: "#101010",
@@ -49,6 +50,7 @@ const App = () => {
 						<Route path="/hero" element={<Hero />} />
 						<Route path="/draftmode" element={<DraftMode />} />
 					</Routes>
+					<Footer />
 				</HashRouter>
 			</Provider>
 		</ThemeProvider>
