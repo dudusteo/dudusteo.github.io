@@ -104,7 +104,7 @@ const style = {
 			.manual-details {
 				width: clamp(4.75rem, 0rem + 33.3333vw, 19rem);
 				padding: clamp(0.25rem, 0rem + 3.3333vw, 1rem)
-					clamp(0.5rem, 0rem + 6.6666vw, 2rem);
+					clamp(0.3725rem, 0rem + 5vw, 1.5rem);
 
 				color: ${theme.text.color.white};
 
@@ -123,7 +123,8 @@ const style = {
 			background: #00000060;
 
 			grid-area: bottom;
-			padding: clamp(0.25rem, 0rem + 3.3333vw, 1rem);
+			padding: clamp(0.25rem, 0rem + 3.3333vw, 1rem)
+				clamp(0.3725rem, 0rem + 5vw, 1.5rem);
 			.top-section {
 				.artifact-slot {
 					height: clamp(2.5rem, 0rem + 33.3333vw, 10rem);

@@ -1,11 +1,13 @@
 import { Theme, css } from "@emotion/react";
 
+const size = 10;
+
 const style = {
 	toggle: () => (theme: Theme) =>
 		css`
 			display: inline-block;
 			position: relative;
-			width: 8rem;
+			width: ${size}rem;
 			height: 2rem;
 			padding: 8px;
 		`,
@@ -57,7 +59,7 @@ const style = {
 		`,
 	checked: () => (theme: Theme) =>
 		css`
-			transform: translateX(6rem);
+			transform: translateX(${size - 2}rem);
 
 			&::before {
 				background-image: black;

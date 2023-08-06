@@ -20,10 +20,12 @@ const style = {
 			.switch {
 				display: flex;
 				justify-content: space-between;
+				align-items: center;
 				background-color: ${theme.border.secondary};
 				border-radius: 2rem;
-				margin: auto 1rem;
-				padding: 1rem 3.5rem;
+
+				margin: auto clamp(0.3725rem, 0rem + 5vw, 1.5rem);
+				padding: 1rem 3rem;
 				font-size: clamp(0.3725rem, 0rem + 5vw, 1.5rem);
 				color: ${theme.text.color.gray};
 			}
