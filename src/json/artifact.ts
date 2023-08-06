@@ -1,3 +1,4 @@
+import * as Image from "../img";
 import data from "./cache/artifactdata.json";
 
 export const artifactEnhanceOptions = [
@@ -12,9 +13,10 @@ interface ArtifactController {
 		level: number
 	) => { health: number; attack: number };
 	getImage: (artifactName: string) => string;
+	getStarImage: (artifactName: string) => string;
 }
 
-const artifactController = {
+const artifact = {
 	data,
 	getBaseStats: (artifactName: string, artifactLevel: number) => {
 		const artifact = data[artifactName];
@@ -40,6 +42,10 @@ const artifactController = {
 			"_ico.png"
 		);
 	},
+	getStarImage: (artifactName: string) => {
+		const artifactInfo = data[artifactName];
+		return Image.star[artifactInfo.rarity];
+	},
 };
 
-export default artifactController as ArtifactController;
+export default artifact as ArtifactController;
