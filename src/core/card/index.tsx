@@ -50,6 +50,7 @@ const Card = ({
 					{ee && (
 						<EEIcon eeName={hero.getEEName(heroName)} number={ee} />
 					)}
+					<div></div>
 				</div>
 				<Divider />
 				<div className="bottom-section">

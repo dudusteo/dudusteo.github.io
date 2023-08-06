@@ -126,6 +126,9 @@ const style = {
 			padding: clamp(0.25rem, 0rem + 3.3333vw, 1rem)
 				clamp(0.3725rem, 0rem + 5vw, 1.5rem);
 			.top-section {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
 				.artifact-slot {
 					height: clamp(2.5rem, 0rem + 33.3333vw, 10rem);
 					width: clamp(2.5rem, 0rem + 33.3333vw, 10rem);
