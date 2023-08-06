@@ -1,9 +1,7 @@
 import * as React from "react";
 
-import style from "./artifactSlot.style";
 import Artifact from "../artifact";
 import { ClickAwayListener, Popper } from "@mui/base";
-import artifactController from "../../json/artifact";
 import ArtifactBadge from "../artifact-badge";
 
 interface ArtifactSlotProps {
@@ -21,11 +19,11 @@ const ArtifactSlot = ({
 		(EventTarget & SVGSVGElement) | null
 	>(null);
 
-	const handleClick = (
-		event: React.MouseEvent<SVGSVGElement, MouseEvent>
-	) => {
-		setAnchorEl(anchorEl ? null : event.currentTarget);
-	};
+	// const handleClick = (
+	// 	event: React.MouseEvent<SVGSVGElement, MouseEvent>
+	// ) => {
+	// 	setAnchorEl(anchorEl ? null : event.currentTarget);
+	// };
 
 	const removeArtifact = () => {
 		setAnchorEl(null);
