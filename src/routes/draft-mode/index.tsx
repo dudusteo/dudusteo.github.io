@@ -3,6 +3,7 @@ import style from "./draftMode.style";
 import hero from "../../json/hero";
 import HeroBadge from "../../core/hero-badge";
 import DraftCard from "../../core/draft-card";
+import Toggle from "../../core/toggle";
 
 const DraftMode = () => {
 	const heroOptions = hero.getDraftModeHeroOptions();
@@ -13,11 +14,17 @@ const DraftMode = () => {
 		<div css={style.draftMode}>
 			<div css={style.card}>
 				<DraftCard heroName={heroName} details={details} />
-				<button
-					onClick={() => setDetails((prevDetails) => !prevDetails)}
-				>
-					button
-				</button>
+				<div css={style.switch}>
+					<div className="switch">
+						<span css={[!details && style.active]}>Stats</span>
+						<Toggle
+							onChange={() =>
+								setDetails((prevDetails) => !prevDetails)
+							}
+						></Toggle>
+						<span css={[details && style.active]}>Profile</span>
+					</div>
+				</div>
 			</div>
 
 			<div css={style.draftModeList}>

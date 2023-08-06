@@ -23,8 +23,6 @@ const Card = ({
 	stats,
 	details = null,
 }: CardProps) => {
-	console.log(details);
-
 	return (
 		<div css={style.card}>
 			<div css={style.heroBackground}>

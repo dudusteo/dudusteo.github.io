@@ -3,6 +3,7 @@ import style from "./footer.style";
 const Footer = () => {
 	return (
 		<div css={style.footer}>
+			<div css={style.section}>{`© 2023 Epic Seven Toolkit`}</div>
 			<div css={style.section}>
 				<span>
 					{`This website is an unofficial fan site created by DuDuSteo. It is not affiliated with or endorsed by Smilegate Megaport, the developers of "Epic Seven."`}
