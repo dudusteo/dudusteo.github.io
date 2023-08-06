@@ -10,10 +10,10 @@ const ee = {
 	getImage: (eeName: string, number: number) => {
 		const eeInfo = data[eeName];
 
-		console.log(eeName, eeInfo.unit.id);
+		console.log(eeName, eeInfo.unit, number);
 
 		return `https://static.smilegatemegaport.com/event/live/epic7/guide/images/skill/sk_${
-			eeInfo.unit.id
+			eeInfo.unit
 		}_${eeInfo.skills[number - 1].skill}.png`;
 	},
 };

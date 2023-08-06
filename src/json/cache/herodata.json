@@ -98,47 +98,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1017_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc101701",
-				"id": "exc101701",
-				"name": "Untainted Heart",
-				"description": "A staff decorated with a bright red orb that encapsulates both the spirit of charity, and the unwavering determination of Achates.",
-				"unit": "c1017",
-				"role": "manauser",
-				"rarity": 5,
-				"stat": {
-					"type": "max_hp_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Increases the chance to decrease Attack when using Magic Design by 25%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Amount recovered is increased by 67% when using Rapid Cure.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Increases Effect Resistance of the caster for 2 turns when using Curing Prayer.",
-						"skill_description": "Dispels debuffs from all allies before healing them. Increases Effect Resistance of the caster for 2 turns. Healing increases proportional to the caster's max Health.",
-						"values": [57],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1017.png"
-				}
-			}
-		],
+		"ex_equip": "Untainted Heart",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -1122,21 +1082,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1100_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc102301",
-				"id": "exc102301",
-				"name": "Grudge Marble",
-				"description": "A marble filled with the grudges of people who pledged their souls and loyalty to Kayron",
-				"unit": "c1023",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "cri",
-					"value": 0.06
-				}
-			}
-		],
+		"ex_equip": "The Price of Insolence",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -1713,47 +1659,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1062_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc100801",
-				"id": "exc100801",
-				"name": "Golden Cat's Treasure",
-				"description": "An ear-protecting ornament that was passed down in Armin's family and brings wealth and honor.",
-				"unit": "c1008",
-				"role": "knight",
-				"rarity": 5,
-				"stat": {
-					"type": "speed",
-					"value": 5
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Takedown's chance of stunning is increased by 25%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 3,
-						"description": "Shield Wall's barrier strength is increased by 50%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Dispels one debuff from all allies when using Shield Wall.",
-						"skill_description": "Covers all allies with the Shield of Light and grants a barrier for 3 turns, recovering Health and dispelling one debuff. Barrier strength is proportional to the caster's Defense, and amount recovered is proportional to the target's max Health. Decreases damage suffered by allies by 10% when this skill is unavailable.",
-						"values": [5],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1008.png"
-				}
-			}
-		],
+		"ex_equip": "Golden Cat's Treasure",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -1945,21 +1851,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1048_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc101048",
-				"id": "exc101048",
-				"name": "Scarlet Tear",
-				"description": "Earrings bestowed to Aramintha from a nomad during her travels with Duren. No one knew that the trip was going to be their last one together.",
-				"unit": "c1048",
-				"role": "mage",
-				"rarity": 5,
-				"stat": {
-					"type": "speed",
-					"value": 5
-				}
-			}
-		],
+		"ex_equip": "Scarlet Tear",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -2362,47 +2254,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1008_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc100801",
-				"id": "exc100801",
-				"name": "Golden Cat's Treasure",
-				"description": "An ear-protecting ornament that was passed down in Armin's family and brings wealth and honor.",
-				"unit": "c1008",
-				"role": "knight",
-				"rarity": 5,
-				"stat": {
-					"type": "speed",
-					"value": 5
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Takedown's chance of stunning is increased by 25%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 3,
-						"description": "Shield Wall's barrier strength is increased by 50%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Dispels one debuff from all allies when using Shield Wall.",
-						"skill_description": "Covers all allies with the Shield of Light and grants a barrier for 3 turns, recovering Health and dispelling one debuff. Barrier strength is proportional to the caster's Defense, and amount recovered is proportional to the target's max Health. Decreases damage suffered by allies by 10% when this skill is unavailable.",
-						"values": [5],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1008.png"
-				}
-			}
-		],
+		"ex_equip": "Golden Cat's Treasure",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -2668,47 +2520,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2013_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc107101",
-				"id": "exc107101",
-				"name": "Citrine Treasure",
-				"description": "A beautiful brooch made by the world's greatest artisan using only the highest-grade materials.",
-				"unit": "c1071",
-				"role": "ranger",
-				"rarity": 5,
-				"stat": {
-					"type": "acc",
-					"value": 0.08
-				},
-				"skills": [
-					{
-						"skill": 2,
-						"description": "Dispels one buff each from all enemies when using Butterfly Fan.",
-						"skill_description": "Attacks all enemies by waving a fan, dispelling one buff each. Damage dealt increases with more enemies. Grants the caster immunity for 1 turn after attacking.",
-						"values": [12],
-						"_id": 0
-					},
-					{
-						"skill": 3,
-						"description": "Increases decrease Defense chance by 20% when using Razorwind Fan.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Decreases Combat Readiness of all enemies by 15% when using Razorwind Fan.",
-						"skill_description": "Attacks all enemies by creating a powerful gust of wind, with a {{variable}} chance to decrease Defense for 2 turns, before decreasing Combat Readiness by 15%. Effect chance increases by 20% when Razorwind Fan is triggered by Windbreak Fan.",
-						"values": [18],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1071.png"
-				}
-			}
-		],
+		"ex_equip": "Silent Green Flash",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -2781,24 +2593,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2014_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc107101",
-				"id": "exc107101",
-				"name": "Citrine Treasure",
-				"description": "A beautiful brooch made by the world's greatest artisan using only the highest-grade materials.",
-				"unit": "c1071",
-				"role": "ranger",
-				"rarity": 5,
-				"stat": {
-					"type": "acc",
-					"value": 0.08
-				},
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1071.png"
-				}
-			}
-		],
+		"ex_equip": "Citrine Treasure",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -2873,47 +2668,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2033_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc203301",
-				"id": "exc203301",
-				"name": "Silent Daggers",
-				"description": "A pair of daggers that Assassin Coli has been using since before she joined Dagger Sicar.",
-				"unit": "c2033",
-				"role": "assassin",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Damage dealt is increased by 10% when using Ambush.",
-						"skill_description": null,
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 1,
-						"description": "Removes 3 Souls from the enemy after using Ambush.",
-						"skill_description": "Ambushes the enemy. Removes 3 Souls from the opponent. When the caster is stealthed, increases damage dealt and increases Speed of the caster for 1 turn. Damage dealt increases proportional to the caster's Speed.",
-						"values": [56, 15, 3],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Grants the caster immunity for 2 turns after using Murder.",
-						"skill_description": "Moves silently to attack the enemy, stunning for 1 turn, before granting immunity to the caster for 2 turns. Silences all enemies for 1 turn when the target is defeated. Damage dealt increases proportional to the caster's Speed.",
-						"values": [20, 28, 12],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c2033.png"
-				}
-			}
-		],
+		"ex_equip": "Silent Daggers",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -3208,21 +2963,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1015_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc101015",
-				"id": "exc101015",
-				"name": "Cape of Selfish Interest",
-				"description": "A cape Baal made for Sezan after she became a doll. Baal is keeping it in his pocket, looking forward to her reaction when she sees it.",
-				"unit": "c1015",
-				"role": "mage",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				}
-			}
-		],
+		"ex_equip": "Cape of Selfish Interest",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -3859,47 +3600,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1071_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc107101",
-				"id": "exc107101",
-				"name": "Citrine Treasure",
-				"description": "A beautiful brooch made by the world's greatest artisan using only the highest-grade materials.",
-				"unit": "c1071",
-				"role": "ranger",
-				"rarity": 5,
-				"stat": {
-					"type": "acc",
-					"value": 0.08
-				},
-				"skills": [
-					{
-						"skill": 2,
-						"description": "Dispels one buff each from all enemies when using Butterfly Fan.",
-						"skill_description": "Attacks all enemies by waving a fan, dispelling one buff each. Damage dealt increases with more enemies. Grants the caster immunity for 1 turn after attacking.",
-						"values": [12],
-						"_id": 0
-					},
-					{
-						"skill": 3,
-						"description": "Increases decrease Defense chance by 20% when using Razorwind Fan.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Decreases Combat Readiness of all enemies by 15% when using Razorwind Fan.",
-						"skill_description": "Attacks all enemies by creating a powerful gust of wind, with a {{variable}} chance to decrease Defense for 2 turns, before decreasing Combat Readiness by 15%. Effect chance increases by 20% when Razorwind Fan is triggered by Windbreak Fan.",
-						"values": [18],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1071.png"
-				}
-			}
-		],
+		"ex_equip": "Citrine Treasure",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -4127,47 +3828,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2021_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc202101",
-				"id": "exc202101",
-				"name": "Hellfire",
-				"description": "A gauntlet that maximizes the power of Malicus, making it unsuitable for cooking.",
-				"unit": "c2021",
-				"role": "manauser",
-				"rarity": 5,
-				"stat": {
-					"type": "def_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "When a critical hit is made with Punishment, dispels one debuff inflicted on the caster and the ally with the lowest Health.",
-						"skill_description": "Attacks an enemy with a sharp dagger, healing the ally with the lowest Health. A critical hit will dispel one debuff from the caster and the ally with the lowest Health. Amount recovered increases proportional to the damage dealt.",
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Increases Defense of the caster for 2 turns when using Divine Punishment.",
-						"skill_description": "Attacks all enemies with a giant gauntlet, before increasing Defense of the caster for 2 turns and healing the ally with the lowest Health. A critical hit activates Punishment against a random enemy. Amount recovered increases proportional to the damage dealt.",
-						"values": [2],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Grants the caster increased Attack (Greater) for 2 turns when using Sacred Power.",
-						"skill_description": "Heals an ally and the caster with sacred power, granting invincibility for 1 turn and increased Attack for 2 turns to the ally, and invincibility for 1 turn and increased Attack (Greater) for 2 turns to the caster. Amount recovered increases proportional to the caster's Attack.",
-						"values": [6, 44, 1],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c2021.png"
-				}
-			}
-		],
+		"ex_equip": "Hellfire",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -4396,24 +4057,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1097_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc107101",
-				"id": "exc107101",
-				"name": "Citrine Treasure",
-				"description": "A beautiful brooch made by the world's greatest artisan using only the highest-grade materials.",
-				"unit": "c1071",
-				"role": "ranger",
-				"rarity": 5,
-				"stat": {
-					"type": "acc",
-					"value": 0.08
-				},
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1071.png"
-				}
-			}
-		],
+		"ex_equip": "Citrine Treasure",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -5043,47 +4687,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1002_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc100201",
-				"id": "exc100201",
-				"name": "Black Winter Spear",
-				"description": "\"A requiem for the fallen heroes of Wintenberg.\" These are the words the blacksmith spoke as he offered this weapon to Cecilia.",
-				"unit": "c1002",
-				"role": "knight",
-				"rarity": 5,
-				"stat": {
-					"type": "acc",
-					"value": 0.08
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Increases decrease Defense chance by 10% when using Deliverance.",
-						"skill_description": null,
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Dispels one buff from all enemies after using Steel Cloudburst.",
-						"skill_description": "Attacks all enemies with a magical spear, with a {{variable}} chance to decrease Attack for 2 turns and a 100% chance to dispel one buff. Damage dealt increases proportional to the caster's max Health.",
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 2,
-						"description": "Makes all enemies unhealable for 2 turns when using Steel Cloudburst.",
-						"skill_description": "Attacks all enemies with a magical spear, with a {{variable}} chance to decrease Attack for 2 turns and a 100% chance to make them unhealable for 2 turns. Damage dealt increases proportional to the caster's max Health.",
-						"values": [17, 27],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1002.png"
-				}
-			}
-		],
+		"ex_equip": "Black Winter Spear",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -5311,47 +4915,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1103_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc110301",
-				"id": "exc110301",
-				"name": "Reingar PSC Armband",
-				"description": "An armband Celine wore when she was a part of the Reingar Public Security Club. She keeps it with her to help remind her of those days.",
-				"unit": "c1103",
-				"role": "assassin",
-				"rarity": 5,
-				"stat": {
-					"type": "cri",
-					"value": 0.06
-				},
-				"skills": [
-					{
-						"skill": 2,
-						"description": "Grants the caster stealth for 2 turns after using Blink.",
-						"skill_description": "Attacks a random enemy with Blink when an enemy uses a non-attack skill. Can be activated once every 2 turns.\nBlink: Cuts the enemy in the blink of an eye, before granting the caster stealth for 2 turns. When the enemy is not an Elite or Boss monster, damage sharing effects are ignored.",
-						"values": [15],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "When using Blink, damage dealt is increased by 10% and attacks the enemy with the highest Attack.",
-						"skill_description": "Attacks the enemy with the highest Attack with Blink when an enemy uses a non-attack skill. Can be activated once every 2 turns.\nBlink: Cuts the enemy in the blink of an eye. When the enemy is not an Elite or Boss monster, damage sharing effects are ignored.",
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Damage dealt is increased by 10% when using Thunderclap.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1103.png"
-				}
-			}
-		],
+		"ex_equip": "Reingar PSC Armband",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -5501,47 +5065,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1079_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc107901",
-				"id": "exc107901",
-				"name": "Lucky Dice",
-				"description": "Dice used on the day Cermia won a once-in-a-lifetime jackpot. She holds onto them in hopes that they'll bring her that luck again one day.",
-				"unit": "c1079",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "25% chance to grant an extra attack with the same skill when using Playing with Fire.",
-						"skill_description": "Attacks with a flaming sword, with a {{variable}} chance to make the target unhealable for 1 turn. Has a 25% chance to grant the caster an extra attack with the same skill.",
-						"values": [27],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Grants a barrier to the caster for 2 turns when using Hot Streak!. Barrier strength increases proportional to the caster’s Attack.",
-						"skill_description": "Shoots fire, granting the caster increased Attack (Greater) and a barrier for 2 turns, resetting the cooldown of All-In!, and granting an extra turn. Barrier strength is proportional to the caster's Attack.",
-						"values": [44, 5, 35],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Decreases skill cooldown of Hot Streak! by 2 turns when an enemy is defeated by All-In!.",
-						"skill_description": "Attacks with a blazing inferno, penetrating Defense by 50%. Decreases skill cooldown of Hot Streak! by 2 turns when an enemy is defeated.",
-						"values": [34],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1079.png"
-				}
-			}
-		],
+		"ex_equip": "Lucky Dice",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -5955,47 +5479,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1027_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc102701",
-				"id": "exc102701",
-				"name": "Justice's Mask",
-				"description": "A pauldron with the face of a stern judge, symbolizing the firm resolve not to allow emotion to get in the way of duty.",
-				"unit": "c1027",
-				"role": "knight",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Chance of activating Smash increases by 10% when using Slash.",
-						"skill_description": "Attacks with a giant sword, with a {{variable}} chance to decrease Attack for 1 turn. After using this skill, has a 35% chance to activate Smash as an extra attack. Chance to activate Smash is doubled when the enemy is buffed.",
-						"values": [17],
-						"_id": 0
-					},
-					{
-						"skill": 1,
-						"description": "Chance of decreasing Attack increases by 15%, and damage dealt increases by 10% when using Slash.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Dispels all debuffs from the caster before the skill effect when using Faithful Strike.",
-						"skill_description": "Dispels all debuffs from the caster and attacks all enemies with a swordstorm, before increasing Attack of all allies for 2 turns. Additionally increases Defense of the caster for 2 turns. When there are three or fewer enemies, damage dealt increases as enemies become fewer.",
-						"values": [1, 2],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1027.png"
-				}
-			}
-		],
+		"ex_equip": "Justice's Mask",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -6070,47 +5554,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1009_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc101701",
-				"id": "exc101701",
-				"name": "Untainted Heart",
-				"description": "A staff decorated with a bright red orb that encapsulates both the spirit of charity, and the unwavering determination of Achates.",
-				"unit": "c1017",
-				"role": "manauser",
-				"rarity": 5,
-				"stat": {
-					"type": "max_hp_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Increases the chance to decrease Attack when using Magic Design by 25%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Amount recovered is increased by 67% when using Rapid Cure.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Increases Effect Resistance of the caster for 2 turns when using Curing Prayer.",
-						"skill_description": "Dispels debuffs from all allies before healing them. Increases Effect Resistance of the caster for 2 turns. Healing increases proportional to the caster's max Health.",
-						"values": [57],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1017.png"
-				}
-			}
-		],
+		"ex_equip": "Little Queen's Guard",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -6182,47 +5626,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1049_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc104901",
-				"id": "exc104901",
-				"name": "Prototype Crown",
-				"description": "Equipment that contains a set of emergency commands and looks like a tiny crown.",
-				"unit": "c1049",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 2,
-						"description": "50% chance to grant the caster an extra turn when using Magic Bolt.",
-						"skill_description": "Inflicts magic nail for 3 turns, before a 50% chance to grant the caster an extra turn. Magic nail cannot be resisted.",
-						"values": [30, 35],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Dispels all buffs from the enemy when using Magic Bolt. (This effect is applied before inflicting magic nail.)",
-						"skill_description": "Inflicts magic nail for 3 turns after dispelling all buffs from the enemy. This effect cannot be resisted.",
-						"values": [30],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Decreases the enemy's Defense for 2 turns when using Hyper Strike.",
-						"skill_description": "Soars into the air and attacks the enemy, stunning for 1 turn, before  decreasing Defense for 2 turns. Damage dealt is increased when the enemy is inflicted with magic nail.",
-						"values": [20, 18, 30],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1049.png"
-				}
-			}
-		],
+		"ex_equip": "Prototype Crown",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -6297,47 +5701,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1101_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc100301",
-				"id": "exc100301",
-				"name": "Valkyrie Wing",
-				"description": "A mysterious circlet that symbolizes strength and beauty, and is the source of Rose's Fighting Spirit.",
-				"unit": "c1003",
-				"role": "knight",
-				"rarity": 5,
-				"stat": {
-					"type": "speed",
-					"value": 5
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Activates each effect regardless of current Health when using Sequential Cutter.",
-						"skill_description": "Attacks with a sword, with a {{variable}} chance to provoke for 1 turn, before increasing Defense of the caster for 1 turn. Damage dealt increases proportional to the caster's Defense.",
-						"values": [25, 2],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Applies the same effect to the caster when using Shield of Light.",
-						"skill_description": "Covers an ally and the caster with the Shield of Light, dispelling two debuffs and granting a barrier for 2 turns before increasing Combat Readiness by {{variable}}. Barrier strength is proportional to the caster's Defense.",
-						"values": [5],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Decreases skill cooldown of Goddess of Victory by 1 turn.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1003.png"
-				}
-			}
-		],
+		"ex_equip": "Snowy Mountain Horn",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -6576,21 +5940,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1014_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc101014",
-				"id": "exc101014",
-				"name": "Restrained Ferality",
-				"description": "A necklace given to Cidd by the Wild Dog Company after he accomplished his first mission. Apparently, Jenua pick the design himself.",
-				"unit": "c1014",
-				"role": "assassin",
-				"rarity": 5,
-				"stat": {
-					"type": "acc",
-					"value": 0.08
-				}
-			}
-		],
+		"ex_equip": "Restrained Ferality",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -6665,47 +6015,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1028_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc101601",
-				"id": "exc101601",
-				"name": "Azure Dragon's Spirit",
-				"description": "A ribbon with special powers that allows the wearer to harness their innate dragon powers.",
-				"unit": "c1016",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "35% chance to extend the caster's buff durations by 1 turn when using Double Slash.",
-						"skill_description": "Attacks by swinging their weapon, with a {{variable}} chance to decrease Defense for 2 turns, before a 35% chance to extend the caster's buff durations by 1 turn.",
-						"values": [18],
-						"_id": 0
-					},
-					{
-						"skill": 1,
-						"description": "Damage dealt is increased by 30% when using Double Slash.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 2,
-						"description": "Increases chance of inflicting silence with Dragon's Roar by 15%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1016.png"
-				}
-			}
-		],
+		"ex_equip": "Azure Dragon's Spirit",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -7778,47 +7088,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2022_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc202201",
-				"id": "exc202201",
-				"name": "Ruele's Sad Promise",
-				"description": "A mysterious concoction of life created by combining the laws of light and nature and the love of a noble soul.",
-				"unit": "c2022",
-				"role": "manauser",
-				"rarity": 5,
-				"stat": {
-					"type": "res",
-					"value": 0.08
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Dispels one debuff from the ally with the lowest Health when using Key to an Oath.",
-						"skill_description": "Attacks the enemy with a staff and heals the ally with the lowest Health, before dispelling one debuff. Healing increases proportional to the target's max Health.",
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Has a 30% chance to reset skill cooldown of Regen when using Regen.",
-						"skill_description": "Blesses an ally, recovering their Health and increasing their Combat Readiness by 50%. Healing increases proportional to the caster's max Health. When this skill is used, has a 30% chance to reset this skill's cooldown.",
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Decreases skill cooldown of Destina's Grace by 1 turn.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c2022.png"
-				}
-			}
-		],
+		"ex_equip": "Ruele's Sad Promise",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -7905,47 +7175,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1076_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc107601",
-				"id": "exc107601",
-				"name": "Halted Pocketwatch",
-				"description": "Diene's pocketwatch where she keeps a dried forget-me-not inside. The watch's hands are halted at the exact time of Diene's most beautiful moment of her life.",
-				"unit": "c1076",
-				"role": "manauser",
-				"rarity": 5,
-				"stat": {
-					"type": "speed",
-					"value": 5
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Increase Combat Readiness of the ally with the highest Attack by 5% when using Light of Judgment. When the caster has a buff, the effect is doubled.",
-						"skill_description": null,
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Blessings of the Goddess's barrier strength is increased by 10%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 2,
-						"description": "Increases Combat Readiness of all allies by 15% when using Blessings of the Goddess",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1003.png"
-				}
-			}
-		],
+		"ex_equip": "Halted Pocketwatch",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -8697,47 +7927,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1091_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc202201",
-				"id": "exc202201",
-				"name": "Ruele's Sad Promise",
-				"description": "A mysterious concoction of life created by combining the laws of light and nature and the love of a noble soul.",
-				"unit": "c2022",
-				"role": "manauser",
-				"rarity": 5,
-				"stat": {
-					"type": "res",
-					"value": 0.08
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Dispels one debuff from the ally with the lowest Health when using Key to an Oath.",
-						"skill_description": "Attacks the enemy with a staff and heals the ally with the lowest Health, before dispelling one debuff. Healing increases proportional to the target's max Health.",
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Has a 30% chance to reset skill cooldown of Regen when using Regen.",
-						"skill_description": "Blesses an ally, recovering their Health and increasing their Combat Readiness by 50%. Healing increases proportional to the caster's max Health. When this skill is used, has a 30% chance to reset this skill's cooldown.",
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Decreases skill cooldown of Destina's Grace by 1 turn.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c2022.png"
-				}
-			}
-		],
+		"ex_equip": "Ruele's Sad Promise",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -9696,21 +8886,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1110_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc111001",
-				"id": "exc111001",
-				"name": "Foreign Minister's Baton",
-				"description": "A baton with Politia's national flag attached to it. When Flan is in a good mood, she often performs flag magic for Landy.",
-				"unit": "c1110",
-				"role": "ranger",
-				"rarity": 5,
-				"stat": {
-					"type": "acc",
-					"value": 0.08
-				}
-			}
-		],
+		"ex_equip": "Foreign Minister's Baton",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -9780,21 +8956,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3026_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc106601",
-				"id": "exc106601",
-				"name": "Dragon Emerald",
-				"description": "Jewelry that Luna's father passed on to her. It is the only thing her mother left behind when she left.",
-				"unit": "c1066",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				}
-			}
-		],
+		"ex_equip": "Dragon Emerald",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -9870,21 +9032,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1087_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc101087",
-				"id": "exc101087",
-				"name": "Indomitable Faith",
-				"description": "A crossbow made from the weapon Furious had used when he was serving with the Aakhen Army. It can shoot dozens of arrorws within a short period.",
-				"unit": "c1087",
-				"role": "ranger",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				}
-			}
-		],
+		"ex_equip": "Indomitable Faith",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -9957,47 +9105,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2035_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc203501",
-				"id": "exc203501",
-				"name": "Tear-Stained Badge",
-				"description": "A worn-out badge made of paper and given to General Purrgis by his subordinates as a token of their appreciation for him.",
-				"unit": "c2035",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "max_hp_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 2,
-						"description": "20% chance for Spearhead to increase Defense of the caster for 2 turns when the caster is attacked.",
-						"skill_description": "Increases Combat Readiness of all allies by {{variable}} when the caster is attacked, with a 20% chance to increase Defense of the caster for 2 turns.",
-						"values": [2],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Spearhead increases Combat Readiness by an additional 3%.",
-						"skill_description": "Increases Combat Readiness of all allies by {{variable}} when the caster is attacked.",
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Decreases skill cooldown of Command to Charge by 1 turn.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c2035.png"
-				}
-			}
-		],
+		"ex_equip": "Tear-Stained Badge",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -10294,25 +9402,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2086_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc104901",
-				"id": "exc104901",
-				"name": "Prototype Crown",
-				"description": "Equipment that contains a set of emergency commands and looks like a tiny crown.",
-				"unit": "c1049",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				},
-				"skills": [],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1049.png"
-				}
-			}
-		],
+		"ex_equip": "Prototype Crown",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -10391,47 +9481,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2018_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc201801",
-				"id": "exc201801",
-				"name": "Whispered Faith",
-				"description": "A mystical whistle that enables the user to freely exchange feelings with small creatures.",
-				"unit": "c2018",
-				"role": "mage",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 2,
-						"description": "Grants a barrier to all allies when using Spirit's Protection. Barrier strength increases proportional to the caster's Attack.",
-						"skill_description": "Attacks with spirit power, and casts a barrier over all allies for 2 turns. Barrier strength is proportional to the caster's Attack.",
-						"values": [5],
-						"_id": 0
-					},
-					{
-						"skill": 3,
-						"description": "Stuns the enemy for 1 turn when using Wave of Force.",
-						"skill_description": "Delivers a blow to the enemy with spirit power, stunning them for 1 turn, and heals all allies before granting continuous healing for 2 turns. Amount recovered increases proportional to the damage dealt.",
-						"values": [20, 11],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Increases Attack of all allies for 2 turns when using Wave of Force.",
-						"skill_description": "Delivers a blow to the enemy with spirit power, and heals all allies before granting continuous healing and increased Attack for 2 turns. Amount recovered increases proportional to the damage dealt.",
-						"values": [11, 1],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c2018.png"
-				}
-			}
-		],
+		"ex_equip": "Whispered Faith",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -10681,24 +9731,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1039_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc102301",
-				"id": "exc102301",
-				"name": "Grudge Marble",
-				"description": "A marble filled with the grudges of people who pledged their souls and loyalty to Kayron",
-				"unit": "c1023",
-				"role": "assassin",
-				"rarity": 5,
-				"stat": {
-					"type": "cri",
-					"value": 0.06
-				},
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1023.png"
-				}
-			}
-		],
+		"ex_equip": "Grudge Marble",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -11514,21 +10547,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1113_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc102301",
-				"id": "exc102301",
-				"name": "Grudge Marble",
-				"description": "A marble filled with the grudges of people who pledged their souls and loyalty to Kayron",
-				"unit": "c1023",
-				"role": "assassin",
-				"rarity": 5,
-				"stat": {
-					"type": "cri",
-					"value": 0.06
-				}
-			}
-		],
+		"ex_equip": "Bloody Jewel",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -11607,47 +10626,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2085_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc208501",
-				"id": "exc208501",
-				"name": "Flame Armband",
-				"description": "A staff decorated with a bright red orb that encapsulates both the spirit of charity, and the unwavering determination of Achates.",
-				"unit": "c2085",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 2,
-						"description": "Blazing Fury increases Combat Readiness of the caster by an additional 5%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Grants immunity to the caster for 2 turns when using Blazing Fury.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Silences the target for 1 turn when using Flames of Destruction. When the caster is granted vigor, ignores Effect Resistance. This effect is applied before inflicting burn.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c2033.png"
-				}
-			}
-		],
+		"ex_equip": "Flame Armband",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -12311,47 +11290,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1011_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc104601",
-				"id": "exc104601",
-				"name": "Eternal Rose",
-				"description": "A rose that Lidica picked when she was excommunicated from the Rose Apostles. It has been specially treated to ensure it never withers but also lost its scent in the process.",
-				"unit": "c1046",
-				"role": "ranger",
-				"rarity": 5,
-				"stat": {
-					"type": "acc",
-					"value": 0.08
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Damage dealt is increased by 20% when using Wild Rose.",
-						"skill_description": null,
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 1,
-						"description": "Increases base Combat Readiness reduction by 5% when using Wild Rose.",
-						"skill_description": "Attacks with a sword, decreasing Combat Readiness by 15%. When the enemy is debuffed, decreases Combat Readiness by an additional 10%.",
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 2,
-						"description": "Dispels an additional buff when using Thornbush.",
-						"skill_description": "Attacks all enemies, with a {{variable}} chance each to decrease Hit Chance for 1 turn, make them unhealable for 1 turn, and dispel two buffs.",
-						"values": [22, 27],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1046.png"
-				}
-			}
-		],
+		"ex_equip": "Eternal Rose",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -12427,47 +11366,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1073_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc107301",
-				"id": "exc107301",
-				"name": "Proof of Choice",
-				"description": "A token given to the leader of the Enhanced Magic Division. To ensure the past is never forgotten, he keeps it with him at all times.",
-				"unit": "c1073",
-				"role": "mage",
-				"rarity": 5,
-				"stat": {
-					"type": "cri",
-					"value": 0.06
-				},
-				"skills": [
-					{
-						"skill": 2,
-						"description": "Increases Attack of the caster for 2 turns when using Dimensional Corridor.",
-						"skill_description": "Attacks the enemy in a dimensional corridor, with a {{variable}} chance each to dispel two buffs before increasing skill cooldowns by 1 turn twice. Increases Attack and Speed of the caster for 2 turns. Damage dealt increases proportional to the target's Speed.",
-						"values": [1, 3],
-						"_id": 0
-					},
-					{
-						"skill": 3,
-						"description": "Inflicts decreased Hit Chance for 1 turn when using Dimensional Explosion.",
-						"skill_description": "Attacks all enemies with an explosion, decreasing Hit Chance and silencing for 1 turn, before granting stealth to the caster for 2 turns. Penetrates Defense by 30%. Damage dealt increases proportional to the caster's Speed.",
-						"values": [22, 28, 15, 34],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Damage dealt is increased by 20% when using Dimensional Explosion.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1073.png"
-				}
-			}
-		],
+		"ex_equip": "Proof of Choice",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -12544,47 +11443,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1023_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc102301",
-				"id": "exc102301",
-				"name": "Grudge Marble",
-				"description": "A marble filled with the grudges of people who pledged their souls and loyalty to Kayron",
-				"unit": "c1023",
-				"role": "assassin",
-				"rarity": 5,
-				"stat": {
-					"type": "cri",
-					"value": 0.06
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Damage dealt is increased by 10% when using Void Slash.",
-						"skill_description": null,
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 3,
-						"description": "Damage dealt is increased by 10% when using Apocalypse.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Inflicts silence for 1 turn when using Apocalypse.",
-						"skill_description": "Attacks the enemy by exploding the Archdemon's Might contained within the sword, before inflicting silence for 1 turn and increasing Attack of the caster for 2 turns. When the enemy is defeated, extends the duration of any buffs already granted to the caster by 1 turn. Damage dealt increases proportional to the caster's lost Health.",
-						"values": [28, 1],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1023.png"
-				}
-			}
-		],
+		"ex_equip": "Grudge Marble",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -13034,47 +11893,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1006_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc101601",
-				"id": "exc101601",
-				"name": "Azure Dragon's Spirit",
-				"description": "A ribbon with special powers that allows the wearer to harness their innate dragon powers.",
-				"unit": "c1016",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "speed",
-					"value": 5
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "35% chance to extend the caster's buff durations by 1 turn when using Double Slash.",
-						"skill_description": "Attacks by swinging their weapon, with a {{variable}} chance to decrease Defense for 2 turns, before a 35% chance to extend the caster's buff durations by 1 turn.",
-						"values": [18],
-						"_id": 0
-					},
-					{
-						"skill": 1,
-						"description": "Damage dealt is increased by 30% when using Double Slash.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 2,
-						"description": "Increases chance of inflicting silence with Dragon's Roar by 15%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1016.png"
-				}
-			}
-		],
+		"ex_equip": "Azure Dragon's Spirit",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -13150,47 +11969,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2028_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc202201",
-				"id": "exc202201",
-				"name": "Ruele's Sad Promise",
-				"description": "A mysterious concoction of life created by combining the laws of light and nature and the love of a noble soul.",
-				"unit": "c2022",
-				"role": "manauser",
-				"rarity": 5,
-				"stat": {
-					"type": "res",
-					"value": 0.08
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Dispels one debuff from the ally with the lowest Health when using Key to an Oath.",
-						"skill_description": "Attacks the enemy with a staff and heals the ally with the lowest Health, before dispelling one debuff. Healing increases proportional to the target's max Health.",
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Has a 30% chance to reset skill cooldown of Regen when using Regen.",
-						"skill_description": "Blesses an ally, recovering their Health and increasing their Combat Readiness by 50%. Healing increases proportional to the caster's max Health. When this skill is used, has a 30% chance to reset this skill's cooldown.",
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Decreases skill cooldown of Destina's Grace by 1 turn.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c2022.png"
-				}
-			}
-		],
+		"ex_equip": "Ruele's Sad Promise",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -13427,21 +12206,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1070_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc100301",
-				"id": "exc100301",
-				"name": "Valkyrie Wing",
-				"description": "A mysterious circlet that symbolizes strength and beauty, and is the source of Rose's Fighting Spirit.",
-				"unit": "c1003",
-				"role": "knight",
-				"rarity": 5,
-				"stat": {
-					"type": "speed",
-					"value": 5
-				}
-			}
-		],
+		"ex_equip": "Grace of the Vast Ocean Tide",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -13520,21 +12285,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1099_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc101099",
-				"id": "exc101099",
-				"name": "Prototype Memory Card",
-				"description": "A memory card that was installed in Laika when she was first produced. Brinus gave it to her in a small gift box and told her to go through its contents whenever Laika felt the need.",
-				"unit": "c1099",
-				"role": "ranger",
-				"rarity": 5,
-				"stat": {
-					"type": "speed",
-					"value": 5
-				}
-			}
-		],
+		"ex_equip": "Prototype Memory Card",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -14086,47 +12837,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1046_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc104601",
-				"id": "exc104601",
-				"name": "Eternal Rose",
-				"description": "A rose that Lidica picked when she was excommunicated from the Rose Apostles. It has been specially treated to ensure it never withers but also lost its scent in the process.",
-				"unit": "c1046",
-				"role": "ranger",
-				"rarity": 5,
-				"stat": {
-					"type": "acc",
-					"value": 0.08
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Damage dealt is increased by 20% when using Wild Rose.",
-						"skill_description": null,
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 1,
-						"description": "Increases base Combat Readiness reduction by 5% when using Wild Rose.",
-						"skill_description": "Attacks with a sword, decreasing Combat Readiness by 15%. When the enemy is debuffed, decreases Combat Readiness by an additional 10%.",
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 2,
-						"description": "Dispels an additional buff when using Thornbush.",
-						"skill_description": "Attacks all enemies, with a {{variable}} chance each to decrease Hit Chance for 1 turn, make them unhealable for 1 turn, and dispel two buffs.",
-						"values": [22, 27],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1046.png"
-				}
-			}
-		],
+		"ex_equip": "Eternal Rose",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -14357,47 +13068,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1095_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc109501",
-				"id": "exc109501",
-				"name": "Soul Tailor",
-				"description": "A medal bestowed only to the most talented of tailors. As it is a family heirloom, Lilibet received it from her mother, with whom she has been separated from childhood.",
-				"unit": "c1095",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "cri",
-					"value": 0.06
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Damage dealt is increased by 20% when using Slice-Slice.",
-						"skill_description": null,
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Increases chance of inflicting bleeding with Snip-Snip by 15%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Damage dealt is increased by 10% when using Soul Cutter.",
-						"skill_description": null,
-						"values": [52, 46],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1095.png"
-				}
-			}
-		],
+		"ex_equip": "Soul Tailor",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -15011,47 +13682,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1069_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc101601",
-				"id": "exc101601",
-				"name": "Azure Dragon's Spirit",
-				"description": "A ribbon with special powers that allows the wearer to harness their innate dragon powers.",
-				"unit": "c1016",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "35% chance to extend the caster's buff durations by 1 turn when using Double Slash.",
-						"skill_description": "Attacks by swinging their weapon, with a {{variable}} chance to decrease Defense for 2 turns, before a 35% chance to extend the caster's buff durations by 1 turn.",
-						"values": [18],
-						"_id": 0
-					},
-					{
-						"skill": 1,
-						"description": "Damage dealt is increased by 30% when using Double Slash.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 2,
-						"description": "Increases chance of inflicting silence with Dragon's Roar by 15%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1016.png"
-				}
-			}
-		],
+		"ex_equip": "Azure Dragon's Spirit",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -15128,47 +13759,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1082_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc108201",
-				"id": "exc108201",
-				"name": "Communion Lotus",
-				"description": "A physical manifestation of the power gained through communion with the Spirits. Its form and nature change as needed.",
-				"unit": "c1082",
-				"role": "mage",
-				"rarity": 5,
-				"stat": {
-					"type": "acc",
-					"value": 0.08
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Increases decrease Defense chance by 15% when using Wild Wave.",
-						"skill_description": "Attacks with intense elemental force, with a 65% chance to decrease Defense for 2 turns. Damage dealt increases proportional to the amount of the enemy's lost Health.",
-						"values": [18],
-						"_id": 0
-					},
-					{
-						"skill": 1,
-						"description": "Has a 35% chance to grant an extra attack with the same skill when using Wild Wave. Extra attack can only be granted once per turn of the caster.",
-						"skill_description": "Attacks with intense elemental force, with a 50% chance to decrease Defense for 2 turns. Damage dealt increases proportional to the amount of the enemy's lost Health. Has a 35% chance to grant an extra attack with the same skill. Extra attack can only be granted once per turn of the caster.",
-						"values": [18],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Has a 75% chance to decrease Attack of all enemies for 2 turns when using Wave of Vengeance.",
-						"skill_description": "Attacks all enemies with the power of ruin, with a {{variable}} chance to decrease Defense for 2 turns, before a 75% chance to decrease Attack for 2 turns. Increases Attack of the caster, and increased Attack can stack up to 3 times.",
-						"values": [17, 18],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1082.png"
-				}
-			}
-		],
+		"ex_equip": "Communion Lotus",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -15249,47 +13840,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1066_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc106601",
-				"id": "exc106601",
-				"name": "Dragon Emerald",
-				"description": "Jewelry that Luna's father passed on to her. It is the only thing her mother left behind when she left.",
-				"unit": "c1066",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Increases the caster's Combat Readiness by 15% after using Infinity Slash.",
-						"skill_description": "Stabs the target a random number of times, before increasing Combat Readiness of the caster by 15%. Skill cooldown decreases by 1-3 turns and damage dealt increases according to the number of attacks.",
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 3,
-						"description": "Decreases the enemy's Attack for 2 turns after using Ragnar Spear.",
-						"skill_description": "Soars into the air and hits the enemy with a spear, with a {{variable}} chance to decrease Defense for 2 turns and a 100% chance to decrease Attack for 2 turns. Attacks using an advantageous element.",
-						"values": [18, 17],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Grants an extra turn to the caster when the enemy is defeated by Ragnar Spear.",
-						"skill_description": "Soars into the air and hits the enemy with a spear, with a {{variable}} chance to decrease Defense for 2 turns. Attacks using an advantageous element. Grants an extra turn to the caster when the enemy is defeated.",
-						"values": [18, 35],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1066.png"
-				}
-			}
-		],
+		"ex_equip": "Dragon Emerald",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -15984,21 +14535,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1096_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc102301",
-				"id": "exc102301",
-				"name": "Grudge Marble",
-				"description": "A marble filled with the grudges of people who pledged their souls and loyalty to Kayron",
-				"unit": "c1023",
-				"role": "mage",
-				"rarity": 5,
-				"stat": {
-					"type": "cri",
-					"value": 0.06
-				}
-			}
-		],
+		"ex_equip": "Grudge Marble",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -16318,47 +14855,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1122_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc110301",
-				"id": "exc110301",
-				"name": "Reingar PSC Armband",
-				"description": "An armband Celine wore when she was a part of the Reingar Public Security Club. She keeps it with her to help remind her of those days.",
-				"unit": "c1103",
-				"role": "assassin",
-				"rarity": 5,
-				"stat": {
-					"type": "cri",
-					"value": 0.06
-				},
-				"skills": [
-					{
-						"skill": 2,
-						"description": "Grants the caster stealth for 2 turns after using Blink.",
-						"skill_description": "Attacks a random enemy with Blink when an enemy uses a non-attack skill. Can be activated once every 2 turns.\nBlink: Cuts the enemy in the blink of an eye, before granting the caster stealth for 2 turns. When the enemy is not an Elite or Boss monster, damage sharing effects are ignored.",
-						"values": [15],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "When using Blink, damage dealt is increased by 10% and attacks the enemy with the highest Attack.",
-						"skill_description": "Attacks the enemy with the highest Attack with Blink when an enemy uses a non-attack skill. Can be activated once every 2 turns.\nBlink: Cuts the enemy in the blink of an eye. When the enemy is not an Elite or Boss monster, damage sharing effects are ignored.",
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Damage dealt is increased by 10% when using Thunderclap.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1103.png"
-				}
-			}
-		],
+		"ex_equip": "Reingar PSC Armband",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -16776,47 +15273,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1104_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc101701",
-				"id": "exc101701",
-				"name": "Untainted Heart",
-				"description": "A staff decorated with a bright red orb that encapsulates both the spirit of charity, and the unwavering determination of Achates.",
-				"unit": "c1017",
-				"role": "manauser",
-				"rarity": 5,
-				"stat": {
-					"type": "max_hp_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Increases the chance to decrease Attack when using Magic Design by 25%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Amount recovered is increased by 67% when using Rapid Cure.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Increases Effect Resistance of the caster for 2 turns when using Curing Prayer.",
-						"skill_description": "Dispels debuffs from all allies before healing them. Increases Effect Resistance of the caster for 2 turns. Healing increases proportional to the caster's max Health.",
-						"values": [57],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1017.png"
-				}
-			}
-		],
+		"ex_equip": "Untainted Heart",
 		"skills": {
 			"S1": {
 				"hitTypes": [],
@@ -16966,47 +15423,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1044_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc104401",
-				"id": "exc104401",
-				"name": "A Rabbit's Wild Nature",
-				"description": "A whip used to train beasts. It is said that beasts are more obedient when tamed with this whip.",
-				"unit": "c1044",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "acc",
-					"value": 0.08
-				},
-				"skills": [
-					{
-						"skill": 2,
-						"description": "Increases the effect chance by 10% when using Punishment.",
-						"skill_description": null,
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 3,
-						"description": "Has a 35% chance to grant the caster an extra turn after using Grand Finale.",
-						"skill_description": "Drives monsters forward to attack all enemies, dispelling two buffs. Grants increased Attack to all allies for 3 turns. After attacking, has a 35% chance to grant the caster an extra turn.",
-						"values": [1, 35],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Silences the enemy with the highest Combat Readiness for 1 turn after using Grand Finale.",
-						"skill_description": "Drives monsters forward to attack all enemies, dispelling two buffs, before silencing the enemy with the highest Combat Readiness for 1 turn. Grants increased Attack to all allies for 3 turns.",
-						"values": [28, 1],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1044.png"
-				}
-			}
-		],
+		"ex_equip": "A Rabbit's Wild Nature",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -17707,47 +16124,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1080_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc101601",
-				"id": "exc101601",
-				"name": "Azure Dragon's Spirit",
-				"description": "A ribbon with special powers that allows the wearer to harness their innate dragon powers.",
-				"unit": "c1016",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "cri",
-					"value": 0.06
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "35% chance to extend the caster's buff durations by 1 turn when using Double Slash.",
-						"skill_description": "Attacks by swinging their weapon, with a {{variable}} chance to decrease Defense for 2 turns, before a 35% chance to extend the caster's buff durations by 1 turn.",
-						"values": [18],
-						"_id": 0
-					},
-					{
-						"skill": 1,
-						"description": "Damage dealt is increased by 30% when using Double Slash.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 2,
-						"description": "Increases chance of inflicting silence with Dragon's Roar by 15%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1016.png"
-				}
-			}
-		],
+		"ex_equip": "Azure Dragon's Spirit",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -18702,47 +17079,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1019_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc101901",
-				"id": "exc101901",
-				"name": "Flame of Life",
-				"description": "When Ravi was reborn as a wraith, fire energy was infused into her body, deriving its strength from the lives taken by her axe.",
-				"unit": "c1019",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Has a 40% chance to dispel one debuff from the caster when using Slaughter.",
-						"skill_description": "Attacks the enemy with a double-edged axe, with a 35% chance to stun for 1 turn, before recovering Health proportional to damage dealt, with a 40% chance to dispel one debuff from the caster.",
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 1,
-						"description": "Has a 35% chance to burn for 2 turns when using Slaughter.",
-						"skill_description": "Attacks the enemy with a double-edged axe, with a 35% chance each to stun for 1 turn and burn for 2 turns, before recovering Health proportional to damage dealt.",
-						"values": [20, 31],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Increases stun chance by 10% when using Devil Drive.",
-						"skill_description": "Brutally attacks all enemies, with a 85% chance to stun for 1 turn, decreasing Combat Readiness of stunned enemies by 100%.",
-						"values": [20],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1019.png"
-				}
-			}
-		],
+		"ex_equip": "Flame of Life",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -18814,47 +17151,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1090_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc202201",
-				"id": "exc202201",
-				"name": "Ruele's Sad Promise",
-				"description": "A mysterious concoction of life created by combining the laws of light and nature and the love of a noble soul.",
-				"unit": "c2022",
-				"role": "manauser",
-				"rarity": 5,
-				"stat": {
-					"type": "res",
-					"value": 0.08
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Dispels one debuff from the ally with the lowest Health when using Key to an Oath.",
-						"skill_description": "Attacks the enemy with a staff and heals the ally with the lowest Health, before dispelling one debuff. Healing increases proportional to the target's max Health.",
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Has a 30% chance to reset skill cooldown of Regen when using Regen.",
-						"skill_description": "Blesses an ally, recovering their Health and increasing their Combat Readiness by 50%. Healing increases proportional to the caster's max Health. When this skill is used, has a 30% chance to reset this skill's cooldown.",
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Decreases skill cooldown of Destina's Grace by 1 turn.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c2022.png"
-				}
-			}
-		],
+		"ex_equip": "Ruele's Sad Promise",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -19663,47 +17960,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1054_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc105401",
-				"id": "exc105401",
-				"name": "Rin's Sparkling Rings",
-				"description": "A pair of rings Basar gave Rin on her first birthday after he adopted her. They never lose their sheen, and they're much lighter than her other rings.",
-				"unit": "c1054",
-				"role": "manauser",
-				"rarity": 5,
-				"stat": {
-					"type": "acc",
-					"value": 0.08
-				},
-				"skills": [
-					{
-						"skill": 2,
-						"description": "Increases chance of activating Ring Throw by 20% when using Dazzling Dance.",
-						"skill_description": "Dazzles the enemy with a dance, with a {{variable}} chance to decrease Defense for 2 turns, before a 70% chance to use Ring Throw. Damage dealt increases proportional to the caster's max Health.",
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 3,
-						"description": "Amount recovered is increased by 15% when using Showtime.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Dispels one debuff from all allies before the skill effect when using Showtime.",
-						"skill_description": "Dispels 1 debuff from all allies and heals them with an elegant dance, before granting two random buffs for 3 turns. Amount recovered increases proportional to the target's max Health.",
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1054.png"
-				}
-			}
-		],
+		"ex_equip": "Rin's Sparkling Rings",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -19859,21 +18116,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2029_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc102029",
-				"id": "exc102029",
-				"name": "Golden Horn of Vengenance",
-				"description": "A slingshot he bought after selling everything that he inherited from his parents. He reconfigured the handle as a flute so that he can call Racoo.",
-				"unit": "c2029",
-				"role": "ranger",
-				"rarity": 5,
-				"stat": {
-					"type": "speed",
-					"value": 5
-				}
-			}
-		],
+		"ex_equip": "Golden Horn of Vengenance",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -20042,47 +18285,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1043_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc104301",
-				"id": "exc104301",
-				"name": "A Treatise on Logic",
-				"description": "An old book found in the royal library. Other than Romann, nobody has read it in a very long time.",
-				"unit": "c1043",
-				"role": "mage",
-				"rarity": 5,
-				"stat": {
-					"type": "speed",
-					"value": 5
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "75% chance to dispel one buff from the enemy when using Gravity Arrow.",
-						"skill_description": "Shoots gravity arrows at the enemy, decreasing Combat Readiness by {{variable}}, with a 75% chance to dispel one buff, and increasing Combat Readiness of the caster by {{variable}}.",
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Grants a barrier to the caster for 2 turns when using Gravitation. Barrier strength increases proportional to the caster's max Health.",
-						"skill_description": "Attacks all enemies with a magic circle, with a 50% chance each to decrease Combat Readiness by {{variable}} four times, before granting the caster a barrier for 2 turns. Barrier strength increases proportional to the caster's max Health.",
-						"values": [5],
-						"_id": 1
-					},
-					{
-						"skill": 2,
-						"description": "50% chance to dispel one buff each from all enemies when using Gravitation.",
-						"skill_description": "Attacks all enemies with a magic circle, with a 50% chance each to decrease Combat Readiness by {{variable}} four times, and a 50% chance to dispel one buff each from all enemies.",
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1043.png"
-				}
-			}
-		],
+		"ex_equip": "A Treatise on Logic",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -20234,47 +18437,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1003_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc100301",
-				"id": "exc100301",
-				"name": "Valkyrie Wing",
-				"description": "A mysterious circlet that symbolizes strength and beauty, and is the source of Rose's Fighting Spirit.",
-				"unit": "c1003",
-				"role": "knight",
-				"rarity": 5,
-				"stat": {
-					"type": "speed",
-					"value": 5
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Activates each effect regardless of current Health when using Sequential Cutter.",
-						"skill_description": "Attacks with a sword, with a {{variable}} chance to provoke for 1 turn, before increasing Defense of the caster for 1 turn. Damage dealt increases proportional to the caster's Defense.",
-						"values": [25, 2],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Applies the same effect to the caster when using Shield of Light.",
-						"skill_description": "Covers an ally and the caster with the Shield of Light, dispelling two debuffs and granting a barrier for 2 turns before increasing Combat Readiness by {{variable}}. Barrier strength is proportional to the caster's Defense.",
-						"values": [5],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Decreases skill cooldown of Goddess of Victory by 1 turn.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1003.png"
-				}
-			}
-		],
+		"ex_equip": "Valkyrie Wing",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -20759,25 +18922,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c5071_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc106601",
-				"id": "exc106601",
-				"name": "Dragon Emerald",
-				"description": "Jewelry that Luna's father passed on to her. It is the only thing her mother left behind when she left.",
-				"unit": "c1066",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				},
-				"skills": [],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1066.png"
-				}
-			}
-		],
+		"ex_equip": "Dragon Emerald",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -20853,47 +18998,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1106_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc101701",
-				"id": "exc101701",
-				"name": "Untainted Heart",
-				"description": "A staff decorated with a bright red orb that encapsulates both the spirit of charity, and the unwavering determination of Achates.",
-				"unit": "c1017",
-				"role": "manauser",
-				"rarity": 5,
-				"stat": {
-					"type": "max_hp_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Increases the chance to decrease Attack when using Magic Design by 25%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Amount recovered is increased by 67% when using Rapid Cure.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Increases Effect Resistance of the caster for 2 turns when using Curing Prayer.",
-						"skill_description": "Dispels debuffs from all allies before healing them. Increases Effect Resistance of the caster for 2 turns. Healing increases proportional to the caster's max Health.",
-						"values": [57],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1017.png"
-				}
-			}
-		],
+		"ex_equip": "Grace of Madness",
 		"skills": {
 			"S1": {
 				"hitTypes": ["normal", "miss"],
@@ -21100,47 +19205,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1040_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc104001",
-				"id": "exc104001",
-				"name": "Witch Hat",
-				"description": "A magic hat that keeps your skin clear and wrinkle-free by completely blocking heat and UV rays.",
-				"unit": "c1040",
-				"role": "mage",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 2,
-						"description": "30% chance to grant the caster an extra turn when using Spirit Absorb.",
-						"skill_description": "Absorbs the enemy's Attack, increasing Attack of the caster for 2 turns before recovering Health proportional to the damage dealt, with a {{variable}} chance to decrease Attack of the enemy for 2 turns. Has a 30% chance of granting the caster an extra turn after attacking. When the enemy is defeated, cooldown does not increase.",
-						"values": [1, 17, 35],
-						"_id": 0
-					},
-					{
-						"skill": 3,
-						"description": "Inflicts vampiric touch for 2 turns when using Flame Kiss.",
-						"skill_description": "Swallows the enemy in the flame of Chatty, the magic lantern, with a {{variable}} chance each to inflict two burn effects for 2 turns, and inflicts vampiric touch for 2 turns.",
-						"values": [31, 23],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Dispels two buffs when using Flame Kiss. (Applies prior to inflicting burn debuff)",
-						"skill_description": "Swallows the enemy in the flame of Chatty, the magic lantern, dispelling two buffs, with a {{variable}} chance each to inflict two burn effects for 2 turns.",
-						"values": [31],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1040.png"
-				}
-			}
-		],
+		"ex_equip": "Witch Hat",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -21389,47 +19454,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2003_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc200301",
-				"id": "exc200301",
-				"name": "Shadow Wing",
-				"description": "A circlet shaped like a pair of wings and consumed by an inner shadow. It reinvigorates the distorted desires of its wearer with new life.",
-				"unit": "c2003",
-				"role": "knight",
-				"rarity": 5,
-				"stat": {
-					"type": "acc",
-					"value": 0.08
-				},
-				"skills": [
-					{
-						"skill": 2,
-						"description": "Dispels one more buff when using Spear of Darkness.",
-						"skill_description": "Leaps into the air and strikes at the enemy with a swordstorm, dispelling two buffs and decreasing Defense for 2 turns.",
-						"values": [18],
-						"_id": 0
-					},
-					{
-						"skill": 3,
-						"description": "Increases Combat Readiness of the caster by an additional 25% when using Goddess of Ruin.",
-						"skill_description": "Attacks all enemies with the Portent of Destruction, decreasing their Combat Readiness by 25%, and increases Combat Readiness of all allies by 25%, before increasing Combat Readiness of the caster by an additional 25%. Increases Effectiveness of the caster for 2 turns.",
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Increases Combat Readiness effects of Goddess of Ruin by 5% each.",
-						"skill_description": "Attacks all enemies with the Portent of Destruction, decreasing their Combat Readiness by 30%, and increases Combat Readiness of all allies by 30%. Increases Effectiveness of the caster for 2 turns.",
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c2003.png"
-				}
-			}
-		],
+		"ex_equip": "Shadow Wing",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -21504,21 +19529,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1132_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc104601",
-				"id": "exc104601",
-				"name": "Eternal Rose",
-				"description": "A rose that Lidica picked when she was excommunicated from the Rose Apostles. It has been specially treated to ensure it never withers but also lost its scent in the process.",
-				"unit": "c1046",
-				"role": "ranger",
-				"rarity": 5,
-				"stat": {
-					"type": "acc",
-					"value": 0.08
-				}
-			}
-		],
+		"ex_equip": "Beads of Mystic Spirits",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -21774,21 +19785,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1123_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc100301",
-				"id": "exc100301",
-				"name": "Valkyrie Wing",
-				"description": "A mysterious circlet that symbolizes strength and beauty, and is the source of Rose's Fighting Spirit.",
-				"unit": "c1003",
-				"role": "knight",
-				"rarity": 5,
-				"stat": {
-					"type": "max_hp_rate",
-					"value": 0.07
-				}
-			}
-		],
+		"ex_equip": "Valkyrie Wing",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -21867,47 +19864,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1072_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc107201",
-				"id": "exc107201",
-				"name": "Queen's Keepsake",
-				"description": "The only gift Sigret has ever received. Though little more than a decoration, she wears it daily.",
-				"unit": "c1072",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Increases the damage dealt by Sever by 20%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 1,
-						"description": "Increases the chance of inflicting bleeding when using Sever by 20%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 2,
-						"description": "Changes the conditions necessary to activate Sever when using Smash from 50% remaining Health to 75% remaining Health.",
-						"skill_description": "Batters the enemy with a scythe, with a {{variable}} chance each to make them unhealable and inflict bleeding for 2 turns. When the enemy's Health is 75% or less after the attack, activates Sever as an extra attack with a 100% chance of inflicting bleeding.",
-						"values": [27, 32],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1072.png"
-				}
-			}
-		],
+		"ex_equip": "Queen's Keepsake",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -22134,21 +20091,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2062_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc100301",
-				"id": "exc100301",
-				"name": "Valkyrie Wing",
-				"description": "A mysterious circlet that symbolizes strength and beauty, and is the source of Rose's Fighting Spirit.",
-				"unit": "c1003",
-				"role": "knight",
-				"rarity": 5,
-				"stat": {
-					"type": "speed",
-					"value": 5
-				}
-			}
-		],
+		"ex_equip": "Valkyrie Wing",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -23809,25 +21752,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2065_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc109501",
-				"id": "exc109501",
-				"name": "Soul Tailor",
-				"description": "A medal bestowed only to the most talented of tailors. As it is a family heirloom, Lilibet received it from her mother, with whom she has been separated from childhood.",
-				"unit": "c1095",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "cri",
-					"value": 0.06
-				},
-				"skills": [],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1095.png"
-				}
-			}
-		],
+		"ex_equip": "Soul Tailor",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -23899,25 +21824,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1050_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc101601",
-				"id": "exc101601",
-				"name": "Azure Dragon's Spirit",
-				"description": "A ribbon with special powers that allows the wearer to harness their innate dragon powers.",
-				"unit": "c1016",
-				"role": "mage",
-				"rarity": 5,
-				"stat": {
-					"type": "acc",
-					"value": 0.08
-				},
-				"skills": [],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1016.png"
-				}
-			}
-		],
+		"ex_equip": "Azure Dragon's Spirit",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -24140,47 +22047,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2036_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc203601",
-				"id": "exc203601",
-				"name": "Silver Lion's Protection",
-				"description": "A shield with a lion motif regarded by Troublemaker Crozet as his most valued possession, which he uses in honor of his one true love.",
-				"unit": "c2036",
-				"role": "knight",
-				"rarity": 5,
-				"stat": {
-					"type": "max_hp_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 2,
-						"description": "Increases Chivalry's counterattack chance by 15% when the ally in the back row is attacked.",
-						"skill_description": "Receives {{variable}} of damage suffered by the ally in the back row in their place. Only the highest damage distribution effect will be applied. Has a 50% chance to counterattack when the ally in the back row is attacked.",
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 3,
-						"description": "Recovers the caster's Health when using Oath of Protection. Amount recovered increases proportional to the caster's max Health.",
-						"skill_description": "Swears an oath of protection, dispelling all debuffs from the caster and one ally, before increasing Defense for 3 turns. Grants class enhancement to the ally for 3 turns, and recovers the caster's Health. Amount recovered increases proportional to the caster's max Health.",
-						"values": ["c2036_r", 2],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Increases Combat Readiness of the target by 40% when using Oath of Protection.",
-						"skill_description": "Swears an oath of protection, dispelling all debuffs from the caster and one ally, before increasing Defense for 3 turns. Grants class enhancement to the ally for 3 turns, and increases their Combat Readiness by 40%.",
-						"values": ["c2036_r", 2],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c2036.png"
-				}
-			}
-		],
+		"ex_equip": "Silver Lion's Protection",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -24334,47 +22201,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1042_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc104201",
-				"id": "exc104201",
-				"name": "Estyria",
-				"description": "A beautiful, silver sword that cuts through its enemies delicately, like the winter wind.",
-				"unit": "c1042",
-				"role": "knight",
-				"rarity": 5,
-				"stat": {
-					"type": "max_hp_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Dispels one more buff when using Sword Storm.",
-						"skill_description": "Attacks with a swordstorm, with a {{variable}} chance to dispel two buffs. Damage dealt increases proportional to the caster's max Health.",
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 1,
-						"description": "Decreases cooldown of All-Out Attack by 1 turn when a buff is dispelled with Sword Storm.",
-						"skill_description": "Attacks with a swordstorm, with a {{variable}} chance to dispel one buff. Cooldown of All-Out Attack decreases by 1 turn when a buff is dispelled. Damage dealt increases proportional to the caster's max Health.",
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 2,
-						"description": "Increases Combat Readiness of the caster by an additional 20% when using Commanding Shout.",
-						"skill_description": "Increases Attack and Critical Hit Chance of an ally for 2 turns, before increasing Combat Readiness by 30%. Increases Attack and Critical Hit Chance of the caster for 2 turns, before increasing Combat Readiness by 50%.",
-						"values": [1, 4],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1042.png"
-				}
-			}
-		],
+		"ex_equip": "Estyria",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -24742,7 +22569,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1007_l.png"
 		},
-		"ex_equip": "Dragon Emerald",
+		"ex_equip": "Blade Insignia",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],

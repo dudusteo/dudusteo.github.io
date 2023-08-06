@@ -162,7 +162,7 @@ const star = {
 	3: three,
 };
 
-// Set Icons https://static.smilegatemegaport.com/event/live/epic7/guide/wearingStatus/images/sets/
+// Set Icons https://static.smilegatemegaport.com/event/live/epic7/guide/wearingStatus/images/sets/set_shield
 import attack from "./set/set_att.png";
 import counter from "./set/set_counter.png";
 import critical from "./set/set_cri.png";
@@ -174,7 +174,7 @@ import immunity from "./set/set_immune.png";
 import injury from "./set/set_scar.png";
 import lifesteal from "./set/set_vampire.png";
 import penetration from "./set/set_penetrate.png";
-import protection from "./set/protection.png";
+import protection from "./set/set_shield.png";
 import rage from "./set/set_rage.png";
 import resist from "./set/set_res.png";
 import revenge from "./set/set_revenge.png";
