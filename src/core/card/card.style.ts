@@ -100,6 +100,22 @@ const style = {
 					}
 				}
 			}
+
+			.manual-details {
+				width: clamp(4.75rem, 0rem + 33.3333vw, 19rem);
+				padding: clamp(0.25rem, 0rem + 3.3333vw, 1rem)
+					clamp(0.5rem, 0rem + 6.6666vw, 2rem);
+
+				color: ${theme.text.color.white};
+
+				span:first-of-type {
+					font-size: clamp(0.625rem, 0rem + 8.3333vw, 2.5rem);
+				}
+
+				span:last-of-type {
+					font-size: clamp(0.5rem, 0rem + 6.6666vw, 2rem);
+				}
+			}
 		`,
 	// 565 / 850 size of 16 rem
 	bottomCard: () => () =>

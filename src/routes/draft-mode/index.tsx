@@ -7,10 +7,19 @@ import DraftCard from "../../core/draft-card";
 const DraftMode = () => {
 	const heroOptions = hero.getDraftModeHeroOptions();
 	const [heroName, setHeroName] = React.useState("Vildred");
+	const [details, setDetails] = React.useState<boolean>(false);
 
 	return (
 		<div css={style.draftMode}>
-			<DraftCard heroName={heroName} />
+			<div css={style.card}>
+				<DraftCard heroName={heroName} details={details} />
+				<button
+					onClick={() => setDetails((prevDetails) => !prevDetails)}
+				>
+					button
+				</button>
+			</div>
+
 			<div css={style.draftModeList}>
 				{heroOptions.map((heroOption, index) => (
 					<button

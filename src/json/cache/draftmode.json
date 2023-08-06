@@ -11,8 +11,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Increases basic Speed of other allies, and when the enemy is defeated, launches an extra attack.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Increases basic Speed of other allies, and when the enemy is defeated, launches an extra attack."
+		},
 		"artifact": "Sword of Summer Twilight",
 		"ee": 1,
 		"imprint": "Team",
@@ -30,8 +32,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Bruiser",
-		"tooltip": "When attacked, increases Attack and Defense of the caster, and deals great AoE damage to enemies every turn.",
+		"details": {
+			"tag": "Bruiser",
+			"tooltip": "When attacked, increases Attack and Defense of the caster, and deals great AoE damage to enemies every turn."
+		},
 		"artifact": "Holy Sacrifice",
 		"ee": 2,
 		"imprint": "Self",
@@ -49,8 +53,10 @@
 			"efr": 0.98,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Becomes stronger as the caster's Health gets lower, and upon receiving lethal damage, the caster does not die for 1 turn.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Becomes stronger as the caster's Health gets lower, and upon receiving lethal damage, the caster does not die for 1 turn."
+		},
 		"artifact": "Shepherd of the Hollow",
 		"ee": 1,
 		"imprint": "Self",
@@ -68,8 +74,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Attacks all enemies, dealing devastating damage to the enemy with the highest max Health.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Attacks all enemies, dealing devastating damage to the enemy with the highest max Health."
+		},
 		"artifact": "Golden Rose",
 		"imprint": "Self",
 		"sets": ["Speed", "Torrent"]
@@ -86,8 +94,10 @@
 			"efr": 1.69,
 			"dac": 0.03
 		},
-		"tag": "Tanker",
-		"tooltip": "Increase Defense of all allies and provokes enemy to protect allies.",
+		"details": {
+			"tag": "Tanker",
+			"tooltip": "Increase Defense of all allies and provokes enemy to protect allies."
+		},
 		"artifact": "Aurius",
 		"ee": 2,
 		"imprint": "Self",
@@ -105,8 +115,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Bruiser",
-		"tooltip": "Has high chance to evade enemy attakcs, and when successfully evading, counterattacks the target.",
+		"details": {
+			"tag": "Bruiser",
+			"tooltip": "Has high chance to evade enemy attakcs, and when successfully evading, counterattacks the target."
+		},
 		"artifact": "Moonlight Dreamblade",
 		"imprint": "Self",
 		"sets": ["Lifesteal", "Penetration"]
@@ -123,8 +135,10 @@
 			"efr": 1.3,
 			"dac": 0.03
 		},
-		"tag": "Supporter",
-		"tooltip": "Supports the battle by increasing Attack and Defense of all allies, Has high Speed.",
+		"details": {
+			"tag": "Supporter",
+			"tooltip": "Supports the battle by increasing Attack and Defense of all allies, Has high Speed."
+		},
 		"artifact": "Rod of Amaryllis",
 		"ee": 3,
 		"imprint": "Self",
@@ -142,8 +156,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Debuffer",
-		"tooltip": "Attacks all enemies, putting them to sleep and decreasing Speed. Has very high Speed.",
+		"details": {
+			"tag": "Debuffer",
+			"tooltip": "Attacks all enemies, putting them to sleep and decreasing Speed. Has very high Speed."
+		},
 		"artifact": "Guiding Light",
 		"ee": 2,
 		"imprint": "Self",
@@ -161,8 +177,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Bruiser",
-		"tooltip": "Dispels all buffs from all enemies, and when using a basic skill, attacks the target with an extra attack, dealing damage.",
+		"details": {
+			"tag": "Bruiser",
+			"tooltip": "Dispels all buffs from all enemies, and when using a basic skill, attacks the target with an extra attack, dealing damage."
+		},
 		"artifact": "Alencinox's Wrath",
 		"ee": 2,
 		"imprint": "Self",
@@ -180,8 +198,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Bruiser",
-		"tooltip": "When using a basic skill, has a chance to attack the target with an extra attack, dealing great damage.",
+		"details": {
+			"tag": "Bruiser",
+			"tooltip": "When using a basic skill, has a chance to attack the target with an extra attack, dealing great damage."
+		},
 		"artifact": "Snow Crystal",
 		"ee": 1,
 		"imprint": "Self",
@@ -199,8 +219,10 @@
 			"efr": 1.07,
 			"dac": 0.03
 		},
-		"tag": "Healer",
-		"tooltip": "Grants revive to all allies, which allows them to revive with low Health.",
+		"details": {
+			"tag": "Healer",
+			"tooltip": "Grants revive to all allies, which allows them to revive with low Health."
+		},
 		"artifact": "Stella Harpa",
 		"imprint": "Self",
 		"sets": ["Protection", "Health"]
@@ -217,8 +239,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "When an enemy uses a non-attack skill, instantly deals huge damage against the enemy with the highest Attack.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "When an enemy uses a non-attack skill, instantly deals huge damage against the enemy with the highest Attack."
+		},
 		"artifact": "Secret Art - Storm Sword",
 		"ee": 2,
 		"imprint": "Self",
@@ -236,8 +260,10 @@
 			"efr": 0.98,
 			"dac": 0.03
 		},
-		"tag": "Bruiser",
-		"tooltip": "Countersttacks the enemy, provoking them, and when using a basic skill, deals additional damage.",
+		"details": {
+			"tag": "Bruiser",
+			"tooltip": "Countersttacks the enemy, provoking them, and when using a basic skill, deals additional damage."
+		},
 		"artifact": "Spear of a New Dawn",
 		"ee": 3,
 		"imprint": "Self",
@@ -255,8 +281,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Deals stronger damage to enemies as the number of buffs granted to all enemies increases.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Deals stronger damage to enemies as the number of buffs granted to all enemies increases."
+		},
 		"artifact": "Guiding Light",
 		"imprint": "Self",
 		"sets": ["Destruction", "Critical"]
@@ -273,8 +301,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Attacks all enemies, delaying their turn, and stunning for 1 turn.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Attacks all enemies, delaying their turn, and stunning for 1 turn."
+		},
 		"artifact": "Tagehel's Ancient Book",
 		"imprint": "Self",
 		"sets": ["Speed", "Critical"]
@@ -291,8 +321,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Debuffer",
-		"tooltip": "Decreases Combat Readiness increase effect of the enemy by half, and inflicts various debuffs.",
+		"details": {
+			"tag": "Debuffer",
+			"tooltip": "Decreases Combat Readiness increase effect of the enemy by half, and inflicts various debuffs."
+		},
 		"artifact": "Tagehel's Ancient Book",
 		"imprint": "Self",
 		"sets": ["Speed", "Immunity"]
@@ -309,8 +341,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Attacks all enemies, decreasing max Health cumulatively, while granting buffs to all allies.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Attacks all enemies, decreasing max Health cumulatively, while granting buffs to all allies."
+		},
 		"artifact": "Elbris Ritual Sword",
 		"ee": 3,
 		"imprint": "Self",
@@ -328,8 +362,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Bruiser",
-		"tooltip": "Limits the number of Soul gained by the enemy, and when an ally is attacked, has a chance to counterattack all enemies.",
+		"details": {
+			"tag": "Bruiser",
+			"tooltip": "Limits the number of Soul gained by the enemy, and when an ally is attacked, has a chance to counterattack all enemies."
+		},
 		"artifact": "Elbris Ritual Sword",
 		"imprint": "Self",
 		"sets": ["Counter", "Immunity"]
@@ -346,8 +382,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Attacks all enemies, dealing huge damage. Has very high Speed.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Attacks all enemies, dealing huge damage. Has very high Speed."
+		},
 		"artifact": "Rhianna & Luciella",
 		"imprint": "Self",
 		"sets": ["Speed", "Critical"]
@@ -364,8 +402,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Deals great damage against a single enemy that ignores their element. Has high Speed.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Deals great damage against a single enemy that ignores their element. Has high Speed."
+		},
 		"artifact": "A Symbol of Unity",
 		"ee": 1,
 		"imprint": "Self",
@@ -383,8 +423,10 @@
 			"efr": 0.41,
 			"dac": 0.03
 		},
-		"tag": "Supporter",
-		"tooltip": "Inflicts various debuffs on all enemies, and takes a portion of damage suffered by allies in their place. Has very high Speed.",
+		"details": {
+			"tag": "Supporter",
+			"tooltip": "Inflicts various debuffs on all enemies, and takes a portion of damage suffered by allies in their place. Has very high Speed."
+		},
 		"artifact": "Goblet of Oath",
 		"imprint": "Self",
 		"sets": ["Speed", "Hit"]
@@ -401,8 +443,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Debuffer",
-		"tooltip": "Puts a single enemy to sleep and increases skill cooldown of all enemies. Has very high Speed.",
+		"details": {
+			"tag": "Debuffer",
+			"tooltip": "Puts a single enemy to sleep and increases skill cooldown of all enemies. Has very high Speed."
+		},
 		"artifact": "Guiding Light",
 		"imprint": "Self",
 		"sets": ["Speed", "Hit"]
@@ -419,8 +463,10 @@
 			"efr": 1.34,
 			"dac": 0.03
 		},
-		"tag": "Bruiser",
-		"tooltip": "Grants stealth to all allies except for the caster, and when the caster is attacked, counterattacks the target.",
+		"details": {
+			"tag": "Bruiser",
+			"tooltip": "Grants stealth to all allies except for the caster, and when the caster is attacked, counterattacks the target."
+		},
 		"artifact": "Etica's Scepter",
 		"imprint": "Self",
 		"sets": ["Lifesteal", "Critical"]
@@ -437,8 +483,10 @@
 			"efr": 0.41,
 			"dac": 0.03
 		},
-		"tag": "Bruiser",
-		"tooltip": "Deals great damage against a single enemy proportional to the caster's lost Health, and provokes the enemy to protect allies.",
+		"details": {
+			"tag": "Bruiser",
+			"tooltip": "Deals great damage against a single enemy proportional to the caster's lost Health, and provokes the enemy to protect allies."
+		},
 		"artifact": "Aurius",
 		"imprint": "Self",
 		"sets": ["Speed", "Health"]
@@ -455,8 +503,10 @@
 			"efr": 0.33,
 			"dac": 0.03
 		},
-		"tag": "Debuffer",
-		"tooltip": "At the start of an enemy's turn, inflicts venom effects that deal damage proportional to Health.",
+		"details": {
+			"tag": "Debuffer",
+			"tooltip": "At the start of an enemy's turn, inflicts venom effects that deal damage proportional to Health."
+		},
 		"artifact": "Celestine",
 		"ee": 3,
 		"imprint": "Self",
@@ -474,8 +524,10 @@
 			"efr": 0.13,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Takes a turn first at the start of battle to keep the opponent's main Hero in check.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Takes a turn first at the start of battle to keep the opponent's main Hero in check."
+		},
 		"artifact": "Tagehel's Ancient Book",
 		"imprint": "Self",
 		"sets": ["Speed", "Hit"]
@@ -492,8 +544,10 @@
 			"efr": 0.97,
 			"dac": 0.03
 		},
-		"tag": "Supporter",
-		"tooltip": "Greatly increases the offensive capabilities of an ally. Has very high Speed.",
+		"details": {
+			"tag": "Supporter",
+			"tooltip": "Greatly increases the offensive capabilities of an ally. Has very high Speed."
+		},
 		"artifact": "Fan of Light and Dark",
 		"imprint": "Self",
 		"sets": ["Speed", "Hit"]
@@ -510,8 +564,10 @@
 			"efr": 0.64,
 			"dac": 0.03
 		},
-		"tag": "Supporter",
-		"tooltip": "When the ally in the back row receives lethal damage, protects them by consuming the caster's Health.",
+		"details": {
+			"tag": "Supporter",
+			"tooltip": "When the ally in the back row receives lethal damage, protects them by consuming the caster's Health."
+		},
 		"artifact": "Proof of Valor",
 		"imprint": "Self",
 		"sets": ["Speed", "Hit"]
@@ -528,8 +584,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Tanker",
-		"tooltip": "Protects allies by provoking the enemy or granting a barrier.",
+		"details": {
+			"tag": "Tanker",
+			"tooltip": "Protects allies by provoking the enemy or granting a barrier."
+		},
 		"artifact": "Aurius",
 		"imprint": "Self",
 		"sets": ["Speed", "Immunity"]
@@ -546,8 +604,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Revives upon death, and attacks all enemies, dealing huge damage.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Revives upon death, and attacks all enemies, dealing huge damage."
+		},
 		"artifact": "Alexa's Basket",
 		"imprint": "Self",
 		"sets": ["Speed", "Critical"]
@@ -564,8 +624,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Bruiser",
-		"tooltip": "Deals huge, single target damage to enemies. If the target is a Dark elemental, greatly increase damage dealth, and deals additional damage to all enemies.",
+		"details": {
+			"tag": "Bruiser",
+			"tooltip": "Deals huge, single target damage to enemies. If the target is a Dark elemental, greatly increase damage dealth, and deals additional damage to all enemies."
+		},
 		"artifact": "Hell Cutter",
 		"imprint": "Self",
 		"sets": ["Attack", "Immunity"]
@@ -582,8 +644,10 @@
 			"efr": 2.03,
 			"dac": 0.03
 		},
-		"tag": "Debuffer",
-		"tooltip": "At the end of the enemy's turn, increases Combat Readiness of the caster, and puts the enemy to sleep.",
+		"details": {
+			"tag": "Debuffer",
+			"tooltip": "At the end of the enemy's turn, increases Combat Readiness of the caster, and puts the enemy to sleep."
+		},
 		"artifact": "Bastion of Hope",
 		"imprint": "Self",
 		"sets": ["Speed", "Resist"]
@@ -600,8 +664,10 @@
 			"efr": 0.27,
 			"dac": 0.03
 		},
-		"tag": "Bruiser",
-		"tooltip": "When attacking and when attacked, recovers the caster's Health, and when an enemy is defeated, revives a dead ally.",
+		"details": {
+			"tag": "Bruiser",
+			"tooltip": "When attacking and when attacked, recovers the caster's Health, and when an enemy is defeated, revives a dead ally."
+		},
 		"artifact": "Proof of Valor",
 		"imprint": "Self",
 		"sets": ["Speed", "Penetration"]
@@ -618,8 +684,10 @@
 			"efr": 2.47,
 			"dac": 0.03
 		},
-		"tag": "Healer",
-		"tooltip": "Supports allies by reviving all dead allies or recovering Health.",
+		"details": {
+			"tag": "Healer",
+			"tooltip": "Supports allies by reviving all dead allies or recovering Health."
+		},
 		"artifact": "Unfading Memories",
 		"ee": 3,
 		"imprint": "Self",
@@ -637,8 +705,10 @@
 			"efr": 1.02,
 			"dac": 0.03
 		},
-		"tag": "Bruiser",
-		"tooltip": "When suffering a critical hit from the enemy, decreases damage suffered, and counterattacks with an attack that targets all enemies.",
+		"details": {
+			"tag": "Bruiser",
+			"tooltip": "When suffering a critical hit from the enemy, decreases damage suffered, and counterattacks with an attack that targets all enemies."
+		},
 		"artifact": "Bastion of Hope",
 		"imprint": "Self",
 		"sets": ["Lifesteal", "Resist"]
@@ -655,8 +725,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Debuffer",
-		"tooltip": "When attacking, decreases Evasion of the enemy, and a successful hit deals additional damage. While this Hero is alive, all Heroes on the battlefield cannot revive.",
+		"details": {
+			"tag": "Debuffer",
+			"tooltip": "When attacking, decreases Evasion of the enemy, and a successful hit deals additional damage. While this Hero is alive, all Heroes on the battlefield cannot revive."
+		},
 		"artifact": "Guiding Light",
 		"imprint": "Self",
 		"sets": ["Speed", "Immunity"]
@@ -673,8 +745,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Attacks all enemies, increases Attack and Combat Readiness of all allies. Has high Speed.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Attacks all enemies, increases Attack and Combat Readiness of all allies. Has high Speed."
+		},
 		"artifact": "Shepherd of the Hollow",
 		"imprint": "Self",
 		"sets": ["Speed", "Penetration"]
@@ -691,8 +765,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Bruiser",
-		"tooltip": "When attacked, dispels debuffs from all allies, and attacks all enemies, stunning for 1 turn.",
+		"details": {
+			"tag": "Bruiser",
+			"tooltip": "When attacked, dispels debuffs from all allies, and attacks all enemies, stunning for 1 turn."
+		},
 		"artifact": "Aurius",
 		"imprint": "Self",
 		"sets": ["Speed", "Critical"]
@@ -709,8 +785,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Supporter",
-		"tooltip": "Dispels buffs from all enemies and increases skill cooldowns of a single enemy target to the max. Has high Speed.",
+		"details": {
+			"tag": "Supporter",
+			"tooltip": "Dispels buffs from all enemies and increases skill cooldowns of a single enemy target to the max. Has high Speed."
+		},
 		"artifact": "Guiding Light",
 		"imprint": "Self",
 		"sets": ["Speed", "Critical"]
@@ -727,8 +805,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Debuffer",
-		"tooltip": "Attacks all enemies, inflicting DoTs and stunning for 1 turn.",
+		"details": {
+			"tag": "Debuffer",
+			"tooltip": "Attacks all enemies, inflicting DoTs and stunning for 1 turn."
+		},
 		"artifact": "Abyssal Crown",
 		"imprint": "Self",
 		"sets": ["Speed", "Hit"]
@@ -745,8 +825,10 @@
 			"efr": 2.12,
 			"dac": 0.03
 		},
-		"tag": "Healer",
-		"tooltip": "Supports allies by reviving all dead allies or recovering Health.",
+		"details": {
+			"tag": "Healer",
+			"tooltip": "Supports allies by reviving all dead allies or recovering Health."
+		},
 		"artifact": "Shimadra Staff",
 		"imprint": "Self",
 		"sets": ["Speed", "Resist"]
@@ -763,8 +845,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "When there is a surviving ally, cannot be selected as the target for attacks and deals great damage to enemies.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "When there is a surviving ally, cannot be selected as the target for attacks and deals great damage to enemies."
+		},
 		"artifact": "Tagehel's Ancient Book",
 		"imprint": "Self",
 		"sets": ["Destruction", "Penetration"]
@@ -781,8 +865,10 @@
 			"efr": 2.005,
 			"dac": 0.03
 		},
-		"tag": "Supporter",
-		"tooltip": "Dispels debuffs from all allies and increases Combat Readiness. Has high Speed.",
+		"details": {
+			"tag": "Supporter",
+			"tooltip": "Dispels debuffs from all allies and increases Combat Readiness. Has high Speed."
+		},
 		"artifact": "Eternus",
 		"imprint": "Self",
 		"sets": ["Speed", "Resist"]
@@ -799,8 +885,10 @@
 			"efr": 0.72,
 			"dac": 0.03
 		},
-		"tag": "Bruiser",
-		"tooltip": "Protects allies from attacks that target all allies, and deals huge damage to all enemies.",
+		"details": {
+			"tag": "Bruiser",
+			"tooltip": "Protects allies from attacks that target all allies, and deals huge damage to all enemies."
+		},
 		"artifact": "Crown of Glory",
 		"imprint": "Self",
 		"sets": ["Speed", "Immunity"]
@@ -817,8 +905,10 @@
 			"efr": 0.35,
 			"dac": 0.03
 		},
-		"tag": "Supporter",
-		"tooltip": "Dispels debuffs from all allies and grants increased Attack and Immunity.",
+		"details": {
+			"tag": "Supporter",
+			"tooltip": "Dispels debuffs from all allies and grants increased Attack and Immunity."
+		},
 		"artifact": "War Horn",
 		"imprint": "Self",
 		"sets": ["Speed", "Immunity"]
@@ -835,8 +925,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Deals great damage to a single enemy and at the end of the turn, increases Evasion of the caster.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Deals great damage to a single enemy and at the end of the turn, increases Evasion of the caster."
+		},
 		"artifact": "Shepherd of the Hollow",
 		"imprint": "Self",
 		"sets": ["Lifesteal", "Penetration"]
@@ -853,8 +945,10 @@
 			"efr": 0.3,
 			"dac": 0.03
 		},
-		"tag": "Bruiser",
-		"tooltip": "When an ally is attacked by a counterattack, Dual Attack, or extra attack, strengthens the caster's ability, and on the caster's turn deals devastating damage to all enemies.",
+		"details": {
+			"tag": "Bruiser",
+			"tooltip": "When an ally is attacked by a counterattack, Dual Attack, or extra attack, strengthens the caster's ability, and on the caster's turn deals devastating damage to all enemies."
+		},
 		"artifact": "Draco Plate",
 		"imprint": "Self",
 		"sets": ["Lifesteal", "Critical"]
@@ -871,8 +965,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "When an ally makes a critical hit, deals additional AoE damage, and deals huge damage against a single enemy target.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "When an ally makes a critical hit, deals additional AoE damage, and deals huge damage against a single enemy target."
+		},
 		"artifact": "Guiding Light",
 		"imprint": "Self",
 		"sets": ["Speed", "Torrent"]
@@ -889,8 +985,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Increases Attack and Combat Readiness of all allies and deals huge damage against a single enemy. Has high Speed.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Increases Attack and Combat Readiness of all allies and deals huge damage against a single enemy. Has high Speed."
+		},
 		"artifact": "Tagehel's Ancient Book",
 		"imprint": "Self",
 		"sets": ["Speed", "Critical"]
@@ -907,8 +1005,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Attacks all enemies, dealing damage, and grants buffs to the ally while recovering Health.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Attacks all enemies, dealing damage, and grants buffs to the ally while recovering Health."
+		},
 		"artifact": "Time Matter",
 		"imprint": "Self",
 		"sets": ["Lifesteal", "Critical"]
@@ -925,8 +1025,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Supporter",
-		"tooltip": "Increases Attack and Defense of all allies, and when attacking, triggers a Dual Attack from a random ally. Has very high Speed.",
+		"details": {
+			"tag": "Supporter",
+			"tooltip": "Increases Attack and Defense of all allies, and when attacking, triggers a Dual Attack from a random ally. Has very high Speed."
+		},
 		"artifact": "Nostalgic Music Box",
 		"imprint": "Self",
 		"sets": ["Speed", "Immunity"]
@@ -943,8 +1045,10 @@
 			"efr": 0.8,
 			"dac": 0.03
 		},
-		"tag": "Debuffer",
-		"tooltip": "Puts all enemies to sleep, and at the start of the enemy's turn, inflicts venom effects that deal damage equivalent to 10% of max Health.",
+		"details": {
+			"tag": "Debuffer",
+			"tooltip": "Puts all enemies to sleep, and at the start of the enemy's turn, inflicts venom effects that deal damage equivalent to 10% of max Health."
+		},
 		"artifact": "Wondrous Potion Vial",
 		"imprint": "Self",
 		"sets": ["Counter", "Health"]
@@ -961,8 +1065,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Bruiser",
-		"tooltip": "Decreases debuff durations of all allies, and increases skill cooldowns of all enemies by attacking them.",
+		"details": {
+			"tag": "Bruiser",
+			"tooltip": "Decreases debuff durations of all allies, and increases skill cooldowns of all enemies by attacking them."
+		},
 		"artifact": "Draco Plate",
 		"imprint": "Self",
 		"sets": ["Speed", "Critical"]
@@ -979,8 +1085,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Enhances the caster's Attack and deals huge damage to all enemies.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Enhances the caster's Attack and deals huge damage to all enemies."
+		},
 		"artifact": "Tagehel's Ancient Book",
 		"imprint": "Self",
 		"sets": ["Speed", "Critical"]
@@ -997,8 +1105,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Increases skill cooldowns of all enemies and decreases Combat Readiness. At the start of the foremost Hero's turn, increaes Combat Readiness by 100%.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Increases skill cooldowns of all enemies and decreases Combat Readiness. At the start of the foremost Hero's turn, increaes Combat Readiness by 100%."
+		},
 		"artifact": "Etica's Scepter",
 		"imprint": "Self",
 		"sets": ["Attack", "Hit"]
@@ -1015,8 +1125,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Revives all allies or keeps them from dying, and when suffering critical hit, counterattacks, dealing huge damage.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Revives all allies or keeps them from dying, and when suffering critical hit, counterattacks, dealing huge damage."
+		},
 		"artifact": "Dust Devil",
 		"imprint": "Self",
 		"sets": ["Speed", "Penetration"]
@@ -1033,8 +1145,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Debuffer",
-		"tooltip": "Plants a bomb on the enemy, and at the end of the turn, detonates. Bomb inflicts huge damage to the target and stuns for 1 turn.",
+		"details": {
+			"tag": "Debuffer",
+			"tooltip": "Plants a bomb on the enemy, and at the end of the turn, detonates. Bomb inflicts huge damage to the target and stuns for 1 turn."
+		},
 		"artifact": "Star of the Deep Sea",
 		"imprint": "Self",
 		"sets": ["Speed", "Hit"]
@@ -1051,8 +1165,10 @@
 			"efr": 0.18,
 			"dac": 0.03
 		},
-		"tag": "Debuffer",
-		"tooltip": "Attacks all enemies, with a low chance to stun, and evades enemy attacks with stealth.",
+		"details": {
+			"tag": "Debuffer",
+			"tooltip": "Attacks all enemies, with a low chance to stun, and evades enemy attacks with stealth."
+		},
 		"artifact": "Fairy Tale for a Nightmare",
 		"imprint": "Self",
 		"sets": ["Speed", "Critical"]
@@ -1069,8 +1185,10 @@
 			"efr": 1.24,
 			"dac": 0.03
 		},
-		"tag": "Debuffer",
-		"tooltip": "Inflicts a seal effect that blocks passive skills of enemies from activating.",
+		"details": {
+			"tag": "Debuffer",
+			"tooltip": "Inflicts a seal effect that blocks passive skills of enemies from activating."
+		},
 		"artifact": "Fairy Tale for a Nightmare",
 		"imprint": "Self",
 		"sets": ["Counter", "Hit"]
@@ -1087,8 +1205,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Bruiser",
-		"tooltip": "When an other ally uses a skill, triggers a Dual Attack from the caster, attacking all enemies.",
+		"details": {
+			"tag": "Bruiser",
+			"tooltip": "When an other ally uses a skill, triggers a Dual Attack from the caster, attacking all enemies."
+		},
 		"artifact": "Mature Sunglasses",
 		"imprint": "Self",
 		"sets": ["Speed", "Torrent"]
@@ -1105,8 +1225,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Debuffer",
-		"tooltip": "Plants a bomb on the enemy. Bomb inflicts huge damage on the enemy and stuns for 1 turn.",
+		"details": {
+			"tag": "Debuffer",
+			"tooltip": "Plants a bomb on the enemy. Bomb inflicts huge damage on the enemy and stuns for 1 turn."
+		},
 		"artifact": "Star of the Deep Sea",
 		"imprint": "Self",
 		"sets": ["Speed", "Hit"]
@@ -1123,8 +1245,10 @@
 			"efr": 1.97,
 			"dac": 0.03
 		},
-		"tag": "Supporter",
-		"tooltip": "Dispels all buffs from all enemies and disables skill usage. Additionally, dispels debuffs from allies and grants buffs.",
+		"details": {
+			"tag": "Supporter",
+			"tooltip": "Dispels all buffs from all enemies and disables skill usage. Additionally, dispels debuffs from allies and grants buffs."
+		},
 		"artifact": "Sole Consolation",
 		"imprint": "Self",
 		"sets": ["Speed", "Resist"]
@@ -1141,8 +1265,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Increases basic Speed of other allies, and deals huge damage against a single enemy.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Increases basic Speed of other allies, and deals huge damage against a single enemy."
+		},
 		"artifact": "Wind Rider",
 		"ee": 3,
 		"imprint": "Team",
@@ -1160,8 +1286,10 @@
 			"efr": 0.05,
 			"dac": 0.03
 		},
-		"tag": "Debuffer",
-		"tooltip": "Increases basic Speed of other allies, and neutralizes a single enemy from acting. Has very high Speed.",
+		"details": {
+			"tag": "Debuffer",
+			"tooltip": "Increases basic Speed of other allies, and neutralizes a single enemy from acting. Has very high Speed."
+		},
 		"artifact": "Guiding Light",
 		"ee": 2,
 		"imprint": "Team",
@@ -1179,8 +1307,10 @@
 			"efr": 1.12,
 			"dac": 0.03
 		},
-		"tag": "Tanker",
-		"tooltip": "Decreases damage suffered of all allies and grants invincibility.",
+		"details": {
+			"tag": "Tanker",
+			"tooltip": "Decreases damage suffered of all allies and grants invincibility."
+		},
 		"artifact": "Aurius",
 		"imprint": "Self",
 		"sets": ["Speed", "Resist"]
@@ -1197,8 +1327,10 @@
 			"efr": 0.86,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Increases Attack, Defense, and Speed as the Health gets lower. Recovers the caster's Health proportional to damage dealt.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Increases Attack, Defense, and Speed as the Health gets lower. Recovers the caster's Health proportional to damage dealt."
+		},
 		"artifact": "Wind Rider",
 		"imprint": "Self",
 		"sets": ["Destruction", "Immunity"]
@@ -1215,8 +1347,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Bruiser",
-		"tooltip": "Increases Evasion of all allies, and either provokes or stuns the enemy.",
+		"details": {
+			"tag": "Bruiser",
+			"tooltip": "Increases Evasion of all allies, and either provokes or stuns the enemy."
+		},
 		"artifact": "Durandal",
 		"ee": 1,
 		"imprint": "Self",
@@ -1234,8 +1368,10 @@
 			"efr": 1.02,
 			"dac": 0.03
 		},
-		"tag": "Tanker",
-		"tooltip": "Receives a portion of the damage suffered by the ally in the back row in their place, and protects allies by stunning enemies.",
+		"details": {
+			"tag": "Tanker",
+			"tooltip": "Receives a portion of the damage suffered by the ally in the back row in their place, and protects allies by stunning enemies."
+		},
 		"artifact": "Hilag Lance",
 		"ee": 3,
 		"imprint": "Self",
@@ -1253,8 +1389,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Deals huge damage to a single enemy, and evades enemy attacks with stealth.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Deals huge damage to a single enemy, and evades enemy attacks with stealth."
+		},
 		"artifact": "A Symbol of Unity",
 		"imprint": "Self",
 		"sets": ["Speed", "Penetration"]
@@ -1271,8 +1409,10 @@
 			"efr": 0.66,
 			"dac": 0.03
 		},
-		"tag": "Debuffer",
-		"tooltip": "Supports allies by dispelling debuffs from all allies, or by inflicting strong debuffs on enemies.",
+		"details": {
+			"tag": "Debuffer",
+			"tooltip": "Supports allies by dispelling debuffs from all allies, or by inflicting strong debuffs on enemies."
+		},
 		"artifact": "Tagehel's Ancient Book",
 		"imprint": "Self",
 		"sets": ["Speed", "Immunity"]
@@ -1289,8 +1429,10 @@
 			"efr": 1.35,
 			"dac": 0.03
 		},
-		"tag": "Tanker",
-		"tooltip": "Receives a portion of the damage suffered by all allies in their place, and protects allies by stunning enemies.",
+		"details": {
+			"tag": "Tanker",
+			"tooltip": "Receives a portion of the damage suffered by all allies in their place, and protects allies by stunning enemies."
+		},
 		"artifact": "Adamant Shield",
 		"imprint": "Self",
 		"sets": ["Counter", "Health"]
@@ -1307,8 +1449,10 @@
 			"efr": 0.0,
 			"dac": 0.03
 		},
-		"tag": "Attacker",
-		"tooltip": "Has high chance to evade enemy attacks, and when successfully evading, counterattacks, dealing damage to all enemies.",
+		"details": {
+			"tag": "Attacker",
+			"tooltip": "Has high chance to evade enemy attacks, and when successfully evading, counterattacks, dealing damage to all enemies."
+		},
 		"artifact": "Shepherd of the Hollow",
 		"imprint": "Self",
 		"sets": ["Speed", "Penetration"]

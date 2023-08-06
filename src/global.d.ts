@@ -34,6 +34,11 @@ interface Stats {
 	dac: number;
 }
 
+interface Details {
+	tag: string;
+	tooltip: string;
+}
+
 interface FormattedStats {
 	atk: number;
 	def: number;

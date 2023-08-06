@@ -6,9 +6,14 @@ const style = {
 			display: flex;
 			padding: auto auto;
 		`,
+
+	card: () => (theme: Theme) =>
+		css`
+			height: clamp(15rem, 0rem + 200vw, 60rem);
+		`,
 	draftModeList: () => (theme: Theme) =>
 		css`
-			height: clamp(13rem, 0rem + 173.3333vw, 52rem);
+			height: clamp(15rem, 0rem + 200vw, 60rem);
 			width: 100%;
 			border: 1px solid ${theme.border.primary};
 			border-radius: 0.5rem;

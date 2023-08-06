@@ -1,4 +1,4 @@
-import stat from "../../json/stat";
+import stat from "../../../json/stat";
 
 interface ManualStatsProps {
 	stats: FormattedStats;

@@ -4,17 +4,27 @@ import style from "./card.style";
 import Divider from "../divider";
 import hero from "../../json/hero";
 import HeroIcon from "../hero-icon";
-import Stats from "../stats";
+import Stats from "./stats";
 import gear from "../../json/gear";
+import Details from "./details";
 
 interface CardProps {
 	heroName: string;
 	artifactName: string;
 	sets: string[];
 	stats: FormattedStats;
+	details?: Details | null;
 }
 
-const Card = ({ heroName, artifactName, sets, stats }: CardProps) => {
+const Card = ({
+	heroName,
+	artifactName,
+	sets,
+	stats,
+	details = null,
+}: CardProps) => {
+	console.log(details);
+
 	return (
 		<div css={style.card}>
 			<div css={style.heroBackground}>
@@ -24,7 +34,11 @@ const Card = ({ heroName, artifactName, sets, stats }: CardProps) => {
 				<span>{heroName}</span>
 			</div>
 			<div css={style.middleCard}>
-				<Stats stats={stats} />
+				{details ? (
+					<Details details={details} />
+				) : (
+					<Stats stats={stats} />
+				)}
 			</div>
 
 			<div css={style.bottomCard}>

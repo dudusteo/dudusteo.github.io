@@ -4,9 +4,10 @@ import stat from "../../json/stat";
 
 interface DraftCardProps {
 	heroName: string;
+	details?: boolean;
 }
 
-const DraftCard = ({ heroName }: DraftCardProps) => {
+const DraftCard = ({ heroName, details = false }: DraftCardProps) => {
 	const draftModeHeroInfo = hero.getDraftModeHeroInfo(heroName);
 
 	return (
@@ -15,6 +16,7 @@ const DraftCard = ({ heroName }: DraftCardProps) => {
 			artifactName={draftModeHeroInfo.artifact}
 			sets={draftModeHeroInfo.sets}
 			stats={stat.getFormattedStats(draftModeHeroInfo.stats)}
+			details={details ? draftModeHeroInfo.details : null}
 		/>
 	);
 };
