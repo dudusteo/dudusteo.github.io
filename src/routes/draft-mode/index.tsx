@@ -7,7 +7,7 @@ import Toggle from "../../core/toggle";
 
 const DraftMode = () => {
 	const heroOptions = hero.getDraftModeHeroOptions();
-	const [heroName, setHeroName] = React.useState("Vildred");
+	const [heroName, setHeroName] = React.useState<string>("Vildred");
 	const [details, setDetails] = React.useState<boolean>(false);
 
 	return (

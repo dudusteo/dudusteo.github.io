@@ -16,7 +16,7 @@
 			"tooltip": "Increases basic Speed of other allies, and when the enemy is defeated, launches an extra attack."
 		},
 		"artifact": "Sword of Summer Twilight",
-		"ee": 1,
+		"ee": 2,
 		"imprint": "Team",
 		"sets": ["Speed", "Torrent"]
 	},

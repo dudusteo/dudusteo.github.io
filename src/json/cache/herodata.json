@@ -23,7 +23,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1144_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -235,7 +235,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3143_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -312,7 +312,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3043_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -386,7 +386,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c5001_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -486,7 +486,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1138_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -558,7 +558,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1137_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -643,7 +643,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1140_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -715,7 +715,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1139_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -789,7 +789,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3105_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -863,7 +863,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4105_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -959,7 +959,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3093_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -1033,7 +1033,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1018_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -1217,7 +1217,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3012_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -1294,7 +1294,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4065_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -1388,7 +1388,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2042_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -1462,7 +1462,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1143_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -1532,7 +1532,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c6062_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -1603,7 +1603,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4042_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -1840,7 +1840,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2019_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -2034,7 +2034,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2007_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -2106,7 +2106,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c5004_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -2181,7 +2181,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2099_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -2256,7 +2256,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1129_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -2484,7 +2484,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3004_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -2558,7 +2558,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1124_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["normal", "miss"],
@@ -2653,14 +2653,14 @@
 		"role": "warrior",
 		"zodiac": "scorpion",
 		"self_devotion": {
-			"type": "att_rate",
+			"type": "acc",
 			"grades": {
-				"C": 0.04,
-				"B": 0.06,
-				"A": 0.08,
-				"S": 0.1,
-				"SS": 0.12,
-				"SSS": 0.14
+				"C": 0.068,
+				"B": 0.102,
+				"A": 0.136,
+				"S": 0.17,
+				"SS": 0.204,
+				"SSS": 0.238
 			}
 		},
 		"assets": {
@@ -2987,7 +2987,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2091_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -3059,7 +3059,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2031_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -3133,7 +3133,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3031_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -3298,7 +3298,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c6008_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -3372,7 +3372,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1093_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -3447,7 +3447,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1053_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -3524,7 +3524,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3006_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -3609,7 +3609,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3095_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -3685,7 +3685,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1141_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["normal", "miss"],
@@ -3780,7 +3780,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1117_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -3975,7 +3975,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2043_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -4051,7 +4051,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/benimaruPanel.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -4240,7 +4240,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2011_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -4312,7 +4312,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2039_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -4486,7 +4486,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2024_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -4566,7 +4566,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3001_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -4640,7 +4640,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3124_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -4714,7 +4714,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4034_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -4810,7 +4810,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3071_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -4887,7 +4887,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3051_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -4969,7 +4969,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1013_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -5163,7 +5163,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3064_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -5236,7 +5236,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2005_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -5426,7 +5426,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1081_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -5615,7 +5615,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2037_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -5685,7 +5685,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2010_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -5759,7 +5759,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4001_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -5855,7 +5855,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4025_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -6417,7 +6417,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3123_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -6497,7 +6497,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3025_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -6781,7 +6781,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2027_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -6858,7 +6858,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1033_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -6935,7 +6935,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4035_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -7029,7 +7029,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2080_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -7106,7 +7106,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2089_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -7176,7 +7176,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1012_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -7260,7 +7260,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2054_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -7336,7 +7336,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2008_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -7407,7 +7407,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1036_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -7490,7 +7490,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2012_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -7565,7 +7565,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2090_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -7634,7 +7634,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2053_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -7704,7 +7704,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2095_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -8024,7 +8024,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1021_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -8096,7 +8096,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1094_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -8173,7 +8173,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4073_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -8271,7 +8271,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1037_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -8354,7 +8354,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3044_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -8443,7 +8443,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3094_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -8544,7 +8544,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1111_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -8619,7 +8619,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1134_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -8818,7 +8818,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1142_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -8894,7 +8894,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1105_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -8971,7 +8971,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3054_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -9052,7 +9052,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1116_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -9147,7 +9147,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3022_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -9219,7 +9219,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1108_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -9294,7 +9294,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c5050_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -9369,7 +9369,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2046_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -9446,7 +9446,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4003_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -9538,7 +9538,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2002_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -9622,7 +9622,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2032_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -10073,7 +10073,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3103_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -10147,7 +10147,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3074_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -10221,7 +10221,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3101_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -10508,7 +10508,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3024_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["normal", "miss"],
@@ -10607,7 +10607,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3135_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -10775,7 +10775,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3091_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -10851,7 +10851,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3041_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -10942,7 +10942,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3122_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -11027,7 +11027,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3023_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -11099,7 +11099,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c5016_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -11173,7 +11173,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4141_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": [],
@@ -11263,7 +11263,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3055_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -11335,7 +11335,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1128_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -11442,7 +11442,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3102_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -11720,7 +11720,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1024_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -11792,7 +11792,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1130_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -11870,7 +11870,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3131_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -11944,7 +11944,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3053_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -12018,7 +12018,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3052_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -12090,7 +12090,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2006_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -12167,7 +12167,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3011_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -12238,7 +12238,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3151_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -12656,7 +12656,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1047_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -12735,7 +12735,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1086_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -12812,7 +12812,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1085_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -12886,7 +12886,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3084_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -12962,7 +12962,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3063_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -13267,7 +13267,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1107_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -13357,7 +13357,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3003_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -13605,7 +13605,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1109_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -13678,7 +13678,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c6011_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -13752,7 +13752,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2070_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -13839,7 +13839,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3092_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -13934,7 +13934,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1029_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -13981,6 +13981,83 @@
 				"chd": 1.5,
 				"dac": 0.03,
 				"eff": 0.3,
+				"efr": 0
+			}
+		}
+	},
+	"Lethe": {
+		"code": "c5149",
+		"_id": "lethe",
+		"name": "Lethe",
+		"moonlight": false,
+		"rarity": 5,
+		"attribute": "ice",
+		"role": "warrior",
+		"zodiac": "waterbearer",
+		"self_devotion": {
+			"type": "acc",
+			"grades": {
+				"B": 0.09,
+				"A": 0.135,
+				"S": 0.18,
+				"SS": 0.225,
+				"SSS": 0.27
+			}
+		},
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c5149_s.png",
+			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
+			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c5149_l.png"
+		},
+		"ex_equip": null,
+		"skills": {
+			"S1": {
+				"hitTypes": ["crit", "crushing", "normal", "miss"],
+				"rate": 1,
+				"pow": 1,
+				"targets": 1,
+				"options": []
+			},
+			"S2": {
+				"hitTypes": ["normal", "miss"],
+				"rate": 0.3,
+				"pow": 1.3,
+				"targets": 1,
+				"selfHpScaling": 0.22,
+				"penetration": 1,
+				"options": []
+			},
+			"S3": {
+				"hitTypes": ["crit", "crushing", "normal", "miss"],
+				"rate": 1,
+				"pow": 1.05,
+				"targets": 3,
+				"options": []
+			}
+		},
+		"calculatedStatus": {
+			"lv50FiveStarFullyAwakened": {
+				"cp": 17097,
+				"atk": 885,
+				"hp": 6149,
+				"spd": 121,
+				"def": 613,
+				"chc": 0.15,
+				"chd": 1.5,
+				"dac": 0.03,
+				"eff": 0.18,
+				"efr": 0
+			},
+			"lv60SixStarFullyAwakened": {
+				"cp": 17097,
+				"atk": 885,
+				"hp": 6149,
+				"spd": 121,
+				"def": 613,
+				"chc": 0.15,
+				"chd": 1.5,
+				"dac": 0.03,
+				"eff": 0.18,
 				"efr": 0
 			}
 		}
@@ -14126,7 +14203,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3153_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -14198,7 +14275,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1089_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -14395,7 +14472,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2079_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -14469,7 +14546,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2009_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -14542,7 +14619,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2071_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -14619,7 +14696,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3035_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -14692,7 +14769,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1031_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -14779,7 +14856,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1126_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -14853,7 +14930,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3113_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -15287,7 +15364,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4044_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -15396,7 +15473,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2049_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -15474,7 +15551,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2047_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -15573,7 +15650,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4041_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -15685,7 +15762,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1032_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -15759,7 +15836,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2073_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -15835,7 +15912,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3121_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -15997,7 +16074,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c0002_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -16074,7 +16151,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4023_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -16169,7 +16246,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/m0063_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -16358,7 +16435,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3014_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -16434,7 +16511,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3072_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -16511,7 +16588,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3042_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -16599,7 +16676,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c6037_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -16815,7 +16892,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3033_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -16875,13 +16952,13 @@
 		"role": "warrior",
 		"zodiac": "maiden",
 		"self_devotion": {
-			"type": "coop",
+			"type": "acc",
 			"grades": {
-				"B": 0.02,
-				"A": 0.03,
-				"S": 0.04,
-				"SS": 0.05,
-				"SSS": 0.06
+				"B": 0.09,
+				"A": 0.135,
+				"S": 0.18,
+				"SS": 0.225,
+				"SSS": 0.27
 			}
 		},
 		"assets": {
@@ -17006,7 +17083,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4062_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -17102,7 +17179,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3132_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -17153,6 +17230,82 @@
 			}
 		}
 	},
+	"Navy Captain Landy": {
+		"code": "c2109",
+		"_id": "navy-captain-landy",
+		"name": "Navy Captain Landy",
+		"moonlight": true,
+		"rarity": 5,
+		"attribute": "light",
+		"role": "knight",
+		"zodiac": "lion",
+		"self_devotion": {
+			"type": "att_rate",
+			"grades": {
+				"B": 0.06,
+				"A": 0.09,
+				"S": 0.12,
+				"SS": 0.15,
+				"SSS": 0.18
+			}
+		},
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2109_s.png",
+			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
+			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2109_l.png"
+		},
+		"ex_equip": null,
+		"skills": {
+			"S1": {
+				"hitTypes": ["crit", "crushing", "normal", "miss"],
+				"rate": 1.1,
+				"pow": 1,
+				"targets": 1,
+				"options": []
+			},
+			"S2": {
+				"hitTypes": ["crit", "crushing", "normal", "miss"],
+				"rate": 0.8,
+				"pow": 1.3,
+				"targets": 3,
+				"options": []
+			},
+			"S3": {
+				"hitTypes": ["crit", "crushing", "normal", "miss"],
+				"rate": 1,
+				"pow": 1,
+				"targets": 3,
+				"penetration": 0.6,
+				"options": []
+			}
+		},
+		"calculatedStatus": {
+			"lv50FiveStarFullyAwakened": {
+				"cp": 13494,
+				"atk": 869,
+				"hp": 4639,
+				"spd": 99,
+				"def": 534,
+				"chc": 0.22999999999999998,
+				"chd": 1.5,
+				"dac": 0.03,
+				"eff": 0,
+				"efr": 0
+			},
+			"lv60SixStarFullyAwakened": {
+				"cp": 17057,
+				"atk": 1134,
+				"hp": 5825,
+				"spd": 99,
+				"def": 662,
+				"chc": 0.22999999999999998,
+				"chd": 1.5,
+				"dac": 0.03,
+				"eff": 0,
+				"efr": 0
+			}
+		}
+	},
 	"Nemunas": {
 		"code": "c3061",
 		"_id": "nemunas",
@@ -17179,7 +17332,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3061_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -17251,7 +17404,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c5082_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -17323,7 +17476,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2072_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -17404,7 +17557,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3133_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -17482,7 +17635,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3045_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -17673,7 +17826,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2087_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -17751,7 +17904,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3073_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -17826,7 +17979,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1125_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -17900,7 +18053,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3125_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -17981,7 +18134,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2110_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -18075,7 +18228,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1112_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -18151,7 +18304,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1035_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -18227,7 +18380,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3005_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -18301,7 +18454,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1115_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -18395,7 +18548,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1118_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -18471,7 +18624,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1001_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -18788,7 +18941,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1114_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -18863,7 +19016,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2074_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -18936,7 +19089,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2102_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["normal", "miss"],
@@ -19011,7 +19164,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3075_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -19085,7 +19238,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4051_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -19190,7 +19343,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4013_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -19288,7 +19441,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3034_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -19362,7 +19515,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3062_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -19434,7 +19587,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1121_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -19633,7 +19786,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1136_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -19795,7 +19948,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1102_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -20006,7 +20159,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3013_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -20200,7 +20353,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1135_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -20277,7 +20430,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1022_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -20356,7 +20509,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2015_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -20435,7 +20588,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4144_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -20534,7 +20687,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1020_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -20849,7 +21002,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4142_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -21062,7 +21215,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1038_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -21139,7 +21292,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4005_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -21448,7 +21601,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4052_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -21543,7 +21696,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2017_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -21832,7 +21985,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1004_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -21905,7 +22058,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2048_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -22073,7 +22226,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1092_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -22148,7 +22301,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2111_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -22226,7 +22379,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3104_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -22313,7 +22466,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2038_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -22390,7 +22543,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2050_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -22462,7 +22615,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2103_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -22536,7 +22689,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1034_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -22613,7 +22766,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c5009_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -22710,7 +22863,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4012_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": [],
@@ -22798,7 +22951,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c5024_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["normal", "miss"],
@@ -22893,7 +23046,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1065_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -22970,7 +23123,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3155_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -23044,7 +23197,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3015_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -23120,7 +23273,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2088_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -23192,7 +23345,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1127_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -23272,7 +23425,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3152_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -23346,7 +23499,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3154_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -23427,7 +23580,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1067_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -23507,7 +23660,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3032_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -23581,7 +23734,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3002_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -23732,13 +23885,13 @@
 		"role": "mage",
 		"zodiac": "crab",
 		"self_devotion": {
-			"type": "coop",
+			"type": "acc",
 			"grades": {
-				"B": 0.02,
-				"A": 0.03,
-				"S": 0.04,
-				"SS": 0.05,
-				"SSS": 0.06
+				"B": 0.09,
+				"A": 0.135,
+				"S": 0.18,
+				"SS": 0.225,
+				"SSS": 0.27
 			}
 		},
 		"assets": {
@@ -23841,7 +23994,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3021_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -23913,7 +24066,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2082_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -24106,7 +24259,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2023_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -24306,7 +24459,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4004_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -24404,7 +24557,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4143_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"TODO": "find multis",
@@ -24495,7 +24648,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4103_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -24589,47 +24742,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1007_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc106601",
-				"id": "exc106601",
-				"name": "Dragon Emerald",
-				"description": "Jewelry that Luna's father passed on to her. It is the only thing her mother left behind when she left.",
-				"unit": "c1066",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Increases the caster's Combat Readiness by 15% after using Infinity Slash.",
-						"skill_description": "Stabs the target a random number of times, before increasing Combat Readiness of the caster by 15%. Skill cooldown decreases by 1-3 turns and damage dealt increases according to the number of attacks.",
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 3,
-						"description": "Decreases the enemy's Attack for 2 turns after using Ragnar Spear.",
-						"skill_description": "Soars into the air and hits the enemy with a spear, with a {{variable}} chance to decrease Defense for 2 turns and a 100% chance to decrease Attack for 2 turns. Attacks using an advantageous element.",
-						"values": [18, 17],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Grants an extra turn to the caster when the enemy is defeated by Ragnar Spear.",
-						"skill_description": "Soars into the air and hits the enemy with a spear, with a {{variable}} chance to decrease Defense for 2 turns. Attacks using an advantageous element. Grants an extra turn to the caster when the enemy is defeated.",
-						"values": [18, 35],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1066.png"
-				}
-			}
-		],
+		"ex_equip": "Dragon Emerald",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -24706,7 +24819,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1074_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -24787,47 +24900,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1088_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc108801",
-				"id": "exc108801",
-				"name": "True Sight",
-				"description": "An object that has been passed down among the greatest sorcerers since ancient times. It is said that even in total darkness, its blue light does not fade.",
-				"unit": "c1088",
-				"role": "mage",
-				"rarity": 5,
-				"stat": {
-					"type": "max_hp_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Combat Readiness of the caster increases by an additional 5% when Vitality Drain results in a critical hit.",
-						"skill_description": "Smashes the enemy with a rock, increasing the caster's Combat Readiness by {{variable}}. A critical hit will increase the caster's Combat Readiness by an additional 15%.",
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 3,
-						"description": "Increases the caster's Combat Readiness by 50% when using Mana Amplification.",
-						"skill_description": "Fully amplifies mana, granting immunity to all allies for 3 turns before granting increased Attack (Greater) to the caster for 3 turns while increasing Attack of all allies except for the caster for 3 turns. Increases the caster's Combat Readiness by 50%.",
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Dispels one debuff from all allies before the skill effect when using Mana Amplification.",
-						"skill_description": "Fully amplifies mana, dispelling one debuff each from all allies before granting immunity to all allies for 3 turns and granting increased Attack (Greater) to the caster for 3 turns while increasing Attack of all allies except for the caster for 3 turns.",
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1088.png"
-				}
-			}
-		],
+		"ex_equip": "True Sight",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -24901,7 +24974,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3065_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -24974,47 +25047,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2004_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc200401",
-				"id": "exc200401",
-				"name": "Dun Blyraia's Dark Blessing",
-				"description": "A quiver made with Mana from the dimension that Wanderer Silk came from, known to maximize her concentration.",
-				"unit": "c2004",
-				"role": "ranger",
-				"rarity": 5,
-				"stat": {
-					"type": "speed",
-					"value": 5
-				},
-				"skills": [
-					{
-						"skill": 2,
-						"description": "Grants the caster an extra attack regardless of whether the enemy is debuffed when using Automatic Fire.",
-						"skill_description": "Fires a volley of arrows at the enemy, decreasing Combat Readiness by 10%. After the attack, grants the caster an extra attack with the same skill. Damage dealt increases proportional to the caster's Speed.",
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 3,
-						"description": "Dispels one buff from the enemy when using Shock Arrow. (This effect is applied before inflicting silence.)",
-						"skill_description": "Shoots an arrow infused with the power of lightning, dispelling one buff before inflicting silence and making them unhealable for 2 turns, and decreasing Combat Readiness by 100%. Damage dealt increases proportional to the caster's Speed.",
-						"values": [28, 27],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Increases Speed of all allies for 2 turns when using Shock Arrow.",
-						"skill_description": "Shoots an arrow infused with the power of lightning, inflicting silence and making them unhealable for 2 turns, and decreasing Combat Readiness by 100%, before increasing Speed of all allies for 2 turns. Damage dealt increases proportional to the caster's Speed.",
-						"values": [28, 27, 3],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c2004.png"
-				}
-			}
-		],
+		"ex_equip": "Dun Blyraia's Dark Blessing",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -25090,47 +25123,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c2020_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc100301",
-				"id": "exc100301",
-				"name": "Valkyrie Wing",
-				"description": "A mysterious circlet that symbolizes strength and beauty, and is the source of Rose's Fighting Spirit.",
-				"unit": "c1003",
-				"role": "knight",
-				"rarity": 5,
-				"stat": {
-					"type": "speed",
-					"value": 5
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Activates each effect regardless of current Health when using Sequential Cutter.",
-						"skill_description": "Attacks with a sword, with a {{variable}} chance to provoke for 1 turn, before increasing Defense of the caster for 1 turn. Damage dealt increases proportional to the caster's Defense.",
-						"values": [25, 2],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Applies the same effect to the caster when using Shield of Light.",
-						"skill_description": "Covers an ally and the caster with the Shield of Light, dispelling two debuffs and granting a barrier for 2 turns before increasing Combat Readiness by {{variable}}. Barrier strength is proportional to the caster's Defense.",
-						"values": [5],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Decreases skill cooldown of Goddess of Victory by 1 turn.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1003.png"
-				}
-			}
-		],
+		"ex_equip": "Valkyrie Wing",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -25207,7 +25200,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/m0171_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": [],
@@ -25275,7 +25268,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c3134_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -25355,47 +25348,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1016_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc101601",
-				"id": "exc101601",
-				"name": "Azure Dragon's Spirit",
-				"description": "A ribbon with special powers that allows the wearer to harness their innate dragon powers.",
-				"unit": "c1016",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "acc",
-					"value": 0.08
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "35% chance to extend the caster's buff durations by 1 turn when using Double Slash.",
-						"skill_description": "Attacks by swinging their weapon, with a {{variable}} chance to decrease Defense for 2 turns, before a 35% chance to extend the caster's buff durations by 1 turn.",
-						"values": [18],
-						"_id": 0
-					},
-					{
-						"skill": 1,
-						"description": "Damage dealt is increased by 30% when using Double Slash.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 2,
-						"description": "Increases chance of inflicting silence with Dragon's Roar by 15%.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1016.png"
-				}
-			}
-		],
+		"ex_equip": "Azure Dragon's Spirit",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -25472,7 +25425,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1131_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -25556,47 +25509,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1030_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc103001",
-				"id": "exc103001",
-				"name": "Small Drone Tuna",
-				"description": "Tuna is a drone made by Yuna. No matter where she goes, on Earth or on Orbis, Tuna is there to protect her.",
-				"unit": "c1030",
-				"role": "ranger",
-				"rarity": 5,
-				"stat": {
-					"type": "speed",
-					"value": 5
-				},
-				"skills": [
-					{
-						"skill": 1,
-						"description": "Combat Readiness increases by an additional 1% per target when using Homing Laser.",
-						"skill_description": "Attacks all enemies with a drone before increasing Combat Readiness of the caster by 7% per target and all other allies by 3% per target. Damage dealt increases proportional to the caster's Speed. When there are three or fewer enemies, damage dealt increases with fewer enemies.",
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 2,
-						"description": "Has a 30% chance each to grant allies increased Attack (Greater) for 2 turns when using Upgrade.",
-						"skill_description": "Buffs all allies with a drone and increases Attack and Speed for 2 turns, with a 30% chance each to grant allies increased Attack (Greater) for 2 turns.",
-						"values": [1, 3, 44],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Damage dealt is increased by 30% when using Meteor Cannon.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c1030.png"
-				}
-			}
-		],
+		"ex_equip": "Small Drone Tuna",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -25669,47 +25582,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1119_l.png"
 		},
-		"ex_equip": [
-			{
-				"_id": "exc111901",
-				"id": "exc111901",
-				"name": "A Spell of Tragic Love",
-				"description": "A talisman given by Amid long ago. Though it does not have any noticeable effects, Zahhak cherishes it more than anything.",
-				"unit": "c1119",
-				"role": "warrior",
-				"rarity": 5,
-				"stat": {
-					"type": "att_rate",
-					"value": 0.07
-				},
-				"skills": [
-					{
-						"skill": 2,
-						"description": "Increases Attack of the target and the caster for 2 turns when using Elaborate Plan.",
-						"skill_description": null,
-						"values": [],
-						"_id": 0
-					},
-					{
-						"skill": 3,
-						"description": "Inflicts resource reduction on the target by 60% before the skill's effect when using Execute.",
-						"skill_description": null,
-						"values": [],
-						"_id": 1
-					},
-					{
-						"skill": 3,
-						"description": "Decreases skill cooldown of Execute by 1 turn.",
-						"skill_description": null,
-						"values": [],
-						"_id": 2
-					}
-				],
-				"assets": {
-					"icon": "https://assets.epicsevendb.com/_source/item/icon_eq_exclusive_c2033.png"
-				}
-			}
-		],
+		"ex_equip": "A Spell of Tragic Love",
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -25792,7 +25665,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c4071_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -25889,7 +25762,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1083_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -25964,7 +25837,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1010_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],
@@ -26039,7 +25912,7 @@
 			"image": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/question_circle.png",
 			"thumbnail": "https://raw.githubusercontent.com/fribbels/Fribbels-Epic-7-Optimizer/main/data/cachedimages/c1133_l.png"
 		},
-		"ex_equip": [],
+		"ex_equip": null,
 		"skills": {
 			"S1": {
 				"hitTypes": ["crit", "crushing", "normal", "miss"],

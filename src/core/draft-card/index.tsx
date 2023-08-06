@@ -14,6 +14,7 @@ const DraftCard = ({ heroName, details = false }: DraftCardProps) => {
 		<Card
 			heroName={heroName}
 			artifactName={draftModeHeroInfo.artifact}
+			ee={draftModeHeroInfo.ee}
 			sets={draftModeHeroInfo.sets}
 			stats={stat.getFormattedStats(draftModeHeroInfo.stats)}
 			details={details ? draftModeHeroInfo.details : null}

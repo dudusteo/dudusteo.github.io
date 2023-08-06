@@ -7,10 +7,12 @@ import HeroIcon from "../hero-icon";
 import Stats from "./stats";
 import gear from "../../json/gear";
 import Details from "./details";
+import EEIcon from "../ee-icon";
 
 interface CardProps {
 	heroName: string;
 	artifactName: string;
+	ee?: number;
 	sets: string[];
 	stats: FormattedStats;
 	details?: Details | null;
@@ -19,6 +21,7 @@ interface CardProps {
 const Card = ({
 	heroName,
 	artifactName,
+	ee,
 	sets,
 	stats,
 	details = null,
@@ -44,6 +47,9 @@ const Card = ({
 					<ArtifactSlot
 						artifact={{ name: artifactName, enhance: 30 }}
 					/>
+					{ee && (
+						<EEIcon eeName={hero.getEEName(heroName)} number={ee} />
+					)}
 				</div>
 				<Divider />
 				<div className="bottom-section">

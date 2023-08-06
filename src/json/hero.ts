@@ -26,6 +26,7 @@ interface HeroController {
 	getDraftModeHeroInfo: (heroName: string) => any;
 	getDraftModeHeroOptions: () => any;
 	getHeroInfo: (heroName: string) => any;
+	getEEName: (heroName: string) => string;
 	getHeroOptions: () => any;
 	getExclusiveEquipmentStats: (
 		heroName: string,
@@ -62,6 +63,10 @@ const hero = {
 	getHeroInfo: (heroName: string) => {
 		const hero = data[heroName];
 		return hero;
+	},
+	getEEName: (heroName: string) => {
+		const hero = data[heroName];
+		return hero.ex_equip;
 	},
 	getHeroOptions: () => {
 		const heroOptions = [];
