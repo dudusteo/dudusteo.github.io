@@ -5,14 +5,25 @@ const style = {
 		css`
 			display: flex;
 			flex-direction: column;
-			text-align: center;
-			margin-top: 2rem;
+			align-items: space-between;
+			gap: 1rem;
+
 			padding: 1rem;
+			margin-top: 2rem;
 			color: ${theme.text.color.white};
 			background-color: ${theme.primary};
-			display: flex;
 			border-top: 1px solid ${theme.secondary};
 			border-bottom: 1px solid ${theme.secondary};
+
+			a {
+				color: ${theme.text.color.yellow};
+			}
+		`,
+	section: () => (theme: Theme) =>
+		css`
+			display: flex;
+			flex-direction: column;
+			text-align: center;
 		`,
 };
 

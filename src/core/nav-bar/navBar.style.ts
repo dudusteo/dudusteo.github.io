@@ -7,6 +7,7 @@ const style = {
 			background-color: ${theme.primary};
 			display: flex;
 			border-bottom: 1px solid ${theme.secondary};
+			margin-bottom: 2rem;
 		`,
 	button: () => (theme: Theme) =>
 		css`
