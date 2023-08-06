@@ -10,6 +10,7 @@ import Speed from "./stat/stat_spd.png";
 import Attack from "./stat/stat_atk.png";
 import Defense from "./stat/stat_def.png";
 import Health from "./stat/stat_hp.png";
+import DualAttackChance from "./stat/stat_dac.png";
 
 const CriticalHitChance = CriticalHitChancePercent;
 const CriticalHitDamage = CriticalHitDamagePercent;
@@ -32,6 +33,7 @@ const stat = {
 	Attack,
 	Defense,
 	Health,
+	DualAttackChance,
 };
 
 // Class Icons

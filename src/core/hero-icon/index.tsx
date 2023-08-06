@@ -20,6 +20,8 @@ const HeroIcon = React.memo(({ heroName }: HeroIconProps) => {
 				prevSpineWidget.dispose();
 			}
 
+			const heroInfo = hero.getHeroInfo(heroName);
+
 			return new SpinePlayer("spine-widget", {
 				alpha: true,
 				viewport: {
@@ -29,8 +31,12 @@ const HeroIcon = React.memo(({ heroName }: HeroIconProps) => {
 					height: 800,
 				},
 				showControls: false,
-				jsonUrl: `https://www.e7vau.lt/static/game/portrait/${hero.data[heroName].code}.json`,
-				atlasUrl: `https://www.e7vau.lt/static/game/portrait/${hero.data[heroName].code}.atlas`,
+				jsonUrl: `https://www.e7vau.lt/static/game/portrait/${
+					heroInfo.code == "c5004" ? "m9194" : heroInfo.code
+				}.json`,
+				atlasUrl: `https://www.e7vau.lt/static/game/portrait/${
+					heroInfo.code == "c5004" ? "m9194" : heroInfo.code
+				}.atlas`,
 				showLoading: false,
 				skin: "normal",
 				animation: "idle",
