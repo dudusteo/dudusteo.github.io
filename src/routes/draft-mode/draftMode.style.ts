@@ -8,7 +8,7 @@ const style = {
 		`,
 	draftModeList: () => (theme: Theme) =>
 		css`
-			//height: clamp(13rem, 0rem + 173.3333vw, 52rem);
+			height: clamp(13rem, 0rem + 173.3333vw, 52rem);
 			width: 100%;
 			border: 1px solid ${theme.border.primary};
 			border-radius: 0.5rem;
@@ -17,7 +17,7 @@ const style = {
 			grid-gap: 0.5rem;
 			grid-template-rows: repeat(auto-fit, 9rem);
 			grid-template-columns: repeat(auto-fit, 9rem);
-			//overflow: scroll;
+			overflow: auto;
 
 			& > button {
 				cursor: pointer;

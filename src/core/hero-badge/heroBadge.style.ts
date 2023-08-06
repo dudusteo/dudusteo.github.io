@@ -9,6 +9,7 @@ const style = {
 		justify-content: center;
 		width: ${size}rem;
 		height: ${size}rem;
+		position: relative;
 
 		::before {
 			content: "";
