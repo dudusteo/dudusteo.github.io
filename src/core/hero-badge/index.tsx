@@ -9,7 +9,7 @@ const HeroBadge = ({ heroName }: HeroBadgeProps) => {
 	return (
 		<div css={style.heroBadge}>
 			<div css={style.image}>
-				<img alt={heroName} src={hero.getHeroImage(heroName)} />
+				<img alt={heroName} src={hero.getHeroIconImage(heroName)} />
 			</div>
 			<div css={[style.elevatedIcons, style.topSection]}>
 				<img alt={heroName} src={hero.getClassImage(heroName)} />

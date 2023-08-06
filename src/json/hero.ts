@@ -40,6 +40,7 @@ interface HeroController {
 	getBaseStats: (heroName: string, heroLevel: number) => any;
 	getBonusStats: (heroName: string, heroLevel: number) => any;
 	getHeroImage: (heroName: string) => string;
+	getHeroIconImage: (heroName: string) => string;
 	getClassImage: (heroName: string) => string;
 	getAttributeImage: (heroName: string) => string;
 	getStarImage: (heroName: string) => string;
@@ -178,6 +179,13 @@ const hero = {
 		};
 	},
 	getHeroImage: (heroName: string) => {
+		const image = Image.hero[data[heroName].code];
+		if (image) {
+			return image;
+		}
+		return data[heroName].assets.icon;
+	},
+	getHeroIconImage: (heroName: string) => {
 		return data[heroName].assets.icon;
 	},
 	getClassImage: (heroName: string) => {

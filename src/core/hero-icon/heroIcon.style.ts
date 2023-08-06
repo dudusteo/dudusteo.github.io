@@ -14,8 +14,7 @@ const style = {
 		display: flex;
 		justify-content: center;
 		img {
-			margin: auto;
-			height: 200px;
+			object-fit: cover;
 		}
 	`,
 };
